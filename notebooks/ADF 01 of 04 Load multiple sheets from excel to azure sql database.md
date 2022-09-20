@@ -14,10 +14,11 @@
 
 ### Step 3: Create source dataset wth sheetname as parameter
   - Open **ADF Studio** > Click on **Author** > expand **Datasets** > Navigate to required folder > click on folder **...** > click on **New DataSet**
-  - Select **Azure Blob Storage** > Click on **Continue** > Select **Excel** > Click on **Continue** > Name it as **src_multiple_sheets** > Select required **Linked Service**
-  - > Browse and point to above **Blob Excel** > Under **SheetName** > select **Edit** > name parameter as **pSheetName** > select **First row as Header** > select import schema as **None** > Click on **ok**
+  - Select **Azure Blob Storage** > Click on **Continue** > Select **Excel** > Click on **Continue** > Name it as **src_multiple_sheets** > Select required **Linked Service** > Browse and point to above **Blob Excel** > Under **SheetName** > select **Edit** > name parameter as **pSheetName** > select **First row as Header** > select import schema as **None** > Click on **ok**
+
 
     ![image](https://user-images.githubusercontent.com/20516321/191255618-f07ef258-434d-4af5-ad7f-cd62c1223639.png)
+
 ### Step 4: Create Target dataset
   - Open **ADF Studio** > Click on **Author** > expand **Datasets** > Navigate to required folder > click on folder **...** > click on **New DataSet**
   - Select **Azure SQL Database** > Click on **Continue** > Name it as **tgt_multiple_sheets** > select required **Linked Service** > Click on **Edit** > provide required schemaname and table name > select **none**
