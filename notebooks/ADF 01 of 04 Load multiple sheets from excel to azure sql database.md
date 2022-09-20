@@ -25,7 +25,19 @@
   - Click on **ok**
 
     ![image](https://user-images.githubusercontent.com/20516321/191257544-6f49fafb-1a42-4a71-92b7-8b1809a462ad.png)
+### Step 5: Create Pipeline
+  - Open **ADF Studio** > Click on **Author** > expand **Pipelines** > Navigate to required folder > click on folder **...** > click on **New Pipeline**
+  - Name pipeline as **pipeline_load_multiple_sheets_to_azure_sql_database**
+  - Click on **Variables** > Click on **New** > Provide as shown below
+    
+    ![image](https://user-images.githubusercontent.com/20516321/191259230-ae9fe749-6cde-40c2-abdd-11b4f0ca2a89.png)
 
+  - From **Activities** > expand **Itteration & Conditionals** > drag and drop ** **ForEach** into work area
+  - Click on **Settings** > select **Sequential** > Click on **Items** > click on **add dynamic content** > Click on **Variables** > click on **list_of_sheets** > clcik on **ok**
+
+    ![image](https://user-images.githubusercontent.com/20516321/191260526-110579a8-5832-4aba-b0db-df82bd48759f.png)
+
+  - Click on **Activities** > Click on **Edit** > drag and drop **CopyData** > Clcik on **Source** > 
 
   -   - 
   - 
