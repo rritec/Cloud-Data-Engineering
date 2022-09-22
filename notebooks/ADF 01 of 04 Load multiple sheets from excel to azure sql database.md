@@ -19,7 +19,7 @@
 
     ![image](https://user-images.githubusercontent.com/20516321/191262796-d7b25243-8387-4eba-94ff-526498ded16e.png)
 
-  - Clcik on **Connections** > Click on  **SheetName** > under **parameters** > click on **psheetname** parameter > Click on **ok**
+  - Clcik on **Connections** > Click on  **SheetName** > Click on **add dynamic content** > under **parameters** > click on **psheetname** parameter > Click on **ok**
   
 
 
