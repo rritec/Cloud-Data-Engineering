@@ -28,6 +28,7 @@
       3. Upload **main.py** into blob **pycode** container
 3. **Create custom activity pipeline**
 4. **Create custom activity pipeline**
+5. **Create custom activity pipeline**
 
 ## Reference:
 
