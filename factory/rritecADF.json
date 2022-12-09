@@ -1,0 +1,9 @@
+{
+	"name": "rritecADF",
+	"location": "East US",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8fae4c6d-e073-4edd-9032-080a90973e37",
+		"tenantId": "eef9cf0b-91d1-4851-9ef9-fdfcc20f40ea"
+	}
+}
