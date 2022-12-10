@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "rritecADF"
+		},
+		"rritec_azure_sql_db_Linked_Service_connectionString": {
+			"value": ""
+		},
+		"rritecsa_linked_service_connectionString": {
+			"value": ""
+		}
+	}
+}
