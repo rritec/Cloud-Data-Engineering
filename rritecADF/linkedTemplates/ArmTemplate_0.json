@@ -55,6 +55,9 @@
 					"referenceName": "rritecsa_linked_service",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "B01/input"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -75,27 +78,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/tgt_emp')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "rritec_azure_sql_db_Linked_Service",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "AzureSqlTable",
-				"schema": [],
-				"typeProperties": {
-					"schema": "dbo",
-					"table": "inputEmp"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/rritec_azure_sql_db_Linked_Service')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/src_emp')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -103,6 +85,9 @@
 				"linkedServiceName": {
 					"referenceName": "rritecsa_linked_service",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "B01/input"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -134,6 +119,30 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/tgt_emp')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "rritec_azure_sql_db_Linked_Service",
+					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "B01/target"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "inputEmp"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/rritec_azure_sql_db_Linked_Service')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/tgt_emp1')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -141,6 +150,9 @@
 				"linkedServiceName": {
 					"referenceName": "rritec_azure_sql_db_Linked_Service",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "B01/target"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -235,6 +247,9 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
+				"folder": {
+					"name": "B01"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -306,6 +321,9 @@
 				"policy": {
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
+				},
+				"folder": {
+					"name": "B01"
 				},
 				"annotations": []
 			},
