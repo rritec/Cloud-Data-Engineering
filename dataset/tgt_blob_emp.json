@@ -1,0 +1,24 @@
+{
+	"name": "tgt_blob_emp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "rritecsa_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "tgt_blob_emp.TXT",
+				"folderPath": "target",
+				"container": "adfv2tutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
