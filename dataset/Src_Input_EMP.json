@@ -1,0 +1,23 @@
+{
+	"name": "Src_Input_EMP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "rritecsa_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "inputEmp.TXT",
+				"container": "adfv2tutorial"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
