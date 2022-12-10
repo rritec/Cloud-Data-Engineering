@@ -5,12 +5,14 @@
 			"referenceName": "rritecsa_linked_service",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "B01/target"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "tgt_blob_emp.TXT",
 				"folderPath": "target",
 				"container": "adfv2tutorial"
 			},
