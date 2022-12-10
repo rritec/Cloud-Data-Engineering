@@ -1,0 +1,16 @@
+{
+	"name": "tgt_emp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "rritec_azure_sql_db_Linked_Service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "inputEmp"
+		}
+	}
+}
