@@ -1,0 +1,30 @@
+{
+	"name": "tgt_emp1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "rritec_azure_sql_db_Linked_Service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar"
+			},
+			{
+				"name": "LastName",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emp1"
+		}
+	}
+}
