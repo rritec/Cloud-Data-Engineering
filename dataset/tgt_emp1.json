@@ -5,6 +5,9 @@
 			"referenceName": "rritec_azure_sql_db_Linked_Service",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "B01/target"
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [

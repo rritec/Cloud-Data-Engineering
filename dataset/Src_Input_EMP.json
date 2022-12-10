@@ -5,6 +5,9 @@
 			"referenceName": "rritecsa_linked_service",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "B01/input"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
