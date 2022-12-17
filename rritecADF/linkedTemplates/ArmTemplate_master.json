@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "rritecADF"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
 		"rritec_azure_sql_db_Linked_Service_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'rritec_azure_sql_db_Linked_Service'"
@@ -14,6 +18,10 @@
 		"rritecsa_linked_service_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'rritecsa_linked_service'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://rritecsa.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +50,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
 					"rritec_azure_sql_db_Linked_Service_connectionString": {
 						"value": "[parameters('rritec_azure_sql_db_Linked_Service_connectionString')]"
 					},
 					"rritecsa_linked_service_connectionString": {
 						"value": "[parameters('rritecsa_linked_service_connectionString')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					}
 				}
 			},

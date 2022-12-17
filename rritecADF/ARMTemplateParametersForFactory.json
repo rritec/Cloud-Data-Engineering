@@ -5,11 +5,17 @@
 		"factoryName": {
 			"value": "rritecADF"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"rritec_azure_sql_db_Linked_Service_connectionString": {
 			"value": ""
 		},
 		"rritecsa_linked_service_connectionString": {
 			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://rritecsa.dfs.core.windows.net/"
 		}
 	}
 }
