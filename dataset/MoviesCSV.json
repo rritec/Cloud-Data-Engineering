@@ -1,0 +1,49 @@
+{
+	"name": "MoviesCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "moviesDB.csv",
+				"folderPath": "input",
+				"fileSystem": "adfv2tutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "movie",
+				"type": "String"
+			},
+			{
+				"name": "title",
+				"type": "String"
+			},
+			{
+				"name": "genres",
+				"type": "String"
+			},
+			{
+				"name": "year",
+				"type": "String"
+			},
+			{
+				"name": "Rating",
+				"type": "String"
+			},
+			{
+				"name": "RottenTomato",
+				"type": "String"
+			}
+		]
+	}
+}
