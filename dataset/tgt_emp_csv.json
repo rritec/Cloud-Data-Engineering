@@ -1,0 +1,32 @@
+{
+	"name": "tgt_emp_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "rritecsa_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "target",
+				"container": "adfv2tutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "year",
+				"type": "String"
+			},
+			{
+				"name": "AverageComedyRating",
+				"type": "String"
+			}
+		]
+	}
+}
