@@ -1,0 +1,17 @@
+{
+	"name": "SourceDataset_4n8",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "rritecsa_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "source"
+			}
+		}
+	}
+}
