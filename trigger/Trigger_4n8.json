@@ -2,7 +2,7 @@
 	"name": "Trigger_4n8",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "DeltaCopyFromBlobPipeline",
