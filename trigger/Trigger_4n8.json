@@ -1,0 +1,36 @@
+{
+	"name": "Trigger_4n8",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "DeltaCopyFromBlobPipeline",
+				"type": "PipelineReference"
+			},
+			"parameters": {
+				"windowStart": {
+					"type": "Expression",
+					"value": "@trigger().outputs.windowStartTime"
+				},
+				"windowEnd": {
+					"type": "Expression",
+					"value": "@trigger().outputs.windowEndTime"
+				}
+			}
+		},
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Minute",
+			"interval": 15,
+			"startTime": "2022-12-18T02:13:00Z",
+			"endTime": "2022-12-19T02:13:00Z",
+			"delay": "00:00:00",
+			"maxConcurrency": 50,
+			"retryPolicy": {
+				"intervalInSeconds": 30
+			},
+			"dependsOn": []
+		}
+	}
+}
