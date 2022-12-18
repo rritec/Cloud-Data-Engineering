@@ -14,8 +14,17 @@
 		"rritecsa_linked_service_connectionString": {
 			"value": ""
 		},
+		"rrsource_linkedservice_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://rritecsa.dfs.core.windows.net/"
+		},
+		"Trigger_4n8_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Trigger_4n8_properties_pipeline_parameters_windowEnd": {
+			"value": "@trigger().outputs.windowEndTime"
 		}
 	}
 }

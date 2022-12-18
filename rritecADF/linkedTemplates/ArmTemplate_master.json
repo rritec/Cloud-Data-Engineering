@@ -19,9 +19,21 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'rritecsa_linked_service'"
 		},
+		"rrsource_linkedservice_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'rrsource_linkedservice'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://rritecsa.dfs.core.windows.net/"
+		},
+		"Trigger_4n8_properties_pipeline_parameters_windowStart": {
+			"type": "string",
+			"defaultValue": "@trigger().outputs.windowStartTime"
+		},
+		"Trigger_4n8_properties_pipeline_parameters_windowEnd": {
+			"type": "string",
+			"defaultValue": "@trigger().outputs.windowEndTime"
 		},
 		"containerUri": {
 			"type": "string",
@@ -59,6 +71,9 @@
 					"rritecsa_linked_service_connectionString": {
 						"value": "[parameters('rritecsa_linked_service_connectionString')]"
 					},
+					"rrsource_linkedservice_connectionString": {
+						"value": "[parameters('rrsource_linkedservice_connectionString')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					}
@@ -79,6 +94,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"Trigger_4n8_properties_pipeline_parameters_windowStart": {
+						"value": "[parameters('Trigger_4n8_properties_pipeline_parameters_windowStart')]"
+					},
+					"Trigger_4n8_properties_pipeline_parameters_windowEnd": {
+						"value": "[parameters('Trigger_4n8_properties_pipeline_parameters_windowEnd')]"
 					}
 				}
 			},
