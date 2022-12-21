@@ -51,7 +51,17 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Map Sink Dataset
       - Debug
       - Trigger
-      - Understand output of run steps      - 
+      - Understand output of run steps 
+
+ 2. **Azure Storage Account Integration with ADF**
+      - Copy multiple files from blob to blob
+      - Filter activity - Dynamic Copy Activity
+      - Get File Names from Folder Dynamically
+      - Copy Activity Behavior in ADF
+      - Copy Activity Performance Tuning in ADF
+      - Get Count of files from folder in ADF
+      - Validate copied data between source and sink in ADF
+       
 
 
 
