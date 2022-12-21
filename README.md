@@ -6,14 +6,14 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 
 ----
 1. **Introduction**
-  - ETL Introduction
-  - ELT Introduction
-  - Different ETL Tools
-  - Azure Data Factory Introduction
-  - Azure Data Factory - Important Concepts in ADF
-  - ADF Architecture
-  - Create Azure Free Account with credit card
-  - Create Azure Free Account with out credit card
+    - ETL Introduction
+    - ELT Introduction
+    - Different ETL Tools
+    - Azure Data Factory Introduction
+    - Azure Data Factory - Important Concepts in ADF
+    - ADF Architecture
+    - Create Azure Free Account with credit card
+    - Create Azure Free Account with out credit card
 
 2. **Storage Account**
   - Introduction
