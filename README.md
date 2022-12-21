@@ -16,16 +16,26 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
     - Create Azure Free Account with out credit card
 
 2. **Storage Account**
-  - Introduction
-  - Create Storage Account
-  - Create Containers
-  - Create Folders
-  - Upload Files
-  - Override Files
-  - Download Files
-  - Edit Files
-  - Preview Files in different formats
-3. 
+      - Introduction
+      - Create Storage Account
+      - Create Containers
+      - Create Folders
+      - Upload Files
+      - Override Files
+      - Download Files
+      - Edit Files
+      - Preview Files in different formats
+
+2. **Storage Account**
+      - Introduction
+      - Create Storage Account
+      - Create Containers
+      - Create Folders
+      - Upload Files
+      - Override Files
+      - Download Files
+      - Edit Files
+      - Preview Files in different formats
 ![image](https://user-images.githubusercontent.com/20516321/208840649-b1a4e81f-4ade-48fd-8baf-a73ba4000bce.png)
 
 
