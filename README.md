@@ -61,6 +61,22 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Copy Activity Performance Tuning in ADF
       - Get Count of files from folder in ADF
       - Validate copied data between source and sink in ADF
+
+ 2. **Azure SQL Database integration with ADF**
+      - Azure SQL Databases - Introduction - Relational databases in Azure
+      - Overwrite and Append Modes in Copy Activity in ADF
+
+ 2. **Incremental Load**
+      - What is full load
+      - What is incremental load
+      - types of incremental loads
+      - Incrementally load data from Azure SQL Database to Azure Blob storage
+      - Incrementally load data from multiple tables in SQL Server to a database in Azure SQL Database
+      - Incrementally copy new and changed files based on LastModifiedDate
+      - Incrementally copy new files based on time partitioned file name
+
+ 2. **Logic Apps**
+      - Branching and chaining activities
        
 
 
