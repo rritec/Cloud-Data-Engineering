@@ -6,7 +6,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 
 ----
 1. **Introduction**
-  1. ETL Introduction
+  - 1. ETL Introduction
   2. ELT Introduction
   3. Different ETL Tools
   4. Azure Data Factory Introduction
