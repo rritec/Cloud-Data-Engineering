@@ -45,11 +45,14 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Create Sink Datasets      - 
       - Preview data
 
-2. **Pipelines**
-      - Create Source Datasets
-      - Create Sink Datasets      - 
-      - Preview data
-![image](https://user-images.githubusercontent.com/20516321/208840649-b1a4e81f-4ade-48fd-8baf-a73ba4000bce.png)
+2. **BLOB to BLOB Pipeline**
+      - Create Pipeline
+      - Map source Dataset
+      - Map Sink Dataset
+      - Debug
+      - Trigger
+      - Understand output of run steps      - 
+
 
 
 
