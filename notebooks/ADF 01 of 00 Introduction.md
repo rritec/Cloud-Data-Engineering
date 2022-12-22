@@ -9,7 +9,7 @@
 
 
 # Introduction
-## What is ETL ?
+## What is ETL
   - **Extract**: Get Required data(required Tables/Columns/rows) from hetrogenious/homogenious source.
       - Amazon.in > Example of Storage MySQL(OLTP)
       - amazon.co.uk > Example of Storage MS SQL Server(OLTP)
