@@ -55,4 +55,8 @@
   - Click on **Advanced** Tab > select **Enable hierarchical namespace**
   - Click on **Review**
   - Click on **Create**
+## Container
+  - Click on **Data Lake Storage** > Click on **Container** > Name it as **rriteccontainer** > Click on **Create**
+  - ![image](https://user-images.githubusercontent.com/20516321/209080454-923c3672-5e86-4abb-a877-a85f5f43f26d.png)
+
 
