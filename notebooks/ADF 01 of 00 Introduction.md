@@ -36,7 +36,13 @@
   - Click on the URL [Azure Free Sandbox](https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/5-exercise-create-a-storage-account?ns-enrollment-type=learningpath&ns-enrollment-id=learn.store-data-in-azure) > In the same page click on **Azure Portal**
   - Note: Few Services only available in the sandbox
 # Storage Account
-  - Azure Storage is a Microsoft-managed service providing cloud storage that is highly available, secure, durable, scalable, and redundant. Azure Storage includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files, Azure Queues, and Azure Tables
+  - Azure Storage is a Microsoft-managed service providing cloud storage that is 
+      - highly available
+      - secure
+      - durable
+      - scalable
+      - redundant. 
+  - Azure Storage includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files, Azure Queues, and Azure Tables
 ## Lab
   - Open [Azure Portal](https://portal.azure.com/)> > Click on the search bar > Type **Storage accounts** > Click on **Storage Accounts**
   - Click on **Create** > Under **Basics** tab provide below details
