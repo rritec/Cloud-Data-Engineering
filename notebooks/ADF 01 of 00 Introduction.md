@@ -2,6 +2,7 @@
 1. **[Introduction](#Introduction)**<br>
 2. **[Azure Free Account](#Azure-Free-Account)**<br>
 3. **[Storage Account](#Storage-Account)**<br>
+4. **[Azure Sql Database](#Azure-Sql-Database)**<br>
 
 
 # Introduction
@@ -66,5 +67,9 @@
   - Open **rriteccontainer** > open **input** folder > Click on **upload** > from **labdata** select **emp.csv** > Click on **upload**
   - Right Click on **emp.csv** > observe all properties
   - ![image](https://user-images.githubusercontent.com/20516321/209083873-83ee8400-13d9-497a-8772-95e3ff065fa3.png)
+# Azure Sql Database
+  - Best for modern cloud applications. Hyperscale and serverless
+## Lab
+  - Open
 
 
