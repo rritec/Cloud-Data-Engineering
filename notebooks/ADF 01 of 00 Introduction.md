@@ -27,6 +27,7 @@
   - Tableau
   - ...etc
 # Azure Free Account
-## Open the url https://azure.microsoft.com/en-in/free/
+  - Click on the URL [Azure Free Account]( https://azure.microsoft.com/en-in/free/) > Click on **Start Free** > 
+  - 
   - dfds
 
