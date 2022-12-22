@@ -26,7 +26,7 @@
   - Power BI
   - Tableau
   - ...etc
-# Azure Account
-## logi
+# Azure Free Account
+## Open the url https://azure.microsoft.com/en-in/free/
   - dfds
 
