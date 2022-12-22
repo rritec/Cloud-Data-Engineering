@@ -62,4 +62,9 @@
   - Open **rriteccontainer** > Click on **Add Directory** > Name it as **input**
   - Click on **Add Directory** > Name it as **output**
   - ![image](https://user-images.githubusercontent.com/20516321/209080956-412e8fa4-eef5-43f7-86b3-58cbc199ae78.png)
+## Upload File
+  - Open **rriteccontainer** > open **input** folder > Click on **upload** > from **labdata** select **emp.csv** > Click on **upload**
+  - Right Click on **emp.csv** > observe all properties
+  - ![image](https://user-images.githubusercontent.com/20516321/209083873-83ee8400-13d9-497a-8772-95e3ff065fa3.png)
+
 
