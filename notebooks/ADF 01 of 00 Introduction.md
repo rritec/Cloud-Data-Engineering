@@ -27,7 +27,8 @@
   - Tableau
   - ...etc
 # Azure Free Account
-  - Click on the URL [Azure Free Account]( https://azure.microsoft.com/en-in/free/) > Click on **Start Free** > 
-  - 
-  - dfds
+## Azure Free Account with Credit Card
+  - Click on the URL [Azure Free Account]( https://azure.microsoft.com/en-in/free/) > Click on **Start Free** > Provide your emailid > Follow the wizard
+## Azure Free Account with Student Mailid
+  - Click on the URL [Azure Student Free Account]( https://azure.microsoft.com/en-in/free/students/) > Click on **Start Free** > Provide your emailid > Follow the wizard
 
