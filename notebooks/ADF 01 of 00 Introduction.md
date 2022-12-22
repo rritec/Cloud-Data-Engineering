@@ -1,11 +1,6 @@
 ### Table of Contents
 **[Introduction](#Introduction)**<br>
 **[Azure Account](#Azure Account)**<br>
-**[Troubleshooting](#troubleshooting)**<br>
-**[Compatibility](#compatibility)**<br>
-**[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
-**[Building the Extension Bundles](#building-the-extension-bundles)**<br>
-**[Next Steps, Credits, Feedback, License](#next-steps)**<br>
 
 
 # Introduction
@@ -33,4 +28,5 @@
   - ...etc
 # Azure Account
 ## logi
+  - dfds
 
