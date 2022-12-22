@@ -1,6 +1,6 @@
 ### Table of Contents
 **[Introduction](#Introduction)**<br>
-**[What is ETL](#What is ETL)**<br>
+**[Azure Account](#Azure Account)**<br>
 **[Troubleshooting](#troubleshooting)**<br>
 **[Compatibility](#compatibility)**<br>
 **[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
@@ -31,4 +31,8 @@
   - Power BI
   - Tableau
   - ...etc
+# Azure Account
+## What is ETL
+  - **Extract**: Get Required data(required Tables/Columns/rows) from hetrogenious/homogenious source.
+      - Amazon.in > Example of Storage MySQL(OLTP)
 
