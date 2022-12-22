@@ -1,6 +1,7 @@
 ### DP-203 Azure Data Engineer
 1. **[Introduction](#Introduction)**<br>
 2. **[Azure Free Account](#Azure-Free-Account)**<br>
+3. **[Storage Account](#Storage-Account)**<br>
 
 
 # Introduction
@@ -34,4 +35,18 @@
 ## Azure Free sandbox
   - Click on the URL [Azure Free Sandbox](https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/5-exercise-create-a-storage-account?ns-enrollment-type=learningpath&ns-enrollment-id=learn.store-data-in-azure) > In the same page click on **Azure Portal**
   - Note: Few Services only available in the sandbox
+# Storage Account
+  - Azure Storage is a Microsoft-managed service providing cloud storage that is highly available, secure, durable, scalable, and redundant. Azure Storage includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files, Azure Queues, and Azure Tables
+## Lab
+  - Open [Azure Portal](https://portal.azure.com/)> > Click on the search bar > Type **Storage accounts** > Click on **Storage Accounts**
+  - Click on **Create** > Under **Basics** tab provide below details
+      - Subscription: **rritecsubscription**
+      - Resource Group: **rritecresoucegroup**
+      - Storage Account Name: **rritecsa**
+      - Region: **(US) East US**
+      - Performance: **Standard**
+      - Redundancy: **Locally-Redundant Storage (LRS)**
+  - Click on **Advanced** Tab > select **Enable hierarchical namespace**
+  - Click on **Review**
+  - Click on **Create**
 
