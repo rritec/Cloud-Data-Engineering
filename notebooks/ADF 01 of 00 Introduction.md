@@ -1,6 +1,6 @@
 ### Table of Contents
 **[Introduction](#Introduction)**<br>
-**[Usage Instructions](#usage-instructions)**<br>
+**[What is ETL](#What is ETL)**<br>
 **[Troubleshooting](#troubleshooting)**<br>
 **[Compatibility](#compatibility)**<br>
 **[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
