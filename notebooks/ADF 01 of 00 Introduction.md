@@ -1,4 +1,5 @@
-# What is ETL ?
+# Introduction
+## What is ETL ?
   - **Extract**: Get Required data(required Tables/Columns/rows) from hetrogenious/homogenious source.
       - Amazon.in > Example of Storage MySQL(OLTP)
       - amazon.co.uk > Example of Storage MS SQL Server(OLTP)
@@ -9,14 +10,14 @@
       - Converting Unix timestamp into windows timestamp
       - Converting all data in a consistency format (1 or M > Male, 0 or F > Female)   
  - **Load**: Final Data which is useful for Analysis/Analytics, will be loadded into warehouse / Datalakes /ADLS /Synposis
-# What is ELT ?
+## What is ELT ?
 - It is same as ETL but the order of work is different
-# Different Tools ETL/ELT ?
+## Different Tools ETL/ELT ?
   - Informatica (ETL/ELT)
   - ODI (ELT)
   - ADF (ETL/ELT)
   - .... etc
-# Different BI Tools ?
+## Different BI Tools ?
   - Power BI
   - Tableau
   - ...etc
