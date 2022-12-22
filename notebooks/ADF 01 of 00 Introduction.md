@@ -1,6 +1,6 @@
 ### DP-203 Azure Data Engineer
-**[Introduction](#Introduction)**<br>
-**[Azure Free Account](#Azure-Free-Account)**<br>
+1. **[Introduction](#Introduction)**<br>
+2. **[Azure Free Account](#Azure-Free-Account)**<br>
 
 
 # Introduction
