@@ -32,7 +32,5 @@
   - Tableau
   - ...etc
 # Azure Account
-## What is ETL
-  - **Extract**: Get Required data(required Tables/Columns/rows) from hetrogenious/homogenious source.
-      - Amazon.in > Example of Storage MySQL(OLTP)
+## logi
 
