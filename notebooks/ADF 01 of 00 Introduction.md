@@ -93,7 +93,7 @@
     - ![image](https://user-images.githubusercontent.com/20516321/209275635-0512b890-d319-4a1b-b6f2-1eaa7b576eb8.png)
 
   ## Lab 2: create one table
-  - Open **rritecazuresqldb***
+  - Open **rritecazuresqldb**
   - Click on **Query Editor(preview)**
   - Under **sql server authentication** > provide **username:** as **saadmin** > **password:** as **RRitec123$**
   - Click on **ok**
@@ -181,7 +181,23 @@
       ``` sql
       select * from emp
       ```
-  - 
-  - 
+  - ![image](https://user-images.githubusercontent.com/20516321/209278382-d5706988-accb-4f72-add2-5f473a0f774d.png)
+
+## Lab 3: Login and work in SSMS ttol
+  - Instal SSMS tool by following [url](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#instal-sql-server-management-studio-ssms)
+  - open **rritecAzuresqldb** > copy serbername
+  - ![image](https://user-images.githubusercontent.com/20516321/209279155-117ad993-851b-4bb2-b732-956579425adc.png)
+
+  - open SSMS tool
+  - Provide below information
+  - ![image](https://user-images.githubusercontent.com/20516321/209279299-d777b4cd-38e9-4e52-a832-c592d7c1d8a9.png)
+
+  - Click on **Connect**
+  - Expand **Databases**
+  - Expand **rritecazuresqldb** > Expend **Tables**
+  - Right click on **emp** table > click on **select top 1000 rows**
+  - ![image](https://user-images.githubusercontent.com/20516321/209279628-efbc9e45-3ceb-431f-8974-8dfb1d27d141.png)
+
+  - observe **query** and **result**
 
 
