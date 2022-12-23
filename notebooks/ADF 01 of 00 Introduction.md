@@ -99,13 +99,6 @@
   - Click on **ok**
   - Create emp,dept and salgrade tables and insert some data by running below code
       ``` sql
-          CREATE DATABASE rritecDB;
-
-          GO
-
-          use rritecDB;
-
-          GO
 
           CREATE TABLE [dbo].[DEPT]
           (DEPTNO INT PRIMARY KEY ,
@@ -184,6 +177,11 @@
 
           INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
           ```
+  - Observe data by runing 
+      ``` sql
+      select * from emp
+      ```
+  - 
   - 
 
 
