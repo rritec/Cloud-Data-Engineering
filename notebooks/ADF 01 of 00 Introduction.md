@@ -222,6 +222,13 @@
   - Click on **Go to Resource**
   - Click on **Launch Studio**
   - Observe all options
+# Linked Service to blob
+  - In search box type
+  - 
+# Linked Service to Azure Sql Database
+  - In search box type
+# Data Sets
+  - In search box type
 
 
 
