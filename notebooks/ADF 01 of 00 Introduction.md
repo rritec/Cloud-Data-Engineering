@@ -223,7 +223,21 @@
   - Click on **Launch Studio**
   - Observe all options
 # Linked Service to blob
-  - In search box type
+  - Linked service defines the connection information to a data store or compute.
+## Lab
+  - Click on **Manage**
+  - Click on **Linked Services**
+  - Click on **New**
+  - Under **Data Store** > select **Azure Blob Storage** > Click on **Continue**
+  - **Name** it as **ls_to_blob_rritecsa**
+  - **Connect Via Integration runtime:** AutoResloveIntegrationRuntime
+  - **Authentication Type:** Account Key
+  - **Account Selection Method:** From Azure Subscription
+  - **Azure Subscription:** Azure For Students
+  - **Storage Account Name:** rritecsa
+  - Click on **Test Connection**
+  - ![image](https://user-images.githubusercontent.com/20516321/209294913-03b3d076-39b6-4a3b-8415-104ee14f4ca6.png)
+  - Click on **Create** -  
   - 
 # Linked Service to Azure Sql Database
   - In search box type
