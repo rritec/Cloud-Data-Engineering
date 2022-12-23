@@ -3,6 +3,10 @@
 2. **[Azure Free Account](#Azure-Free-Account)**<br>
 3. **[Storage Account](#Storage-Account)**<br>
 4. **[Azure Sql Database](#Azure-Sql-Database)**<br>
+5. **[Azure Data Factory](#Azure-Data-Factory)**<br>
+6. **[Linked Service to blob](#Linked-Service-to-blob)**<br>
+7. **[Linked Service to Azure Sql Database](#Linked-Service-to-Azure-Sql-Database)**<br>
+8. **[Data Sets](#Data-Sets)**<br>
 
 
 # Introduction
@@ -202,6 +206,23 @@
   - ![image](https://user-images.githubusercontent.com/20516321/209279761-0cdbb8b8-8104-4039-9221-72955c9ea239.png)
 ## Lab 4(optional): Login and work in Azure Data Studio tool
   - Instal Azure Data Studio and explore your own
+# Azure Data Factory
+  - In search box type **Data Factories** > Under **services** > Click on **Data Factories**
+  - ![image](https://user-images.githubusercontent.com/20516321/209284786-7918e604-260e-479b-9b5d-30813b9ea286.png)
+
+  - Click on **Create**
+      - **Subsription:** Azure For Students
+      - **Resource Groups**: master-rritec
+      - **Name:** rritecadf
+      - **Region:**East US
+      - **Version:** V2
+  - Click on **Review & Create**
+  - Click on **Create**
+  - ![image](https://user-images.githubusercontent.com/20516321/209289546-3f2a5fb3-8e31-492d-87cf-a9640ac9789a.png)
+  - Click on **Go to Resource**
+  - Click on **Launch Studio**
+  - Observe all options
+
 
 
 
