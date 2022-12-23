@@ -200,6 +200,8 @@
 
   - observe **query** and **result**
   - ![image](https://user-images.githubusercontent.com/20516321/209279761-0cdbb8b8-8104-4039-9221-72955c9ea239.png)
+## Lab 4(optional): Login and work in Azure Data Studio tool
+  - Instal Azure Data Studio and explore your own
 
 
 
