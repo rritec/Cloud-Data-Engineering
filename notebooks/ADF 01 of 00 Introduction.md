@@ -7,6 +7,7 @@
 6. **[Linked Service to blob](#Linked-Service-to-blob)**<br>
 7. **[Linked Service to Azure Sql Database](#Linked-Service-to-Azure-Sql-Database)**<br>
 8. **[Data Sets](#Data-Sets)**<br>
+9. **[Create Pipenine from Blob to Azure Sql Database](#Create-Pipenine-from-Blob-to-Azure-Sql-Database)**<br>
 
 
 # Introduction
@@ -259,7 +260,26 @@
 
   - Click on **Create** -
 # Data Sets
-  - dd
+  - Click on **Author**
+  - Right Click on datasets > Create new **Folder** > Name it as **Source**
+  - Right Click on **Source** folder > Click on **New Dataset** > Provide below options
+  - ![image](https://user-images.githubusercontent.com/20516321/209418572-7638b228-3ec1-4ffd-ae70-af22b80cad39.png)
+  - Right Click on datasets > Create new **Folder** > Name it as **target**
+  - Right Click on **target** folder > Click on **New Dataset** > Provide below options
+  - ![image](https://user-images.githubusercontent.com/20516321/209418743-bcf5f118-00b6-442b-bb0e-5cecbc75b36c.png)
+# Create Pipenine from Blob to Azure Sql Database
+  - Click on **Author**
+  - Right Click on **pipelines** > Click on **New Folder** > Name it as **rritec_pipelines**
+  - Right click on **rritec_pipelines** folder > Click on **New Pipeline** > Name it as **p01_from Blob to Azure Sql Database**
+  - Under **Activities** > Expand **Move & Transform** > Drag and drop **Copy Data** activity
+  - Under **Genera** tab > name it as **Copy_from_blob_to_AzureSqlDB**
+  - Click on **Source** tab > Select **Source Dataset** as **src_emp**
+  - Click on **Sink** tab > Select **Sink dataset** as **tgt_emp** > Select **Table Option** as **Auto Create Table**
+  - Click on **Debug**
+  - Observe run status under **output** tab
+  - Click on **publish** to save the work 
+
+
 
 
 
