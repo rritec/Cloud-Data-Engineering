@@ -277,7 +277,12 @@
   - Click on **Sink** tab > Select **Sink dataset** as **tgt_emp** > Select **Table Option** as **Auto Create Table**
   - Click on **Debug**
   - Observe run status under **output** tab
-  - Click on **publish** to save the work 
+  - Click on **publish** to save the work
+  - ![image](https://user-images.githubusercontent.com/20516321/209419233-cd322af4-fb3e-4b62-9713-228462d1bbe8.png)
+  - open SSMS > observe data in table
+  - ![image](https://user-images.githubusercontent.com/20516321/209419293-07193ab6-aa37-49d6-bd60-ef786cbcc0ab.png)
+
+
 
 
 
