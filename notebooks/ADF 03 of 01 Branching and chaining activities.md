@@ -7,13 +7,12 @@ Ref: https://learn.microsoft.com/en-us/azure/data-factory/tutorial-control-flow-
 # Create Logic Apps using Gmail
 
 
-1. Click on Logic Apps>>Create successlogic app 
+1. In search box type **Logic Apps** > Under **services** > Click on **Logic Apps**
+2. 2. Click on **Add** > Provide required information as for your subscription
+3. ![image](https://user-images.githubusercontent.com/20516321/209438015-aaf01251-0a7c-4f75-93f8-5ac4e009cd2d.png)
+3. Click on review&create > After Deployment > click on **Goto resource** > Click on ADD
 
-![image](https://user-images.githubusercontent.com/20516321/209438015-aaf01251-0a7c-4f75-93f8-5ac4e009cd2d.png)
-
-2. Click on review&create>>After Deployment>>click on Goto resource>>Click on ADD
-
-3. In the splash page for Logic Apps Designer, select When an HTTP request is received under Start with a common trigger. 
+3. Under **Start with a common trigger** > Click on **When a HTTP request is received**
 
     ![image](https://user-images.githubusercontent.com/20516321/209438373-8aba531f-9851-4634-a768-c27fe2be56dd.png) 
     
