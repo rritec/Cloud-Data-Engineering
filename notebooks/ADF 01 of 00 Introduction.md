@@ -10,6 +10,7 @@
 9. **[Create Pipenine from Blob to Azure Sql Database](#Create-Pipenine-from-Blob-to-Azure-Sql-Database)**<br>
 10. **[Additional Columns](#Additional-Columns)**<br>
 11. **[Create Pipenine from Blob to Blob](#Create-Pipenine-from-Blob-to-Blob)**<br>
+12. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
 
 
 # Introduction
@@ -313,6 +314,17 @@ drop table [dbo].[TGT_EMP]
   - Under **General** tab > name it as **Copy_from_blob_to_Blob**
   - Click on **Source** tab > Select **Source Dataset** as **src_emp**
   - Click on **Sink** tab > Select **Sink dataset** as **tgt_emp1**
+  - ![image](https://user-images.githubusercontent.com/20516321/209508743-32207e73-d66b-4ec4-a705-fe271ef6f839.png)
+
+  - Click on **Debug**
+  - Observe Output. 
+# Create Pipenine from Blob to MS Sql Server
+  - Click on **Author**
+  - Right click on **rritec_pipelines** folder > Click on **New Pipeline** > Name it as **p02_from Blob to MS Sql Server**
+  - Under **Activities** > Expand **Move & Transform** > Drag and drop **Copy Data** activity
+  - Under **General** tab > name it as **Copy_from_blob_to_Blob**
+  - Click on **Source** tab > Select **Source Dataset** as **src_emp**
+  - Click on **Sink** tab > Select **Sink dataset** as **tgt_sql_server_emp**
   - ![image](https://user-images.githubusercontent.com/20516321/209508743-32207e73-d66b-4ec4-a705-fe271ef6f839.png)
 
   - Click on **Debug**
