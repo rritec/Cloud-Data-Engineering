@@ -8,6 +8,8 @@
 7. **[Linked Service to Azure Sql Database](#Linked-Service-to-Azure-Sql-Database)**<br>
 8. **[Data Sets](#Data-Sets)**<br>
 9. **[Create Pipenine from Blob to Azure Sql Database](#Create-Pipenine-from-Blob-to-Azure-Sql-Database)**<br>
+10. **[Additional Columns](#Additional-Columns)**<br>
+11. **[Create Pipenine from Blob to Blob](#Create-Pipenine-from-Blob-to-Blob)**<br>
 
 
 # Introduction
@@ -258,7 +260,8 @@
   - Click on **Test Connection**  
   - ![image](https://user-images.githubusercontent.com/20516321/209418103-69375600-171e-47db-9c1f-3bb7fbff9199.png)
 
-  - Click on **Create** -
+  - Click on **Create**
+
 # Data Sets
   - Click on **Author**
   - Right Click on datasets > Create new **Folder** > Name it as **Source**
@@ -267,6 +270,7 @@
   - Right Click on datasets > Create new **Folder** > Name it as **target**
   - Right Click on **target** folder > Click on **New Dataset** > Provide below options
   - ![image](https://user-images.githubusercontent.com/20516321/209418743-bcf5f118-00b6-442b-bb0e-5cecbc75b36c.png)
+
 # Create Pipenine from Blob to Azure Sql Database
   - Click on **Author**
   - Right Click on **pipelines** > Click on **New Folder** > Name it as **rritec_pipelines**
@@ -282,7 +286,37 @@
   - Understand the **output JSON** of **copy Activity**. For More information refer [URL](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-monitoring?tabs=data-factory#monitor-programmatically) 
   - open SSMS > observe data in table
   - ![image](https://user-images.githubusercontent.com/20516321/209419293-07193ab6-aa37-49d6-bd60-ef786cbcc0ab.png)
-  - 
+
+# Additional Columns
+  - Open Pipeline **p01_from Blob to Azure Sql Database**
+  - Select **Copy Data** Activity
+  - Click on **Source** tab 
+  - In **Additional Columns**  > Click on **New**
+  - provide as shown below
+  - ![image](https://user-images.githubusercontent.com/20516321/209504074-83671970-e0cd-4a35-a09e-73a7b2e85ec6.png)
+
+  - Click on **Sink** tab
+  - In **Pre Copy Script** > type below sql code
+``` sql
+drop table [dbo].[TGT_EMP]
+```
+  - ![image](https://user-images.githubusercontent.com/20516321/209504332-94e596eb-5636-4627-b45a-b06c12efb274.png)
+
+  - Click on **debug**
+  - observe output jsons
+  - open SSMS > observe data in table
+
+# Create Pipenine from Blob to Blob
+  - Click on **Author**
+  - Right click on **rritec_pipelines** folder > Click on **New Pipeline** > Name it as **p02_from Blob to Blob**
+  - Under **Activities** > Expand **Move & Transform** > Drag and drop **Copy Data** activity
+  - Under **General** tab > name it as **Copy_from_blob_to_Blob**
+  - Click on **Source** tab > Select **Source Dataset** as **src_emp**
+  - Click on **Sink** tab > Select **Sink dataset** as **tgt_emp1**
+  - ![image](https://user-images.githubusercontent.com/20516321/209508743-32207e73-d66b-4ec4-a705-fe271ef6f839.png)
+
+  - Click on **Debug**
+  - Observe Output. 
 
 
 
