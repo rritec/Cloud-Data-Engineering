@@ -15,6 +15,7 @@
 15. **[Self Hosted IR](#Self-Hosted-IR)**<br>
 16. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
 17. **[Create Pipenine from Azure SQL DB to MS Sql Server DB](#Create-Pipenine-from-Azure-SQL-DB-to-MS-Sql-Server-DB)**<br>
+18. **[Load multiple sheets from excel to Azure SQL DB](#Load-multiple-sheets-from-excel-to-Azure-SQL-DB)**<br>
 
 
 # Introduction
@@ -378,7 +379,7 @@ drop table [dbo].[TGT_EMP]
   - Observe Output.
   - ![image](https://user-images.githubusercontent.com/20516321/209774340-24d92c19-3170-41c9-a362-c46240eadee3.png)
 
-# Load multiple sheets from excel to azure sql database
+# Load multiple sheets from excel to Azure SQL DB
 **Step 1: Create Excel with sample data**
   - Open excel > in Sheet1 type as shown below
 
