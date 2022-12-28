@@ -368,9 +368,11 @@ drop table [dbo].[TGT_EMP]
   - Select **Table Option** as **Auto Create Table**
   - ![image](https://user-images.githubusercontent.com/20516321/209773977-b189c318-fa71-4801-9230-b4021515b052.png)
 
-  - ![image](https://user-images.githubusercontent.com/20516321/209508743-32207e73-d66b-4ec4-a705-fe271ef6f839.png)
+  
   - Click on **Debug**
   - Observe Output.
+  - ![image](https://user-images.githubusercontent.com/20516321/209774340-24d92c19-3170-41c9-a362-c46240eadee3.png)
+
 
 
 
