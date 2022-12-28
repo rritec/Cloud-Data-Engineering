@@ -16,6 +16,8 @@
 16. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
 17. **[Create Pipenine from Azure SQL DB to MS Sql Server DB](#Create-Pipenine-from-Azure-SQL-DB-to-MS-Sql-Server-DB)**<br>
 18. **[Load multiple sheets from excel to Azure SQL DB](#Load-multiple-sheets-from-excel-to-Azure-SQL-DB)**<br>
+19. **[Incrementally load data from Azure SQL DB to Blob](#Incrementally-load-data-from-Azure-SQL-DB-to-Blob)**<br>
+20. 
 
 
 # Introduction
@@ -448,8 +450,14 @@ drop table [dbo].[TGT_EMP]
 
     ![image](https://user-images.githubusercontent.com/20516321/209803533-21b87745-5ccf-401e-831f-deeb7f17b036.png)
 
+# Incrementally load data from Azure SQL DB to Blob
 
-  - 
+  1. ![image](https://user-images.githubusercontent.com/20516321/209805592-c0bd3d78-968b-48f8-bdac-f715f11ab663.png)
+
+**Step 1: Create a data source table in your SQL database**
+  1.  Open SSMS > Run the following SQL command against your SQL database to create a table named as **data_source_table**
+  2.  dd
+
 
 
 
