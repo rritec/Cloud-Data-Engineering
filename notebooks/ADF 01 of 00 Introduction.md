@@ -287,7 +287,9 @@
   - Click on **Source** tab > Select **Source Dataset** as **src_emp**
   - Click on **Sink** tab > Select **Sink dataset** as **tgt_emp** > Select **Table Option** as **Auto Create Table**
   - Click on **Debug**
-  - Observe run status under **output** tab
+  - Under **output** tab > Observe run **Details**
+  - ![image](https://user-images.githubusercontent.com/20516321/209774609-19490338-3be6-4f65-8a4e-bc762b3a7dc0.png)
+
   - Click on **publish** to save the work
   - ![image](https://user-images.githubusercontent.com/20516321/209419233-cd322af4-fb3e-4b62-9713-228462d1bbe8.png)
   - Understand the **output JSON** of **copy Activity**. For More information refer [URL](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-monitoring?tabs=data-factory#monitor-programmatically) 
