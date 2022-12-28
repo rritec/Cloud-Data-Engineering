@@ -441,7 +441,7 @@ drop table [dbo].[TGT_EMP]
   - Click on **Add Trigger** > Click on **Trigger now**
   - observe run status
 
-     ![image](https://user-images.githubusercontent.com/20516321/191265980-c142eadc-8f38-4bbe-8451-fa991a6e809d.png)
+     ![image](https://user-images.githubusercontent.com/20516321/209803014-312e7b9c-2c8e-4aca-af0b-d54870d76cda.png)
 
 
   - go to database and query target table andobserve both records
