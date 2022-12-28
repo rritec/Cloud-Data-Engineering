@@ -423,7 +423,7 @@ drop table [dbo].[TGT_EMP]
 **Step 5: Create Pipeline**
 
   - Open **ADF Studio** > Click on **Author** > expand **Pipelines** > Navigate to required folder > click on folder **...** > click on **New Pipeline**
-  - Name pipeline as **pipeline_load_multiple_sheets_to_azure_sql_database**
+  - Name pipeline as **p05_pipeline_load_multiple_sheets_to_azure_sql_database**
   - Click on **Variables** > Click on **New** > Provide as shown below
     
     ![image](https://user-images.githubusercontent.com/20516321/191259230-ae9fe749-6cde-40c2-abdd-11b4f0ca2a89.png)
@@ -454,26 +454,85 @@ drop table [dbo].[TGT_EMP]
 
   1. ![image](https://user-images.githubusercontent.com/20516321/209805592-c0bd3d78-968b-48f8-bdac-f715f11ab663.png)
 
-**Step 1: Create a data source table in your SQL database**
+**Step 1: Create a data source/watermark/stored procedure in your SQL database**
   1.  Open SSMS > Run the following SQL command against your SQL database to create a table named as **data_source_table**
 ```sql
-    create table data_source_table
+    create table incr_emp
     (
-        PersonID int,
-        Name varchar(255),
-        LastModifytime datetime
+        empid int,
+        ename varchar(255),
+        hiredate datetime
     );
+    
+    GO
 
-    INSERT INTO data_source_table
-        (PersonID, Name, LastModifytime)
+    INSERT INTO incr_emp
+        (empid, ename, hiredate)
     VALUES
-        (1, 'aaaa','9/1/2017 12:56:00 AM'),
-        (2, 'bbbb','9/2/2017 5:23:00 AM'),
-        (3, 'cccc','9/3/2017 2:36:00 AM'),
-        (4, 'dddd','9/4/2017 3:21:00 AM'),
-        (5, 'eeee','9/5/2017 8:06:00 AM');
+        (1, 'Myla RamReddy','9/1/2020 12:56:00 AM'),
+        (2, 'Anam Tarun','9/2/2020 5:23:00 AM'),
+        (3, 'John','9/3/2020 2:36:00 AM'),
+        (4, 'Mark','9/4/2020 3:21:00 AM'),
+        (5, 'Nancy','9/5/2020 8:06:00 AM');
 ```
-  2.  dd
+  2.  Create another table in your SQL database to store the high watermark value
+``` sql
+    create table watermarktable
+    (
+
+    TableName varchar(255),
+    last_load_date datetime,
+    );
+```
+  3.  Set the default value of the high watermark with the table name of source data store.
+``` sql
+    INSERT INTO watermarktable
+    VALUES ('incr_emp','1/1/2010 12:00:00 AM')
+```
+  4.  Observe the data
+``` sql
+    select * from watermarktable
+```
+  5. Create a stored procedure in your SQL database
+``` sql
+    CREATE PROCEDURE sp_write_watermark @LastLoadDate datetime, @TableName varchar(50)
+    AS
+
+    BEGIN
+
+    UPDATE watermarktable
+    SET [last_load_date] = @LastLoadDate
+    WHERE [TableName] = @TableName
+
+    END
+```
+**Step 2: Create pipeline**
+  1. Create a pipeline with the name **po6_IncrementalCopyPipeline_from_Azure_SQL_DB_to_Blob**
+  2. Add the first lookup activity to get the **old watermark value.**
+    1. In the **Activities** toolbox, expand **General**, and drag-drop the **Lookup activity** to the pipeline designer surface.
+    2. Change the name of the activity to **LookupOldWaterMarkActivity**
+    3. Switch to the Settings tab, and click + New for Source Dataset. In this step, you create a dataset to represent data in the watermarktable. This table contains the old watermark that was used in the previous copy operation.
+
+In the New Dataset window, select Azure SQL Database, and click Continue. You see a new window opened for the dataset.
+
+In the Set properties window for the dataset, enter WatermarkDataset for Name.
+
+For Linked Service, select New, and then do the following steps:
+
+Enter AzureSqlDatabaseLinkedService for Name.
+
+Select your server for Server name.
+
+Select your Database name from the dropdown list.
+
+Enter your User name & Password.
+
+To test connection to the your SQL database, click Test connection.
+
+Click Finish.
+
+Confirm that AzureSqlDatabaseLinkedService is selected for Linked service. 
+  3. 
 
 
 
