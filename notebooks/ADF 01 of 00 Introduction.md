@@ -446,7 +446,8 @@ drop table [dbo].[TGT_EMP]
 
   - go to database and query target table andobserve both records
 
-    ![image](https://user-images.githubusercontent.com/20516321/191266321-8d7f48ee-42cd-4efb-88c9-5a1719b75e4a.png)
+    ![image](https://user-images.githubusercontent.com/20516321/209803533-21b87745-5ccf-401e-831f-deeb7f17b036.png)
+
 
   - 
 
