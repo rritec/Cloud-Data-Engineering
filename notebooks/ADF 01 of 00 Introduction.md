@@ -4,13 +4,14 @@
 3. **[Storage Account](#Storage-Account)**<br>
 4. **[Azure Sql Database](#Azure-Sql-Database)**<br>
 5. **[Azure Data Factory](#Azure-Data-Factory)**<br>
-6. **[Linked Service to blob](#Linked-Service-to-blob)**<br>
-7. **[Linked Service to Azure Sql Database](#Linked-Service-to-Azure-Sql-Database)**<br>
-8. **[Data Sets](#Data-Sets)**<br>
-9. **[Create Pipenine from Blob to Azure Sql Database](#Create-Pipenine-from-Blob-to-Azure-Sql-Database)**<br>
-10. **[Additional Columns](#Additional-Columns)**<br>
-11. **[Create Pipenine from Blob to Blob](#Create-Pipenine-from-Blob-to-Blob)**<br>
-12. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
+6. **[Integration runtimes](#Integration-runtimes)**<br>
+7. **[Linked Service to blob](#Linked-Service-to-blob)**<br>
+8. **[Linked Service to Azure Sql Database](#Linked-Service-to-Azure-Sql-Database)**<br>
+9. **[Data Sets](#Data-Sets)**<br>
+10. **[Create Pipenine from Blob to Azure Sql Database](#Create-Pipenine-from-Blob-to-Azure-Sql-Database)**<br>
+11. **[Additional Columns](#Additional-Columns)**<br>
+12. **[Create Pipenine from Blob to Blob](#Create-Pipenine-from-Blob-to-Blob)**<br>
+13. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
 
 
 # Introduction
@@ -226,6 +227,8 @@
   - Click on **Go to Resource**
   - Click on **Launch Studio**
   - Observe all options
+# Integration runtimes
+  - Refer the [doc](https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime)
 # Linked Service to blob
   - Linked service defines the connection information to a data store or compute.
 ## Lab
