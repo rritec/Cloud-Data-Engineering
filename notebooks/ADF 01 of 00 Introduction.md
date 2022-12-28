@@ -11,7 +11,9 @@
 10. **[Create Pipenine from Blob to Azure Sql Database](#Create-Pipenine-from-Blob-to-Azure-Sql-Database)**<br>
 11. **[Additional Columns](#Additional-Columns)**<br>
 12. **[Create Pipenine from Blob to Blob](#Create-Pipenine-from-Blob-to-Blob)**<br>
-13. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
+13. **[Install SQL Server](#Install-SQL-Server)**<br>
+15. **[Self Hosted IR](#Self-Hosted-IR)**<br>
+16. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
 
 
 # Introduction
@@ -321,15 +323,28 @@ drop table [dbo].[TGT_EMP]
 
   - Click on **Debug**
   - Observe Output. 
+
+# Install SQL Server
+  - Follow the [doc](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#msft-sql-server-installation) and install SQL Serer database
+
+# Self Hosted IR
+  - Perform data flows, data movement and dispatch activities to **external compute**
+  - In **ADF** > Clcik on **Manage** > Under **Connections** > Click on **Integration Runtimes**
+  - Click on **New**
+  - Click on **Azure, Self-Hosted**
+  - Click on **Self-Hosted**
+  - Name it as **Self-Hosted-IR**
+  - Click on **Create**
+  - Click on **Express Setup** and install the software
+
 # Create Pipenine from Blob to MS Sql Server
   - Click on **Author**
-  - Right click on **rritec_pipelines** folder > Click on **New Pipeline** > Name it as **p02_from Blob to MS Sql Server**
+  - Right click on **rritec_pipelines** folder > Click on **New Pipeline** > Name it as **p03_from Blob to MS Sql Server**
   - Under **Activities** > Expand **Move & Transform** > Drag and drop **Copy Data** activity
-  - Under **General** tab > name it as **Copy_from_blob_to_Blob**
+  - Under **General** tab > name it as **Copy_from_blob_to_MS_SQL_Server**
   - Click on **Source** tab > Select **Source Dataset** as **src_emp**
   - Click on **Sink** tab > Select **Sink dataset** as **tgt_sql_server_emp**
   - ![image](https://user-images.githubusercontent.com/20516321/209508743-32207e73-d66b-4ec4-a705-fe271ef6f839.png)
-
   - Click on **Debug**
   - Observe Output. 
 
