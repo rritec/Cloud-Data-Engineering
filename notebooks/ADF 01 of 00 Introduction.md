@@ -325,7 +325,9 @@ drop table [dbo].[TGT_EMP]
   - ![image](https://user-images.githubusercontent.com/20516321/209508743-32207e73-d66b-4ec4-a705-fe271ef6f839.png)
 
   - Click on **Debug**
-  - Observe Output. 
+  - Under **Output** > observe **Details**
+  - ![image](https://user-images.githubusercontent.com/20516321/209774847-4c1331d1-837d-4ff9-952f-33ec90b94657.png)
+ 
 
 # Install SQL Server
   - Follow the [doc](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#msft-sql-server-installation) and install SQL Serer database
