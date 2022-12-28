@@ -349,9 +349,10 @@ drop table [dbo].[TGT_EMP]
   - Under **General** tab > name it as **Copy_from_blob_to_MS_SQL_Server**
   - Click on **Source** tab > Select **Source Dataset** as **src_emp**
   - Click on **Sink** tab > Select **Sink dataset** as **tgt_sql_server_emp**
-  - ![image](https://user-images.githubusercontent.com/20516321/209508743-32207e73-d66b-4ec4-a705-fe271ef6f839.png)
   - Click on **Debug**
-  - Observe Output. 
+  - Under **Output** > observe **Details**
+  - ![image](https://user-images.githubusercontent.com/20516321/209775129-191c309d-ccce-4c27-9c82-6aad1e5228fa.png)
+
 
 # Create Pipenine from Azure SQL DB to MS Sql Server DB
   - Click on **Author**
