@@ -416,7 +416,10 @@ drop table [dbo].[TGT_EMP]
   - Click on **ok**
 
     ![image](https://user-images.githubusercontent.com/20516321/191257544-6f49fafb-1a42-4a71-92b7-8b1809a462ad.png)
+
+
 **Step 5: Create Pipeline**
+
   - Open **ADF Studio** > Click on **Author** > expand **Pipelines** > Navigate to required folder > click on folder **...** > click on **New Pipeline**
   - Name pipeline as **pipeline_load_multiple_sheets_to_azure_sql_database**
   - Click on **Variables** > Click on **New** > Provide as shown below
