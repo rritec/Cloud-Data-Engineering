@@ -330,6 +330,11 @@ drop table [dbo].[TGT_EMP]
   - Click on **Debug**
   - Under **Output** > observe **Details**
   - ![image](https://user-images.githubusercontent.com/20516321/209774847-4c1331d1-837d-4ff9-952f-33ec90b94657.png)
+
+**Home Work:**
+    1. Create Pipenine from Azure SQL Database to Blob    
+    2. Create Pipenine from Azure SQL Database to Azure SQL Database
+    
  
 
 # Install SQL Server
