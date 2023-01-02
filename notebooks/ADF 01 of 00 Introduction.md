@@ -460,9 +460,13 @@ drop table [dbo].[TGT_EMP]
   1. ![image](https://user-images.githubusercontent.com/20516321/209805592-c0bd3d78-968b-48f8-bdac-f715f11ab663.png)
 
 **Step 1: Create a data source/watermark/stored procedure in your SQL database**
-  1.  Open SSMS > Run the following SQL command against your SQL database to create a table named as **data_source_table**
+
+![image](https://user-images.githubusercontent.com/20516321/210257521-5d8df50a-6e8e-4c8b-b38e-7e2c22ae2a63.png)
+
+
+  1.  Open SSMS > Run the following SQL command against your SQL database to create a table named as **src_incr_emp**
 ```sql
-    create table incr_emp
+    create table src_incr_emp
     (
         empid int,
         ename varchar(255),
@@ -471,7 +475,7 @@ drop table [dbo].[TGT_EMP]
     
     GO
 
-    INSERT INTO incr_emp
+    INSERT INTO src_incr_emp
         (empid, ename, hiredate)
     VALUES
         (1, 'Myla RamReddy','9/1/2020 12:56:00 AM'),
@@ -492,7 +496,7 @@ drop table [dbo].[TGT_EMP]
   3.  Set the default value of the high watermark with the table name of source data store.
 ``` sql
     INSERT INTO watermarktable
-    VALUES ('incr_emp','1/1/2010 12:00:00 AM')
+    VALUES ('src_incr_emp','1/1/2010 12:00:00 AM')
 ```
   4.  Observe the data
 ``` sql
@@ -513,31 +517,49 @@ drop table [dbo].[TGT_EMP]
 ```
 **Step 2: Create pipeline**
   1. Create a pipeline with the name **po6_IncrementalCopyPipeline_from_Azure_SQL_DB_to_Blob**
-  2. Add the first lookup activity to get the **old watermark value.**
-    1. In the **Activities** toolbox, expand **General**, and drag-drop the **Lookup activity** to the pipeline designer surface.
-    2. Change the name of the activity to **LookupOldWaterMarkActivity**
-    3. Switch to the Settings tab, and click + New for Source Dataset. In this step, you create a dataset to represent data in the watermarktable. This table contains the old watermark that was used in the previous copy operation.
-
-In the New Dataset window, select Azure SQL Database, and click Continue. You see a new window opened for the dataset.
-
-In the Set properties window for the dataset, enter WatermarkDataset for Name.
-
-For Linked Service, select New, and then do the following steps:
-
-Enter AzureSqlDatabaseLinkedService for Name.
-
-Select your server for Server name.
-
-Select your Database name from the dropdown list.
-
-Enter your User name & Password.
-
-To test connection to the your SQL database, click Test connection.
-
-Click Finish.
-
-Confirm that AzureSqlDatabaseLinkedService is selected for Linked service. 
-  3. 
+  2. Drag and drop the **Lookup** activity to the pipeline designer surface.
+  3. Change the name of the activity to **Lookup_last_load_date**
+  4. Click on **Settings** tab > click **+ New** for Source Dataset > Click on **Azure SQL Database**
+  5. Name it as **ds_WatermarkDataset**
+  6. Select Linked Service of **azure SQl Database**
+  7. Select **Table Name** as **dbo.watermarktable**
+  8.  Click on **ok**
+  9.  Drag and drop the **Copy Data** activity to the pipeline designer surface.
+  10.  Connect **lookup** and **Copy Data** activities
+  11.  Select **Copy Data** activity > Click on **Source** > Click on **New** > Select **Azure SQL Database**
+  12.  Click on **Continue**
+  13.  Provide **Name** as **ds_src_incr_emp**
+  14.  Select **Linked Service** as **ls_to_rritecAzureSQLDB**
+  15.  Select **Table Name** as **dbo.src_incr_emp**
+  16.  Select **Use Query** as **Query**
+  17.  Provide **Query** as 
+```sql
+select *
+from [dbo].[src_incr_emp]
+where hiredate > '@{activity('Lookup_last_load_date').output.firstRow.last_load_date}'
+```
+  18. Click on **Sink** > Click on **New** > Select **Azure Blob Storage** > Click on **Continue** > Select **DelimitedText** > Click on **Continue**
+  19. Provide **Name** as **incr_emp_sinkdataset**
+  20. select **Linked Service** as **ls_to_blob_rritecsa**
+  21. Select **File Path** as required
+  22. select **First row as header**
+  23. Click on **ok**
+  24. Drag and drop one more **Lookup** activity to the pipeline designer surface.
+  25. Provide **Name** as **lookup_get_max_date_from_source**
+  26. Click on **Settings** > Select **Source Dataset** as **ds_src_incr_emp**
+  27. **Use Query** as **Query** 
+  28. Provide **Query** as 
+``` sql
+select max(hiredate) as max_date from [dbo].[src_incr_emp]
+```
+  29. Drag and drop **Stored Procedure** activity to the pipeline designer surface.
+  30. **Name** as **update_last_load_date**
+  31. Select **linked Service** as **ls_to_rritecAzureSQLDB**
+  32. Select **Stored Procedure Name** as **[dbo].[sp_write_watermark]**
+  33. Under **Stored Procedure Parameters** > Click on **Import**
+  34. Select **LastLoadDate** value as **@activity('lookup_get_max_date_from_source').output.firstRow.max_date**
+  35. Select **TableName** value as **@activity('Lookup_last_load_date').output.firstRow.tablename**
+  36. Click on **debug** > observe run steps
 
 
 
