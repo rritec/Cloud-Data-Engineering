@@ -560,6 +560,15 @@ select max(hiredate) as max_date from [dbo].[src_incr_emp]
   34. Select **LastLoadDate** value as **@activity('lookup_get_max_date_from_source').output.firstRow.max_date**
   35. Select **TableName** value as **@activity('Lookup_last_load_date').output.firstRow.tablename**
   36. Click on **debug** > observe run steps
+  37. Insert two records 
+``` sql
+INSERT INTO src_incr_emp
+VALUES (6, 'newdata','9/6/2017 2:23:00 AM')
+
+INSERT INTO src_incr_emp
+VALUES (7, 'newdata','9/7/2017 9:01:00 AM')
+```
+  38. Click on **debug** > observe run steps
 
 
 
