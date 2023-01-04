@@ -19,6 +19,7 @@
 19. **[Incrementally load data from Azure SQL DB to Blob](#Incrementally-load-data-from-Azure-SQL-DB-to-Blob)**<br>
 20. **[Incremental copy multiple tables](#Incremental-copy-multiple-tables)**<br>
 21. **[Incremental copy lastmodified copy data tool](#Incremental-copy-lastmodified-copy-data-tool)**<br>
+22. **[Incremental copy partitioned file name copy data tool](#Incremental-copy-partitioned-file-name-copy-data-tool)**<br>
 
 
 # Introduction
@@ -574,6 +575,9 @@ VALUES (7, 'albert','9/7/2017 9:01:00 AM')
 Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-multiple-tables-portal)
 # Incremental copy lastmodified copy data tool
 Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-lastmodified-copy-data-tool)
+# Incremental copy partitioned file name copy data tool
+Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-partitioned-file-name-copy-data-tool)
+
 
 
 
