@@ -17,7 +17,7 @@
 17. **[Create Pipenine from Azure SQL DB to MS Sql Server DB](#Create-Pipenine-from-Azure-SQL-DB-to-MS-Sql-Server-DB)**<br>
 18. **[Load multiple sheets from excel to Azure SQL DB](#Load-multiple-sheets-from-excel-to-Azure-SQL-DB)**<br>
 19. **[Incrementally load data from Azure SQL DB to Blob](#Incrementally-load-data-from-Azure-SQL-DB-to-Blob)**<br>
-20. 
+20. **[Incremental copy multiple tables](#Incremental-copy-multiple-tables)**<br>
 
 
 # Introduction
@@ -563,12 +563,14 @@ select max(hiredate) as max_date from [dbo].[src_incr_emp]
   37. Insert two records 
 ``` sql
 INSERT INTO src_incr_emp
-VALUES (6, 'newdata','9/6/2017 2:23:00 AM')
+VALUES (6, 'geo','9/6/2017 2:23:00 AM')
 
 INSERT INTO src_incr_emp
-VALUES (7, 'newdata','9/7/2017 9:01:00 AM')
+VALUES (7, 'albert','9/7/2017 9:01:00 AM')
 ```
   38. Click on **debug** > observe run steps
+# Incremental copy multiple tables
+Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-multiple-tables-portal)
 
 
 
