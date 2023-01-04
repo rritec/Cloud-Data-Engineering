@@ -18,6 +18,7 @@
 18. **[Load multiple sheets from excel to Azure SQL DB](#Load-multiple-sheets-from-excel-to-Azure-SQL-DB)**<br>
 19. **[Incrementally load data from Azure SQL DB to Blob](#Incrementally-load-data-from-Azure-SQL-DB-to-Blob)**<br>
 20. **[Incremental copy multiple tables](#Incremental-copy-multiple-tables)**<br>
+21. **[Incremental copy lastmodified copy data tool](#Incremental-copy-lastmodified-copy-data-tool)**<br>
 
 
 # Introduction
@@ -571,6 +572,8 @@ VALUES (7, 'albert','9/7/2017 9:01:00 AM')
   38. Click on **debug** > observe run steps
 # Incremental copy multiple tables
 Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-multiple-tables-portal)
+# Incremental copy lastmodified copy data tool
+Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-lastmodified-copy-data-tool)
 
 
 
