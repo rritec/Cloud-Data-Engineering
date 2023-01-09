@@ -629,81 +629,49 @@ Ref: https://learn.microsoft.com/en-us/azure/data-factory/tutorial-control-flow-
 15. Click on **sign in** > Give you **gmail userid and password**.
 16. Type TargetGmail in **To** address 
 17. click on **Add parameter** and in drop down select **Body** and **subject**.
-18. ![image](https://user-images.githubusercontent.com/20516321/209439215-4055ccb8-8efd-49cc-893e-61f929ece512.png)
+18. ![image](https://user-images.githubusercontent.com/20516321/211259603-dfa11d6f-b986-41ca-9c1d-4e91b64fcd29.png)
+
+**Step 2: Call Logic app inside the Pipeline to send Succeeded email**
    
-8. Go to **Azure Data Factory**>>click **Launch Audio**>>Click on **Author**>>Create a pipeline.
-9. Expand Your practicing pipeline>>In Activities Search for **Web** and drag into workflow.
+1. Go to **Azure Data Factory** > click **Launch Studio** > Click on **Author** 
+2. Open the pipeline **p01_Create Pipenine from Blob to Azure Sql Database**
+3. In Activities Search for **Web** and drag into workflow.
+4. ![image](https://user-images.githubusercontent.com/20516321/209440556-3604c90e-3284-4f8a-a610-2ab37e09378f.png)
+5. Click on **web** > In **General** tab give name of Activity **successmail** > open settings tab past **URL** from notepad
+6. Select **Method** as **POST**
+7. Click on **Body** > Click on **Add dynamic expression**. > Copy and paste below json code > Click on **ok**
+``` json
+{
+    "dataFactoryName": "@{pipeline().DataFactory}",
+    "pipelineName": "@{pipeline().Pipeline}",
+    "status": "@{activity('Copy data from blob to azuresqldb').output.executionDetails[0].status}",
+    "message": "Number of rows Copied: @{activity('Copy data from blob to azuresqldb').output.rowsCopied}"    
+}
+```
+7.  Click on **Headers** **+ New** > Provide **Name** as **Content-Type** > Provide **Value** as **application/json**
+14. Click on **Debug**
+15. Observe Mail.
+16. ![image](https://user-images.githubusercontent.com/20516321/211261313-781433ed-c256-46aa-a912-889f0ed0e4f3.png)
 
-   ![image](https://user-images.githubusercontent.com/20516321/209440556-3604c90e-3284-4f8a-a610-2ab37e09378f.png)
-   
-10. click on web>>open General tab give name of Activity **successmail**>>open settings tab past **URL**>>click on **Body** as **Add dynamic expression**.
 
+**Step 3: Call Logic app inside the Pipeline to send Failed email**
 
-    ![image](https://user-images.githubusercontent.com/20516321/209442837-aefb6c5c-10b9-43dc-a6df-bd9f03f81817.png)
+1. Inside the pipeline click on web activity **clone**
+2. In **General** tab give name of Activity **Failedmail** 
+7. Click on **Body** > Click on **Add dynamic expression**. > Copy and paste below json code > Click on **ok**
+``` json
+{
+    "dataFactoryName": "@{pipeline().DataFactory}",
+    "pipelineName": "@{pipeline().Pipeline}",
+    "status": "@{activity('Copy data from blob to azuresqldb').output.executionDetails[0].status}",
+    "message": "The Error Message is : @{activity('Copy data from blob to azuresqldb').output.errors[0].Message}"
     
-11. connect with your Blob activity pipeline (or) old people.
+}
 
-    ![image](https://user-images.githubusercontent.com/20516321/209442917-f4d3c19b-c275-470d-a4b2-31f6b0d74130.png)
-    
-12. Now top of Your work flow>>click on **Validate** for Validation.
-13. click on **Publish**.
-14. click on **Debug**
-15. After Debug, click **Trigger**.
-
-# Create Fail Logic App
-
-1. Copy the Succeslogicapp>>Click on Successlogicapp>>On tool bar menu>>click on **Clone** to copy.
-
-  ![image](https://user-images.githubusercontent.com/20516321/209443382-bd837d01-b694-420f-a542-d410d55991b6.png)
-  
-2. Give name as **Faillogicapp**.
-3. Copy **URL** and past into notepad.
-4. Goto Data factory>>click on your **Successpipeline**>>click on **successmailweb**>>click on clone to copy web activity.
-
-    ![image](https://user-images.githubusercontent.com/20516321/209443590-60825e3f-7d35-4eb6-a012-2b08ce050c5e.png)
-5. After clone Successmail web Activity>>Go to general tab give name as Fail mail.
-6. click on setting and paste (or) change the **URL**.
-7. Connect to **BlobActivity** as fail
-![image](https://user-images.githubusercontent.com/20516321/209444154-3140df5d-8b78-45a4-99c1-6f99957a62e1.png) 
-  
-8. Now top of Your work flow>>click on **Validate** for Validation.
-9. click on **Publish**.
-10. click on **Debug**.
-11. After Debug, click **Trigger**.
-
-
-
-
-   
-    
-    
-    
-
-   
-   
-   
-   
-   
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+7.  Select **Copy Data** activity > Click on **Source** > Click on **open**
+8.  Change file name as **emp1111111.csv**(Note: this file is not availble inside our blob)
+9.  Click on **Debug**
+15. Observe Mail.
+16. ![image](https://user-images.githubusercontent.com/20516321/211262341-951c70f4-6676-43cb-bcea-2dac4562eb6c.png)
 
