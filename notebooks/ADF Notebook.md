@@ -21,6 +21,7 @@
 21. **[Incremental copy lastmodified copy data tool](#Incremental-copy-lastmodified-copy-data-tool)**<br>
 22. **[Incremental copy partitioned file name copy data tool](#Incremental-copy-partitioned-file-name-copy-data-tool)**<br>
 23. **[Logic Apps](#Logic-Apps)**<br>
+24. **[DataFlows](#DataFlows)**<br>
 
 
 # Introduction
@@ -675,3 +676,34 @@ Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tuto
 
 Refer for more information [msft doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-control-flow-portal)
 
+# DataFlows
+1. Mapping data flows are visually designed data **transformations** in Azure Data Factory.
+2. Data flows allow data engineers to develop data transformation logic without writing code.
+3. The resulting data flows are executed as activities within Azure Data Factory pipelines that use scaled-out Apache Spark clusters.
+4. Data flow activities can be operationalized using existing Azure Data Factory scheduling, control, flow, and monitoring capabilities.
+5. Mapping data flows provide an entirely visual experience with no coding required.
+6. Your data flows run on ADF-managed execution clusters for scaled-out data processing.
+7. Azure Data Factory handles all the code translation, path optimization, and execution of your data flow jobs.
+8. Reference1 [MSFT Doc](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-overview)
+
+## Lab
+
+1. Develop a dataflow equal to below query
+``` sql
+select 
+  dname, 
+  sum(sal) as total_sal 
+from 
+  emp, 
+  dept 
+where 
+  emp.deptno = dept.deptno 
+  and emp.deptno in (10, 20) 
+group by 
+  dname 
+order by 
+  2 asc
+```
+2. ![image](https://user-images.githubusercontent.com/20516321/211307068-69491755-f804-41ad-9abd-f3023d54b7e8.png)
+3. Create a new pipeline with the name of **p01_dataflow1**
+4. 
