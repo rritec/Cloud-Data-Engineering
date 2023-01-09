@@ -596,7 +596,7 @@ Ref: https://learn.microsoft.com/en-us/azure/data-factory/tutorial-control-flow-
 
     ![image](https://user-images.githubusercontent.com/20516321/209438373-8aba531f-9851-4634-a768-c27fe2be56dd.png) 
     
-  * Use this json code for your refernce.  
+6. Under **Request body json Schema** > Copy and paste below **json** code 
 
 ``` json 
 {
@@ -618,22 +618,18 @@ Ref: https://learn.microsoft.com/en-us/azure/data-factory/tutorial-control-flow-
 }
  
 ```
-4. At the top of the Logic Apps Designer>>select Save>>You can now see the URL of your HTTP request trigger>>Select the copy icon to copy it for later use>>For Your reference copy and paste in your notepad.
- 
- ![image](https://user-images.githubusercontent.com/20516321/209442383-618a03ed-462e-46df-a3bb-53a217319f16.png)
-    
-4. Click New step>>type **Gmail** in the actions search box>>Search and select **Send email (V2)**>>type connection name as sendsuccessmail as per below dialog box
-5. Click on sign in>>Give you gmail user and password.
-6. Type TargetGmail in **To**>>click on Add parameter and in drop down select Body and subject.
-
-   ![image](https://user-images.githubusercontent.com/20516321/209439215-4055ccb8-8efd-49cc-893e-61f929ece512.png)
-   
-
-   ![image](https://user-images.githubusercontent.com/20516321/209438553-a8abceee-ce88-4ee0-a777-652168c368c7.png)
-   
-7. Type Target Gmail in **To**>>click on Add parameter and in drop down select Body and subject.
-
-   ![image](https://user-images.githubusercontent.com/20516321/209439215-4055ccb8-8efd-49cc-893e-61f929ece512.png)
+7. At the top of the Logic Apps Designer > Click on **Save** 
+8. You can now see the URL of your HTTP request
+9. Select the copy icon to copy it 
+10. Paste in your **notepad.**
+11. We will use this URL later in ADF pipeline web activity
+12. ![image](https://user-images.githubusercontent.com/20516321/209442383-618a03ed-462e-46df-a3bb-53a217319f16.png)
+13. Click on **New step** > type **Gmail** in the actions search box > Search and select **Send email (V2)** 
+14. Type connection name as **sendstatusmail** as per below dialog box
+15. Click on **sign in** > Give you **gmail userid and password**.
+16. Type TargetGmail in **To** address 
+17. click on **Add parameter** and in drop down select **Body** and **subject**.
+18. ![image](https://user-images.githubusercontent.com/20516321/209439215-4055ccb8-8efd-49cc-893e-61f929ece512.png)
    
 8. Go to **Azure Data Factory**>>click **Launch Audio**>>Click on **Author**>>Create a pipeline.
 9. Expand Your practicing pipeline>>In Activities Search for **Web** and drag into workflow.
