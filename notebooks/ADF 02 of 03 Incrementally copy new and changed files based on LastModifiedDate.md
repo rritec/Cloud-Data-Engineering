@@ -37,9 +37,7 @@ Ref: https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-c
 ![image](https://user-images.githubusercontent.com/20516321/211186311-af922da6-d3e4-45b8-ace0-b379267107c3.png)
 
 
-6. After Settings > **Review and finish** > Summary > Click on next > observer below Picture.
-
-![image](https://user-images.githubusercontent.com/20516321/211186454-5b4b2996-8b24-4c49-ae6f-6f5aecb45392.png)
+6. After Settings > **Review and finish** > Summary > Click on next 
 
 7. Deployement > Click on Moniter.
 
