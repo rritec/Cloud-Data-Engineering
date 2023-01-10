@@ -732,7 +732,7 @@ order by
 27. ![image](https://user-images.githubusercontent.com/20516321/211468763-b7bf121b-19b7-4059-93a7-916054c437a6.png)
 
 28. Click on **Select1Emp** + icon > add **filter** row Modifier
-29. Click on **Filter on** expression builder > provide expression as <DEPTNO == 10 || DEPTNO == 20>
+29. Click on **Filter on** expression builder > provide expression as ``` DEPTNO == 10 || DEPTNO == 20> ```
 30. 
 
 
