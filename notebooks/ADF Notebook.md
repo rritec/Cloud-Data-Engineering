@@ -733,7 +733,33 @@ order by
 
 28. Click on **Select1Emp** + icon > add **filter** row Modifier
 29. Click on **Filter on** expression builder > provide expression as ``` DEPTNO == 10 || DEPTNO == 20> ```
-30. 
+
+30. Click on **filter1** + icon > Select **Join** from **Multiple inputs/outputs**
+31. Select **join1** > Select **left stream** as **filter1** > select **right stream** as **select2dept** > join type** as **inner** 
+32. Select **Join Conditions** > left and right columns as **DEPTNO**
+33. ![image](https://user-images.githubusercontent.com/20516321/211472517-a1c652d1-806e-482d-854f-63c39e65dcdf.png)
+
+34. Click on **Join1** + icon > from **Schema Modifier** select **Aggregate**
+35. Under **group by** select **Dname** column
+36. Under **Aggregates** > name **column** as **totalsal** > **Expression** as ```sum(SAL)```
+37. ![image](https://user-images.githubusercontent.com/20516321/211473271-8cd7c99f-15fd-421e-9cb8-1eec83ddd46f.png)
+
+38. Click on **aggregate1** + icon > From **row modifier** select **Sort**
+39. select sort column as **totalsal** and order as **ascending**
+40. ![image](https://user-images.githubusercontent.com/20516321/211474756-6c8070ff-0617-4324-852a-1f0a3ba4977a.png)
+
+41. Click on **sort1** + icon > From **destination** select **Sink**
+42. select dataset as **tgt_azure_sql_agg**
+43. under settings select **table actio** as **recreate table**
+44. ![image](https://user-images.githubusercontent.com/20516321/211474483-7a2134c5-2ec2-4af8-af40-c13e3d03d568.png)
+
+42. Click on **debug**
+43. observe output
+44. ![image](https://user-images.githubusercontent.com/20516321/211475947-b9425518-b756-494f-aa0c-f0ad8b050da6.png)
+
+45. ![image](https://user-images.githubusercontent.com/20516321/211475778-9a14f8f3-ab70-44ec-bece-5a80af570163.png)
+
+
 
 
 
