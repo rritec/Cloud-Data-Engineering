@@ -641,10 +641,11 @@ Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tuto
 7. Click on **Body** > Click on **Add dynamic expression**. > Copy and paste below json code > Click on **ok**
 ``` json
 {
-    "dataFactoryName": "@{pipeline().DataFactory}",
-    "pipelineName": "@{pipeline().Pipeline}",
-    "status": "@{activity('Copy data from blob to azuresqldb').output.executionDetails[0].status}",
-    "message": "Number of rows Copied: @{activity('Copy data from blob to azuresqldb').output.rowsCopied}"    
+    "dataFactoryName":"@{pipeline().DataFactory}",
+    "pipelineName":"@{pipeline().Pipeline}",
+    "status":"@{activity('Copy data from blob to azuresqldb').output.executionDetails[0].status}",
+    "message":"The Number of rows Read from Source is:  @{activity('Copy data from blob to azuresqldb').output.rowsRead} <br/>
+    The Number of rows Copied to target is: @{activity('Copy data from blob to azuresqldb').output.rowsCopied}"
 }
 ```
 7.  Click on **Headers** **+ New** > Provide **Name** as **Content-Type** > Provide **Value** as **application/json**
