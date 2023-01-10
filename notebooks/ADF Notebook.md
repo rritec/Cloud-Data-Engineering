@@ -707,4 +707,33 @@ order by
 ```
 2. ![image](https://user-images.githubusercontent.com/20516321/211307068-69491755-f804-41ad-9abd-f3023d54b7e8.png)
 3. Create a new pipeline with the name of **p01_dataflow1**
-4. 
+4. From **Activities** > From **Move & transform** > Drag and drop **Data flow** activity
+5. In **General** tab > Type **Name** as **d01_dataflow**
+6. Click on **Settings** tab > In **Data flow** Section > Click on **+ New**
+7. provide **Name** as **d01_dataflow1**
+8. Click on **Add Source**
+9. Provide **Output Stream Name** as **SrcEmp**
+10. Select **Dataset** as **src_azure_sql_emp**
+11. ![image](https://user-images.githubusercontent.com/20516321/211466552-1753baf0-4a2c-468d-873c-e1822b73f280.png)
+
+12. Click on another empty **Add Source** drop down > Click on **Add Source**
+13. Provide **Output Stream Name** as **SrcDmp**
+14. Select **Dataset** as **src_azure_sql_dept**
+15. ![image](https://user-images.githubusercontent.com/20516321/211466976-ad58d71e-dece-432d-869a-0b947af0c7a5.png)
+
+16. Click on **SrcEmp** + icon > add **select** Schema Modifier
+17. Provide **Output Stream Name** as **select1Emp**
+18. Under **input columns** delete all columns except **deptno** and **sal**19. 
+21. ![image](https://user-images.githubusercontent.com/20516321/211467974-52456b35-cca6-4362-b947-09be984c577a.png)
+
+22. Click on **SrcDept** + icon > add **select** Schema Modifier
+23. Provide **Output Stream Name** as **select2Dept**
+24. Under **input columns** delete all columns except **deptno** and **dname**
+27. ![image](https://user-images.githubusercontent.com/20516321/211468763-b7bf121b-19b7-4059-93a7-916054c437a6.png)
+
+28. Click on **Select1Emp** + icon > add **filter** row Modifier
+29. Click on **Filter on** expression builder > provide expression as <DEPTNO == 10 || DEPTNO == 20>
+30. 
+
+
+
