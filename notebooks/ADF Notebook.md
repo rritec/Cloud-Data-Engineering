@@ -755,7 +755,8 @@ order by
 
 42. Click on **debug**
 43. observe output
-44. ![image](https://user-images.githubusercontent.com/20516321/211475947-b9425518-b756-494f-aa0c-f0ad8b050da6.png)
+44. ![image](https://user-images.githubusercontent.com/20516321/211707073-7e8b9532-e18e-43ea-ae3b-299c732364f1.png)
+
 
 45. ![image](https://user-images.githubusercontent.com/20516321/211475778-9a14f8f3-ab70-44ec-bece-5a80af570163.png)
 
