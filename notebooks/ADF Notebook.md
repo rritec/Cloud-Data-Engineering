@@ -793,6 +793,8 @@ Click on add symbol > search for **Sink3** > Give Name as Sink3 > Below sink Cre
 
 ![image](https://user-images.githubusercontent.com/20516321/212005953-57baff49-37af-43a0-af74-d19bd59b060a.png)
 
+Go to **Pipeline1_Dataflows_Split1** > Click on **validate** > Click on **Publish** > Click on **Debug**
+
 
 
 
