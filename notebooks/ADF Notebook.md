@@ -768,8 +768,8 @@ order by
 Reference : [Joins](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_06_Power%20Query%20Editor%20Combine%20Data.md)
 
 # Split Transformation
-Go to **AzureDataFactory(ADF)** > Click on **Author** > Create New Pipeline > Give name as **Pipeline_Dataflow_split** > Drag **Dataflow Activity** from Activity pane into work area 
-![image](https://user-images.githubusercontent.com/20516321/211992460-205c8038-43fe-4cd4-85b6-e7b9f2527ddd.png)
+Go to **AzureDataFactory(ADF)** > Click on **Author** > Create New Pipeline > Give name as **Pipeline1_Dataflows_split** > Drag **Dataflow Activity** from Activity pane into work area 
+![image](https://user-images.githubusercontent.com/20516321/212013537-97dda0ff-95d0-4019-afdc-9a43482ff8bd.png)
 
 Click on Dataflow Activity > Go to settings > Click on New > Give name as **Dataflow_Split** > Click on **Add Source** > Go to **sourceSetting** > Give name as **Source1emp** > Bottom **sourceSetting** > Select **Dataset** as **Src_azure_sql_emp**
 
