@@ -768,3 +768,33 @@ order by
 Reference : [Joins](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_06_Power%20Query%20Editor%20Combine%20Data.md)
 
 # Split Transformation
+Go to **AzureDataFactory(ADF)** > Click on **Author** > Create New Pipeline > Give name as **Pipeline_Dataflow_split** > Drag **Dataflow Activity** from Activity pane into work area 
+![image](https://user-images.githubusercontent.com/20516321/211992460-205c8038-43fe-4cd4-85b6-e7b9f2527ddd.png)
+
+Click on Dataflow Activity > Go to settings > Click on New > Give name as **Dataflow_Split** > Click on **Add Source** > Go to **sourceSetting** > Give name as **Source1emp** > Bottom **sourceSetting** > Select **Dataset** as **Src_azure_sql_emp**
+
+![image](https://user-images.githubusercontent.com/20516321/211998478-8cfbf6b0-01eb-438a-89fa-8299e7aa8afa.png)
+
+Click on add symbol > Search for **Conditional split** > Bottom of Conditional split > In split condition > Follow as per below picture
+
+![image](https://user-images.githubusercontent.com/20516321/212001689-83074d4b-26e2-4ea9-abd5-6fa6dc10e8f2.png)
+
+![image](https://user-images.githubusercontent.com/20516321/212001899-fad78590-b9d7-40df-91f4-dd60c7ca90b1.png)
+
+Click on add symbol > search for **Sink** > Give Name as Sink1 > Below sink Create New dataset > Give name as DS_Sink_Emp10 > Select LinkService as **ls_azuresqldb_dec22** > Click on Create new table > Give name as dbo.DS_Sink_Emp10
+
+![image](https://user-images.githubusercontent.com/20516321/212005400-e1c0d2d0-9a31-4d5c-840f-95934fac6f45.png)
+
+Click on add symbol > search for **Sink2** > Give Name as Sink2 > Below sink Create New dataset > Give name as DS_Sink_emp20 > Select LinkService as **ls_azuresqldb_dec22** > Click on Create new table > Give name as dbo.DS_Sink2_Emp20
+
+![image](https://user-images.githubusercontent.com/20516321/212005713-a0d70a1f-b9d5-45dc-9e81-056c04eab7df.png)
+
+Click on add symbol > search for **Sink3** > Give Name as Sink3 > Below sink Create New dataset > Give name as DS_Sink_emp30 > Select LinkService as **ls_azuresqldb_dec22** > Click on Create new table > Give name as dbo.DS_Sink3_emp30
+
+![image](https://user-images.githubusercontent.com/20516321/212005953-57baff49-37af-43a0-af74-d19bd59b060a.png)
+
+
+
+
+
+
