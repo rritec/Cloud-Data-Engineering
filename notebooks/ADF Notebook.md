@@ -795,6 +795,23 @@ Click on add symbol > search for **Sink3** > Give Name as Sink3 > Below sink Cre
 
 Go to **Pipeline1_Dataflows_Split1** > Click on **validate** > Click on **Publish** > Click on **Debug**
 
+![image](https://user-images.githubusercontent.com/20516321/212010636-3e28670e-de15-4f5a-b526-cde00ab9abea.png)
+
+Now Open **SQL SERVER** > Check data > Using below Query
+
+'''
+Select * from [dbo].[Ds_Sink_emp10]
+'''
+
+
+
+![image](https://user-images.githubusercontent.com/20516321/212011205-8a77c32e-abd4-46b4-9fa2-4d77560f7d34.png)
+
+
+
+
+
+
 
 
 
