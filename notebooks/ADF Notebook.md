@@ -22,6 +22,7 @@
 22. **[Incremental copy partitioned file name copy data tool](#Incremental-copy-partitioned-file-name-copy-data-tool)**<br>
 23. **[Logic Apps](#Logic-Apps)**<br>
 24. **[DataFlows](#DataFlows)**<br>
+25. **[Split Transformation](#Split-Transformation)**<br>
 
 
 # Introduction
@@ -765,3 +766,5 @@ order by
 
 
 Reference : [Joins](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_06_Power%20Query%20Editor%20Combine%20Data.md)
+
+# Split Transformation
