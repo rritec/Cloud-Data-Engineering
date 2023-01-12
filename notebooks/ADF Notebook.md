@@ -797,17 +797,27 @@ Go to **Pipeline1_Dataflows_Split1** > Click on **validate** > Click on **Publis
 
 ![image](https://user-images.githubusercontent.com/20516321/212010636-3e28670e-de15-4f5a-b526-cde00ab9abea.png)
 
-Now Open **SQL SERVER** > Check data > Using below Query
+Now Open **SQL SERVER** > Check data of table **[dbo].[Ds_Sink_emp10]**  > Using below Query
 
 ``` sql
 Select * from [dbo].[Ds_Sink_emp10]
 ```
-
-
-
 ![image](https://user-images.githubusercontent.com/20516321/212011205-8a77c32e-abd4-46b4-9fa2-4d77560f7d34.png)
 
+Check data of table **[dbo].[Ds_Sink2_emp20]**  > Using below Query
 
+``` sql
+Select * from [dbo].[Ds_Sink2_emp20]
+```
+![image](https://user-images.githubusercontent.com/20516321/212012385-bb3e4013-fb1f-4eb8-9b00-a4ebcaf993cb.png)
+
+Check data of table **[dbo].[Ds_Sink3_emp30]**  > Using below Query
+
+``` sql
+Select * from [dbo].[Ds_Sink3_emp30]
+```
+
+![image](https://user-images.githubusercontent.com/20516321/212012706-9c0caf2a-1c16-4470-9f0f-03cd7408acca.png)
 
 
 
