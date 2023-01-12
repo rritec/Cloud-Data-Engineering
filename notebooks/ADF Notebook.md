@@ -799,9 +799,9 @@ Go to **Pipeline1_Dataflows_Split1** > Click on **validate** > Click on **Publis
 
 Now Open **SQL SERVER** > Check data > Using below Query
 
-'''
+``` sql
 Select * from [dbo].[Ds_Sink_emp10]
-'''
+```
 
 
 
