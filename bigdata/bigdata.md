@@ -36,4 +36,8 @@
         ![image](https://user-images.githubusercontent.com/20516321/214224728-8d6d2333-0f35-49f1-aebd-b038fc02f822.png)
 
     3. type ```use metastore;```
-    6. type ```select * from DBS;```   
+    6. type ```select * from DBS;```
+  
+        ![image](https://user-images.githubusercontent.com/20516321/214237910-5cba6910-c977-4e6b-b275-c48f4e236c04.png)
+
+    7.  
