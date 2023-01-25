@@ -1,10 +1,10 @@
 # Hadoop(BigData)
-1. **[Hive](#Hive)**<br>
-2. 
+1. **[Hive Metastore](#Hive-Metastore)**<br>
+2. **[Hive Managed External Tables](#Hive-Managed-External-Tables)**<br>
 
 
 
-# Hive
+# Hive Metastore
 1. Connect to hive cli
     1. type ```hive```
     2. type ```show databases;```
@@ -40,4 +40,10 @@
   
         ![image](https://user-images.githubusercontent.com/20516321/214237910-5cba6910-c977-4e6b-b275-c48f4e236c04.png)
 
-    7.  
+# Hive Managed External Tables
+1. Create managed table
+    1. open terminal ```type hive```
+    2. 
+    
+  2. 
+  3. Create external Table
