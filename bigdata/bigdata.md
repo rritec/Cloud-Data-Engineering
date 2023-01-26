@@ -39,6 +39,7 @@
     6. type ```select * from DBS;```
   
         ![image](https://user-images.githubusercontent.com/20516321/214237910-5cba6910-c977-4e6b-b275-c48f4e236c04.png)
+5. `info:`do you know we can clear the `hive cli` by using `ctrl_i` or `!clear`
 
 # Hive Managed External Tables
 1. Create managed table or internal table
