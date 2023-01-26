@@ -73,16 +73,46 @@
             103,marc,3000
             ```
             
-        3. type `wq!`
-        4. Copy file from linux to hadoop `hdfs dfs -put /home/cloudera/Desktop/emp.txt /user/cloudera/`
+        3. type `:wq!`
+        4. Copy file from linux to hadoop `hdfs dfs -put -f /home/cloudera/Desktop/emp.txt /user/cloudera/`
         5. in hive terminal type 
             ``` sql
-            load data inpath '/user/cloudera/emp.txt' into table emp
+            load data inpath '/user/cloudera/emp.txt' into table emp;
             ```
-        6. 
-        
-        
-    6. 
-    
-  2. 
+        6. the file '/user/cloudera/emp.txt' available in this location?
+            - No
+        7. observe data
+            ``` sql 
+            select * from emp limit 2;
+            ```
+            
+        7. to see column titles `set hive.cli.print.header=true;` 
+        8. observe data
+            ``` sql 
+            select * from emp limit 2;
+            ```
+        9. To see only column names without table names `set hive.resultset.use.unique.column.names=false;`
+        10. observe data
+            ``` sql 
+            select * from emp limit 2;
+            ```       
+    6. Observe table in **metastore** 
+        ``` sql
+        mysql -uroot -pcloudera
+        ```
+        ``` sql
+        use metastore;
+        ```
+        ``` sql
+        select * from TBLS
+        ```
+    7. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
+    8. If we drop **managed_table** hive metastore and hdfs warehouse will be cleared.
+        1. drop the table
+            ``` sql
+            drop table emp;
+            ```
+        2. Note that metastore table `TBLS` deleted the row of `emp`
+        3. Note that `emp.txt` deleted from wareouse path
+
   3. Create external Table 
