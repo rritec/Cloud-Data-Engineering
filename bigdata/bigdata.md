@@ -46,7 +46,7 @@
     2. create table using below script
     
         ``` sql 
-        Create table emp if not exists (empno int,ename string,sal int) rows delimited fields terminated by ',';
+        Create table if not exists emp (empno int,ename string,sal int) rows delimited fields terminated by ',';
         ```
     3. 
     
