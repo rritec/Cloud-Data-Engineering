@@ -59,7 +59,30 @@
         ``` sql
         desc formatted emp;
         ```
-    4. 
+    4. Observe data
+        ``` sql
+        select * from emp;
+        ```
+    5. load data from **file** into **table**
+        1. In linux desktop > right click open terminal
+        2. create a file `vi emp.txt`
+        3. enter data
+            ``` 
+            101,ram,1000
+            102,john,2000
+            103,marc,3000
+            ```
+            
+        3. type `wq!`
+        4. Copy file from linux to hadoop `hdfs dfs -put /home/cloudera/Desktop/emp.txt /user/cloudera/`
+        5. in hive terminal type 
+            ``` sql
+            load data inpath '/user/cloudera/emp.txt' into table emp
+            ```
+        6. 
+        
+        
+    6. 
     
   2. 
   3. Create external Table 
