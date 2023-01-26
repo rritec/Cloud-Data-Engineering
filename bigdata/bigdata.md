@@ -45,7 +45,8 @@
     1. Open terminal ```type hive```
     2. create table using below script
     
-        sql ```Create table emp if not exists (empno int,ename string,sal int) rows delimited fields terminated by ',';```
+        ``` sql
+        Create table emp if not exists (empno int,ename string,sal int) rows delimited fields terminated by ',';```
     3. 
     
   2. 
