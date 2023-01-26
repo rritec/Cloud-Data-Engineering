@@ -48,7 +48,18 @@
         ``` sql 
         Create table if not exists emp (empno int,ename string,sal int) rows delimited fields terminated by ',';
         ```
-    3. 
+    3. Observe Schema of table
+
+        ``` sql
+        describe emp;
+        ```
+        ``` sql
+        desc emp;
+        ```
+        ``` sql
+        desc formatted emp;
+        ```
+    4. 
     
   2. 
   3. Create external Table 
