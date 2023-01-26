@@ -41,9 +41,11 @@
         ![image](https://user-images.githubusercontent.com/20516321/214237910-5cba6910-c977-4e6b-b275-c48f4e236c04.png)
 
 # Hive Managed External Tables
-1. Create managed table
-    1. open terminal ```type hive```
-    2. 
+1. Create managed table or internal table
+    1. Open terminal ```type hive```
+    2. create table using below script
+        sql``` Create table emp if not exists (empno int,ename string,sal int) rows delimited fields terminated by ',';```
+    3. 
     
   2. 
-  3. Create external Table
+  3. Create external Table 
