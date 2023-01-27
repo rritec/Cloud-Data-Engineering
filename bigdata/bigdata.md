@@ -117,14 +117,13 @@
         3. Note that `emp.txt` deleted from wareouse path
 
   3. Create external Table
-  
       1. Open terminal ```type hive```
       2. create table using below script
     
         ``` sql 
         Create external table if not exists emp_ext (empno int,ename string,sal int) rows delimited fields terminated by ',';
         ```
-    3. Observe Schema of table
+     3. Observe Schema of table
 
         ``` sql
         describe emp_ext;
