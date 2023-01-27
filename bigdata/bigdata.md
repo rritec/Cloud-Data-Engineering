@@ -192,9 +192,10 @@ select * from TBLS
 8. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
 
 1. drop the table
-    ``` sql
-    drop table emp_ext;
-    ```
+
+``` sql
+drop table emp_ext;
+```
 2. Note that metastore table `TBLS` deleted the row of `emp`
 3. Note that `emp_ext.txt` not deleted from wareouse path
 4. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
