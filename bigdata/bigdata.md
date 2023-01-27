@@ -121,83 +121,83 @@
 
  # Hive External Tables
 
-      1. Open terminal ```type hive```
-      2. create table using below script
-    
-        ``` sql 
-        Create external table if not exists emp_ext (empno int,ename string,sal int) rows delimited fields terminated by ',';
-        ```
-     3. Observe Schema of table
+1. Open terminal ```type hive```
+2. create table using below script
 
-        ``` sql
-        describe emp_ext;
-        ```
-        ``` sql
-        desc emp_ext;
-        ```
-        ``` sql
-        desc formatted emp_ext;
-        ```
-     4. Observe data
-    
-        ``` sql
-        select * from emp_ext;
-        ```
-     5. load data from **file** into **table**
+``` sql 
+Create external table if not exists emp_ext (empno int,ename string,sal int) rows delimited fields terminated by ',';
+```
+3. Observe Schema of table
 
-        1. In linux desktop > right click open terminal
-        2. create a file `vi emp_ext.txt`
-        3. enter data
-            ``` 
-            101,ram,1000
-            102,john,2000
-            103,marc,3000
-            ```
-            
-        3. type `:wq!`
-        4. in hive terminal type 
-            ``` sql
-            load data local inpath '/home/cloudera/Desktop/emp_ext.txt' into table emp;
-            ```
-     6. the file '/home/cloudera/Desktop/emp.txt' available in this location?
-            - Yes
+``` sql
+describe emp_ext;
+```
+``` sql
+desc emp_ext;
+```
+``` sql
+desc formatted emp_ext;
+```
+4. Observe data
 
-     7. observe data
+``` sql
+select * from emp_ext;
+```
+5. load data from **file** into **table**
 
-            ``` sql 
-            select * from emp_ext limit 2;
-            ```
-            
-     7. to see column titles `set hive.cli.print.header=true;` 
-     8. observe data
-            ``` sql 
-            select * from emp_ext limit 2;
-            ```
-     9. To see only column names without table names `set hive.resultset.use.unique.column.names=false;`
-     10. observe data
-            ``` sql 
-            select * from emp_ext limit 2;
-            ```       
-     6. Observe table in **metastore** 
-        ``` sql
-        mysql -uroot -pcloudera
-        ```
-        ``` sql
-        use metastore;
-        ```
-        ``` sql
-        select * from TBLS
-        ```
-     7. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
-     8. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
+1. In linux desktop > right click open terminal
+2. create a file `vi emp_ext.txt`
+3. enter data
+    ``` 
+    101,ram,1000
+    102,john,2000
+    103,marc,3000
+    ```
 
-        1. drop the table
-            ``` sql
-            drop table emp_ext;
-            ```
-        2. Note that metastore table `TBLS` deleted the row of `emp`
-        3. Note that `emp_ext.txt` not deleted from wareouse path
-        4. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
+3. type `:wq!`
+4. in hive terminal type 
+    ``` sql
+    load data local inpath '/home/cloudera/Desktop/emp_ext.txt' into table emp;
+    ```
+6. the file '/home/cloudera/Desktop/emp.txt' available in this location?
+    - Yes
+
+7. observe data
+
+    ``` sql 
+    select * from emp_ext limit 2;
+    ```
+
+7. to see column titles `set hive.cli.print.header=true;` 
+8. observe data
+    ``` sql 
+    select * from emp_ext limit 2;
+    ```
+9. To see only column names without table names `set hive.resultset.use.unique.column.names=false;`
+10. observe data
+    ``` sql 
+    select * from emp_ext limit 2;
+    ```       
+6. Observe table in **metastore** 
+``` sql
+mysql -uroot -pcloudera
+```
+``` sql
+use metastore;
+```
+``` sql
+select * from TBLS
+```
+7. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
+8. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
+
+1. drop the table
+    ``` sql
+    drop table emp_ext;
+    ```
+2. Note that metastore table `TBLS` deleted the row of `emp`
+3. Note that `emp_ext.txt` not deleted from wareouse path
+4. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
 
 # Hive Operations
 1. jjj
