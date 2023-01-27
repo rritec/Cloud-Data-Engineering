@@ -1,6 +1,9 @@
 # Hadoop(BigData)
 1. **[Hive Metastore](#Hive-Metastore)**<br>
-2. **[Hive Managed External Tables](#Hive-Managed-External-Tables)**<br>
+2. **[Hive Managed Tables](#Hive-Managed-Tables)**<br>
+3. **[Hive External Tables](#Hive-External-Tables)**<br>
+4. **[Hive Operations](#Hive-Operations)**<br>
+5. 
 
 
 
@@ -41,7 +44,7 @@
         ![image](https://user-images.githubusercontent.com/20516321/214237910-5cba6910-c977-4e6b-b275-c48f4e236c04.png)
 5. `info:`do you know we can clear the `hive cli` by using `ctrl_i` or `!clear`
 
-# Hive Managed External Tables
+# Hive Managed Tables
 1. **Create managed table or internal table**
     1. Open terminal ```type hive```
     2. create table using below script
@@ -116,7 +119,7 @@
         2. Note that metastore table `TBLS` deleted the row of `emp`
         3. Note that `emp.txt` deleted from wareouse path
 
-  3. **Create external Table or non-managed Table**
+ # Hive External Tables
 
       1. Open terminal ```type hive```
       2. create table using below script
@@ -195,4 +198,7 @@
         2. Note that metastore table `TBLS` deleted the row of `emp`
         3. Note that `emp_ext.txt` not deleted from wareouse path
         4. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
+
+# Hive Operations
+1. jjj
         
