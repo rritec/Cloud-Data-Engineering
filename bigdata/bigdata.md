@@ -179,7 +179,7 @@ select * from emp_ext;
     ``` sql 
     select * from emp_ext limit 2;
     ```       
-11. Observe table in **metastore** 
+11. Observe table in **metastore**
 
 ``` sql
 mysql -uroot -pcloudera
@@ -190,18 +190,19 @@ use metastore;
 ``` sql
 select * from TBLS
 ```
-12. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
-13. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
-
-14. drop the table
+13. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
+14. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
+15. drop the table
 
 ``` sql
 drop table emp_ext;
 ```
-15. Note that metastore table `TBLS` deleted the row of `emp`
-16. Note that `emp_ext.txt` not deleted from wareouse path
-17. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
+
+16. Note that metastore table `TBLS` deleted the row of `emp`
+17. Note that `emp_ext.txt` not deleted from wareouse path
+18. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
 
 # Hive Operations
 1. jjj
+2. 
         
