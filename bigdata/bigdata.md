@@ -42,7 +42,7 @@
 5. `info:`do you know we can clear the `hive cli` by using `ctrl_i` or `!clear`
 
 # Hive Managed External Tables
-1. Create managed table or internal table
+1. **Create managed table or internal table**
     1. Open terminal ```type hive```
     2. create table using below script
     
@@ -116,7 +116,8 @@
         2. Note that metastore table `TBLS` deleted the row of `emp`
         3. Note that `emp.txt` deleted from wareouse path
 
-  3. Create external Table
+  3. **Create external Table or non-managed Table**
+
       1. Open terminal ```type hive```
       2. create table using below script
     
@@ -134,11 +135,13 @@
         ``` sql
         desc formatted emp_ext;
         ```
-    4. Observe data
+     4. Observe data
+    
         ``` sql
         select * from emp_ext;
         ```
-    5. load data from **file** into **table**
+     5. load data from **file** into **table**
+
         1. In linux desktop > right click open terminal
         2. create a file `vi emp_ext.txt`
         3. enter data
@@ -153,20 +156,22 @@
             ``` sql
             load data local inpath '/home/cloudera/Desktop/emp_ext.txt' into table emp;
             ```
-        6. the file '/home/cloudera/Desktop/emp.txt' available in this location?
+     6. the file '/home/cloudera/Desktop/emp.txt' available in this location?
             - Yes
-        7. observe data
+
+     7. observe data
+
             ``` sql 
             select * from emp_ext limit 2;
             ```
             
-        7. to see column titles `set hive.cli.print.header=true;` 
-        8. observe data
+     7. to see column titles `set hive.cli.print.header=true;` 
+     8. observe data
             ``` sql 
             select * from emp_ext limit 2;
             ```
-        9. To see only column names without table names `set hive.resultset.use.unique.column.names=false;`
-        10. observe data
+     9. To see only column names without table names `set hive.resultset.use.unique.column.names=false;`
+     10. observe data
             ``` sql 
             select * from emp_ext limit 2;
             ```       
