@@ -175,7 +175,7 @@
             ``` sql 
             select * from emp_ext limit 2;
             ```       
-    6. Observe table in **metastore** 
+     6. Observe table in **metastore** 
         ``` sql
         mysql -uroot -pcloudera
         ```
@@ -185,8 +185,9 @@
         ``` sql
         select * from TBLS
         ```
-    7. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
-    8. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
+     7. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
+     8. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
+
         1. drop the table
             ``` sql
             drop table emp_ext;
