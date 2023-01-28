@@ -217,8 +217,14 @@ describe database rritec;
 
 3. Add comment to Table and columns
 ``` sql 
-create table emp(empno int comment "employee number",ename string,sal int) comment "it is a test table"
+create table emp(empno int comment "employee number",ename string,sal int) comment "it is a test table";
 ```
-4. 
+4. observe comments
+``` sql
+desc formatted emp;
+```
+![image](https://user-images.githubusercontent.com/20516321/215237826-fca28300-2f1f-4e6e-b746-fc6ad1bdbfb7.png)
+
 5. 
+6. 
         
