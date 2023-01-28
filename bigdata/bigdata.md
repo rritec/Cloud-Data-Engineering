@@ -201,8 +201,24 @@ drop table emp_ext;
 21. Note that metastore table `TBLS` deleted the row of `emp`
 22. Note that `emp_ext.txt` not deleted from wareouse path
 23. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
+24. 
 
 # Hive Operations
-1. jjj
-2. 
+
+1. Add comment to Database
+``` sql
+create database rritec comment "big data training by rritec";
+```
+2. observe comment
+``` sql
+describe database rritec;
+```
+![image](https://user-images.githubusercontent.com/20516321/215237182-d8c405fd-06db-40df-b33e-b80ed0591526.png)
+
+3. Add comment to Table and columns
+``` sql 
+create table emp(empno int comment "employee number",ename string,sal int) comment "it is a test table"
+```
+4. 
+5. 
         
