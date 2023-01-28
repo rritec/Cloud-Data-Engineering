@@ -145,41 +145,41 @@ select * from emp_ext;
 ```
 5. load data from **file** into **table**
 
-1. In linux desktop > right click open terminal
-2. create a file `vi emp_ext.txt`
-3. enter data
+6. In linux desktop > right click open terminal
+7. create a file `vi emp_ext.txt`
+8. enter data
     ``` 
     101,ram,1000
     102,john,2000
     103,marc,3000
     ```
 
-3. type `:wq!`
-4. in hive terminal type 
+9. type `:wq!`
+10. in hive terminal type 
     ``` sql
     load data local inpath '/home/cloudera/Desktop/emp_ext.txt' into table emp;
     ```
-6. the file '/home/cloudera/Desktop/emp.txt' available in this location?
+11. the file '/home/cloudera/Desktop/emp.txt' available in this location?
     - Yes
 
-7. observe data
+12. observe data
 
     ``` sql 
     select * from emp_ext limit 2;
     ```
 
-7. to see column titles `set hive.cli.print.header=true;` 
-8. observe data
+13. to see column titles `set hive.cli.print.header=true;` 
+14. observe data
     ``` sql 
     select * from emp_ext limit 2;
     ```
-9. To see only column names without table names `set hive.resultset.use.unique.column.names=false;`
-10. observe data
+15. To see only column names without table names `set hive.resultset.use.unique.column.names=false;`
+16. observe data
 
     ``` sql 
     select * from emp_ext limit 2;
     ```       
-11. Observe table in **metastore**
+17. Observe table in **metastore**
 
 ``` sql
 mysql -uroot -pcloudera
@@ -190,17 +190,17 @@ use metastore;
 ``` sql
 select * from TBLS
 ```
-13. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
-14. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
-15. drop the table
+18. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
+19. If we drop **external_table** hive metastore will be cleared and hdfs warehouse will **not** be cleared.
+20. drop the table
 
 ``` sql
 drop table emp_ext;
 ```
 
-16. Note that metastore table `TBLS` deleted the row of `emp`
-17. Note that `emp_ext.txt` not deleted from wareouse path
-18. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
+21. Note that metastore table `TBLS` deleted the row of `emp`
+22. Note that `emp_ext.txt` not deleted from wareouse path
+23. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
 
 # Hive Operations
 1. jjj
