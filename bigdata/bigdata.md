@@ -4,8 +4,9 @@
 3. **[Hive External Tables](#Hive-External-Tables)**<br>
 4. **[Hive Operations](#Hive-Operations)**<br>
 5. **[Hadoop File Formats and its Types](#Hadoop-File-Formats-and-its-Types)**<br>
-6. 
+6. **[Different ways to connecting hive](#Different-ways-to-connecting-hive)**<br>
 7. 
+8. 
 
 
 
@@ -329,5 +330,36 @@ SET hive.execution.engine=spark
         ``` sql 
         insert into dept_parquet select * from dept_text;
         ```
-3. 
+# Different ways to connecting hive
+1.  Mainly three ways
+    1. HUE UI
+    2. Hive CLI
+    3. beeline
+2.  HUE UI
+    1. open http://quickstart.cloudera:8888
+    2. provide username: **cloudera** and password as **cloudera**
+    3. open hive and try different commands
+        ``` sql
+        show databases;
+        ```
+        ``` sql        
+        use database rritec;        
+        ```
+        ``` sql
+        show tables;
+        ```
+    4. 
+3.  Hive CLI
+    1. we know it
+4.  beeline
+    1. Connect to beeline
+        ``` sql
+        beeline -u jdbc:hive2://
+        ```
+    2. show databases;
+        ``` sql
+        show databases;
+        ```
+    3. 
+5.  
         
