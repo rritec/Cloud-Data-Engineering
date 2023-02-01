@@ -351,6 +351,15 @@ SET hive.execution.engine=spark
     4. 
 3.  Hive CLI
     1. we know it
+    2. run script in hive cli
+        ``` sql
+        source /home/cloudera/my_script.hql
+        ```
+    3. run script in linux
+        ``` sql
+        hive -f /home/cloudera/my_script.hql
+        ```
+    4. 
 4.  beeline
     1. Connect to beeline
         ``` sql
@@ -360,6 +369,13 @@ SET hive.execution.engine=spark
         ``` sql
         show databases;
         ```
-    3. 
+    3. run script
+        ``` sql
+        source /home/cloudera/my_script.hql
+        ```
+    4. run script in linux
+        ``` sql
+        beeline -u jdbc:hive2:// -f /home/cloudera/my_script.hql
+        ```
 5.  
         
