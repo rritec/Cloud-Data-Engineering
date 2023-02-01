@@ -121,8 +121,9 @@
 
  # Hive External Tables
 
-1. Open terminal ```type hive```
-2. create table using below script
+1. it is also called as `non-mangaed` table
+2. Open terminal ```type hive```
+3. create table using below script
 
 ``` sql 
 Create external table if not exists emp_ext (empno int,ename string,sal int) rows delimited fields terminated by ',';
