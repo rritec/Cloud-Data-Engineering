@@ -291,6 +291,11 @@ show databases;
 ![image](https://user-images.githubusercontent.com/20516321/215387074-443dce60-1ce4-4208-9bbd-d53469f16c30.png)
 
 12. Observe Default hive execution engine
+    1. There are three execut engines available
+    2. those are
+        1. MR > Map Reduce (default Execution Engine)
+        2. TeZ
+        3. Spark > Most of the times we will use this in projects
 ``` sql
 SET hive.execution.engine
 ```
