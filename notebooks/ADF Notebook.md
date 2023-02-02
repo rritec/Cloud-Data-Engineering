@@ -23,6 +23,8 @@
 23. **[Logic Apps](#Logic-Apps)**<br>
 24. **[DataFlows](#DataFlows)**<br>
 25. **[Split Transformation](#Split-Transformation)**<br>
+26.  **[Derived Column](#Derived Column)**<br>
+  
 
 
 # Introduction
