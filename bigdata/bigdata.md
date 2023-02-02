@@ -5,12 +5,15 @@
 4. **[Hive Operations](#Hive-Operations)**<br>
 5. **[Hadoop File Formats and its Types](#Hadoop-File-Formats-and-its-Types)**<br>
 6. **[Different ways to connecting hive](#Different-ways-to-connecting-hive)**<br>
-7. 
-8. 
+7. **[Partitioning](#Partitioning)**<br>
+8. **[Partitioning](#Partitioning)**<br>
+9. **[Bucketing](#Bucketing)**<br>
+10. 
 
 
 
 # Hive Metastore
+
 1. Connect to hive cli
     1. type ```hive```
     2. type ```show databases;```
@@ -383,7 +386,9 @@ SET hive.execution.engine=spark
         beeline -u jdbc:hive2:// -f /home/cloudera/my_script.hql
         ```
 5. ..
-# pari
+
+# Partitioning
+
 1. Partitioning is the optimization technique in Hive which improves the performance significantly
 2. Apache Hive organizes tables into partitions. Partitioning is a way of dividing a table into related parts based on the values of particular columns like date, city, and department
 ![image](https://user-images.githubusercontent.com/20516321/216234868-7f22531c-1108-4cbd-9203-cc7f7e0ebf68.png)
@@ -476,7 +481,8 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         
         4. 
     10. 
-7. 
+# Bucketing
+1. 
 
 
 
