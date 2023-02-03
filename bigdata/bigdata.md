@@ -410,9 +410,7 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
     4. You “statically” add a partition in the table and move the file into the partition of the table.
     5. We can alter the partition in the static partition.
     6. You can get the partition column value from the filename, day of date etc without reading the whole big file.
-    7. If you want to use the Static partition in the hive you should set property `set hive.mapred.mode = strict` This property set by default in `hive-site.xml`
-    8. Static partition is in `Strict` Mode.
-    9. You can perform Static partition on Hive Manage table or external table.
+    7. You can perform Static partition on Hive `Manage` table or `external` table.
     10. create table
         ``` sql
         create table emp_partition(empno int,ename string,sal int) partitioned by(deptno int) row format delimited fields terminated by '|' ;
