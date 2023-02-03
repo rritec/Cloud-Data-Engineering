@@ -1,4 +1,4 @@
-# Hadoop(BigData)
+# Hadoop(BigData)(Hive)
 1. **[Hive Metastore](#Hive-Metastore)**<br>
 2. **[Hive Managed Tables](#Hive-Managed-Tables)**<br>
 3. **[Hive External Tables](#Hive-External-Tables)**<br>
