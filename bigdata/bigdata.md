@@ -5,8 +5,7 @@
 4. **[Hive Operations](#Hive-Operations)**<br>
 5. **[Hadoop File Formats and its Types](#Hadoop-File-Formats-and-its-Types)**<br>
 6. **[Different ways to connecting hive](#Different-ways-to-connecting-hive)**<br>
-7. **[Partitioning](#Partitioning)**<br>
-8. **[Partitioning](#Partitioning)**<br>
+7. **[Partitioning](#Partitioning)**<br>8.
 9. **[Bucketing](#Bucketing)**<br>
 10. 
 
@@ -389,8 +388,9 @@ SET hive.execution.engine=spark
 
 # Partitioning
 
-1. Partitioning is the optimization technique in Hive which improves the performance significantly
-2. Apache Hive organizes tables into partitions. Partitioning is a way of dividing a table into related parts based on the values of particular columns like date, city, and department
+1. Partitioning is the `optimization technique` in Hive which improves the `performance` significantly
+2. Apache Hive organizes tables into partitions. Partitioning is a way of dividing a table into related parts based on the values of particular columns like `date`, `city,` and `department`
+
 ![image](https://user-images.githubusercontent.com/20516321/216234868-7f22531c-1108-4cbd-9203-cc7f7e0ebf68.png)
 
 3. To create data partitioning in Hive the syntax is
