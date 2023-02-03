@@ -504,6 +504,7 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
     5. Since the join of each bucket becomes an efficient merge-sort, this makes map-side joins even more efficient.
 5. Creation of bucketed tables
     1. With the help of `CLUSTERED BY` clause and optional `SORTED BY` clause in CREATE TABLE statement we can create bucketed tables.
+    2. Understanding `cluster by` and `hashing`
         ``` sql
         set hive.enforce.bucketing=true;
         ```
@@ -524,16 +525,43 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         ```
         ``` shell
         hdfs dfs -tail /user/hive/warehouse/rritec.db/orders_buck/000006_0
+        ```       
+        
+    3. Understanding `sorted by`
+        ``` sql
+        create table orders_buck_sort(order_id int,order_date timestamp,order_customer_id int,order_status string) clustered by (order_id) sorted by (order_id) into 8 buckets row format delimited fields terminated by ',' tblproperties("skip.header.line.count"="1");
         ```
+        ``` sql
+        desc formatted orders_buck_sort;
+        ```
+        ``` sql
+        insert into table orders_buck_sort select * from orders_stage;
+        ```
+        ``` shell
+        hdfs dfs -tail /user/hive/warehouse/rritec.db/orders_buck/000000_0
+        ```
+        ``` shell
+        hdfs dfs -tail /user/hive/warehouse/rritec.db/orders_buck/000006_0
+        ```         
         
+        
+    4.  Creating `partition` and `bucketing`
+        ``` sql
+        create table orders_partition_buck(order_id int,order_date timestamp,order_customer_id int) partitioned by (order_status string) clustered by (order_id) into 8 buckets row format delimited fields terminated by ',' tblproperties("skip.header.line.count"="1");
+        ```
+        ``` sql
+        desc formatted orders_partition_buck;
+        ```
+        ``` sql
+        insert into table orders_partition_buck partition(order_status) select * from orders_stage;
+        ``` 
+        ``` bash
+        hdfs dfs -ls -h /user/hive/warehouse/rritec.db/orders_partition_buck/order_status=CANCELED
+        ```
+        ![image](https://user-images.githubusercontent.com/20516321/216626674-a0a4c49d-3264-449c-8bbf-2f5ef717edf6.png)
 
-
-        
-        
-        
-        
-        
-    2. 
+       
+    5.  
     
 6.  
 
