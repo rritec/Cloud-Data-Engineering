@@ -505,6 +505,9 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
 5. Creation of bucketed tables
     1. With the help of `CLUSTERED BY` clause and optional `SORTED BY` clause in CREATE TABLE statement we can create bucketed tables.
     2. Understanding `cluster by` and `hashing`
+    3. understand below diagram with number of `buckets = 3`
+        ![image](https://user-images.githubusercontent.com/20516321/216627516-90d8d264-3a75-425a-bb86-0cac3662e99d.png)
+
         ``` sql
         set hive.enforce.bucketing=true;
         ```
@@ -546,6 +549,9 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         
         
     4.  Creating `partition` and `bucketing`
+
+        ![image](https://user-images.githubusercontent.com/20516321/216627245-bfa4b21d-a680-4954-b017-8a53045f4812.png)
+
         ``` sql
         create table orders_partition_buck(order_id int,order_date timestamp,order_customer_id int) partitioned by (order_status string) clustered by (order_id) into 8 buckets row format delimited fields terminated by ',' tblproperties("skip.header.line.count"="1");
         ```
