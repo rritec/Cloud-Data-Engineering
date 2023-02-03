@@ -519,10 +519,10 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         ``` sql
         insert into table orders_buck select * from orders_stage;
         ```
-        ``` linux
+        ``` shell
         hdfs dfs -tail /user/hive/warehouse/rritec.db/orders_buck/000000_0
         ```
-        ``` linux
+        ``` shell
         hdfs dfs -tail /user/hive/warehouse/rritec.db/orders_buck/000006_0
         ```
         
