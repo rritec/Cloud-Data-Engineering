@@ -492,7 +492,7 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
     1. Basically, this concept is based on hashing function on the bucketed column. Along with mod (by the total number of buckets).
     2. Where the hash_function depends on the type of the bucketing column.
     3. However, the Records with the same bucketed column will always be stored in the same bucket.
-    4. Moreover,  to divide the table into buckets we use CLUSTERED BY clause.
+    4. Moreover,  to divide the table into buckets we use `CLUSTERED BY` clause.
     5. Generally, in the table directory, each bucket is just a file, and Bucket numbering is 1-based.
     6. Along with Partitioning on Hive tables bucketing can be done and even without partitioning.
     7. Moreover, Bucketed tables will create almost equally distributed data file parts.
