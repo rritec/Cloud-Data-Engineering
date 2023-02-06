@@ -1,6 +1,7 @@
 # Hadoop(BigData)(sqoop)
 1. **[Sqoop Introduction](#Sqoop-Introduction)**<br>
-2. 
+2. **[Sqoop Eval](#Sqoop-Eval)**<br>
+3. 
 
 
 
@@ -86,14 +87,31 @@ ls -ltrh
   --username root \
   --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt
   ```
-11. run query
+# Sqoop Eval
+1. Basically, to quickly run simple SQL queries against a database, we use Sqoop `Eval` tool in Sqoop.
+2. run simple sql query to see 10 records
   ``` sql
-  sqoop \
-  eval \
+  sqoop eval \
   --connect jdbc:mysql://localhost:3306/retail_db \
   --username root \
   --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt \
   --query "select * from orders limit 10;"
   ```
-12. 
+  
+3. Create table and insert rows
+  ``` sql
+  sqoop eval \
+  --connect jdbc:mysql://localhost:3306/retail_db \
+  --username root \
+  --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt \
+  --query "create table test(id int,name varchar(20));"
+  ```
+  ``` sql
+  sqoop eval \
+  --connect jdbc:mysql://localhost:3306/retail_db \
+  --username root \
+  --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt \
+  --query "insert into test values(101,'Myla RamReddy');"
+  ```
+4. 
 
