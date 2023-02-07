@@ -532,6 +532,9 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         
     3. Understanding `sorted by`
         ``` sql
+        set hive.enforce.sorting=true;
+        ```
+        ``` sql
         create table orders_buck_sort(order_id int,order_date timestamp,order_customer_id int,order_status string) clustered by (order_id) sorted by (order_id) into 8 buckets row format delimited fields terminated by ',' tblproperties("skip.header.line.count"="1");
         ```
         ``` sql
