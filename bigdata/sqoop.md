@@ -120,14 +120,15 @@ ls -ltrh
 # Sqoop Import
 
 1. Import `orders` table from `retail_db` database
+
     ``` sql 
     sqoop import \
-  --connect jdbc:mysql://localhost:3306/retail_db \
-  --username root \
-  --password cloudera \
-  --table orders \
-  --target-dir /user/cloudera/rritec/orders
-  ```
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table orders \
+    --target-dir /user/cloudera/rritec/orders
+    ```
 2. observe files in `hdfs` location
     ``` sql
     hdfs dfs -ls -h /user/cloudera/rritec/orders/
