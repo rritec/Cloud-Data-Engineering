@@ -1,7 +1,9 @@
 # Hadoop(BigData)(sqoop)
 1. **[Sqoop Introduction](#Sqoop-Introduction)**<br>
 2. **[Sqoop Eval](#Sqoop-Eval)**<br>
-3. 
+3. **[Sqoop Import](#Sqoop-Import)**<br>
+4. **[Sqoop Export](#Sqoop-Export)**<br>
+5. 
 
 
 
@@ -115,3 +117,25 @@ ls -ltrh
   ```
 4. 
 
+# Sqoop Import
+
+1. Import `orders` table from `retail_db` database
+    ``` sql 
+    sqoop import \
+  --connect jdbc:mysql://localhost:3306/retail_db \
+  --username root \
+  --password cloudera \
+  --table orders \
+  --target-dir /user/cloudera/rritec/orders
+  ```
+2. observe files in `hdfs` location
+    ``` sql
+    hdfs dfs -ls -h /user/cloudera/rritec/orders/
+    ```
+    ![image](https://user-images.githubusercontent.com/20516321/217207566-4b7e1fc1-edd8-4f15-a1a4-b1eb17279535.png)
+
+
+3. 
+
+
+# Sqoop Export
