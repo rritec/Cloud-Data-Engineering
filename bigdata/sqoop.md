@@ -140,7 +140,78 @@ ls -ltrh
     
     ![image](https://user-images.githubusercontent.com/20516321/217235654-2f2ba0ff-4197-4b57-a9bb-4187d3f2ac08.png)
 
-4. 
+4. Observe total number of rwos is macing with mysql table
+
+  ![image](https://user-images.githubusercontent.com/20516321/217236063-84f44b6a-8ec4-4a8c-b1f8-8e91e52d6dd0.png)
+  ![image](https://user-images.githubusercontent.com/20516321/217236250-96b00f2d-4cea-411c-9cb1-80496219658b.png)
+
+  
+
+5. `warehouse-dir` will create directory with the name of mysql table
+    ``` sql 
+    sqoop import \
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table order_items \
+    --warehouse-dir /user/cloudera/
+    ```
+6. append data
+    ``` sql 
+    sqoop import \
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table orders \
+    --target-dir /user/cloudera/rritec/orders \
+    --append
+    ```
+7. Restrict number of mappers
+  ``` sql 
+    sqoop import \
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table orders \
+    --target-dir /user/cloudera/rritec/orders \
+    --append \
+    --num-mappers 2
+   ```
+   ``` sql 
+    sqoop import \
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table orders \
+    --target-dir /user/cloudera/rritec/orders \
+    --append \
+    -m 2
+   ```
+8. To see detailed log use `verbose`
+  ``` sql 
+    sqoop import \
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table orders \
+    --target-dir /user/cloudera/rritec/orders \
+    --append \
+    --num-mappers 2 \
+    --verbose
+   ```
+9. understand the `compress`
+  ``` sql 
+    sqoop import \
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table orders \
+    --target-dir /user/cloudera/rritec/orders \
+    --append \
+    --num-mappers 2 \
+    --compress
+   ```
+10. 
 
 
 # Sqoop Export
