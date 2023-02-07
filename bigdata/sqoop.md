@@ -136,7 +136,11 @@ ls -ltrh
     ![image](https://user-images.githubusercontent.com/20516321/217207566-4b7e1fc1-edd8-4f15-a1a4-b1eb17279535.png)
 
 
-3. 
+3. Observe number of row in each file.
+    
+    ![image](https://user-images.githubusercontent.com/20516321/217235654-2f2ba0ff-4197-4b57-a9bb-4187d3f2ac08.png)
+
+4. 
 
 
 # Sqoop Export
