@@ -115,6 +115,7 @@ ls -ltrh
   --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt \
   --query "insert into test values(101,'Myla RamReddy');"
   ```
+4. Drop the table
   ``` sql
   sqoop eval \
   --connect jdbc:mysql://localhost:3306/retail_db \
@@ -122,7 +123,7 @@ ls -ltrh
   --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt \
   --query "drop table test;"
   ```
-4. 
+5. 
 
 # Sqoop Import
 
@@ -136,7 +137,8 @@ ls -ltrh
     --table orders \
     --target-dir /user/cloudera/rritec/orders
     ```
-2. observe files in `hdfs` location
+2. Observe files in `hdfs` location
+
     ``` sql
     hdfs dfs -ls -h /user/cloudera/rritec/orders/
     ```
@@ -147,7 +149,7 @@ ls -ltrh
     
     ![image](https://user-images.githubusercontent.com/20516321/217235654-2f2ba0ff-4197-4b57-a9bb-4187d3f2ac08.png)
 
-4. Observe total number of rwos is macing with mysql table
+4. Observe total number of rows is macing with mysql table
 
   ![image](https://user-images.githubusercontent.com/20516321/217236063-84f44b6a-8ec4-4a8c-b1f8-8e91e52d6dd0.png)
   ![image](https://user-images.githubusercontent.com/20516321/217236250-96b00f2d-4cea-411c-9cb1-80496219658b.png)
@@ -222,3 +224,30 @@ ls -ltrh
 
 
 # Sqoop Export
+
+1. Export data back from the HDFS to the RDBMS database.
+2. The target table must exist in the target database. 
+3. The files which are given as input to the Sqoop contain records, which are called rows in table. Those are read and parsed into a set of records
+4. The default operation is to insert all the record from the input files to the database table using the INSERT statement.
+    ``` sql
+    create table emp(empno int, ename varchar(50));
+    ```
+    
+5. Create a file with below records and push into hadoop location
+    ![image](https://user-images.githubusercontent.com/20516321/217448279-5c2c50a0-a710-4741-ba65-a4a47f29d1cb.png)
+
+
+    ``` sh
+    sqoop export --connect jdbc:mysql://localhost:3306/retail_db --username root -password cloudera --table emp --export-dir /user/cloudera/emp.txt
+    ```
+
+
+    
+6. Verify the data in mysql
+    ``` sql 
+    select * from emp;
+    ```
+    ![image](https://user-images.githubusercontent.com/20516321/217448436-a1e793b8-fd9a-4713-9439-c1d81d005839.png)
+
+    
+7. 
