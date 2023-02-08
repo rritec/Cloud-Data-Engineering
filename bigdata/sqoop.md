@@ -115,6 +115,13 @@ ls -ltrh
   --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt \
   --query "insert into test values(101,'Myla RamReddy');"
   ```
+  ``` sql
+  sqoop eval \
+  --connect jdbc:mysql://localhost:3306/retail_db \
+  --username root \
+  --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt \
+  --query "drop table test;"
+  ```
 4. 
 
 # Sqoop Import
