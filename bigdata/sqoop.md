@@ -229,11 +229,13 @@ ls -ltrh
 2. The target table must exist in the target database. 
 3. The files which are given as input to the Sqoop contain records, which are called rows in table. Those are read and parsed into a set of records
 4. The default operation is to insert all the record from the input files to the database table using the INSERT statement.
+
     ``` sql
     create table emp(empno int, ename varchar(50));
     ```
     
 5. Create a file with below records and push into hadoop location
+
     ![image](https://user-images.githubusercontent.com/20516321/217448279-5c2c50a0-a710-4741-ba65-a4a47f29d1cb.png)
 
 
@@ -244,6 +246,7 @@ ls -ltrh
 
     
 6. Verify the data in mysql
+
     ``` sql 
     select * from emp;
     ```
