@@ -4,7 +4,9 @@
 3. **[Sqoop Import](#Sqoop-Import)**<br>
 4. **[Sqoop Export](#Sqoop-Export)**<br>
 5. **[Import All Tables](#Import-All-Tables)**<br>
-6. 
+6. **[Import table from mysql to hive](#Import-table-from-mysql-to-hive**<br>
+7. 
+8. 
 
 
 
@@ -263,10 +265,26 @@ ls -ltrh
     sqoop import-all-tables --connect jdbc:mysql://localhost:3306/retail_db --username root -password cloudera --warehouse-dir /user/cloudera/import_all_tables/
     ```
 2. If Pk is not available use `--autoreset-to-one-mapper`
-3. need to exclude any tables use `--exclude-tables <tables>`
+3. If we need to exclude any tables use `--exclude-tables <tables>`
 4. observe exported files
     ``` sql
     hdfs dfs -ls -R /user/cloudera/import_all_tables
     ```
     
-5. 
+
+# Import table from mysql to hive
+
+1. Directly import a table from `mysql` to `hive`
+
+    ``` sql
+    sqoop import \
+    --connect jdbc:mysql://localhost:3306/retail_db \
+    --username root \
+    --password cloudera \
+    --table orders \
+    --hive-import \
+    --hive-database rritec_test \
+    --hive-table hive_orders
+    ```
+    
+2. 
