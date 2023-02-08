@@ -3,7 +3,8 @@
 2. **[Sqoop Eval](#Sqoop-Eval)**<br>
 3. **[Sqoop Import](#Sqoop-Import)**<br>
 4. **[Sqoop Export](#Sqoop-Export)**<br>
-5. 
+5. **[Import All Tables](#Import-All-Tables)**<br>
+6. 
 
 
 
@@ -254,3 +255,18 @@ ls -ltrh
 
     
 7. 
+
+# Import All Tables
+
+1. import all tables
+   ``` sql
+    sqoop import-all-tables --connect jdbc:mysql://localhost:3306/retail_db --username root -password cloudera --warehouse-dir /user/cloudera/import_all_tables/
+    ```
+2. If Pk is not available use `--autoreset-to-one-mapper`
+3. need to exclude any tables use `--exclude-tables <tables>`
+4. observe exported files
+    ``` sql
+    hdfs dfs -ls -R /user/cloudera/import_all_tables
+    ```
+    
+5. 
