@@ -4,7 +4,7 @@
 3. **[Sqoop Import](#Sqoop-Import)**<br>
 4. **[Sqoop Export](#Sqoop-Export)**<br>
 5. **[Import All Tables](#Import-All-Tables)**<br>
-6. **[Import table from mysql to hive](#Import-table-from-mysql-to-hive**<br>
+6. **[Import table from mysql to hive](#Import-table-from-mysql-to-hive)**<br>
 7. 
 8. 
 
