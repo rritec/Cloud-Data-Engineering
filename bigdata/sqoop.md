@@ -1,6 +1,6 @@
 # Hadoop(BigData)(sqoop)
 1. **[Sqoop Introduction](#Sqoop-Introduction)**<br>
-2. **[sqoop list-tables(#qoop-list-tables)**<br>3. 
+2. **[sqoop list-tables](#qoop-list-tables)**<br>
 4. **[Sqoop Eval](#Sqoop-Eval)**<br>
 5. **[Sqoop Import](#Sqoop-Import)**<br>
 6. **[Sqoop Export](#Sqoop-Export)**<br>
