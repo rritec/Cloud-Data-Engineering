@@ -1,12 +1,13 @@
 # Hadoop(BigData)(sqoop)
 1. **[Sqoop Introduction](#Sqoop-Introduction)**<br>
-2. **[Sqoop Eval](#Sqoop-Eval)**<br>
-3. **[Sqoop Import](#Sqoop-Import)**<br>
-4. **[Sqoop Export](#Sqoop-Export)**<br>
-5. **[Import All Tables](#Import-All-Tables)**<br>
-6. **[Import table from mysql to hive](#Import-table-from-mysql-to-hive)**<br>
-7. 
-8. 
+2. **[sqoop list-tables(#qoop-list-tables)**<br>3. 
+4. **[Sqoop Eval](#Sqoop-Eval)**<br>
+5. **[Sqoop Import](#Sqoop-Import)**<br>
+6. **[Sqoop Export](#Sqoop-Export)**<br>
+7. **[Import All Tables](#Import-All-Tables)**<br>
+8. **[Import table from mysql to hive](#Import-table-from-mysql-to-hive)**<br>
+9. 
+10. 
 
 
 
@@ -92,6 +93,15 @@ ls -ltrh
   --username root \
   --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt
   ```
+# sqoop list-tables
+1. it is useful to list tables of given database
+        ``` sql
+  sqoop list-databases \
+  --connect jdbc:mysql://localhost:3306 \
+  --username root \
+  --password cloudera
+  ```
+2. 
 # Sqoop Eval
 1. Basically, to quickly run simple SQL queries against a database, we use Sqoop `Eval` tool in Sqoop.
 2. run simple sql query to see 10 records
