@@ -24,6 +24,7 @@
     5. How system knows to create folder in ```/user/hive/warehouse/```
     6. type ```SET;``` observe warehouse location property. using this set property system knows the location of warehouse
     7. The property name is `hive.metastore.warehouse.dir=/user/hive/warehouse`
+    8. creating one database is nothing but creating a folder inside HDFS location `/user/hive/warehouse`
 2. can we run hive commands from terminal
     1. Yes
     2. In normal terminal type ```hive -e "show databases;"```
