@@ -94,17 +94,19 @@ ls -ltrh
   --password-file hdfs:///user/cloudera/rritec/sqoop_password.txt
   ```
 # sqoop list-tables
+
 1. it is useful to list tables of given database
-        ``` sql
+  ``` sql
   sqoop list-databases \
   --connect jdbc:mysql://localhost:3306 \
   --username root \
   --password cloudera
   ```
-2. 
+
 # Sqoop Eval
 1. Basically, to quickly run simple SQL queries against a database, we use Sqoop `Eval` tool in Sqoop.
 2. run simple sql query to see 10 records
+
   ``` sql
   sqoop eval \
   --connect jdbc:mysql://localhost:3306/retail_db \
