@@ -49,10 +49,13 @@
     6. type ```select * from DBS;```
   
         ![image](https://user-images.githubusercontent.com/20516321/214237910-5cba6910-c977-4e6b-b275-c48f4e236c04.png)
-5. `info:`do you know we can clear the `hive cli` by using `ctrl_i` or `!clear`
+5. `info:`do you know we can clear the `hive cli` by using `ctrl +   L` or `!clear`
 
 # Hive Managed Tables
-1. **Create managed table or internal table**
+1. Hive Tables are two types
+    1. Managed Tables or Internal Tables
+    2. External Tables or Non Managed Tables
+3. **Create managed table or internal table**
     1. Open terminal ```type hive```
     2. create table using below script
     
