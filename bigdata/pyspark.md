@@ -102,6 +102,16 @@
 
 4. 
 # Spark Environment Setup
+1. Install Java
+    1. To run PySpark application, you would need Java 8 or later version hence download the Java version from Oracle and install it on your system.
+    2. download [here](https://www.oracle.com/java/technologies/downloads/#license-lightbox)
+    3. Post installation, set JAVA_HOME and PATH variable
+        ``` java        
+            JAVA_HOME = C:\Program Files\Java\jdk1.8.0_201
+            PATH = %JAVA_HOME%\bin
+        ```
+    4. 
+2. 
 # Spark RDD
 # Spark DF
 # Spark SQL
