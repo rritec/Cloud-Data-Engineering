@@ -111,7 +111,20 @@
             PATH = %JAVA_HOME%\bin
         ```
     4. 
-2. 
+2. Install Apache Spark
+    1. Download Apache spark by accessing Spark Download page [here](https://spark.apache.org/downloads.html)
+    2. After download, unzip it
+    3. create spark folder in c deive
+    4. copy all spark files into c:\spark
+        ``` java         
+            SPARK_HOME  = C:\spark
+            HADOOP_HOME = C:\spark
+            PATH=%SPARK_HOME%\bin
+            PATH=%HADOOP_HOME%\bin
+        ```
+3. Install winutils
+    1. Download winutils.exe file from winutils, and copy it to %SPARK_HOME%\bin folder. Winutils are different for each Hadoop version hence download the right version [here](https://github.com/steveloughran/winutils)
+4. 
 # Spark RDD
 # Spark DF
 # Spark SQL
