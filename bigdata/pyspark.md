@@ -126,6 +126,15 @@
     1. Download winutils.exe file from winutils, and copy it to %SPARK_HOME%\bin folder. Winutils are different for each Hadoop version hence download the right version [here](https://github.com/steveloughran/winutils)
 4. 
 # Spark RDD
+1. Resilient Distributed Datasets (RDDs):
+    1. Spark revolves around the concept of a resilient distributed dataset (RDD), which is a fault-tolerant collection of elements that can be operated parallel. 
+    2. There are two ways to create RDDs: 
+        1. parallelizing an existing collection in your driver program
+        2. referencing a dataset in an external storage system, such as a shared filesystem, HDFS, HBase, or any data source offering a Hadoop InputFormat.2.dfd
+2. Reference Spark [doc](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
+3. 
+
+
 # Spark DF
 # Spark SQL
 # Spark Structured Streaming 
