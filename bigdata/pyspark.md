@@ -1,7 +1,7 @@
 # Hadoop(BigData)(PySpark)
 1. **[Spark Introduction](#Spark-Introduction)**<br>
 2. **[Spark Architecture](#Spark-Architecture)**<br>
-4. **[Spark Environment Setup](#Spark-Environment-Setup)**<br>
+4. **[Spark Environment Setup (optional)](#Spark-Environment-Setup-(optional))**<br>
 5. **[Spark RDD](#Spark-RDD)**<br>
 6. **[Spark DF](#Spark-DF)**<br>
 7. **[Spark SQL](#Spark-SQL)**<br>
@@ -101,7 +101,7 @@
     16. 
 
 4. 
-# Spark Environment Setup
+# Spark Environment Setup (optional)
 1. Install Java
     1. To run PySpark application, you would need Java 8 or later version hence download the Java version from Oracle and install it on your system.
     2. download [here](https://www.oracle.com/java/technologies/downloads/#license-lightbox)
