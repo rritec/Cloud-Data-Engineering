@@ -175,7 +175,20 @@
         for i in initRDD1.collect():
             print(i)
         ```
-5. 
+5. Map
+    1. Return a new RDD by applying a function to each element of this RDD.
+    2. run and understand below code.
+        ``` python
+        r =sc.parallelize(range(1,11)).map(lambda i:(i,i*2))
+        r.collect()
+        ```
+    3. 
+7. reduce
+    1. Spark RDD `reduce()` aggregate action function is used to calculate `min`, `max`, and total of elements in a dataset
+    2. RDD `reduce()` function takes function type as an argument and returns the RDD with the same type as input.
+    3. It reduces the elements of the input RDD using the binary operator specified.
+    4. syntax is 
+8. 
 
 
 # Spark DF
