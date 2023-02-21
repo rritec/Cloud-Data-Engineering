@@ -132,7 +132,50 @@
         1. parallelizing an existing collection in your driver program
         2. referencing a dataset in an external storage system, such as a shared filesystem, HDFS, HBase, or any data source offering a Hadoop InputFormat.2.dfd
 2. Reference Spark [doc](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
-3. 
+3. Method 1: Create RDD by parallelizing an existing collection in your driver program
+    1. Open `terminal`
+    2. type `pyspark`
+    3. run below code
+        ``` python
+        data = [1, 2, 3, 4, 5]
+        initRDD = sc.parallelize(data)
+        ```
+    4. Get first item from RDD
+        ``` python       
+        initRDD.first()
+        ```
+    5. Get required number of items
+        ``` python
+        initRDD.take(3)
+        ```
+    6. Get all items
+        ``` python
+        initRDD.collect()
+        ```
+    7. 
+4. Method 2: Create RDD by referencing a dataset in an external storage system
+    1. Run below code
+        ``` python
+        initRDD1=sc.textFile("/user/cloudera/rritec/emp.txt")
+        ```
+    2. Get first item from RDD
+        ``` python       
+        initRDD1.first()
+        ```
+    3. Get required number of items
+        ``` python
+        initRDD1.take(3)
+        ```
+    4. Get all items
+        ``` python
+        initRDD1.collect()
+        ```
+    5. Print readable format by using `for` loop
+        ``` python
+        for i in initRDD1.collect():
+            print(i)
+        ```
+5. 
 
 
 # Spark DF
