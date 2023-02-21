@@ -391,6 +391,12 @@ SET hive.execution.engine=spark
         ```
 5. ..
 
+`Home Work`: 
+1. Explore nohup command 
+2. Explore nohup & command
+3. Explore crontab command
+  
+
 # Partitioning
 
 1. Partitioning is the `optimization technique` in Hive which improves the `performance` significantly
