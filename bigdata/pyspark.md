@@ -187,7 +187,12 @@
     1. Spark RDD `reduce()` aggregate action function is used to calculate `min`, `max`, and total of elements in a dataset
     2. RDD `reduce()` function takes function type as an argument and returns the RDD with the same type as input.
     3. It reduces the elements of the input RDD using the binary operator specified.
-    4. syntax is 
+        ``` python
+        r =sc.parallelize(range(1,4)).reduce(lambda a,b:a+b)
+        r
+        ```
+
+    
 8. 
 
 
