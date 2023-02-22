@@ -193,10 +193,18 @@
         ```
 
     
-8. 
+8. filter
+    1. Return a new RDD containing only the elements that satisfy a predicate
+        ``` python
+        r =sc.parallelize(range(1,11)).filter(lambda a:a % 2 ==0)
+        r.collect()
+        ```
+9. 
 
 
 # Spark DF
+1. dd
+2. ss
 # Spark SQL
 # Spark Structured Streaming 
 # Sqoop Introduction
