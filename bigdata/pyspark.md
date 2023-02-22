@@ -2,12 +2,14 @@
 1. **[Spark Introduction](#Spark-Introduction)**<br>
 2. **[Spark Architecture](#Spark-Architecture)**<br>
 4. **[Spark Environment Setup (optional)](#Spark-Environment-Setup-(optional))**<br>
-5. **[Spark RDD](#Spark-RDD)**<br>
-6. **[Spark DF](#Spark-DF)**<br>
-7. **[Spark SQL](#Spark-SQL)**<br>
-8. **[Spark Structured Streaming ](#Spark-Structured-Streaming)**<br>
-9. 
-10. 
+5. **[Spark RDD with Python](#Spark-RDD-with-Python)**<br>
+6. **[Spark RDD with Scala](#Spark-RDD-with-Scala)**<br>
+7. **[Databricks](#Databricks)**<br>
+8. **[Spark DF](#Spark-DF)**<br>
+9. **[Spark SQL](#Spark-SQL)**<br>
+10. **[Spark Structured Streaming ](#Spark-Structured-Streaming)**<br>
+11. 
+12. 
 
 
 
@@ -202,6 +204,35 @@
 9. 
 
 
+# Spark RDD with Scala
+
+1. we can do almost all activities of `spark with python` in `spark with scala`
+2. open `terminal`
+3. type `spark-shell`
+    1. create RDD
+    ``` scala
+    val data = Array(1, 2, 3, 4, 5)
+    val distData = sc.parallelize(data)
+    ```
+    2. Get first item from RDD
+        ``` python       
+        distData.first()
+        ```
+    3. Get required number of items
+        ``` python
+        distData.take(3)
+        ```
+    4. Get all items
+        ``` python
+        distData.collect()
+        ```
+4. 
+
+# Databricks
+
+1. Create `Databricks Community` login
+2. open the link and follow the instructions https://www.databricks.com/try-databricks#account
+3. 
 # Spark DF
 1. dd
 2. ss
