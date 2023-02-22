@@ -230,9 +230,35 @@
 
 # Databricks
 
-1. Create `Databricks Community` login
-2. open the link and follow the instructions https://www.databricks.com/try-databricks#account
-3. 
+1. Signup
+
+    1. Create `Databricks Community` login
+    2. open the link and follow the instructions https://www.databricks.com/try-databricks#account
+    3. Provide required details
+    4. Click on continue
+    5. click on try community version
+    6. verify the mail
+    7. provide password as you like and please remember it.
+    8. Thats it... we are done.
+
+2. Login
+
+    1. open the link https://community.cloud.databricks.com/login.html
+    2. provide email and password > Click on `Sign in`
+    ![image](https://user-images.githubusercontent.com/20516321/220527727-13334d29-b882-407a-b851-c1493b6e17c8.png)
+
+3. Create Cluster
+    1. click on `create` > Click on `cluster` > provide name `rritecdb`
+        ![image](https://user-images.githubusercontent.com/20516321/220528295-0bf2384f-b575-4561-8e74-3d829eda0ddf.png)
+4. upload files into databricks
+5. See the data of files in DBFS
+6. Create dataframe from csv file
+7. Create dataframe from json file
+8. Create dataframe from csv file using format and load
+9. Create dataframe from multiline json file
+10. export as html
+
+
 # Spark DF
 1. dd
 2. ss
