@@ -127,7 +127,7 @@
 3. Install winutils
     1. Download winutils.exe file from winutils, and copy it to %SPARK_HOME%\bin folder. Winutils are different for each Hadoop version hence download the right version [here](https://github.com/steveloughran/winutils)
 4. 
-# Spark RDD
+# Spark RDD with Python
 1. Resilient Distributed Datasets (RDDs):
     1. Spark revolves around the concept of a resilient distributed dataset (RDD), which is a fault-tolerant collection of elements that can be operated parallel. 
     2. There are two ways to create RDDs: 
