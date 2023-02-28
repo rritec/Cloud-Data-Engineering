@@ -190,7 +190,14 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
      10. PySpark Joins
      11. PySpark Union / UnionAll   
 4. Scopes
-5. Scheduling the jobs
+5. Delta Lake
+    1. ACID Transactions
+    2. Delta Live Tables
+    3. COPY INTO
+    4. Auto Loader
+    5. Convert Parquet or Iceberg data to Delta Lake
+
+6. Scheduling the jobs
 
 
 
