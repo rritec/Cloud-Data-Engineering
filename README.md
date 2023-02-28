@@ -93,6 +93,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 1. DBFS
 2. Compute (creating clusters)
 3. Workspace (Creating notebooks and working with notebooks)
+4. Configure the notebooks in ADF Pipeline
 
 
 
