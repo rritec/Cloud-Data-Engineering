@@ -118,8 +118,8 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 1. DBFS
 2. Compute (creating clusters)
 3. Workspace (Creating notebooks and working with notebooks)
-    1.Spark Introduction
-    2.Spark Architecture
+    1. Spark Introduction
+    2. Spark Architecture
     3.Creating RDDs (Reslient Distributed Dataset)
     4.Creating DataFrame
     5.Reading and writing the Data From semi-structrured formats
