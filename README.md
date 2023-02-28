@@ -114,6 +114,21 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
     5. continue
     6. for loop
 
+# Advanced Python
+1. System_Defined_Functions
+2. LEGB_scope_of_objects_of_functions
+3. Methods
+4. Modules
+5. User_defined_packages
+6. system_defined_packages
+7. Iterables & Iterators
+8. Lambda_Functions
+9. Syntax Errors and Exceptions
+10. List comprehensions
+11. OOPs_Introduction_Classes_Objects_Attributes_Methods
+12. OOPs_Inheritance_and_MRO
+13. OOPs_Encapsulation
+14. OOPs_Polymorphism
 
       
     
