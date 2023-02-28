@@ -82,7 +82,10 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 # BigData
 
 1. Linux commands
-1. hhh
+2. HDFS
+3. Hive
+4. Sqoop
+5. Pyspark
 
 
 
