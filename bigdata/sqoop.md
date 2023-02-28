@@ -97,8 +97,8 @@ ls -ltrh
 
 1. it is useful to list tables of given database
   ``` sql
-  sqoop list-databases \
-  --connect jdbc:mysql://localhost:3306 \
+  sqoop list-tables \
+  --connect jdbc:mysql://localhost:3306/retail_db \
   --username root \
   --password cloudera
   ```
