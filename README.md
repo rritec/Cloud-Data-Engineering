@@ -81,52 +81,38 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Branching and chaining activities
 
 # Python
-
-    - ETL Introduction
-    - How to write Python code in normal notepad
-
-How to write Python code in spyder
-
-How to write Python code in Visual Studio Code
-
-How to write Python code in in jupyter
-
-Different Python Objects
-
-int
-float
-complex
-str
-bool
-range
-DataFrame
-..etc
-Data Structures
-
-list
-Dict
-Tuple
-Set
-Mutable Vs Immutable
-
-Read items of str /list/Dict/Tuple/Set/range ..etc
-
-index
-slice
-fancy
-Operators
-
-Comparision(>,<,>=,<=,...)
-Logical/bool(and/or/not)
-Numpy logical (logical_and/logical_or/logical_not)
-Control Flows
-
-input
-if elif elif ... else
-while loop
-break
-cotinue
-for loop
+1. How to write Python code in normal notepad
+2. How to write Python code in spyder
+3. How to write Python code in Visual Studio Code
+4. How to write Python code in in jupyter
+5. Different Python Objects
+    1.int
+    2.float
+    3.complex
+    4.str
+    5.bool
+    6.rangeData Structures
+6. Data Structures
+    1.list
+    2.Dict
+    3.Tuple
+    4.Set
+    5.Mutable Vs Immutable
+7. Read items of str /list/Dict/Tuple/Set/range ..etc
+    1.index
+    2.slice
+    3.fancy
+8. Operators
+    1.Comparision(>,<,>=,<=,...)
+    2.Logical/bool(and/or/not)
+    3.Numpy logical (logical_and/logical_or/logical_not)
+9. Control Flows
+    1.input
+    2.if elif elif ... else
+    3.while loop
+    4.break
+    5.continue
+    6.for loop
 
 
       
