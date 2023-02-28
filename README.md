@@ -81,6 +81,8 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Branching and chaining activities
 
 # Python
+
+    - ETL Introduction
     - How to write Python code in normal notepad
 
 How to write Python code in spyder
