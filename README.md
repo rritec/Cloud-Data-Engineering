@@ -81,7 +81,52 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Branching and chaining activities
 
 # Python
-      datatypes
+    - How to write Python code in normal notepad
+
+How to write Python code in spyder
+
+How to write Python code in Visual Studio Code
+
+How to write Python code in in jupyter
+
+Different Python Objects
+
+int
+float
+complex
+str
+bool
+range
+DataFrame
+..etc
+Data Structures
+
+list
+Dict
+Tuple
+Set
+Mutable Vs Immutable
+
+Read items of str /list/Dict/Tuple/Set/range ..etc
+
+index
+slice
+fancy
+Operators
+
+Comparision(>,<,>=,<=,...)
+Logical/bool(and/or/not)
+Numpy logical (logical_and/logical_or/logical_not)
+Control Flows
+
+input
+if elif elif ... else
+while loop
+break
+cotinue
+for loop
+
+
       
     
 # BigData
