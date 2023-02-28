@@ -120,9 +120,9 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 3. Workspace (Creating notebooks and working with notebooks)
     1. Spark Introduction
     2. Spark Architecture
-    3.Creating RDDs (Reslient Distributed Dataset)
-    4.Creating DataFrame
-    5.Reading and writing the Data From semi-structrured formats
+    3. Creating RDDs (Reslient Distributed Dataset)
+    4. Creating DataFrame
+    5. Reading and writing the Data From semi-structrured formats
         1. Reading JSON Files SingleLine/ MultiLine / Complex
         2. Reading XML Files
         3. Reading CSV / TSV Files
