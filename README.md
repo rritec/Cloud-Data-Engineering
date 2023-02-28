@@ -81,8 +81,8 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Branching and chaining activities
 
 # Python
-
-    - Data types
+      datatypes
+      
     
 # BigData
 
