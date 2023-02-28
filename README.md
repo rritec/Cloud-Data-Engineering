@@ -126,16 +126,16 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
         1. Reading JSON Files SingleLine/ MultiLine / Complex
         2. Reading XML Files
         3. Reading CSV / TSV Files
-    6.Reading and writing the Data From structrured formats
-        1.Reading data from MySql / SQL SERVER / Oracle etc..
-    7.Reading and writing the Data From BIG DATA formats
-        1.Parquet
-        2.ORC
-        3.AVRO
-     8.Reading and writing the Data From AWS S3
-     9.Reading and writing the Data From Azure Blob
-     10.PySpark Joins
-     11.PySpark Union / UnionAll   
+    6. Reading and writing the Data From structrured formats
+        1. Reading data from MySql / SQL SERVER / Oracle etc..
+    7. Reading and writing the Data From BIG DATA formats
+        1. Parquet
+        2. ORC
+        3. AVRO
+     8. Reading and writing the Data From AWS S3
+     9. Reading and writing the Data From Azure Blob
+     10. PySpark Joins
+     11. PySpark Union / UnionAll   
 4. Scopes
 5. Scheduling the jobs
 
