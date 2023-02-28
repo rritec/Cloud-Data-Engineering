@@ -160,10 +160,9 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
     3. Spark Environment Setup (optional)
     4. Spark RDD with Python
     5. Spark RDD with Scala
-    6. Databricks
-    7. Spark DF
-    8. Spark SQL
-    9. Spark Structured Streaming
+    6. Spark DF
+    7. Spark SQL
+    8. Spark Structured Streaming
 
 
 # DataBricks
