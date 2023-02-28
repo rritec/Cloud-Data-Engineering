@@ -6,6 +6,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 
 ----
 1. **Introduction**
+
     - ETL Introduction
     - ELT Introduction
     - Different ETL Tools
@@ -76,8 +77,16 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Incrementally copy new files based on time partitioned file name
 
  2. **Logic Apps**
+ 
       - Branching and chaining activities
-       
+# BigData
+
+1. Linux commands
+1. hhh
+
+
+
+
 
 
 
