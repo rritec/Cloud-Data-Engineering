@@ -94,23 +94,23 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
     8. Bucketing
 
 4. Sqoop
-    1.Sqoop Introduction
-    2.sqoop list-tables
-    3.Sqoop Eval
-    4.Sqoop Import
-    5.Sqoop Export
-    6.Import All Tables
-    7.Import table from mysql to hive
+    1. Sqoop Introduction
+    2. sqoop list-tables
+    3. Sqoop Eval
+    4. Sqoop Import
+    5. Sqoop Export
+    6. Import All Tables
+    7. Import table from mysql to hive
 5. Pyspark
-    1.Spark Introduction
-    2.Spark Architecture
-    3.Spark Environment Setup (optional)
-    4.Spark RDD with Python
-    5.Spark RDD with Scala
-    6.Databricks
-    7.Spark DF
-    8.Spark SQL
-    9.Spark Structured Streaming
+    1. Spark Introduction
+    2. Spark Architecture
+    3. Spark Environment Setup (optional)
+    4. Spark RDD with Python
+    5. Spark RDD with Scala
+    6. Databricks
+    7. Spark DF
+    8. Spark SQL
+    9. Spark Structured Streaming
 
 
 # DataBricks
