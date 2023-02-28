@@ -79,6 +79,11 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
  2. **Logic Apps**
  
       - Branching and chaining activities
+
+# Python
+
+    - Data types
+    
 # BigData
 
 1. Linux commands
