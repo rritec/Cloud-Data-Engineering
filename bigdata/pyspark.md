@@ -262,7 +262,8 @@
 # Spark DF
 1. A DataFrame is a data structure that organizes data into a 2-dimensional table of rows and columns, much like a spreadsheet.
 2. DataFrames are one of the most common data structures used in modern data analytics because they are a flexible and intuitive way of storing and working with data
-3. Creating dataframe from json file
+3. Download or copy sample data from [spark github](https://github.com/apache/spark/tree/master/examples/src/main/resources)
+4. Creating dataframe from json file
 
     ``` sql
     from pyspark.sql import SQLContext
