@@ -282,6 +282,11 @@ ls -ltrh
     ``` sql
     hdfs dfs -ls -R /user/cloudera/import_all_tables
     ```
+5. Import tables by excludin few tables and autoreset-to-one-mapper
+   ``` sql
+    sqoop import-all-tables --connect jdbc:mysql://localhost:3306/retail_db --username root -password cloudera --warehouse-dir /user/cloudera/import_all_tables/ --autoreset-to-one-mapper --exclude-tables categories,customers,departments,order_items
+    ```
+    
     
 
 # Import table from mysql to hive
