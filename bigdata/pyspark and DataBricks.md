@@ -3,7 +3,7 @@
 2. **[Spark Architecture](#Spark-Architecture)**<br>
 4. **[Spark Environment Setup (optional)](#Spark-Environment-Setup-(optional))**<br>
 5. **[Spark RDD with Python](#Spark-RDD-with-Python)**<br>
-6. **[Spark RDD with Scala](#Spark-RDD-with-Scala)**<br>7. 
+6. **[Spark RDD with Scala](#Spark-RDD-with-Scala)**<br>
 8. **[Spark DF](#Spark-DF)**<br>
 9. **[Databricks](#Databricks)**<br>
 10. 
