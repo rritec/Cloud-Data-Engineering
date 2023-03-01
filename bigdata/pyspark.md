@@ -260,8 +260,49 @@
 
 
 # Spark DF
-1. dd
-2. ss
+1. A DataFrame is a data structure that organizes data into a 2-dimensional table of rows and columns, much like a spreadsheet.
+2. DataFrames are one of the most common data structures used in modern data analytics because they are a flexible and intuitive way of storing and working with data
+3. Creating dataframe from json file
+
+    ``` sql
+    from pyspark.sql import SQLContext
+    sqlContext = SQLContext(sc)
+    df = sqlContext.read.json("/user/cloudera/rritec/people.json")    
+    # Displays the content of the DataFrame to stdout
+    df.show()
+    ```
+4. DataFrame Operations
+    1. Show the content of the DataFrame
+        ``` sql
+        df.show()
+        ```
+    2. Print the schema in a tree format
+        ``` sql
+        df.printSchema()
+        ```
+    3. Select only the "name" column
+        ``` sql
+        df.select("name").show()
+        ```
+    4. Select everybody, but increment the age by 1
+        ``` sql
+        df.select(df['name'], df['age'] + 1).show()
+        ```
+    5. Select people older than 21
+        ``` sql
+        df.filter(df['age'] > 21).show()
+        ```
+    6. Count people by age
+        ``` sql
+        df.show()
+        ```
+    7. Show the content of the DataFrame
+        ``` sql
+        df.groupBy("age").count().show()
+        ```
+        
+    8. 
+5. 
 # Spark SQL
 # Spark Structured Streaming 
 
