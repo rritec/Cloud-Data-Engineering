@@ -1,0 +1,24 @@
+[
+   {
+      "name":"Ram",
+      "Education":[
+         {
+            "Qualification":"BE",
+            "year":2011
+         },
+         {
+            "Qualification":"ME",
+            "year":2013
+         }
+      ]
+   },
+   {
+      "name":"Rohit",
+      "Education":[
+         {
+            "Qualification":"BE",
+            "year":2010
+         }
+      ]
+   }
+]
