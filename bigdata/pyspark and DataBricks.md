@@ -297,11 +297,27 @@
     1. click on `create` > Click on `cluster` > provide name `rritecdb`
         ![image](https://user-images.githubusercontent.com/20516321/220528295-0bf2384f-b575-4561-8e74-3d829eda0ddf.png)
 4. upload files into databricks
-5. See the data of files in DBFS
-6. Create dataframe from csv file
-7. Create dataframe from json file
-8. Create dataframe from csv file using format and load
-9. Create dataframe from multiline json file
-10. export as html
+    1. Click on `data` > under `upload file` > drag and drop file from rritec materials labdata/reatail_db_orders/part-00000
+
+        ![image](https://user-images.githubusercontent.com/20516321/222360084-1a8ab005-c2d4-4721-8a04-207e6f917468.png)
+
+    2.  Copy the path `/FileStore/tables/part_00000-2`, it is needed in next exercise
+
+6. See the data of files in DBFS
+
+    1. Click on **Create** > Click on **Notebook** > Name it as **Create Dataframes** > Click on **Create**
+    2. type as for below
+        ``` fs
+        %fs head /FileStore/tables/part_00000-2
+        ```
+        ![image](https://user-images.githubusercontent.com/20516321/222361426-8b3fd531-c2ae-49a7-9b36-c97015c30f71.png)
+
+        
+    3. 
+7. Create dataframe from csv file
+8. Create dataframe from json file
+9. Create dataframe from csv file using format and load
+10. Create dataframe from multiline json file
+11. export as html
 
 
