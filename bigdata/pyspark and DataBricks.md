@@ -315,9 +315,135 @@
         
     3. 
 7. Create dataframe from csv file
+    1. Create dataframe
+        ``` sql
+        orders_df = (spark.read.csv("/FileStore/tables/part_00000-2")
+             .toDF("order_id", "order_date", "order_customer_id", "order_status")
+            )
+        ```
+    2. observe type
+        ``` sql
+        type(orders_df)
+        ```
+    3. See some data
+        ``` sql
+        orders_df.show()
+        ```
+    4. 
 8. Create dataframe from json file
-9. Create dataframe from csv file using format and load
-10. Create dataframe from multiline json file
-11. export as html
+    1. upload order json file
+        ![image](https://user-images.githubusercontent.com/20516321/222363656-9aee863c-a7d3-46d8-8837-eba913b6602e.png)
+
+    2. Observe data
+        ``` fs
+        %fs head /FileStore/tables/part_r_00000_990f5773_9005_49ba_b670_631286032674-1
+        ```
+    3. Create dataframe
+        ``` sql
+        orders_json = spark.read.json("/FileStore/tables/part_r_00000_990f5773_9005_49ba_b670_631286032674-1")
+        ```
+    2. observe type
+        ``` sql
+        type(orders_json)
+        ```
+    3. See some data
+        ``` sql
+        orders_json.show()
+        ```
+    4. 
+
+9. Create dataframe from json file using format and load
+    3. Create dataframe
+        ``` sql
+        orders_df_json = (spark.read.format("json")
+               .load("/FileStore/tables/part_r_00000_990f5773_9005_49ba_b670_631286032674-1")
+              )
+        ```
+    2. observe type
+        ``` sql
+        type(orders_df_json)
+        ```
+    3. See some data
+        ``` sql
+        orders_df_json.show(3)
+        ```
+    4. 
+10. DF Creation by enabling the header
+    1. upload employee csv file       
+
+    2. Observe data
+        ``` fs
+        %fs head  /FileStore/tables/nov2022/emp_csv/employee.csv
+        ```
+    3. Create dataframe
+        ``` sql
+        emp_df = (spark
+          .read
+          .format("csv")
+          .option("header", "true")
+          .load("/FileStore/tables/nov2022/emp_csv/employee.csv")
+          )
+        ```
+    2. observe type
+        ``` sql
+        type(emp_df)
+        ```
+    3. See some data
+        ``` sql
+        emp_df.show(3)
+        ```
+    4. 
+11. DF Creation by using pipe (|) delimited data
+    1. upload departments csv file       
+
+    2. Observe data
+        ``` fs
+        %fs head /FileStore/tables/nov2022/dept_pipe/departments
+        ```
+    3. Create dataframe
+        ``` sql
+        dept_df = (spark
+           .read
+           .format("csv")
+           .option("header", "true")
+           .option("delimiter", "|")
+           .load("/FileStore/tables/nov2022/dept_pipe/departments")
+           )
+        ```
+    2. observe type
+        ``` sql
+        type(dept_df)
+        ```
+    3. See some data
+        ``` sql
+        dept_df.show(3)
+        ```
+    4. 
+12. Create dataframe from multiline json file
+    1. upload students_nested_json_data file       
+
+    2. Observe data
+        ``` fs
+        %fs head /FileStore/tables/nov2022/students_nested_json/students_nested_json_data.json
+        ```
+    3. Create dataframe
+        ``` sql
+        stu_df = (spark
+          .read
+          .format("json")
+          .option("multiline", "true")
+          .load("/FileStore/tables/nov2022/students_nested_json/students_nested_json_data.json")
+           )
+        ```
+    2. observe type
+        ``` sql
+        type(stu_df)
+        ```
+    3. See some data
+        ``` sql
+        stu_df.show(3)
+        ```
+    4. 
+13. observe all the options and find out how to export as html
 
 
