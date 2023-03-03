@@ -13,6 +13,9 @@
 14. **[Dataframes](#Dataframes)**<br>
 15. **[Dataframe Operations](#Dataframe-Operations)**<br>
         15.1. **[Word Count](#Word-Count)**<br>
+        15.1. **[Explode Example 1](#Explode-Example-1)**<br>
+        15.1. **[Explode Example 2](#Explode-Example-1)**<br>
+        17.Explode - Example 1
 16. 
 17. 
 18. 
@@ -538,7 +541,7 @@ sorted_df = agg_df.orderBy(desc("count")).limit(5)
 display(sorted_df)
 ```
 9. 
-## Explode - Example 1
+## Explode Example 1
 1. Observe Data
 
 ``` python
@@ -566,7 +569,7 @@ display(final_df)
 ```
 
 3. 
-## Explode - Example 2
+## Explode Example 2
 1. observe data
 ``` python
 %fs head  /FileStore/tables/dec2022_data/students_nested_json_data.json
