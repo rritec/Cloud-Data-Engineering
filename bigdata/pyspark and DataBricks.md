@@ -421,7 +421,7 @@
         ``` sql
         emp_df.show(3)
         ```
-    4. 
+    4
 5. DF Creation by using pipe (|) delimited data
     1. upload departments csv file       
 
