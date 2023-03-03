@@ -353,6 +353,7 @@
     4. 
 
 9. Create dataframe from json file using format and load
+
     3. Create dataframe
         ``` sql
         orders_df_json = (spark.read.format("json")
