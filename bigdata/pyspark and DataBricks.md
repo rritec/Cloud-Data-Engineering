@@ -487,12 +487,13 @@
 4. Load file and observe data
 
        ``` pyspark
-       df = (spark
-      .read
-      .format("text")
-      .load("/FileStore/tables/sample.txt")
-      .toDF("lines")
-     )```
+              df = (spark
+             .read
+             .format("text")
+             .load("/FileStore/tables/sample.txt")
+             .toDF("lines")
+            ) 
+       ```
      
      ```pysaprk
      display(df)
