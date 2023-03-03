@@ -12,7 +12,7 @@
 13. **[DBFS](#DBFS)**<br>
 14. **[Dataframes](#Dataframes)**<br>
 15. **[Dataframe Operations](#Dataframe-Operations)**<br>
-        * [Dataframe Operations1](#Dataframe-Operations1)<br>
+        **[Word Count](#Word-Count)**<br>
 16. 
 17. 
 18. 
@@ -476,4 +476,25 @@
         ```
     4. 
 7. observe all the options and find out how to export as html
-## Dataframe Operations1
+# Dataframe Operations
+## Word Count
+1. upload the file `Cloud-Data-Engineering/labdata/sample.txt`
+2. Copy DBFS path
+3. observe contents of file
+       ``` fs
+       %fs head /FileStore/tables/sample.txt
+       ```
+4. Load file and observe data
+
+       ``` pyspark
+       df = (spark
+      .read
+      .format("text")
+      .load("/FileStore/tables/sample.txt")
+      .toDF("lines")
+     )```
+     
+     ```pysaprk
+     display(df)
+     ```
+5. 
