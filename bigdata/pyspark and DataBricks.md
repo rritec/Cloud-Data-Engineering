@@ -297,7 +297,7 @@
     1. click on `create` > Click on `cluster` > provide name `rritecdb`
         ![image](https://user-images.githubusercontent.com/20516321/220528295-0bf2384f-b575-4561-8e74-3d829eda0ddf.png)
 4. upload files into databricks
-    1. Click on `data` > under `upload file` > drag and drop file from rritec materials labdata/reatail_db_orders/part-00000
+    1. Click on `data` > under `upload file` > drag and drop file from rritec materials labdata/reatail_db/orders/part-00000
 
         ![image](https://user-images.githubusercontent.com/20516321/222360084-1a8ab005-c2d4-4721-8a04-207e6f917468.png)
 
