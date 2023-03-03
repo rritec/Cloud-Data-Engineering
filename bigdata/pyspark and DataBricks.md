@@ -14,8 +14,8 @@
 15. **[Dataframe Operations](#Dataframe-Operations)**<br>
         15.1. **[Word Count](#Word-Count)**<br>
         15.1. **[Explode Example 1](#Explode-Example-1)**<br>
-        15.1. **[Explode Example 2](#Explode-Example-1)**<br>
-        17.Explode - Example 1
+        15.1. **[Explode Example 2](#Explode-Example-2)**<br>
+        
 16. 
 17. 
 18. 
