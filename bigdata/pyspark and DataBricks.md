@@ -11,9 +11,11 @@
 12. **[Databricks Cluster](#Databricks-Cluster)**<br>
 13. **[DBFS](#DBFS)**<br>
 14. **[Dataframes](#Dataframes)**<br>
-15. 
+15. **[Dataframe Operations](#Dataframe-Operations)**<br>
+        * [Dataframe Operations1](#Dataframe-Operations1)<br>
 16. 
 17. 
+18. 
 
 
 
@@ -474,5 +476,4 @@
         ```
     4. 
 7. observe all the options and find out how to export as html
-
-
+## Dataframe Operations1
