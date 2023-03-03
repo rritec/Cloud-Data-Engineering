@@ -5,10 +5,15 @@
 5. **[Spark RDD with Python](#Spark-RDD-with-Python)**<br>
 6. **[Spark RDD with Scala](#Spark-RDD-with-Scala)**<br>
 8. **[Spark DF](#Spark-DF)**<br>
-9. **[Databricks](#Databricks)**<br>
-10. 
-11. 
-12. 
+9. **[Databricks Introduction](#Databricks-Introduction)**<br>
+10. **[Databricks Signup](#Databricks-Signup)**<br>
+11. **[Databricks Login](#Databricks-Login)**<br>
+12. **[Databricks Cluster](#Databricks-Cluster)**<br>
+13. **[DBFS](#DBFS)**<br>
+14. **[Dataframes](#Dataframes)**<br>
+15. 
+16. 
+17. 
 
 
 
@@ -274,36 +279,57 @@
         
     8. 
 5. 
-# Databricks
+# Databricks Introduction
 
-1. Signup
+1. The Databricks Lakehouse Platform provides a unified set of tools for building, deploying, sharing, and maintaining enterprise-grade data solutions at scale.
+2. Databricks integrates with cloud storage and security in your cloud account, and manages and deploys cloud infrastructure on your behalf.
+3. Databricks is used to process, store, clean, share, analyze, model, and monetize their datasets with solutions from BI to machine learning
+4. common use cases for Databricks
+    1. Build an enterprise data lakehouse. Refer [more](https://docs.databricks.com/lakehouse/index.html)
+    2. ETL and data engineering
+    3. Machine learning, AI, and data science
+    4. Data warehousing, analytics, and BI
+    5. Data governance and secure data sharing
+    6. DevOps, CI/CD, and task orchestration
+    7. Real-time and streaming analytics
+5. Refer more introduction [here](https://docs.databricks.com/introduction/index.html)
 
-    1. Create `Databricks Community` login
-    2. open the link and follow the instructions https://www.databricks.com/try-databricks#account
-    3. Provide required details
-    4. Click on continue
-    5. click on try community version
-    6. verify the mail
-    7. provide password as you like and please remember it.
-    8. Thats it... we are done.
 
-2. Login
 
-    1. open the link https://community.cloud.databricks.com/login.html
-    2. provide email and password > Click on `Sign in`
-    ![image](https://user-images.githubusercontent.com/20516321/220527727-13334d29-b882-407a-b851-c1493b6e17c8.png)
 
-3. Create Cluster
+# Databricks Signup
+
+1. Create `Databricks Community` login
+2. open the link and follow the instructions https://www.databricks.com/try-databricks#account
+3. Provide required details
+4. Click on continue
+5. click on try community version
+6. verify the mail
+7. provide password as you like and please remember it.
+8. Thats it... we are done.
+
+# Databricks Login
+
+1. open the link https://community.cloud.databricks.com/login.html
+2. provide email and password > Click on `Sign in`
+![image](https://user-images.githubusercontent.com/20516321/220527727-13334d29-b882-407a-b851-c1493b6e17c8.png)
+
+# Databricks Cluster
+
     1. click on `create` > Click on `cluster` > provide name `rritecdb`
         ![image](https://user-images.githubusercontent.com/20516321/220528295-0bf2384f-b575-4561-8e74-3d829eda0ddf.png)
-4. upload files into databricks
+
+# DBFS
+
+1.Upload files into databricks
+
     1. Click on `data` > under `upload file` > drag and drop file from rritec materials labdata/reatail_db/orders/part-00000
 
         ![image](https://user-images.githubusercontent.com/20516321/222360084-1a8ab005-c2d4-4721-8a04-207e6f917468.png)
 
     2.  Copy the path `/FileStore/tables/part_00000-2`, it is needed in next exercise
 
-6. See the data of files in DBFS
+2. See the data of files in DBFS
 
     1. Click on **Create** > Click on **Notebook** > Name it as **Create Dataframes** > Click on **Create**
     2. type as for below
@@ -314,7 +340,9 @@
 
         
     3. 
-7. Create dataframe from csv file
+# Dataframes
+
+1. Create dataframe from csv file
     1. Create dataframe
         ``` sql
         orders_df = (spark.read.csv("/FileStore/tables/part_00000-2")
@@ -330,7 +358,7 @@
         orders_df.show()
         ```
     4. 
-8. Create dataframe from json file
+2. Create dataframe from json file
     1. upload order json file
         ![image](https://user-images.githubusercontent.com/20516321/222363656-9aee863c-a7d3-46d8-8837-eba913b6602e.png)
 
@@ -352,9 +380,9 @@
         ```
     4. 
 
-9. Create dataframe from json file using format and load
+3. Create dataframe from json file using format and load
 
-    3. Create dataframe
+    1. Create dataframe
         ``` sql
         orders_df_json = (spark.read.format("json")
                .load("/FileStore/tables/part_r_00000_990f5773_9005_49ba_b670_631286032674-1")
@@ -369,7 +397,7 @@
         orders_df_json.show(3)
         ```
     4. 
-10. DF Creation by enabling the header
+4. DF Creation by enabling the header
     1. upload employee csv file       
 
     2. Observe data
@@ -394,7 +422,7 @@
         emp_df.show(3)
         ```
     4. 
-11. DF Creation by using pipe (|) delimited data
+5. DF Creation by using pipe (|) delimited data
     1. upload departments csv file       
 
     2. Observe data
@@ -420,7 +448,7 @@
         dept_df.show(3)
         ```
     4. 
-12. Create dataframe from multiline json file
+6. Create dataframe from multiline json file
     1. upload students_nested_json_data file       
 
     2. Observe data
@@ -445,6 +473,6 @@
         stu_df.show(3)
         ```
     4. 
-13. observe all the options and find out how to export as html
+7. observe all the options and find out how to export as html
 
 
