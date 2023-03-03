@@ -12,7 +12,7 @@
 13. **[DBFS](#DBFS)**<br>
 14. **[Dataframes](#Dataframes)**<br>
 15. **[Dataframe Operations](#Dataframe-Operations)**<br>
-        **15.1. [Word Count](#Word-Count)**<br>
+        15.1. **[Word Count](#Word-Count)**<br>
 16. 
 17. 
 18. 
