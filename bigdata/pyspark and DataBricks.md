@@ -321,7 +321,7 @@
 
 # DBFS
 
-1.Upload files into databricks
+1. Upload files into databricks
 
     1. Click on `data` > under `upload file` > drag and drop file from rritec materials labdata/reatail_db/orders/part-00000
 
