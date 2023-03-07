@@ -846,5 +846,49 @@ display(orders_df)
 ```pyspark
 orders_df.printSchema()
 ```
-
+# Joining 2 dataframes
+1. already we have `dept_df`
+``` pysaprk
+display(dept_df)
+```
+2. create `emp_df`
+``` pyspark
+%fs head /FileStore/tables/rritec/output/emp_csv_latest/employee.csv
+```
+``` pyspark
+emp_df = (spark
+          .read
+          .format("csv")
+          .option("header", "true")
+          .load("/FileStore/tables/rritec/output/emp_csv_latest/employee.csv"))
+```
+``` pyspark
+display(emp_df)
+```
+``` pyspark
+joined_df = dept_df.join(emp_df, emp_df.ID == dept_df.EmployeeID)
+```
+``` pyspark
+display(joined_df)
+```
+3. 
+# dropping the columns
+1. drop `ID` column
+``` pyspark
+display(joined_df.drop("ID"))
+```
+2. observe data
+``` pysaprk
+display(joined_df)
+```
+3. create final_df
+``` pysaprk
+final_df = joined_df.drop("DepartmentName", "Client", "OnboardedDate")
+```
+``` pysaprk
+display(final_df)
+```
+``` pysaprk
+display(joined_df)
+```
 
