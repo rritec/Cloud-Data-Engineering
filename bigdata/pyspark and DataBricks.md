@@ -16,9 +16,14 @@
         15.1. **[Explode Example 1](#Explode-Example-1)**<br>
         15.1. **[Explode Example 2](#Explode-Example-2)**<br>
         
-16. 
-17. 
-18. 
+16. **[Write Mode](#Write-Mode)**<br>
+17. **[Read Modes](#Read-Modes)**<br>
+18. **[custom schema by using Struct Type](#custom-schema-by-using-Struct-Type)**<br>
+19. **[custom schema by using DDL String](#custom-schema-by-using-DDL-String)**<br>
+20. **[Joining 2 dataframes](#Joining-2-dataframes)**<br>
+21. **[dropping the columns](#dropping-the-columns)**<br>
+22. 
+23. 
 
 
 
@@ -788,7 +793,7 @@ display(dept_df)
 ``` pyspark
 dept_df.printSchema()
 ```
-# Creating the custom schema by using Struct Type
+# Custom schema by using Struct Type
 1. import required functions and creat schema
 ``` pyspark
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DateType
@@ -823,7 +828,7 @@ display(dept_df)
 ``` pyspark
 dept_df.printSchema()
 ```
-# Creating Custom Schema by using DDL String
+# Custom Schema by using DDL String
 
 1. observe the content
 ``` pysaprk
