@@ -453,7 +453,7 @@
         dept_df.show(3)
         ```
     4. 
-6. Create dataframe from multiline json file
+6. Create dataframe from multiline/nested json file
     1. upload students_nested_json_data file       
 
     2. Observe data
@@ -614,3 +614,237 @@ display(final_df)
 final_df.printSchema()
 ```
 7. 
+
+# Write Mode
+
+1. Saving the content of dataframe into external storage.
+``` pyspark
+df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data")
+```
+``` pyspark
+%fs ls /FileStore/tables/rritec/output/final_student_data
+```
+2. Copy the json file dbfs path and observe contents
+``` pyspark
+%fs head dbfs:/FileStore/tables/rritec/output/final_student_data/part-00000-tid-766577745249667303-c54f173e-99aa-4f7b-b754-2a8a092de2a9-4-1-c000.json
+```
+3. What happenes if we write once again
+
+``` pyspark
+df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data")
+```
+## Write Modes - error / errorifexists
+1. Add `error` mode and observe it
+``` pyspark
+(df
+ .write
+ .format("json")
+ .mode("error")
+ .save("/FileStore/tables/rritec/output/final_student_data"))
+ ```
+2. Add `errorifexists` mode and observe it
+``` pyspark
+(df
+ .write
+ .format("json")
+ .mode("errorifexists")
+ .save("/FileStore/tables/rritec/output/final_student_data"))
+ ```
+## Write modes - ignore
+1. Add `error` mode and observe it
+``` pyspark
+(df
+ .write
+ .format("json")
+ .mode("ignore")
+ .save("/FileStore/tables/rritec/output/final_student_data"))
+ ```
+ ## Write modes - append
+1. Add `error` mode and observe it
+``` pyspark
+(df
+ .write
+ .format("json")
+ .mode("append")
+ .save("/FileStore/tables/rritec/output/final_student_data"))
+ ```
+ ``` pyspark
+ %fs ls /FileStore/tables/rritec/output/final_student_data
+ ```
+ ``` pyspark
+ %fs head dbfs:/FileStore/tables/rritec/output/final_student_data/part-00000-tid-7383138309953482542-3d9411b4-16ae-45e7-afbb-843a0c80f621-5-1-c000.json
+ ```
+  ``` pyspark
+ %fs head dbfs:/FileStore/tables/rritec/output/final_student_data/part-00000-tid-766577745249667303-c54f173e-99aa-4f7b-b754-2a8a092de2a9-4-1-c000.json
+ ```
+ ## Write modes - overwrite
+1. Add `error` mode and observe it
+``` pyspark
+(df
+ .write
+ .format("json")
+ .mode("overwrite")
+ .save("/FileStore/tables/rritec/output/final_student_data"))
+ ```
+``` pyspark
+ %fs ls /FileStore/tables/rritec/output/final_student_data
+ ```
+## Adding header when writing the DF
+1. Write into csv file
+``` pyspark
+(final_df
+ .write
+ .format("csv")
+ .mode("overwrite")
+ .option("header", "true")
+ .save("/FileStore/tables/rritec/output/final_student_csv_data")
+ )
+```
+``` pyspark
+%fs ls /FileStore/tables/rritec/output/final_student_csv_data
+```
+```pysaprk
+%fs head dbfs:/FileStore/tables/rritec/output/final_student_csv_data/part-00000-tid-4721931960538371143-1b0b3268-03e9-4725-9d83-269e16786577-8-1-c000.csv
+```
+# Read Modes
+1. upload and observe the data
+``` pyspark
+%fs head /FileStore/tables/rritec/output/ford.json
+```
+2. create dataframe
+``` pyspark
+ford_df = (spark
+           .read
+           .format("json")
+           .load("/FileStore/tables/rritec/output/ford.json"))
+display(ford_df)
+```
+3. Observe number of records
+``` pyspark
+ford_df.count()
+```
+## Read Modes - PERMISSIVE
+1. default mode is `PERMISSIVE`
+``` pyspark
+ford_df = (spark
+           .read
+           .format("json")
+           .option("mode","PERMISSIVE")
+           .load("/FileStore/tables/rritec/output/ford.json"))
+display(ford_df)
+```
+## Read Modes - DROPMALFORMED
+``` pyspark
+ford_df = (spark
+           .read
+           .format("json")
+           .option("mode","DROPMALFORMED")
+           .load("/FileStore/tables/rritec/output/ford.json"))
+display(ford_df)
+```
+``` pyspark
+ford_df.count()
+```
+## Read Modes - FAILFAST
+1. run below command and observe the error message
+``` pyspark
+ford_df = (spark
+           .read
+           .format("json")
+           .option("mode","FAILFAST")
+           .load("/FileStore/tables/rritec/output/ford.json"))
+```
+## badRecordsPath
+1. Create bad records in one separate file
+``` pyspark
+ford_df = (spark
+           .read
+           .format("json")
+           .option("badRecordsPath", "/FileStore/tables/rritec/output/ford_corrupted_records")
+           .load("/FileStore/tables/rritec/output/ford.json"))
+display(ford_df)
+```
+2. observe bad records
+``` pyspark
+%fs ls /FileStore/tables/rritec/output/ford_corrupted_records
+```
+## inferSchema
+
+1. observe data
+``` pyspark 
+%fs head /FileStore/tables/rritec/output/department.csv
+```
+``` pyspark
+dept_df = (spark
+           .read
+           .format("csv")
+           .option("header", "true")
+           .option("inferSchema", "true")
+           .load("/FileStore/tables/rritec/output/department.csv"))
+```
+``` pyspark
+display(dept_df)
+```
+``` pyspark
+dept_df.printSchema()
+```
+# Creating the custom schema by using Struct Type
+1. import required functions and creat schema
+``` pyspark
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DateType
+ 
+# StructType --> Row
+# StructField --> Fields
+ 
+dept_custom_schema = StructType([StructField("EmployeeID", IntegerType()),
+                                StructField("DepartmentName", StringType()),
+                                StructField("Client", StringType()),
+                                StructField("OnboardedDate", DateType())])
+```
+                                
+2. observe datatype
+``` pysaprk
+type(dept_custom_schema)
+```
+3. create dataframe
+``` pyspark
+dept_df = (spark
+           .read
+           .format("csv")
+           .option("header", "true")
+           .schema(dept_custom_schema)
+           .load("/FileStore/tables/rritec/output/department.csv"))
+```
+4. display the contents
+``` pysaprk
+display(dept_df)
+```
+5. Observe the schema
+``` pyspark
+dept_df.printSchema()
+```
+# Creating Custom Schema by using DDL String
+
+1. observe the content
+``` pysaprk
+%fs head /FileStore/tables/rritec/output/orders_csv_latest/part_00000
+```
+2. Create DDL string
+``` pyspark
+orders_custom_schema = "order_id int, order_date date, order_customer_id int, order_status string"
+```
+3. create dataframe
+``` pyspark
+orders_df = (spark
+             .read
+             .format("csv")
+             .schema(orders_custom_schema)
+             .load("/FileStore/tables/rritec/output/orders_csv_latest/part_00000"))
+display(orders_df)
+```
+4. observe schema
+```pyspark
+orders_df.printSchema()
+```
+
+
