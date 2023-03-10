@@ -622,6 +622,17 @@ final_df.printSchema()
 7. 
 
 # Write Mode
+1. Write modes would be used to write `Spark DataFrame` as `JSON, CSV, Parquet, Avro, ORC, Text files` and also used to write to `Hive table`, `JDBC tables like MySQL, SQL server`, e.t.c
+
+| Scala/Java |	Any Language |	Meaning |
+| ------- | ------ | ------- |
+
+| SaveMode.ErrorIfExists (default) |	"error" or "errorifexists" (default) |	When saving a DataFrame to a data source, if data already exists, an exception is expected to be thrown. |
+| SaveMode.Append	| "append"	| When saving a DataFrame to a data source, if data/table already exists, contents of the DataFrame are expected to be appended to existing data. |
+| SaveMode.Overwrite	| "overwrite"	| Overwrite mode means that when saving a DataFrame to a data source, if data/table already exists, existing data is expected to be overwritten by the contents of the DataFrame. |
+| SaveMode.Ignore	| "ignore"	| Ignore mode means that when saving a DataFrame to a data source, if data already exists, the save operation is expected not to save the contents of the DataFrame and not to change the existing data. This is similar to a CREATE TABLE IF NOT EXISTS in SQL. | 
+
+2. Refer Modes [here](https://spark.apache.org/docs/latest/sql-data-sources-load-save-functions.html#save-modes)
 
 1. create a simple dataframe
 ``` python
