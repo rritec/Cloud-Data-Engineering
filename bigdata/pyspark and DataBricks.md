@@ -624,10 +624,10 @@ final_df.printSchema()
 # Write Mode
 1. Write modes would be used to write `Spark DataFrame` as `JSON, CSV, Parquet, Avro, ORC, Text files` and also used to write to `Hive table`, `JDBC tables like MySQL, SQL server`, e.t.c
 
+
 | Scala/Java |	Any Language |	Meaning |
 | ------- | ------ | ------- |
-
-| SaveMode.ErrorIfExists (default) |	"error" or "errorifexists" (default) |	When saving a DataFrame to a data source, if data already exists, an exception is expected to be thrown. |
+| SaveMode.ErrorIfExists (default) | "error" or "errorifexists" (default) | When saving a DataFrame to a data source, if data already exists, an exception is expected to be thrown. |
 | SaveMode.Append	| "append"	| When saving a DataFrame to a data source, if data/table already exists, contents of the DataFrame are expected to be appended to existing data. |
 | SaveMode.Overwrite	| "overwrite"	| Overwrite mode means that when saving a DataFrame to a data source, if data/table already exists, existing data is expected to be overwritten by the contents of the DataFrame. |
 | SaveMode.Ignore	| "ignore"	| Ignore mode means that when saving a DataFrame to a data source, if data already exists, the save operation is expected not to save the contents of the DataFrame and not to change the existing data. This is similar to a CREATE TABLE IF NOT EXISTS in SQL. | 
@@ -737,7 +737,12 @@ df.write.format("json").save("/FileStore/tables/rritec/output/df_data")
 %fs head dbfs:/FileStore/tables/rritec/output/final_student_csv_data/part-00000-tid-4721931960538371143-1b0b3268-03e9-4725-9d83-269e16786577-8-1-c000.csv
 ```
 # Read Modes
-1. upload and observe the data
+1. mode 
+    1. (default `PERMISSIVE`): allows a mode for dealing with corrupt records during parsing.
+    2. `PERMISSIVE` : sets other fields to null when it meets a corrupted record, and puts the malformed string into a new field configured by                columnNameOfCorruptRecord. When a schema is set by user, it sets null for extra fields.
+    3. ``DROPMALFORMED : ignores the whole corrupted records.
+    4. `FAILFAST` : throws an exception when it meets corrupted records.
+2. upload and observe the data
 ``` pyspark
 %fs head /FileStore/tables/rritec/output/ford.json
 ```
