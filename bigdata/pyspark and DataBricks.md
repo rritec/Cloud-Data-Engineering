@@ -623,7 +623,20 @@ final_df.printSchema()
 
 # Write Mode
 
-1. Saving the content of dataframe into external storage.
+1. create a simple dataframe
+``` python
+
+emp_data = [("James", "M", 60000),
+           ("Maria", "F", 70000),
+           ("Mike", None, 50000),
+           ("Jen", "", None)]
+
+columns = ["emp_name", "emp_gender", "emp_sal"]
+emp_df = spark.createDataFrame(data = emp_data, schema = columns)
+display(emp_df)
+
+```
+2. Saving the content of dataframe into external storage.
 ``` pyspark
 df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data")
 ```
