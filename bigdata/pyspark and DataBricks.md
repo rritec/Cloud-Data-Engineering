@@ -740,7 +740,7 @@ df.write.format("json").save("/FileStore/tables/rritec/output/df_data")
 1. mode 
     1. (default `PERMISSIVE`): allows a mode for dealing with corrupt records during parsing.
     2. `PERMISSIVE` : sets other fields to null when it meets a corrupted record, and puts the malformed string into a new field configured by                columnNameOfCorruptRecord. When a schema is set by user, it sets null for extra fields.
-    3. ``DROPMALFORMED : ignores the whole corrupted records.
+    3. `DROPMALFORMED` : ignores the whole corrupted records.
     4. `FAILFAST` : throws an exception when it meets corrupted records.
 2. upload and observe the data
 ``` pyspark
