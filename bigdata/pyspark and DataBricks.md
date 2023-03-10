@@ -626,31 +626,31 @@ final_df.printSchema()
 1. create a simple dataframe
 ``` python
 
-emp_data = [("James", "M", 60000),
+df = [("James", "M", 60000),
            ("Maria", "F", 70000),
            ("Mike", None, 50000),
            ("Jen", "", None)]
 
 columns = ["emp_name", "emp_gender", "emp_sal"]
-emp_df = spark.createDataFrame(data = emp_data, schema = columns)
-display(emp_df)
+df = spark.createDataFrame(data = emp_data, schema = columns)
+display(df)
 
 ```
 2. Saving the content of dataframe into external storage.
 ``` pyspark
-df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data")
+df.write.format("json").save("/FileStore/tables/rritec/output/df_data")
 ```
 ``` pyspark
-%fs ls /FileStore/tables/rritec/output/final_student_data
+%fs ls /FileStore/tables/rritec/output/df_data
 ```
 2. Copy the json file dbfs path and observe contents
 ``` pyspark
-%fs head dbfs:/FileStore/tables/rritec/output/final_student_data/part-00000-tid-766577745249667303-c54f173e-99aa-4f7b-b754-2a8a092de2a9-4-1-c000.json
+%fs head dbfs:/FileStore/tables/rritec/output/df_data/part-00000-tid-766577745249667303-c54f173e-99aa-4f7b-b754-2a8a092de2a9-4-1-c000.json
 ```
 3. What happenes if we write once again
 
 ``` pyspark
-df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data")
+df.write.format("json").save("/FileStore/tables/rritec/output/df_data")
 ```
 ## Write Modes - error / errorifexists
 1. Add `error` mode and observe it
@@ -659,7 +659,7 @@ df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data
  .write
  .format("json")
  .mode("error")
- .save("/FileStore/tables/rritec/output/final_student_data"))
+ .save("/FileStore/tables/rritec/output/df_data"))
  ```
 2. Add `errorifexists` mode and observe it
 ``` pyspark
@@ -667,7 +667,7 @@ df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data
  .write
  .format("json")
  .mode("errorifexists")
- .save("/FileStore/tables/rritec/output/final_student_data"))
+ .save("/FileStore/tables/rritec/output/df_data"))
  ```
 ## Write modes - ignore
 1. Add `error` mode and observe it
@@ -676,7 +676,7 @@ df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data
  .write
  .format("json")
  .mode("ignore")
- .save("/FileStore/tables/rritec/output/final_student_data"))
+ .save("/FileStore/tables/rritec/output/df_data"))
  ```
  ## Write modes - append
 1. Add `error` mode and observe it
@@ -685,16 +685,16 @@ df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data
  .write
  .format("json")
  .mode("append")
- .save("/FileStore/tables/rritec/output/final_student_data"))
+ .save("/FileStore/tables/rritec/output/df_data"))
  ```
  ``` pyspark
- %fs ls /FileStore/tables/rritec/output/final_student_data
+ %fs ls /FileStore/tables/rritec/output/df_data
  ```
  ``` pyspark
- %fs head dbfs:/FileStore/tables/rritec/output/final_student_data/part-00000-tid-7383138309953482542-3d9411b4-16ae-45e7-afbb-843a0c80f621-5-1-c000.json
+ %fs head dbfs:/FileStore/tables/rritec/output/df_data/part-00000-tid-7383138309953482542-3d9411b4-16ae-45e7-afbb-843a0c80f621-5-1-c000.json
  ```
   ``` pyspark
- %fs head dbfs:/FileStore/tables/rritec/output/final_student_data/part-00000-tid-766577745249667303-c54f173e-99aa-4f7b-b754-2a8a092de2a9-4-1-c000.json
+ %fs head dbfs:/FileStore/tables/rritec/output/df_data/part-00000-tid-766577745249667303-c54f173e-99aa-4f7b-b754-2a8a092de2a9-4-1-c000.json
  ```
  ## Write modes - overwrite
 1. Add `error` mode and observe it
@@ -703,10 +703,10 @@ df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data
  .write
  .format("json")
  .mode("overwrite")
- .save("/FileStore/tables/rritec/output/final_student_data"))
+ .save("/FileStore/tables/rritec/output/df_data"))
  ```
 ``` pyspark
- %fs ls /FileStore/tables/rritec/output/final_student_data
+ %fs ls /FileStore/tables/rritec/output/df_data
  ```
 ## Adding header when writing the DF
 1. Write into csv file
@@ -716,7 +716,7 @@ df.write.format("json").save("/FileStore/tables/rritec/output/final_student_data
  .format("csv")
  .mode("overwrite")
  .option("header", "true")
- .save("/FileStore/tables/rritec/output/final_student_csv_data")
+ .save("/FileStore/tables/rritec/output/df_csv_data")
  )
 ```
 ``` pyspark
