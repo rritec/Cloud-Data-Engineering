@@ -637,13 +637,13 @@ final_df.printSchema()
 1. create a simple dataframe
 ``` python
 
-df = [("James", "M", 60000),
+emp_data = [("James", "M", 60000),
            ("Maria", "F", 70000),
            ("Mike", None, 50000),
            ("Jen", "", None)]
 
-columns = ["emp_name", "emp_gender", "emp_sal"]
-df = spark.createDataFrame(data = emp_data, schema = columns)
+emp_columns = ["emp_name", "emp_gender", "emp_sal"]
+df = spark.createDataFrame(data = emp_data, schema = emp_columns)
 display(df)
 
 ```
@@ -814,7 +814,7 @@ dept_df = (spark
            .read
            .format("csv")
            .option("header", "true")
-           .option("inferSchema", "true")
+           .option("inferSchema", "true")           
            .load("/FileStore/tables/rritec/output/department.csv"))
 ```
 ``` pyspark
