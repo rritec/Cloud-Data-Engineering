@@ -23,8 +23,9 @@
 20. **[Joining 2 dataframes](#Joining-2-dataframes)**<br>
 21. **[dropping the columns](#dropping-the-columns)**<br>
 22. **[Spark DF Functions](#Spark-DF-Functions)**<br>
-23. 
+23. **[Spark SQL](#Spark-SQL)**<br>
 24. 
+25. 
 
 
 
@@ -1353,4 +1354,5 @@ emp_df.write
  %fs head dbfs:/Filestore/tables/emp_csv_output_dec_2022/emp_dept=Marketing/part-00005-tid-7195863566135644683-8dcd1890-647d-4722-a2b8-ef7f6f8c0fcb-187-2.c000.csv
  
  ```
-26. 
+# Spark SQL
+1. Please refer the notebook [spark sql](https://github.com/rritec/Cloud-Data-Engineering/blob/main/notebooks/databricks/Spark%20Sql.ipynb)
