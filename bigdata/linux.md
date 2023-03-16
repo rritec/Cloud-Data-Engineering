@@ -39,7 +39,21 @@ mkdir test
 5. If you will not provide a path then by default your file will be created in your current directory only. 
 6. If you want to create your directory some where else, then provide the path of your destination directory will be created there.
 
-5. 
+7. `Making multiple directories`: You can also create multiple directories simultaneously.
+8. Syntax
+``` sh
+
+mkdir <dirname1> <dirname2> <dirname3> ..
+
+```
+9. create multiple directories ‘d1 d2 d3'
+
+``` sh
+
+mkdir d1 d2 d3
+
+```
+
 
 
 
