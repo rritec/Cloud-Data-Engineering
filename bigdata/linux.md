@@ -31,7 +31,7 @@ mkdir <dirname>
 
 ```
 4. Example:
-``` shell
+``` bash
 
 mkdir test
 
