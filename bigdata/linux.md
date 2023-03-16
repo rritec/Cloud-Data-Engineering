@@ -20,8 +20,7 @@
 2. A directory’s solo job is to store the files and the related information. 
 3. All the files, whether ordinary, special, or sub-directory, are contained in directories.
 
-###### mkdir
-------
+##### mkdir
 
 1. The mkdir stands for 'make directory'.
 2. With the help of mkdir command, you can create a new directory wherever you want in your system.
