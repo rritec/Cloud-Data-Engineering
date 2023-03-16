@@ -22,7 +22,7 @@
 
 ##### mkdir
 
-1. The mkdir stands for 'make directory'.
+1. The mkdir stands for `make directory.`
 2. With the help of mkdir command, you can create a new directory wherever you want in your system.
 3. Syntax: 
 ``` bash 
