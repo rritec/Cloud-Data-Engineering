@@ -149,9 +149,89 @@ cd NewDir
 
 ##### cd options
 1. dfd
-| a | b |
+
+
+| Option | b |
 | ---- | --- |
-| hello | hi |
+| cd ~ (or) cd | Brings you to your home directory. |
+| cd - | Brings you to your previous directory of the current directory. |
+| cd .. | Brings you to the parent directory of current directory. |
+| cd / | It takes you to the entire system's root directory. |
+| cd ../..  | It will take you two directories up. |
+
+##### Linux path completion
+1. Path completion is a very helpful feature in any operating system. 
+2. It is made to speed up your typing speed. 
+3. You just have to hit 'Tab' key and your command, option or file name that is arguments will be automatically completed or will give you the options.
+4. For example, if you want to type 'cd Desktop' you can type 'cd De' and hit Tab. 
+5. Your command will be automatically completed.
+6. Path completion is extremely helpful in typing long file names where you don't remember the full file name.
+7. Some files contain symbols or spaces which is difficult to keep in mind there you can use it.
+
+##### Man & help
+1. Man stands for manual which is a reference book of a Linux operating system. 
+2. To get help on any command that you do not understand, you can type
+3. syntax
+``` sh
+
+man <command>
+
+```
+4.  example
+``` sh 
+
+man rm
+
+```
+5. The terminal would open the manual page for that command.
+6. Also help can be used to see the list of available options for a command
+7. syntax
+``` sh
+
+<command> --help
+
+```
+8. example
+``` sh 
+
+ls --help
+
+```
+
+##### Vi Editor
+1. The default editor that comes with the UNIX operating system is called vi (VIsual editor)
+2. The UNIX vi editor is a full screen editor and has two modes of operation:
+--Command mode:
+3. commands which cause action to be taken on the file, and
+--Insert mode:
+4. in which entered text is inserted into the file.
+5. To open a file to see it’s contents:
+	Vi <filename>
+6. To open the file in read-only mode:
+	vi –R <filename>
+7. Editing the file:
+:q --> to quit(coming out) the file
+:wq --> write and quit(saving & coming out)
+:w --> write (saving)
+dd --> to remove a line
+yy --> to copy a line
+p --> to paste a line
+x  --> to remove a character
+:set nu  to see the line numbers
+8. Navigating to a line:
+:n --> to go to a line number
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
