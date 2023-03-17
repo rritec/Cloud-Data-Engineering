@@ -199,18 +199,27 @@ ls --help
 ```
 
 ##### Vi Editor
+
+
+
 1. The default editor that comes with the UNIX operating system is called vi (VIsual editor)
 2. The UNIX vi editor is a full screen editor and has two modes of operation:
 --Command mode:
 3. commands which cause action to be taken on the file, and
 --Insert mode:
 4. in which entered text is inserted into the file.
-5. To open a file to see it’s contents:
+5. To open a file to see it’s contents
+	``` sh 
 	Vi <filename>
-6. To open the file in read-only mode:
+	
+	```
+6. To open the file in read-only mode
+	``` sh
 	vi –R <filename>
+	```
 7. Editing the file:
-:q --> to quit(coming out) the file
+``` sh
+ :q --> to quit(coming out) the file
 :wq --> write and quit(saving & coming out)
 :w --> write (saving)
 dd --> to remove a line
@@ -218,10 +227,22 @@ yy --> to copy a line
 p --> to paste a line
 x  --> to remove a character
 :set nu  to see the line numbers
+
+```
 8. Navigating to a line:
-:n --> to go to a line number
+	`:n --> ` to go to a line number
 
 ##### Linux Files
+##### Linux Files-Topics
+1. Creating empty files 
+2. Creating file contents
+3. Removing files
+4. Copying files
+5. Moving files
+6. Renaming files
+
+#####
+
 
 
 
