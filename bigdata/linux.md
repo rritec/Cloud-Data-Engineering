@@ -493,7 +493,35 @@ cp  JulyTempData/*      /home/Admin/AugTempData
 cp file* /home/Admin/File
 
 ```
+##### mv
+1. Moving a file
+2. Moving multiple files
+3. Moving multiple files with same extension
+4. Moving all files from one dir to other dir
+5. Renaming a file & directory
+
+##### Mv-moving a file
+1. Linux mv command is used to move existing file or directory from one location to another
+2. syntax
+``` sh
+
+mv <filename> <dirname>
+mv <dirname>/<filename> <dirname>
+
+```
+3. example
+``` sh 
+
+mv file1 dir1
+mv /home/Admin/file2 dir2
+
+```
 ##### 
+
+
+
+
+
 
 
 
