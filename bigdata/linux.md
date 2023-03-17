@@ -241,7 +241,271 @@ x  --> to remove a character
 5. Moving files
 6. Renaming files
 
-#####
+##### Touch-Creating single empty file
+1. touch command is a way to create empty files .
+2. syntax
+``` sh
+
+<touch <filename>  
+
+```
+3. example
+``` sh 
+
+touch myfile1 
+
+```
+
+##### Touch-Creating multiple empty files
+1. To create multiple files just type all the file names with a single touch command followed by enter key.
+2.  syntax
+``` sh
+
+touch <filename1> <filename2>
+
+```
+3. example
+``` sh 
+
+touch myfile1 myfile2
+
+```
+##### Cat-Creating file contents
+1. Cat command is used to create file contents
+2. To create a new file, use the command
+    -cat > filename
+    -Add content
+    -Press 'ctrl + d' to return to command prompt.
+
+##### Cat-Displaying files content
+1. Cat command is used to display files contents of a file
+2.  syntax
+``` sh
+
+cat <filename1>
+
+```
+3. example
+``` sh 
+
+cat myfile1
+
+```
+4. Cat command is used to display files contents of a file that’s present in any directory path
+5. example
+``` sh 
+
+cat /home/Admin/Month/ThisMonth.txt
+
+```
+##### rm
+1. Removing file
+2. Removing multiple files
+3. Removing files with same extension
+4. Removing non-empty dir
+
+##### Rm-removing file
+1. The 'rm' means remove. 
+2. This command is used to remove a file. 
+3. The command line doesn't have a recycle bin or trash unlike other GUI's to recover the files.
+4. Hence, be very much careful while using this command. 
+5. Once you have deleted a file, it is removed permanently.
+6. syntax
+``` sh
+
+rm <filename>  
+
+```
+3. example
+``` sh 
+
+rm myfile1 
+
+```
+
+##### Rm-removing multiple files
+1. rm can be used as follows to remove multiple files at a time
+2. syntax
+``` sh
+
+rm <filename1> <filename2> 
+
+```
+3. example
+``` sh 
+
+rm myfile1 myfile2
+
+```
+##### Rm-removing files with same extension
+1. rm can be used to remove all the files ending with same extensions like .pdf, .txt,.log, etc.
+2.  syntax
+``` sh
+
+rm *<extension>
+
+```
+3. example
+``` sh 
+
+rm *.txt 
+
+```
+
+##### Rm-Removing non-empty dir
+1. With rm '-r' option, you can delete a directory having sub directories inside it. 
+2. So you don't need to delete sub-directories manually.
+3. Non-empty directories can be removed recursively as follows: 
+4. syntax
+``` sh
+
+rm –R <dirname>
+(or)
+rm –r <dirname>
+
+```
+5. example
+``` sh 
+
+rm –R country
+(or)
+rm –r country
+
+```
+##### Rm-Removing file/dir forcefully
+1. If a file has read-only access, then while removing it will  ask for permission whether to delete or not. 
+2. However, the file will be deleted after getting permission (Y)
+3. But by giving command rm -rf it will delete that particular file having read-only access without asking for permission.
+4. rm -rf command deletes directory forcefully. 
+5. It means a file or directory will be deleted anyhow even if it has read-only permission.
+6. To delete a file forcefully, use command:
+7. syntax
+``` sh
+
+rm -f <file name>
+
+```
+8. To delete a directory forcefully, use command:
+9. syntax
+``` sh
+
+rm -rf <directory name> 
+
+```
+
+##### cp
+1. Copying file
+2. Copying file into a directory
+3. Copying multiple files into a directory
+4. Copying multiple files with same extension into a directory
+5. Copying dir along with sub-dirs
+6. Copying multiple files with similar file names into a directory
+
+#####  cp-copying file
+1. 'cp' means copy. 
+2. 'cp cp-copying file' command is used to copy a file or a directory.
+3. To copy a file into the same directory syntax will be:
+4. syntax
+``` sh
+
+cp <existing file name> <new file name>
+
+```
+5. example
+``` sh 
+
+cp oldfile.txt newfile.txt
+
+```
+
+##### cp-copying file into a directory
+1. cp can be used to copy a file into a directory 
+2. To copy a file into a directory the syntax will be:
+3. syntax
+``` sh
+
+cp <filename>  <dirpath>
+
+```
+4. example
+``` sh 
+
+cp month.txt /home/Admin/Month
+
+```
+
+##### cp-copying multiple files into a directory
+1. cp can be used to copy multiple files into a directory 
+2. To copy a multiple files into a directory the syntax will be:
+3. syntax
+``` sh
+
+cp <filename1> <filename2>  <dirpath>
+
+```
+4. example
+``` sh 
+
+cp month.txt week.txt /home/Admin/August
+
+```
+
+##### cp-copying multiple files with same extension into a directory
+1. cp can be used to copy multiple files with same extension into a directory 
+2. To copy a multiple files with same extension into a directory the syntax will be:
+3. syntax
+``` sh
+
+cp *.txt  <dirpath>
+
+```
+4. example
+``` sh 
+
+cp *.txt /home/Admin/August
+
+```
+
+##### cp-copying dir along with sub-dirs
+1.Option 'r' with the copy command can be used to copy a directory including all its content from a source directory to the destination directory.
+2. syntax
+``` sh
+
+cp -r <sourceDirectory> <destinationDirectory>  
+	
+cp <sourceDirectory>/* <destinationDirectory>
+
+```
+3. example
+``` sh 
+
+cp -r JulyTempData       /home/Admin/AugTempData
+cp  JulyTempData/*      /home/Admin/AugTempData 
+
+```
+
+##### cp-copying multiple files with similar file names into a directory
+1. cp can be used to copy multiple files with similar file names into a directory 
+2. To copy a multiple files with similar file names into a directory the syntax will be:
+3. example
+``` sh 
+
+cp file* /home/Admin/File
+
+```
+##### 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
