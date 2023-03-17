@@ -145,9 +145,15 @@ cd NewDir
 ##### Child & parent directory
 1. . (dot) represents the current working directory
 2. .. (dot dot) represents the directory one level above the current working directory, often referred to as the parent directory.
-![image](https://user-images.githubusercontent.com/20516321/225894581-9dd25e93-3122-47cb-9f83-0f17d648da88.png)
+3. ![image](https://user-images.githubusercontent.com/20516321/225894581-9dd25e93-3122-47cb-9f83-0f17d648da88.png)
 
-3. 
+##### cd options
+1. dfd
+| a | b |
+| ---- | --- |
+| hello | hi |
+
+
 
 
 
