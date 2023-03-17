@@ -1,7 +1,8 @@
 # Hadoop(BigData)(Linux)
 1. **[Linux Distributions](#Linux-Distributions)**<br>
 2. **[Directory](#Directory)**<br>
-3. 
+3. **[Home work](#Home-work)**<br>
+4. 
 
 
 # Linux Distributions
@@ -53,6 +54,8 @@ mkdir <dirname1> <dirname2> <dirname3> ..
 mkdir d1 d2 d3
 
 ```
+# Home work
+1. Complete learning path and share the screeshot in whatsapp group [here](https://learn.microsoft.com/en-us/training/paths/shell/?WT.mc_id=portaledu_inproduct_roles)
 
 
 
