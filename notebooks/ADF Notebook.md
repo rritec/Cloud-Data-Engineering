@@ -253,6 +253,12 @@
   3. Azure-SSIS
 6. Refer the [doc](https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime)
 
+# Linked Service
+
+1. Linked services are much like connection strings, which define the connection information needed for the service to connect to external resource
+2. `For example`: an Azure Storage linked service links a storage account to the service.
+3. Refer the [doc](https://learn.microsoft.com/en-us/azure/data-factory/concepts-linked-services?tabs=data-factory)
+
 # Linked Service to blob
   - Linked service defines the connection information to a data store or compute.
 ## Lab
