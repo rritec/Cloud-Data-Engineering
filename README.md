@@ -23,7 +23,13 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 
 2. **Storage Account**
       - Introduction
+      - What is subscription
+      - What is resource group
+      - create resource group
       - Create Storage Account
+      - Differences among LRS/GRS/ZRS/GZRS
+      - Difference between Hot and Cool Tiers
+      - Create Data Lake Gen 2
       - Create Containers
       - Create Folders
       - Upload Files
@@ -31,6 +37,11 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
       - Download Files
       - Edit Files
       - Preview Files in different formats
+3. **Azure SQL Database**
+    1. Create SQL Database
+    2. Create Sql Server
+    
+
 
 2. **Linked Service**
       - Create Linked Service to BLOB
