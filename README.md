@@ -40,6 +40,12 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 3. **Azure SQL Database**
     1. Create SQL Database
     2. Create Sql Server
+    3. Create Username and password
+    4. Allow Azure resources and selected IPS access
+    5. Create tables and insert data
+    6. Query Tables
+    7. Install SSMS
+    8. Access Azure SQL Database using SSMS
     
 
 
