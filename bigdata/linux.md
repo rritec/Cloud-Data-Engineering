@@ -154,7 +154,6 @@ cd NewDir
 | Option | b |
 | ---- | --- |
 | cd ~ (or) cd | Brings you to your home directory. |
-| cd - | Brings you to your previous directory of the current directory. |
 | cd .. | Brings you to the parent directory of current directory. |
 | cd / | It takes you to the entire system's root directory. |
 | cd ../..  | It will take you two directories up. |
