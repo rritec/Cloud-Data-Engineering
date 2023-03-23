@@ -91,7 +91,8 @@
   - ![image](https://user-images.githubusercontent.com/20516321/209083873-83ee8400-13d9-497a-8772-95e3ff065fa3.png)
 # Azure Sql Database
   - Best for modern cloud applications. Hyperscale and serverless
-## Lab 1
+  - Follow this blog for free Azure SQL database [doc](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql)
+## Lab 1(Not required for training room)
   - In search box type **Azure SQL** > Under **services** > Click on **Azure SQL**
   - ![image](https://user-images.githubusercontent.com/20516321/209273844-196f7151-7378-40ea-a945-60bb8d8ef89b.png)
 
