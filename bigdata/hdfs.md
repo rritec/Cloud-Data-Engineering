@@ -4,7 +4,7 @@
 3. **[help](#help)**<br>
 4. **[ls](#ls)**<br>
 4. **[mkdir](#mkdir)**<br>
-5. **[help](#help)**<br>
+5. **[touchz](#touchz)**<br>
 6. **[help](#help)**<br>
 7. **[help](#help)**<br>
 8. **[help](#help)**<br>
