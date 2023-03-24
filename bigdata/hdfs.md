@@ -1,8 +1,11 @@
 # Hadoop(BigData)(HDFS)
-1. **[HDFS](#HDFS)**<br>
+1. **[hadoop](#hadoop)**<br>
+2. **[usage](#usage)**<br>
+3. **[help](#help)**<br>
 
 
 
+##### hadoop
 ``` sh
 
 hadoop
