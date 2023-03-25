@@ -21,6 +21,7 @@
 
 
 
+
 ##### hadoop
 ``` sh
 
@@ -135,5 +136,83 @@ hdfs dfs -touchz /user/cloudera/b20230201/emp.txt
 hdfs dfs -touchz /user/cloudera/b20230201/emp1.txt /user/cloudera/b20230201/emp2.txt
 
 ```
+##### put
+
+1. Navigate to linux desktop and create a folder and file
+``` sh
+
+cd Desktop
+
+```
+``` sh
+
+mkdir b20230201
+
+```
+``` sh
+
+cd b20230201
+
+```
+``` sh
+
+vi emp.txt
+# type i from the keyboard to switch from command mode to edit mode
+# type some data like > iam learning hdfs commands
+```
+2. Copy this file from linux machine path to hadoop path
+``` sh
+
+hdfs dfs -put emp.txt /user/cloudera/b20230201/
+
+```
+``` sh
+
+hdfs dfs -ls /user/cloudera/b20230201/
+
+```
+##### copyFromLocal
+
+1. same as put
+2. Copy this file from linux machine path to hadoop path
+``` sh
+
+hdfs dfs -copyFromLocal emp.txt /user/cloudera/b20230201/emp1.txt
+
+```
+``` sh
+
+hdfs dfs -ls /user/cloudera/b20230201/
+
+```
+
+##### get
+
+1. Copy file from hadoop path to linuxpath
+``` sh
+
+hdfs dfs -get /user/cloudera/b20230201/emp.txt  emp10.txt 
+
+```
+``` sh
+
+ls -l
+
+```
+##### copyToLocal
+
+1. same as get
+2. Copy file from hadoop path to linuxpath
+``` sh
+
+hdfs dfs -copyToLocal /user/cloudera/b20230201/emp.txt  emp11.txt 
+
+```
+``` sh
+
+ls -l
+
+```
+
 
 
