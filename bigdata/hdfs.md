@@ -213,6 +213,78 @@ hdfs dfs -copyToLocal /user/cloudera/b20230201/emp.txt  emp11.txt
 ls -l
 
 ```
+##### cp
+
+1. copy files within the HDFS locations
+2. take backup of file in same location
+``` sh
+
+hdfs dfs -cp /user/cloudera/b20230201/emp.txt /user/cloudera/b20230201/emp_bkp.txt
+
+```
+``` sh
+
+hdfs dfs -ls /user/cloudera/b20230201/
+
+```
+
+3. take backup of file in different location
+``` sh
+
+hdfs dfs -cp /user/cloudera/b20230201/emp.txt /user/cloudera/b20230201/d1/emp_bkp.txt
+
+```
+``` sh
+
+hdfs dfs -ls /user/cloudera/b20230201/d1/
+
+```
+##### getmerge
+
+1. merging multiple HDFS files into a single file on local FS
+    1. create three files using `vi` editor and write content as `it is file1`  in first file `it is file2` in second file and `it is file3` in third file
+        ``` sh
+        
+        vi merge_emp1.txt
+        vi merge_emp2.txt
+        vi merge_emp3.txt
+        
+        ```
+        ``` sh
+        
+        ls -l | grep merge
+        
+        ```
+        ``` sh
+        
+        cat merge*
+        
+        ```
+    2. copy these three files into hdfs location
+        ``` sh
+        
+        hdfs dfs -put merge* /user/cloudera/b20230201/
+        # verify it
+        hdfs dfs -ls /user/cloudera/b20230201 | grep merge
+        
+        ```
+    3. merge all three files
+        ``` sh
+
+        hdfs dfs -getmerge /user/cloudera/b20230201/merge* merge_emp_1_to_3.txt
+        # verify
+        cat merge_emp_1_to_3.txt
+        
+
+        ```
+2. adding a new line character at the end of each file using –nl option
+``` sh
+hdfs dfs -getmerge -nl /user/cloudera/b20230201/merge* merge_emp_1_to_3_nl.txt
+```
+``` sh
+cat merge_emp_1_to_3_nl.txt
+```
+
 
 
 
