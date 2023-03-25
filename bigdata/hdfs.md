@@ -5,21 +5,19 @@
 4. **[ls](#ls)**<br>
 4. **[mkdir](#mkdir)**<br>
 5. **[touchz](#touchz)**<br>
-6. **[help](#help)**<br>
-7. **[help](#help)**<br>
-8. **[help](#help)**<br>
-9. **[help](#help)**<br>
-10. **[help](#help)**<br>
-11. **[help](#help)**<br>
-12. **[help](#help)**<br>
-13. **[help](#help)**<br>
-14. **[help](#help)**<br>
-15. **[help](#help)**<br>
-16. **[help](#help)**<br>
-17. **[help](#help)**<br>
-18. **[help](#help)**<br>
-19. **[help](#help)**<br>
-20. **[help](#help)**<br>
+6. **[Put](#Put)**<br>
+7. **[copyFromLocal](#copyFromLocal)**<br>
+8. **[get](#get)**<br>
+9. **[copyToLocal](#copyToLocal)**<br>
+10. **[cp](#cp)**<br>
+11. **[getmerge](#getmerge)**<br>
+12. **[rmdir](#rmdir)**<br>
+13. **[rm](#rm)**<br>
+14. **[moveFromLocal](#moveFromLocal)**<br>
+15. **[mv](#mv)**<br>
+16. **[tail](#tail)**<br>
+17. **[Interview Questions](#Interview-Questions)**<br>
+18. **[Answers](#Answers)**<br>
 
 
 
