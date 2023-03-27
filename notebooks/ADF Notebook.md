@@ -364,6 +364,8 @@ drop table [dbo].[TGT_EMP]
 
 # Install SQL Server
   - Follow the [doc](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#msft-sql-server-installation) and install SQL Serer database
+  - enable `sa` user by following [doc](https://www.top-password.com/knowledge/unlock-sql-server-sa-account.html)
+  - provide password and remember it.
 
 # Self Hosted IR
   - Perform data flows, data movement and dispatch activities to **external compute**
@@ -374,6 +376,8 @@ drop table [dbo].[TGT_EMP]
   - Name it as **Self-Hosted-IR**
   - Click on **Create**
   - Click on **Express Setup** and install the software
+  - Create a linked service using self-hsted IR
+  - create a dataset using above linked service
 
 # Create Pipenine from Blob to MS Sql Server
   - Click on **Author**
