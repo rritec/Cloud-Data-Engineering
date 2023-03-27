@@ -52,7 +52,7 @@ hdfs dfs -usage ls
 
 ``` sh
 
-hdfs dfs -usage ls
+hdfs dfs -help ls
 
 ```
 ##### ls
