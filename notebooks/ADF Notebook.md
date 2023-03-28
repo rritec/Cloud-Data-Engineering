@@ -484,6 +484,12 @@ drop table [dbo].[TGT_EMP]
 
     ![image](https://user-images.githubusercontent.com/20516321/209803533-21b87745-5ccf-401e-831f-deeb7f17b036.png)
 
+Related Content: 
+
+1. [get dynamically all sheets using index numbers](https://learn.microsoft.com/en-us/answers/questions/986785/how-to-get-excel-sheet-names-dyanamically-in-azure)
+2. [ADF xlsx file Dynamic sheet name](https://learn.microsoft.com/en-us/answers/questions/767239/adf-xlsx-file-dynamic-sheet-name)
+
+
 # Incrementally load data from Azure SQL DB to Blob
 
   1. ![image](https://user-images.githubusercontent.com/20516321/209805592-c0bd3d78-968b-48f8-bdac-f715f11ab663.png)
