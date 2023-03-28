@@ -32,11 +32,13 @@
         
         ![image](https://user-images.githubusercontent.com/20516321/214229607-49d7673b-0eef-4818-ab04-001ab46455de.png)
 
-3. hive-site.xml configuration file has metastore database information
+3. Metadata is adata about data. examples of metadata database names,tablenames,column names,...etc
+4. All metadata stored in separate database known as metastore. 
+5. hive-site.xml configuration file has metastore database information
     1. open terminal ```cd /etc/hive/conf/```
     2. type ```cat hive-site.xml | grep metastore```
     3. observe metastore database as mysql
-4. Connect to mysql(Metastore)
+6. Connect to mysql(Metastore)
     1. open terminal > type ```mysql -uroot -pcloudera```
 
         ![image](https://user-images.githubusercontent.com/20516321/214223593-bffe40ce-a79c-41e7-8baa-414e8cef7c36.png)
