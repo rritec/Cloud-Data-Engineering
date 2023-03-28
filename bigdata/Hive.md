@@ -14,10 +14,11 @@
 # Hive Metastore
 
 1. Connect to hive cli
-    1. type ```hive```
-    2. type ```show databases;```
-    3. type ```create database rritecdb```
-    4. desc rritecdb;
+    1. Open Terminal
+    2. Type ```hive```
+    3. type ```show databases;```
+    4. type ```create database rritecdb```
+    5. desc rritecdb;
         
         ![image](https://user-images.githubusercontent.com/20516321/214228819-f9f120ef-2280-4dd5-9318-8d2f797e7cae.png)
 
@@ -32,7 +33,7 @@
         
         ![image](https://user-images.githubusercontent.com/20516321/214229607-49d7673b-0eef-4818-ab04-001ab46455de.png)
 
-3. Metadata is adata about data. examples of metadata database names,tablenames,column names,...etc
+3. Metadata `is a data about data`. examples of metadata database names,tablenames,column names,...etc
 4. All metadata stored in separate database known as metastore. 
 5. hive-site.xml configuration file has metastore database information
     1. open terminal ```cd /etc/hive/conf/```
