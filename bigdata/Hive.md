@@ -28,7 +28,7 @@
 2. can we run hive commands from terminal
     1. Yes
     2. In normal terminal type ```hive -e "show databases;"```
-    3. also observe ```"hive -e set;" | grep warehouse
+    3. also observe ```"hive -e set;" | grep warehouse```
         
         ![image](https://user-images.githubusercontent.com/20516321/214229607-49d7673b-0eef-4818-ab04-001ab46455de.png)
 
