@@ -512,7 +512,8 @@ Related Content:
         @dataset().pSheetIndex
         
         ```
-    13. Under **Field List** > Click on **New** > select **argument** as **Structure** 
+    13.Provide parameter value as **999**
+    14. Under **Field List** > Click on **New** > select **argument** as **Structure** 
 
 2. Get Error of Metadata Activity
 
@@ -520,6 +521,8 @@ Related Content:
     2. connect **Get Metadata** fail with **Set Variable**
     3. Click on **Settings** > Click on **New** > Add new variable name as **Get Error** and Type as **String** > Click on **Conform**
     4. Provide Value as
+
+
        ![image](https://user-images.githubusercontent.com/20516321/228446981-5b93b669-1f25-4cfe-953a-0ff5d61b45fd.png)
 
 
@@ -536,6 +539,11 @@ Related Content:
      
 4. Create ForEach and Copy data activities
     1. Develop based on previous exercise knowledge
+5. Run and observe each step input and ouput
+![image](https://user-images.githubusercontent.com/20516321/228448475-57c9a1fd-520c-4c7d-b532-7b8430774e99.png)
+
+
+
  
 
 
