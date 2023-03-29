@@ -16,14 +16,15 @@
 16. **[Create Pipenine from Blob to MS Sql Server](#Create-Pipenine-from-Blob-to-MS-Sql-Server)**<br>
 17. **[Create Pipenine from Azure SQL DB to MS Sql Server DB](#Create-Pipenine-from-Azure-SQL-DB-to-MS-Sql-Server-DB)**<br>
 18. **[Load multiple sheets from excel to Azure SQL DB](#Load-multiple-sheets-from-excel-to-Azure-SQL-DB)**<br>
-19. **[Incrementally load data from Azure SQL DB to Blob](#Incrementally-load-data-from-Azure-SQL-DB-to-Blob)**<br>
-20. **[Incremental copy multiple tables](#Incremental-copy-multiple-tables)**<br>
-21. **[Incremental copy lastmodified copy data tool](#Incremental-copy-lastmodified-copy-data-tool)**<br>
-22. **[Incremental copy partitioned file name copy data tool](#Incremental-copy-partitioned-file-name-copy-data-tool)**<br>
-23. **[Logic Apps](#Logic-Apps)**<br>
-24. **[DataFlows](#DataFlows)**<br>
-25. **[Split Transformation](#Split-Transformation)**<br>
-26. **[Derived Column](#Derived-Column)**<br>
+19. **[Get Excel Number of Sheets Dynamically and load it](#Get-Excel-Number-of-Sheets-Dynamically-and-load-it)**<br>
+20. **[Incrementally load data from Azure SQL DB to Blob](#Incrementally-load-data-from-Azure-SQL-DB-to-Blob)**<br>
+21. **[Incremental copy multiple tables](#Incremental-copy-multiple-tables)**<br>
+22. **[Incremental copy lastmodified copy data tool](#Incremental-copy-lastmodified-copy-data-tool)**<br>
+23. **[Incremental copy partitioned file name copy data tool](#Incremental-copy-partitioned-file-name-copy-data-tool)**<br>
+24. **[Logic Apps](#Logic-Apps)**<br>
+25. **[DataFlows](#DataFlows)**<br>
+26. **[Split Transformation](#Split-Transformation)**<br>
+27. **[Derived Column](#Derived-Column)**<br>
   
 
 
@@ -519,17 +520,7 @@ Related Content:
     2. connect **Get Metadata** fail with **Set Variable**
     3. Click on **Settings** > Click on **New** > Add new variable name as **Get Error** and Type as **String** > Click on **Conform**
     4. Provide Value as
-       ``` json
-       
-       @split(
-    activity('Get Metadata From Excel').error.message,
-    '('
-    )[2]
-    
-    ```
-
-    5. 
-
+       ![image](https://user-images.githubusercontent.com/20516321/228446981-5b93b669-1f25-4cfe-953a-0ff5d61b45fd.png)
 
 
 3. Create Range Object
@@ -537,29 +528,10 @@ Related Content:
     2. Connect Previous activity to this activity using **Success**
     3. Click on **Settings** > Click on **New** > Add new variable name as **Range of Page Numbers** and Type as **Array** > Click on **Conform**
     4. Provide Value as
-       ``` json
+        
+        ![image](https://user-images.githubusercontent.com/20516321/228446856-7526191b-6d80-4341-a50e-db328ab64525.png)
+
        
-       @range(
-    0,
-    add(
-        int(
-            substring(
-                variables('Get Error'),
-                3,
-                sub(
-                    length(
-                        variables('Get Error')
-                    ),
-                    4
-                )
-            )
-        )
-        ,1
-            
-    )
-)
-    
-    ```
 
      
 4. Create ForEach and Copy data activities
