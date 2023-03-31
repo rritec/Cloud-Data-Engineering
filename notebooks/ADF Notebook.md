@@ -714,7 +714,7 @@ and hiredate <= '@{activity('Get_max_transaction_date_from_source').output.first
 
 ![image](https://user-images.githubusercontent.com/20516321/229049992-c4c25531-63ca-46fe-a13e-2a7d34b273b8.png)
 
-**Step 6: Run one more time by adding few rows and observe steps**
+**Step 7: Run one more time by adding few rows and observe steps**
 
 1. Insert two records 
 
