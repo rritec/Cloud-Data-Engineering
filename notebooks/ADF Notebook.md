@@ -21,10 +21,11 @@
 21. **[Incremental copy multiple tables](#Incremental-copy-multiple-tables)**<br>
 22. **[Incremental copy lastmodified copy data tool](#Incremental-copy-lastmodified-copy-data-tool)**<br>
 23. **[Incremental copy partitioned file name copy data tool](#Incremental-copy-partitioned-file-name-copy-data-tool)**<br>
-24. **[Logic Apps](#Logic-Apps)**<br>
-25. **[DataFlows](#DataFlows)**<br>
-26. **[Split Transformation](#Split-Transformation)**<br>
-27. **[Derived Column](#Derived-Column)**<br>
+24. **[Triggers](#Triggers)**<br>
+25. **[Logic Apps](#Logic-Apps)**<br>
+26. **[DataFlows](#DataFlows)**<br>
+27. **[Split Transformation](#Split-Transformation)**<br>
+28. **[Derived Column](#Derived-Column)**<br>
   
 
 
@@ -737,6 +738,25 @@ Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tuto
 # Incremental copy partitioned file name copy data tool
 Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-partitioned-file-name-copy-data-tool)
 
+# Triggers
+
+1. A pipeline run in Azure Data Factory and Azure Synapse defines an instance of a pipeline execution.
+2. For example, say you have a pipeline that executes at 8:00 AM, 9:00 AM, and 10:00 AM. In this case, there are three separate runs of the pipeline. Each pipeline run has a unique pipeline run ID.
+3. A run ID is a GUID that uniquely defines that particular pipeline run
+4. types of triggers
+    1. Scheduled
+    2. Tumbling window
+    3. Storage event
+    4. Custom event
+5. Pipelines and triggers have a many-to-many relationship (except for the tumbling window trigger). 
+6. Multiple triggers can kick off a single pipeline, or a single trigger can kick off multiple pipelines
+7. Open any Pipeline > Click on **Add Trigger** > Click on **New/Edit**
+8. Click on **New** > Name it as **Daily_trigger**
+
+![image](https://user-images.githubusercontent.com/20516321/229695521-76fb098a-04ca-4f0f-89e5-5929997416bc.png)
+
+9. Click on ok
+
 # Logic Apps
 
 **Step 1: Create email workflow endpoint using Gmail**
@@ -835,6 +855,7 @@ Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tuto
 Refer for more information [msft doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-control-flow-portal)
 
 # DataFlows
+
 1. Mapping data flows are visually designed data **transformations** in Azure Data Factory.
 2. Data flows allow data engineers to develop data transformation logic without writing code.
 3. The resulting data flows are executed as activities within Azure Data Factory pipelines that use scaled-out Apache Spark clusters.
