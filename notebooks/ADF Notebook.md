@@ -26,6 +26,7 @@
 26. **[DataFlows](#DataFlows)**<br>
 27. **[Split Transformation](#Split-Transformation)**<br>
 28. **[Derived Column](#Derived-Column)**<br>
+29. **[Azure DevOps](#Azure-DevOps)**<br>
   
 
 
@@ -1074,6 +1075,20 @@ Select * from [dbo].[Ds_Sink3_emp30]
 ```
 
 ![image](https://user-images.githubusercontent.com/20516321/212012706-9c0caf2a-1c16-4470-9f0f-03cd7408acca.png)
+
+# Azure DevOps
+## Source Control
+
+1. Open azure [Free Services](https://portal.azure.com/#view/Microsoft_Azure_Billing/FreeServicesBlade)
+2. Click on Azure DevOps **Create**
+
+![image](https://user-images.githubusercontent.com/20516321/230009150-7f2e6965-cce7-4eb5-9fa8-9c913ab396f2.png)
+
+3. Select **Default Directory**
+4. Click on **Create New Organization**
+5. Click on **Continue**
+6. Name organization name as **rritecorg**
+7. provide project name as **rritecproj**
 
 
 
