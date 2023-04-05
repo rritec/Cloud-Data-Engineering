@@ -928,9 +928,10 @@ INSERT INTO [dbo].[EMP] VALUES (7934, 'MILLER', 'CLERK', 7782, '23-JAN-1982', 13
 
 INSERT INTO [dbo].[EMP] VALUES (1234, 'Ram', 'CLERK', 7782, '23-JAN-1982', 1400, NULL, 50);
 
-``` sql
+```
 
 2. Develop a dataflow equal to below query
+
 ``` sql
 
 select 
@@ -948,6 +949,7 @@ order by
   2 asc
   
 ```
+
 ![image](https://user-images.githubusercontent.com/20516321/211307068-69491755-f804-41ad-9abd-f3023d54b7e8.png)
 
 3. Create a new pipeline with the name of **p01_dataflow1**
