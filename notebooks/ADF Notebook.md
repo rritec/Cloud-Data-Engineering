@@ -869,6 +869,7 @@ Refer for more information [msft doc](https://learn.microsoft.com/en-us/azure/da
 
 1. Develop a dataflow equal to below query
 ``` sql
+
 select 
   dname, 
   sum(sal) as total_sal 
@@ -882,8 +883,10 @@ group by
   dname 
 order by 
   2 asc
+  
 ```
-2. ![image](https://user-images.githubusercontent.com/20516321/211307068-69491755-f804-41ad-9abd-f3023d54b7e8.png)
+![image](https://user-images.githubusercontent.com/20516321/211307068-69491755-f804-41ad-9abd-f3023d54b7e8.png)
+
 3. Create a new pipeline with the name of **p01_dataflow1**
 4. From **Activities** > From **Move & transform** > Drag and drop **Data flow** activity
 5. In **General** tab > Type **Name** as **d01_dataflow**
@@ -892,22 +895,26 @@ order by
 8. Click on **Add Source**
 9. Provide **Output Stream Name** as **SrcEmp**
 10. Select **Dataset** as **src_azure_sql_emp**
-11. ![image](https://user-images.githubusercontent.com/20516321/211466552-1753baf0-4a2c-468d-873c-e1822b73f280.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211466552-1753baf0-4a2c-468d-873c-e1822b73f280.png)
 
 12. Click on another empty **Add Source** drop down > Click on **Add Source**
 13. Provide **Output Stream Name** as **SrcDmp**
 14. Select **Dataset** as **src_azure_sql_dept**
-15. ![image](https://user-images.githubusercontent.com/20516321/211466976-ad58d71e-dece-432d-869a-0b947af0c7a5.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211466976-ad58d71e-dece-432d-869a-0b947af0c7a5.png)
 
 16. Click on **SrcEmp** + icon > add **select** Schema Modifier
 17. Provide **Output Stream Name** as **select1Emp**
-18. Under **input columns** delete all columns except **deptno** and **sal**19. 
-21. ![image](https://user-images.githubusercontent.com/20516321/211467974-52456b35-cca6-4362-b947-09be984c577a.png)
+18. Under **input columns** delete all columns except **deptno** and **sal**
+
+![image](https://user-images.githubusercontent.com/20516321/211467974-52456b35-cca6-4362-b947-09be984c577a.png)
 
 22. Click on **SrcDept** + icon > add **select** Schema Modifier
 23. Provide **Output Stream Name** as **select2Dept**
 24. Under **input columns** delete all columns except **deptno** and **dname**
-27. ![image](https://user-images.githubusercontent.com/20516321/211468763-b7bf121b-19b7-4059-93a7-916054c437a6.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211468763-b7bf121b-19b7-4059-93a7-916054c437a6.png)
 
 28. Click on **Select1Emp** + icon > add **filter** row Modifier
 29. Click on **Filter on** expression builder > provide expression as ``` DEPTNO == 10 || DEPTNO == 20> ```
@@ -915,28 +922,33 @@ order by
 30. Click on **filter1** + icon > Select **Join** from **Multiple inputs/outputs**
 31. Select **join1** > Select **left stream** as **filter1** > select **right stream** as **select2dept** > join type** as **inner** 
 32. Select **Join Conditions** > left and right columns as **DEPTNO**
-33. ![image](https://user-images.githubusercontent.com/20516321/211472517-a1c652d1-806e-482d-854f-63c39e65dcdf.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211472517-a1c652d1-806e-482d-854f-63c39e65dcdf.png)
 
 34. Click on **Join1** + icon > from **Schema Modifier** select **Aggregate**
 35. Under **group by** select **Dname** column
 36. Under **Aggregates** > name **column** as **totalsal** > **Expression** as ```sum(SAL)```
-37. ![image](https://user-images.githubusercontent.com/20516321/211473271-8cd7c99f-15fd-421e-9cb8-1eec83ddd46f.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211473271-8cd7c99f-15fd-421e-9cb8-1eec83ddd46f.png)
 
 38. Click on **aggregate1** + icon > From **row modifier** select **Sort**
 39. select sort column as **totalsal** and order as **ascending**
-40. ![image](https://user-images.githubusercontent.com/20516321/211474756-6c8070ff-0617-4324-852a-1f0a3ba4977a.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211474756-6c8070ff-0617-4324-852a-1f0a3ba4977a.png)
 
 41. Click on **sort1** + icon > From **destination** select **Sink**
 42. select dataset as **tgt_azure_sql_agg**
 43. under settings select **table actio** as **recreate table**
-44. ![image](https://user-images.githubusercontent.com/20516321/211474483-7a2134c5-2ec2-4af8-af40-c13e3d03d568.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211474483-7a2134c5-2ec2-4af8-af40-c13e3d03d568.png)
 
 42. Click on **debug**
 43. observe output
-44. ![image](https://user-images.githubusercontent.com/20516321/211707073-7e8b9532-e18e-43ea-ae3b-299c732364f1.png)
+
+![image](https://user-images.githubusercontent.com/20516321/211707073-7e8b9532-e18e-43ea-ae3b-299c732364f1.png)
 
 
-45. ![image](https://user-images.githubusercontent.com/20516321/211475778-9a14f8f3-ab70-44ec-bece-5a80af570163.png)
+![image](https://user-images.githubusercontent.com/20516321/211475778-9a14f8f3-ab70-44ec-bece-5a80af570163.png)
 
 
 
@@ -945,7 +957,9 @@ order by
 Reference : [Joins](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_06_Power%20Query%20Editor%20Combine%20Data.md)
 
 # Split Transformation
+
 Go to **AzureDataFactory(ADF)** > Click on **Author** > Create New Pipeline > Give name as **Pipeline1_Dataflows_split** > Drag **Dataflow Activity** from Activity pane into work area 
+
 ![image](https://user-images.githubusercontent.com/20516321/212013537-97dda0ff-95d0-4019-afdc-9a43482ff8bd.png)
 
 Click on Dataflow Activity > Go to settings > Click on New > Give name as **Dataflow_Split** > Click on **Add Source** > Go to **sourceSetting** > Give name as **Source1emp** > Bottom **sourceSetting** > Select **Dataset** as **Src_azure_sql_emp**
