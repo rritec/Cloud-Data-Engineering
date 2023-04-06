@@ -27,6 +27,7 @@
 27. **[Split Transformation](#Split-Transformation)**<br>
 28. **[Derived Column](#Derived-Column)**<br>
 29. **[Azure DevOps](#Azure-DevOps)**<br>
+30. **[cost](#cost)**<br>
   
 
 
@@ -1089,6 +1090,10 @@ Select * from [dbo].[Ds_Sink3_emp30]
 5. Click on **Continue**
 6. Name organization name as **rritecorg**
 7. provide project name as **rritecproj**
+
+# cost
+
+1. refer [link](https://sqlkover.com/how-you-can-save-up-to-80-on-azure-data-factory-pricing/#:~:text=Minimize%20the%20number%20of%20activities,a%20self%2Dhosted%20integration%20runtime.)
 
 
 
