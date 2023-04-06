@@ -29,7 +29,7 @@
 29. **[filter](#filter)**<br>
 30. **[join](#join)**<br>
 31. **[aggregate](#aggregate)**<br>
-32. **[sort](#sort)**<br>33. 
+32. **[sort](#sort)**<br>
 35. **[Split Transformation](#Split-Transformation)**<br>
 36. **[union](#union)**<br>
 34. **[lookup](#lookup)**<br>
