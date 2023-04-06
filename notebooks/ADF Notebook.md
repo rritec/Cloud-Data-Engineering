@@ -25,10 +25,17 @@
 25. **[Logic Apps](#Logic-Apps)**<br>
 26. **[DataFlows](#DataFlows)**<br>
 27. **[Replicate DataFlows logic in copy activity](#Replicate-DataFlows-logic-in-copy-activity)**<br>
-28. **[Split Transformation](#Split-Transformation)**<br>
-29. **[Derived Column](#Derived-Column)**<br>
-30. **[Azure DevOps](#Azure-DevOps)**<br>
-31. **[cost](#cost)**<br>
+28. **[select](#select)**<br>
+29. **[filter](#filter)**<br>
+30. **[join](#join)**<br>
+31. **[aggregate](#aggregate)**<br>
+32. **[sort](#sort)**<br>33. 
+35. **[Split Transformation](#Split-Transformation)**<br>
+36. **[union](#union)**<br>
+34. **[lookup](#lookup)**<br>
+37. **[Derived Column](#Derived-Column)**<br>
+38. **[Azure DevOps](#Azure-DevOps)**<br>
+39. **[cost](#cost)**<br>
   
 
 
@@ -1106,7 +1113,12 @@ Select * from [dbo].[Ds_Sink3_emp30]
 
 ![image](https://user-images.githubusercontent.com/20516321/212012706-9c0caf2a-1c16-4470-9f0f-03cd7408acca.png)
 
+# Lookup
+
+[Refer](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-transformation-overview)
+
 # Azure DevOps
+
 ## Source Control
 
 1. Open azure [Free Services](https://portal.azure.com/#view/Microsoft_Azure_Billing/FreeServicesBlade)
