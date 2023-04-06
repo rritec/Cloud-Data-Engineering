@@ -24,10 +24,11 @@
 24. **[Triggers](#Triggers)**<br>
 25. **[Logic Apps](#Logic-Apps)**<br>
 26. **[DataFlows](#DataFlows)**<br>
-27. **[Split Transformation](#Split-Transformation)**<br>
-28. **[Derived Column](#Derived-Column)**<br>
-29. **[Azure DevOps](#Azure-DevOps)**<br>
-30. **[cost](#cost)**<br>
+27. **[Replicate DataFlows logic in copy activity](#Replicate-DataFlows-logic-in-copy-activity)**<br>
+28. **[Split Transformation](#Split-Transformation)**<br>
+29. **[Derived Column](#Derived-Column)**<br>
+30. **[Azure DevOps](#Azure-DevOps)**<br>
+31. **[cost](#cost)**<br>
   
 
 
@@ -1023,6 +1024,34 @@ order by
 
 Reference : [Joins](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_06_Power%20Query%20Editor%20Combine%20Data.md)
 
+# Replicate DataFlows logic in copy activity
+
+1. Create a new pipeline
+2. Drag and drop Copy Activity
+3. click on the source > create a datasource by pointing sql server
+4. provide below query
+``` sql
+
+SELECT dept.dname,
+       Sum(emp.sal) AS total_sal
+FROM   emp,
+       dept
+WHERE  emp.deptno = dept.deptno
+       AND emp.deptno IN ( 10, 20 )
+GROUP  BY dname
+ORDER  BY 2 DESC 
+
+```
+![image](https://user-images.githubusercontent.com/20516321/230277558-39bbd269-d718-455f-bb4a-5df7f1cce3a9.png)
+
+5. click on the sink > create a datasource by pointing sql server
+6. run it and observe output
+![image](https://user-images.githubusercontent.com/20516321/230277799-9d175d1c-5681-4bad-b47c-61512d134e3c.png)
+
+
+![image](https://user-images.githubusercontent.com/20516321/230277945-b20663bc-73fa-418d-b659-c9c8bcb75210.png)
+
+7. 
 # Split Transformation
 
 Go to **AzureDataFactory(ADF)** > Click on **Author** > Create New Pipeline > Give name as **Pipeline1_Dataflows_split** > Drag **Dataflow Activity** from Activity pane into work area 
