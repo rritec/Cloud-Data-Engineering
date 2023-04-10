@@ -196,18 +196,21 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 
 # BigData
 
-1. BigData Introduction
+1. **BigData Introduction**
+
 - What is BigData
 - BigData properties
 - When to choose bigdata
 
-2. BigData VM Installation
+2. **BigData VM Installation**
 
 - Oracle Virtual box installation
 - Cloudera VM installation
 - winscp Installation
 - Putty Installation
-3. Linux commands
+
+3. **Linux commands**
+
 - Working with folders
 - create folder
 - remove folder with files
@@ -224,7 +227,8 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - find command
 - ... etc
 
-4. HDFS
+4. **HDFS**
+
 - mkdir command
 - put command
 - get command
@@ -234,55 +238,81 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - merge command
 - ... etc
 
-5. Hive
-  6. Hive Metastore
-  7. Hive Managed Tables
-  8. Hive External Tables
-  9. Hive Operations
-  10. Hadoop File Formats and its Types
-  11. Different ways to connecting hive
-  12. Partitioning
-  13. Bucketing
+5. **Hive**
 
-4. Sqoop
-1. Sqoop Introduction
-2. sqoop list-tables
-3. Sqoop Eval
-4. Sqoop Import
-5. Sqoop Export
-6. Import All Tables
-7. Import table from mysql to hive
-5. Pyspark
-1. Spark Introduction
-2. Spark Architecture
-3. Spark Environment Setup (optional)
-4. Spark RDD with Python
-5. Spark RDD with Scala
-6. Spark DF
-7. Spark SQL
-8. Spark Structured Streaming
+- Hive Metastore
+- Hive Managed Tables
+- Hive External Tables
+- Hive Operations
+- Hadoop File Formats and its Types
+- Different ways to connecting hive
+- Partitioning
+- Bucketing
 
+4. **Sqoop**
+
+- Sqoop Introduction
+- sqoop list-tables
+- Sqoop Eval
+- Sqoop Import
+- Sqoop Export
+- Import All Tables
+- Import table from mysql to hive
+
+5. **Pyspark**
+
+- Spark Introduction
+- Spark Architecture
+- Spark Environment Setup (optional)
+- Spark RDD with Python
+- Spark RDD with Scala
+- Spark DF
+- Spark SQL
+- Spark Structured Streaming
 
 # DataBricks
 
-1. DBFS
+1. DBFS(DataBricks File System)
+
+- What is DBFS
+- Navigate around DBFS
+- Understanding path of DBFS
+
 2. Compute (creating clusters)
+- what is cluster
+- create cluster
+- map cluster to notebook
+
 3. Workspace (Creating notebooks and working with notebooks)
-1. Spark Introduction
-2. Spark Architecture
-3. Creating RDDs (Reslient Distributed Dataset)
-4. Creating DataFrame
-5. Reading and writing the Data From semi-structrured formats
-1. Reading JSON Files SingleLine/ MultiLine / Complex
-2. Reading XML Files
-3. Reading CSV / TSV Files
-6. Reading and writing the Data From structrured formats
-1. Reading data from MySql / SQL SERVER / Oracle etc..
-7. Reading and writing the Data From BIG DATA formats
-1. Parquet
-2. ORC
-3. AVRO
-8. Reading and writing the Data From AWS S3
+- Understand workspace
+- create folders
+- organize content in the workspace
+
+4. Spark Introduction
+5. Spark Architecture
+6. Creating RDDs (Reslient Distributed Dataset)
+- what is RDD
+- create RDD
+- Query RDD 
+7. Creating DataFrame
+- what is DF
+- create DF
+- add columns to DF
+- drop columns from DF
+- query required data from DF
+- .. etc
+8. Reading and writing the Data From semi-structrured formats
+9. Reading JSON Files SingleLine/ MultiLine / Complex
+10. Reading XML Files
+11. Reading CSV / TSV Files
+12. Reading and writing the Data From structrured formats
+13. Reading data from MySql / SQL SERVER / Oracle etc..
+14. Reading and writing the Data From BIG DATA formats
+- Parquet
+- ORC
+- AVRO
+- ... etc
+15. Reading and writing the Data From AWS S3
 9. Reading and writing the Data From Azure Blob
 10. PySpark Joins
 11. PySpark Union / UnionAll   
