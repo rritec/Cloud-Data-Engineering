@@ -12,138 +12,171 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 
 1. **Introduction**
 
-    - ETL Introduction
-    - ELT Introduction
-    - Different ETL Tools
-    - Azure Data Factory Introduction
-    - Azure Data Factory - Important Concepts in ADF
-    - ADF Architecture
-    - Create Azure Free Account with credit card
-    - Create Azure Free Account with out credit card
+- ETL Introduction
+- ELT Introduction
+- Different ETL Tools
+- Azure Data Factory Introduction
+- Azure Data Factory - Important Concepts in ADF
+- ADF Architecture
+- Create Azure Free Account with credit card
+- Create Azure Free Account with out credit card
 
 2. **Storage Account**
-      - Introduction
-      - What is subscription
-      - What is resource group
-      - create resource group
-      - Create Storage Account
-      - Differences among LRS/GRS/ZRS/GZRS
-      - Difference between Hot and Cool Tiers
-      - Create Data Lake Gen 2
-      - Create Containers
-      - Create Folders
-      - Upload Files
-      - Override Files
-      - Download Files
-      - Edit Files
-      - Preview Files in different formats
-3. **Azure SQL Database**
-    1. Create SQL Database
-    2. Create Sql Server
-    3. Create Username and password
-    4. Allow Azure resources and selected IPS access
-    5. Create tables and insert data
-    6. Query Tables
-    7. Install SSMS
-    8. Access Azure SQL Database using SSMS
-    
+- Introduction
+- What is subscription
+- What is resource group
+- create resource group
+- Create Storage Account
+- Differences among LRS/GRS/ZRS/GZRS
+- Difference between Hot and Cool Tiers
+- Create Data Lake Gen 2
+- Create Containers
+- Create Folders
+- Upload Files
+- Override Files
+- Download Files
+- Edit Files
+- Preview Files in different formats
 
+3. **Azure SQL Database**
+
+- Create SQL Database
+- Create Sql Server
+- Create Username and password
+- Allow Azure resources and selected IPS access
+- Create tables and insert data
+- Query Tables
+- Install SSMS
+- Access Azure SQL Database using SSMS   
 
 2. **Linked Service**
-      - Create Linked Service to BLOB
-      - Create Linked Service to Azure SQL Database
-      - Create Linked Service to MSFT SQL Server
-      - Create Linked Service to Batch Account
-      - .... etc
-      - Test Linked Service Connection
-      
+
+- Create Linked Service to BLOB
+- Create Linked Service to Azure SQL Database
+- Create Linked Service to MSFT SQL Server
+- Create Linked Service to Batch Account
+- .... etc
+- Test Linked Service Connection
+
 2. **Integration Run Times**
-      - What is Integration Run Time
-      - Types of IRs
-          - Azure integration runtime.
-          - Self-hosted integration runtime.
-          - Azure-SQL Server Integration Services (SSIS) integration runtime.
+
+- What is Integration Run Time
+- Types of IRs
+- Azure integration runtime.
+- Self-hosted integration runtime.
+- Azure-SQL Server Integration Services (SSIS) integration runtime.
+- Install Self-Hosted IR
+- Configuration of Self-Hosted IR
 
 2. **DataSets**
-      - Create Source Datasets
-      - Create Sink Datasets      - 
-      - Preview data
-      - Create Looup datasets
-      - Understand and preview data
-      
+
+- Create Source Datasets
+- Create Sink Datasets      - 
+- Preview data
+- Create Lookup datasets
+- Understand and preview data
+
 
 2. **BLOB to BLOB Pipeline**
-      - Create Pipeline
-      - Map source Dataset
-      - Map Sink Dataset
-      - Debug
-      - Trigger
-      - Understand output of run steps
-      - Understand Json log in each step
 
- 2. **Azure Storage Account Integration with ADF**
+- Create Pipeline
+- Map source Dataset
+- Map Sink Dataset
+- Debug
+- Trigger
+- Understand output of run steps
+- Understand Json log in each step
 
-      - Copy multiple files from blob to blob
-      - Filter activity - Dynamic Copy Activity
-      - Get File Names from Folder Dynamically
-      - Copy Activity Behavior in ADF
-      - Copy Activity Performance Tuning in ADF
-      - Get Count of files from folder in ADF
-      - Validate copied data between source and sink in ADF
+2. **Azure Storage Account Integration with ADF**
 
- 2. **Azure SQL Database integration with ADF**
-      - Azure SQL Databases - Introduction - Relational databases in Azure
-      - Overwrite and Append Modes in Copy Activity in ADF
+- Copy multiple files from blob to blob
+- Filter activity - Dynamic Copy Activity
+- Get File Names from Folder Dynamically
+- Copy Activity Behavior in ADF
+- Copy Activity Performance Tuning in ADF
+- Get Count of files from folder in ADF
+- Validate copied data between source and sink in ADF
 
- 2. **Incremental Load**
-      - What is full load
-      - What is incremental load
-      - types of incremental loads
-      - Incrementally load data from Azure SQL Database to Azure Blob storage
-      - Incrementally load data from multiple tables in SQL Server to a database in Azure SQL Database
-      - Incrementally copy new and changed files based on LastModifiedDate
-      - Incrementally copy new files based on time partitioned file name
+2. **Azure SQL Database integration with ADF**
 
- 2. **Logic Apps**
- 
-      - Branching and chaining activities
+- Azure SQL Databases - Introduction - Relational databases in Azure
+- Overwrite and Append Modes in Copy Activity in ADF
 
-# Python
+2. **Incremental Load**
+
+- What is full load
+- What is incremental load
+- types of incremental loads
+- Incrementally load data from Azure SQL Database to Azure Blob storage
+- Incrementally load data from multiple tables in SQL Server to a database in Azure SQL Database
+- Incrementally copy new and changed files based on LastModifiedDate
+- Incrementally copy new files based on time partitioned file name
+
+2. **Logic Apps**
+
+- Send Succeeded mail of ADF pipeline with run stats
+- Send Failed mail of ADF pipeline with error message
+- Branching and chaining activities
+
+1. **Azure Devops**
+
+- Create organization
+- create project
+- create Git main branch
+- configure Git to ADF
+- create a branch in ADF
+- publish ADF work in Git branch
+- delete git branches
+- understand commit in git
+- understand and debug merge conflicts 
+
+
+# Python Basic Level
+
+1. Install Anaconda
+1. understand markdown language
 1. How to write Python code in normal notepad
 2. How to write Python code in spyder
 3. How to write Python code in Visual Studio Code
-4. How to write Python code in in jupyter
+4. How to write Python code in in jupyter/ JupyterLab
 5. Different Python Objects
-    1. int
-    2. float
-    3. complex
-    4. str
-    5. bool
-    6. range
+1. int
+2. float
+3. complex
+4. str
+5. bool
+6. range
 6. Data Structures
-    1. list
-    2. Dict
-    3. Tuple
-    4. Set
-    5. Mutable Vs Immutable
+1. list
+2. Dict
+3. Tuple
+4. Set
+5. Mutable Vs Immutable
 7. Read items of str /list/Dict/Tuple/Set/range ..etc
-    1. index
-    2. slice
-    3. fancy
+1. index
+2. slice
+3. fancy
 8. Operators
-    1. Comparision(>,<,>=,<=,...)
-    2. Logical/bool(and/or/not)
-    3. Numpy logical (logical_and/logical_or/logical_not)
+1. Comparision(>,<,>=,<=,...)
+2. Logical/bool(and/or/not)
+3. Numpy logical (logical_and/logical_or/logical_not)
 9. Control Flows
-    1. input
-    2. if elif elif ... else
-    3. while loop
-    4. break
-    5. continue
-    6. for loop
+1. input
+2. if elif elif ... else
+3. while loop
+4. break
+5. continue
+6. for loop
 
 # Advanced Python
+
 1. System_Defined_Functions
+1. create functions
+1. function parameter
+1. manadatory parameters
+1. optional parameters
+1. flexiable parameters
+1. key value flexiable parameters
 2. LEGB_scope_of_objects_of_functions
 3. Methods
 4. Modules
@@ -158,39 +191,39 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 13. OOPs_Encapsulation
 14. OOPs_Polymorphism
 
-      
-    
+
+
 # BigData
 
 1. Linux commands
 2. HDFS
 3. Hive
-    1. Hive Metastore
-    2. Hive Managed Tables
-    3. Hive External Tables
-    4. Hive Operations
-    5. Hadoop File Formats and its Types
-    6. Different ways to connecting hive
-    7. Partitioning
-    8. Bucketing
+1. Hive Metastore
+2. Hive Managed Tables
+3. Hive External Tables
+4. Hive Operations
+5. Hadoop File Formats and its Types
+6. Different ways to connecting hive
+7. Partitioning
+8. Bucketing
 
 4. Sqoop
-    1. Sqoop Introduction
-    2. sqoop list-tables
-    3. Sqoop Eval
-    4. Sqoop Import
-    5. Sqoop Export
-    6. Import All Tables
-    7. Import table from mysql to hive
+1. Sqoop Introduction
+2. sqoop list-tables
+3. Sqoop Eval
+4. Sqoop Import
+5. Sqoop Export
+6. Import All Tables
+7. Import table from mysql to hive
 5. Pyspark
-    1. Spark Introduction
-    2. Spark Architecture
-    3. Spark Environment Setup (optional)
-    4. Spark RDD with Python
-    5. Spark RDD with Scala
-    6. Spark DF
-    7. Spark SQL
-    8. Spark Structured Streaming
+1. Spark Introduction
+2. Spark Architecture
+3. Spark Environment Setup (optional)
+4. Spark RDD with Python
+5. Spark RDD with Scala
+6. Spark DF
+7. Spark SQL
+8. Spark Structured Streaming
 
 
 # DataBricks
@@ -198,31 +231,31 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 1. DBFS
 2. Compute (creating clusters)
 3. Workspace (Creating notebooks and working with notebooks)
-    1. Spark Introduction
-    2. Spark Architecture
-    3. Creating RDDs (Reslient Distributed Dataset)
-    4. Creating DataFrame
-    5. Reading and writing the Data From semi-structrured formats
-        1. Reading JSON Files SingleLine/ MultiLine / Complex
-        2. Reading XML Files
-        3. Reading CSV / TSV Files
-    6. Reading and writing the Data From structrured formats
-        1. Reading data from MySql / SQL SERVER / Oracle etc..
-    7. Reading and writing the Data From BIG DATA formats
-        1. Parquet
-        2. ORC
-        3. AVRO
-     8. Reading and writing the Data From AWS S3
-     9. Reading and writing the Data From Azure Blob
-     10. PySpark Joins
-     11. PySpark Union / UnionAll   
+1. Spark Introduction
+2. Spark Architecture
+3. Creating RDDs (Reslient Distributed Dataset)
+4. Creating DataFrame
+5. Reading and writing the Data From semi-structrured formats
+1. Reading JSON Files SingleLine/ MultiLine / Complex
+2. Reading XML Files
+3. Reading CSV / TSV Files
+6. Reading and writing the Data From structrured formats
+1. Reading data from MySql / SQL SERVER / Oracle etc..
+7. Reading and writing the Data From BIG DATA formats
+1. Parquet
+2. ORC
+3. AVRO
+8. Reading and writing the Data From AWS S3
+9. Reading and writing the Data From Azure Blob
+10. PySpark Joins
+11. PySpark Union / UnionAll   
 4. Scopes
 5. Delta Lake
-    1. ACID Transactions
-    2. Delta Live Tables
-    3. COPY INTO
-    4. Auto Loader
-    5. Convert Parquet or Iceberg data to Delta Lake
+1. ACID Transactions
+2. Delta Live Tables
+3. COPY INTO
+4. Auto Loader
+5. Convert Parquet or Iceberg data to Delta Lake
 
 6. Scheduling the jobs
 
