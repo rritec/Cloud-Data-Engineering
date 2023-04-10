@@ -22,6 +22,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Create Azure Free Account with out credit card
 
 2. **Storage Account**
+
 - Introduction
 - What is subscription
 - What is resource group
@@ -49,7 +50,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Install SSMS
 - Access Azure SQL Database using SSMS   
 
-2. **Linked Service**
+4. **Linked Service**
 
 - Create Linked Service to BLOB
 - Create Linked Service to Azure SQL Database
@@ -58,7 +59,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - .... etc
 - Test Linked Service Connection
 
-2. **Integration Run Times**
+5. **Integration Run Times**
 
 - What is Integration Run Time
 - Types of IRs
@@ -68,7 +69,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Install Self-Hosted IR
 - Configuration of Self-Hosted IR
 
-2. **DataSets**
+6. **DataSets**
 
 - Create Source Datasets
 - Create Sink Datasets      - 
@@ -77,7 +78,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Understand and preview data
 
 
-2. **BLOB to BLOB Pipeline**
+7. **BLOB to BLOB Pipeline**
 
 - Create Pipeline
 - Map source Dataset
@@ -87,7 +88,7 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Understand output of run steps
 - Understand Json log in each step
 
-2. **Azure Storage Account Integration with ADF**
+8. **Azure Storage Account Integration with ADF**
 
 - Copy multiple files from blob to blob
 - Filter activity - Dynamic Copy Activity
@@ -97,12 +98,12 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Get Count of files from folder in ADF
 - Validate copied data between source and sink in ADF
 
-2. **Azure SQL Database integration with ADF**
+9. **Azure SQL Database integration with ADF**
 
 - Azure SQL Databases - Introduction - Relational databases in Azure
 - Overwrite and Append Modes in Copy Activity in ADF
 
-2. **Incremental Load**
+10. **Incremental Load**
 
 - What is full load
 - What is incremental load
@@ -112,13 +113,13 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Incrementally copy new and changed files based on LastModifiedDate
 - Incrementally copy new files based on time partitioned file name
 
-2. **Logic Apps**
+11. **Logic Apps**
 
 - Send Succeeded mail of ADF pipeline with run stats
 - Send Failed mail of ADF pipeline with error message
 - Branching and chaining activities
 
-1. **Azure Devops**
+12. **Azure Devops**
 
 - Create organization
 - create project
