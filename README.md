@@ -196,17 +196,53 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 
 # BigData
 
-1. Linux commands
-2. HDFS
-3. Hive
-1. Hive Metastore
-2. Hive Managed Tables
-3. Hive External Tables
-4. Hive Operations
-5. Hadoop File Formats and its Types
-6. Different ways to connecting hive
-7. Partitioning
-8. Bucketing
+1. BigData Introduction
+- What is BigData
+- BigData properties
+- When to choose bigdata
+
+2. BigData VM Installation
+
+- Oracle Virtual box installation
+- Cloudera VM installation
+- winscp Installation
+- Putty Installation
+3. Linux commands
+- Working with folders
+- create folder
+- remove folder with files
+- remove folder without files
+- understanding VI editor
+- working with Files
+- create a file
+- copy file
+- move file
+- remove file
+- cat command
+- understanding permissions
+- grep command
+- find command
+- ... etc
+
+4. HDFS
+- mkdir command
+- put command
+- get command
+- CopyFromLocal command
+- CopyToLocal command
+- rm Command
+- merge command
+- ... etc
+
+5. Hive
+  6. Hive Metastore
+  7. Hive Managed Tables
+  8. Hive External Tables
+  9. Hive Operations
+  10. Hadoop File Formats and its Types
+  11. Different ways to connecting hive
+  12. Partitioning
+  13. Bucketing
 
 4. Sqoop
 1. Sqoop Introduction
