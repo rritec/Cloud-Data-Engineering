@@ -63,7 +63,9 @@
     2. create table using below script
     
         ``` sql 
-        Create table if not exists emp (empno int,ename string,sal int) rows delimited fields terminated by ',';
+
+        Create table if not exists emp (empno int,ename string,sal int) row format delimited fields terminated by ',';
+
         ```
     3. Observe Schema of table
 
