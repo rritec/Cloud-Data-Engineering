@@ -216,7 +216,7 @@ drop table emp_ext;
 
 21. Note that metastore table `TBLS` deleted the row of `emp`
 22. Note that `emp_ext.txt` not deleted from wareouse path
-23. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/emp_ext`
+23. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/rritecdb.db/emp_ext`
 24. 
 
 # Hive Operations
