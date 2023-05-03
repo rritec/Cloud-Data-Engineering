@@ -139,7 +139,7 @@
 3. create table using below script
 
 ``` sql 
-Create external table if not exists emp_ext (empno int,ename string,sal int) rows delimited fields terminated by ',';
+Create external table if not exists emp_ext (empno int,ename string,sal int) row format delimited fields terminated by ',';
 ```
 3. Observe Schema of table
 
