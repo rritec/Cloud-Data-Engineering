@@ -344,7 +344,22 @@
 2. See the data of files in DBFS
 
     1. Click on **Create** > Click on **Notebook** > Name it as **Create Dataframes** > Click on **Create**
-    2. type as for below
+    2. Read about [Databricks Utilities](https://docs.databricks.com/dev-tools/databricks-utils.html#databricks-utilities)
+        ``` fs
+        dbutils.help()
+        ```
+        ``` fs
+        dbutils.fs.help()
+        ```
+
+        ``` fs
+        dbutils.fs.help("head")
+        ```
+        ``` fs
+        dbutils.fs.head("/FileStore/tables/part_00000-2",100)
+        ```
+
+    3. type as for below
         ``` fs
         %fs head /FileStore/tables/part_00000-2
         ```
