@@ -384,6 +384,10 @@
         ``` sql
         orders_df.show()
         ```
+        ``` py
+        df.groupBy("order_status").count().show()
+        ```
+
     4. 
 2. Create dataframe from json file
     1. upload order json file
