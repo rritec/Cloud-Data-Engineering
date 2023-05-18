@@ -385,7 +385,7 @@
         orders_df.show()
         ```
         ``` py
-        df.groupBy("order_status").count().show()
+        orders_df.groupBy("order_status").count().show()
         ```
 
     4. 
