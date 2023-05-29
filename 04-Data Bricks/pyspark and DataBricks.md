@@ -1374,4 +1374,4 @@ emp_df.write
  
  ```
 # Spark SQL
-1. Please refer the notebook [spark sql](https://github.com/rritec/Cloud-Data-Engineering/blob/main/notebooks/databricks/Spark%20Sql.ipynb)
+1. Please refer the notebook [spark sql](https://github.com/rritec/Cloud-Data-Engineering/blob/main/miscellaneous/notebooks/databricks/Spark%20Sql.ipynb)
