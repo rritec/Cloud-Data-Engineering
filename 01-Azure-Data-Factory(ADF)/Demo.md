@@ -3,7 +3,7 @@
   2. AWS
   3. Azure
 2. Azure Cloud Data Engineering
-  1. Azure Data Factory
+  1. Azure Data Factory/Azure Synapse Analytics
     1. Azure Fundmentals
     2. Azure Blobs
     3. Azure Sql Database
@@ -25,3 +25,7 @@
     2. PySpark(Cloud)
     3. spark-shell(spark-scala)(on-permise/cloud)
     4. Databricks
+3. Total Duration: 2 and half months
+4. CV
+5. Proxy
+6. 
