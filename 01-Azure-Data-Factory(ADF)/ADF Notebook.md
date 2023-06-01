@@ -59,6 +59,11 @@
   - Informatica (ETL/ELT)
   - ODI (ELT)
   - ADF (ETL/ELT)
+  - python
+  - scala
+  - java
+  - ssis
+  - ADB
   - .... etc
 ## Different BI Tools ?
   - Power BI
