@@ -699,7 +699,7 @@ from [dbo].[src_incr_emp]
 select *  
 from [dbo].[src_incr_emp]
 where 
-hiredate >= '@{activity('Get_last_load_date').output.firstRow.last_load_date}'
+hiredate > '@{activity('Get_last_load_date').output.firstRow.last_load_date}'
 and hiredate <= '@{activity('Get_max_transaction_date_from_source').output.firstRow.max_hiredate}'
 
 ```
@@ -739,10 +739,10 @@ and hiredate <= '@{activity('Get_max_transaction_date_from_source').output.first
 ``` sql
 
 INSERT INTO src_incr_emp
-VALUES (6, 'geo','9/6/2017 2:23:00 AM')
+VALUES (6, 'geo','9/6/2020 2:23:00 AM')
 
 INSERT INTO src_incr_emp
-VALUES (7, 'albert','9/7/2017 9:01:00 AM')
+VALUES (7, 'albert','9/7/2020 9:01:00 AM')
 
 ```
 2. Click on **debug** > observe run steps
