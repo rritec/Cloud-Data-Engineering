@@ -2,7 +2,9 @@
 **[1 Linux Distributions](#1-Linux-Distributions)**<br>
 **[2 Directory](#2-Directory)**<br>
 **[3 Man and help](#3-Man-and-help)**<br>
-**[4 Home work](#4-Home-work)**<br>
+**[4 Vi Editor](#4-Vi-Editor)**<br>
+**[5 Linux Files](#5-Linux-Files)**<br>
+**[6 Home work](#6-Home-work)**<br>
 
 
 # 1. Linux Distributions
@@ -197,7 +199,7 @@ ls --help
 
 ```
 
-##### Vi Editor
+##### 4 Vi Editor
 
 
 
@@ -231,7 +233,7 @@ x  --> to remove a character
 8. Navigating to a line:
 	`:n --> ` to go to a line number
 
-##### Linux Files
+##### 5 Linux Files
 ##### Linux Files-Topics
 1. Creating empty files 
 2. Creating file contents
@@ -567,7 +569,7 @@ mv /home/Admin/file2 dir2
 
 
 
-# 4 Home work
+# 6 Home work
 1. Complete learning path and share the screeshot in whatsapp group [here](https://learn.microsoft.com/en-us/training/paths/shell/?WT.mc_id=portaledu_inproduct_roles)
 
 
