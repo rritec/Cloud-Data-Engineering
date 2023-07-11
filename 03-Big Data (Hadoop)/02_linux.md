@@ -1,8 +1,8 @@
 # Hadoop(BigData)(Linux)
-1. **[1. Linux Distributions](#1.-Linux-Distributions)**<br>
-2. **[2 Directory](#2-Directory)**<br>
-3. **[Man and help](#Man-and-help)**<br>
-4. **[Home work](#Home-work)**<br>
+**[1 Linux Distributions](#1-Linux-Distributions)**<br>
+**[2 Directory](#2-Directory)**<br>
+**[3 Man and help](#3-Man-and-help)**<br>
+**[4 Home work](#4-Home-work)**<br>
 
 
 # 1. Linux Distributions
@@ -167,7 +167,7 @@ cd NewDir
 6. Path completion is extremely helpful in typing long file names where you don't remember the full file name.
 7. Some files contain symbols or spaces which is difficult to keep in mind there you can use it.
 
-##### Man and help
+##### 3 Man and help
 1. Man stands for manual which is a reference book of a Linux operating system. 
 2. To get help on any command that you do not understand, you can type
 3. syntax
@@ -567,7 +567,7 @@ mv /home/Admin/file2 dir2
 
 
 
-# Home work
+# 4 Home work
 1. Complete learning path and share the screeshot in whatsapp group [here](https://learn.microsoft.com/en-us/training/paths/shell/?WT.mc_id=portaledu_inproduct_roles)
 
 
