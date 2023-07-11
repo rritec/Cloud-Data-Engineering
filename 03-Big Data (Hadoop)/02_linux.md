@@ -1,8 +1,8 @@
 # Hadoop(BigData)(Linux)
 1. **[Linux Distributions](#Linux-Distributions)**<br>
 2. **[Directory](#Directory)**<br>
-3. **[Home work](#Home-work)**<br>
-4. 
+3. **[Man & help](#Man-&-help)**<br>
+4. **[Home work](#Home-work)**<br>
 
 
 # Linux Distributions
