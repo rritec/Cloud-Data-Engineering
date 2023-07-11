@@ -1,6 +1,6 @@
 # Hadoop(BigData)(Linux)
 1. **[1. Linux Distributions](#1.-Linux-Distributions)**<br>
-2. **[Directory](#Directory)**<br>
+2. **[2. Directory](#2.-Directory)**<br>
 3. **[Man and help](#Man-and-help)**<br>
 4. **[Home work](#Home-work)**<br>
 
@@ -15,7 +15,7 @@
   5. Open SUSE
   6. Cent os
 
-# Directory
+# 2. Directory
 
 1. A directory in Linux is similar to a folder in windows OS
 2. A directory’s solo job is to store the files and the related information. 
