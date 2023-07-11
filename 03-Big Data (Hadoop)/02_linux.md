@@ -1,11 +1,11 @@
 # Hadoop(BigData)(Linux)
-1. **[Linux Distributions](#Linux-Distributions)**<br>
+1. **[1. Linux Distributions](#1.-Linux-Distributions)**<br>
 2. **[Directory](#Directory)**<br>
 3. **[Man and help](#Man-and-help)**<br>
 4. **[Home work](#Home-work)**<br>
 
 
-# Linux Distributions
+# 1. Linux Distributions
 
 1. Versions/types/kinds/flavors of Linux operating system are called Linux Flavors/Distributions (also called Linux Distro).
   1. Ubuntu
