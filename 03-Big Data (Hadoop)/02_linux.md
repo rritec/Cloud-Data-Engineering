@@ -66,7 +66,7 @@ mkdir d1 d2 d3
 6. But mkdir -p command will create it at once.
 ``` sh
 
-mkdir -p ~/country/state/district
+mkdir -p country/state/district
 
 ```
 ##### rmdir
@@ -184,9 +184,10 @@ man <command>
 man rm
 
 ```
-5. The terminal would open the manual page for that command.
-6. Also help can be used to see the list of available options for a command
-7. syntax
+5. To close the **manual** type **q** from keyboard
+6. The terminal would open the manual page for that command.
+7. Also help can be used to see the list of available options for a command
+8. syntax
 ``` sh
 
 <command> --help
