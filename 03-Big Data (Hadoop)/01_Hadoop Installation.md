@@ -19,7 +19,7 @@
 
 
 2. Cloudera VM
-    1. Download Cloudera Quick Start VM [here](https://drive.google.com/file/d/1whrzmVjdkdcQyaNV_k3FLV012ss2eH80/view?usp=share_link)
+    1. Download Cloudera Quick Start VM [here](https://drive.google.com/file/d/1zS9E6KYbM4PPgDopFH1VNRJNkNQ7Yu4T/view?usp=sharing)
     2. Create one empty folder and extract it
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/9cb209a8-6641-439d-918b-713f9b39eac2)
 
