@@ -206,10 +206,8 @@ ls --help
 
 1. The default editor that comes with the UNIX operating system is called vi (VIsual editor)
 2. The UNIX vi editor is a full screen editor and has two modes of operation:
---Command mode:
-3. commands which cause action to be taken on the file, and
---Insert mode:
-4. in which entered text is inserted into the file.
+    1. **Command mode:** commands which cause action to be taken on the file
+    2. **Insert mode:** in which entered text is inserted into the file.
 5. To open a file to see it’s contents
 	``` sh 
 	Vi <filename>
