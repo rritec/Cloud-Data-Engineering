@@ -303,5 +303,9 @@ ls -ltrh
     --hive-database rritec_test \
     --hive-table hive_orders
     ```
-    
+# Questions:
+
+1. Are we really using sqoop now a days ?
+- 10 % of the people may using sqoop, just spend 1 hour to learn this sqoop.
+- most of the people are depending on scripts(scala/python) to move data from RDBMS to hadoop vice versa
 2. 
