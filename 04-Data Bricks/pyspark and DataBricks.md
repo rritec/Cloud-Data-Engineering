@@ -962,10 +962,10 @@ emp_df = spark.createDataFrame(data = emp_data, schema = columns)
 display(emp_df)
 
 ```
-2. withColumn
+2. How to add one or more columns to the dataframe?
 ``` python
 
-emp_df1=emp_df.withColumn("tax",emp_df.emp_sal *0.01)
+emp_df1=emp_df.withColumn("tax",emp_df.emp_sal *0.01).withColumn("hra",emp_df.emp_sal *0.03)
 display(emp_df1)
 
 ```
@@ -1010,7 +1010,12 @@ display(emp_df)
 ```
 ``` python
 from pyspark.sql.functions import split
-split_df = emp_df.withColumn("emp_first_name", split("emp_full_name", ",")[0])
+split_df = (
+            emp_df
+            .withColumn("emp_first_name", split("emp_full_name", ",")[0])
+            .withColumn("emp_middle_name", split("emp_full_name", ",")[1])
+            .withColumn("emp_last_name", split("emp_full_name", ",")[2])
+        )
 display(split_df)
 
 ```
