@@ -119,11 +119,11 @@ Related Content:
                     add(
                         int(
                             substring(
-                                variables('Get_error_msg_last_part'),
+                                variables('Get Error'),
                                 3,
                                 sub(
                                     length(
-                                        variables('Get_error_msg_last_part')
+                                        variables('Get Error')
                                     ),
                                     4
                                 )
