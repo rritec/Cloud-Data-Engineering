@@ -114,25 +114,25 @@ Related Content:
     3. Click on **Settings** > Click on **New** > Add new variable name as **Range of Page Numbers** and Type as **Array** > Click on **Conform**
     4. Provide Value as
         ```
-        @range(
-    0,
-    add(
-        int(
-            substring(
-                variables('Get_error_msg_last_part'),
-                3,
-                sub(
-                    length(
-                        variables('Get_error_msg_last_part')
-                    ),
-                    4
+                    @range(
+                0,
+                add(
+                    int(
+                        substring(
+                            variables('Get_error_msg_last_part'),
+                            3,
+                            sub(
+                                length(
+                                    variables('Get_error_msg_last_part')
+                                ),
+                                4
+                            )
+                        )
+                    )
+                    ,1
                 )
+            
             )
-        )
-        ,1
-    )
-
-)
         ``` 
         
         ![image](https://user-images.githubusercontent.com/20516321/228446856-7526191b-6d80-4341-a50e-db328ab64525.png)
