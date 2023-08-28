@@ -10,9 +10,39 @@
     4. Custom event
 5. Pipelines and triggers have a many-to-many relationship (except for the tumbling window trigger). 
 6. Multiple triggers can kick off a single pipeline, or a single trigger can kick off multiple pipelines
-7. Open any Pipeline > Click on **Add Trigger** > Click on **New/Edit**
-8. Click on **New** > Name it as **Daily_trigger**
+## 1. Schedule Trigger
+1. Click on **Manage** > Click on **Triggers** > Click on **New** > Provide Below Information
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/b4bcf012-2a6e-43f5-a401-b4b2fbaa725b)
 
-![image](https://user-images.githubusercontent.com/20516321/229695521-76fb098a-04ca-4f0f-89e5-5929997416bc.png)
+2. Click on ok
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/04843300-3ee2-4620-a0ca-622770ac9571)
 
-9. Click on ok
+### Map Schedule Trigger to Pipeline
+1. Open any pipeline > Click on **Trigger** > Click on **New/Edit** > From the drop down Select above trigger > Click on **ok**
+## 2. Tumbling Window Trigger
+1. Click on **Manage** > Click on **Triggers** > Click on **New** > Provide Below Information
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/1af0f58d-270a-4675-9fd7-436eab358082)
+
+2. Click on ok
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/7121fa9e-92c8-4ad9-9a25-e1c2e642936c)
+3. Map this trigger to any pipeline.
+
+## 3. Storage Event
+### Register EventGrid
+1. Click on **Subscriptions** > Click on **Azure For Students** > Click on **Resource Providers** > Select **Microsoft.EventGrid** > Click on **Register**
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/5693bcad-bcf9-4d67-9296-09f233bb0518)
+
+
+### Create Storage Event
+1.  Click on **Manage** > Click on **Triggers** > Click on **New** > Provide Below Information
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/6d2d8bb0-03bc-4ad0-8c45-f046249b6012)
+
+
+3. Click on **Continue**
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/4d003ee9-a3b3-44a6-aab6-696a628c40d7)
+
+4. Click on **ok**
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/e8c60179-9c49-4c6b-9e95-3a7868e5618f)
+
+5. Map this trigger to any pipeline.
+
