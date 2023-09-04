@@ -18,6 +18,7 @@
 ## Map Repo to ADF Code
 1. Open adf portal adf.azure.com
 2. Click on Setup Code Repositiry
+
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/1501234a-b567-4dc4-8448-f92a7d85cd74)
 
 3. Select Repository Type as **Azure Devops Git**
