@@ -56,7 +56,9 @@ hdfs dfs -help ls
 
 ```
 ##### ls
-1. `ls` without any options in hdfs is equal to `ls –lrt` in `linux`
+1. `/home` is linux os path
+2. `/user` is hdfs path
+3.  `ls` without any options in hdfs is equal to `ls –lrt` in `linux`
 ```sh
 
 hdfs dfs -ls /user/cloudera/b20230201/
