@@ -4,14 +4,15 @@
     2. External Tables or Non Managed Tables
 3. **Create managed table or internal table**
     1. Open terminal ```type hive```
-    2. create table using below script
+    2. Refer document more information [help](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-Create/Drop/Alter/UseDatabase)
+    3. create table using below script
     
         ``` sql 
 
         Create table if not exists emp (empno int,ename string,sal int) row format delimited fields terminated by ',';
 
         ```
-    3. Observe Schema of table
+    4. Observe Schema of table
 
         ``` sql
         describe emp;
@@ -22,11 +23,11 @@
         ``` sql
         desc formatted emp;
         ```
-    4. Observe data
+    5. Observe data
         ``` sql
         select * from emp;
         ```
-    5. load data from **file** into **table**
+    6. load data from **file** into **table**
         1. In linux desktop > right click open terminal
         2. create a file `vi emp.txt`
         3. enter data
@@ -59,7 +60,7 @@
             ``` sql 
             select * from emp limit 2;
             ```       
-    6. Observe table in **metastore** 
+    7. Observe table in **metastore** 
         ``` sql
         mysql -uroot -pcloudera
         ```
@@ -69,8 +70,8 @@
         ``` sql
         select * from TBLS
         ```
-    7. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
-    8. If we drop **managed_table** hive metastore and hdfs warehouse will be cleared.
+    8. Observe `emp.txt` in warehouse path `hdfs dfs -ls /user/hive/warehouse/rritecdb.db/emp/`
+    9. If we drop **managed_table** hive metastore and hdfs warehouse will be cleared.
         1. drop the table
             ``` sql
             drop table emp;
