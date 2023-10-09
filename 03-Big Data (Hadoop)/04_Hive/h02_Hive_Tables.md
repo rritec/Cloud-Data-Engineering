@@ -4,7 +4,7 @@
     2. External Tables or Non Managed Tables
 3. **Create managed table or internal table**
     1. Open terminal ```type hive```
-    2. Refer document more information [help](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-Create/Drop/Alter/UseDatabase)
+    2. Refer document for more information [help](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-Create/Drop/Alter/UseDatabase)
     3. create table using below script
     
         ``` sql 
