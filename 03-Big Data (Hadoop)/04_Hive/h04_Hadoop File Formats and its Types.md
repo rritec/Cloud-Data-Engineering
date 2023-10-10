@@ -21,7 +21,7 @@
         ``` sql 
         insert into dept_orc select * from dept_text;
         ```
-    3.  load data from table to parquet storage tale
+3.  load data from table to parquet storage tale
         ``` sql
         create table dept_parquet(deptno int,dname string,loc string) row format delimited fields terminated by ',' stored as parquet;
         ```
