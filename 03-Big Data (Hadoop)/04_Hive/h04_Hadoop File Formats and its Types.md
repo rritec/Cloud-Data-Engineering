@@ -36,9 +36,9 @@
     ```
 5. Create table directly from parquet file
     ``` sql
-    create external table dept6(deptno int,dname string,loc string)
-stored as orc
-location "/user/hive/warehouse/b2210.db/dept_parquet/"
-TBLPROPERTIES ("skip.header.line.count"="1");
+    create external table dept3(deptno int,dname string,loc string)
+    stored as orc
+    location "/user/hive/warehouse/b2210.db/dept_parquet/"
+    TBLPROPERTIES ("skip.header.line.count"="1");
     ```
 6. 
