@@ -47,7 +47,7 @@
 
     ``` sql
     create external table dept3(deptno int,dname string,loc string)
-     stored as orc
+     stored as parquet
      location "/user/hive/warehouse/b2210.db/dept_parquet/";
     ```
 6. 
