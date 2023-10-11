@@ -2,7 +2,7 @@
 
 1. Hadoop file formats are
     1. text file
-    2. orc file
+    2. orc file [read more](https://cwiki.apache.org/confluence/display/hive/languagemanual+orc)
     3. parquet file
     4. avro file
 2. Load data from text file to orc file storage table
