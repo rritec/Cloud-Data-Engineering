@@ -51,6 +51,9 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         ``` linux
         hdfs dfs -ls /user/hive/warehouse/rritec.db/emp_partition/deptno=20/
         ```
+        ``` linux
+        show partitions emp_partition;
+        ```
         
     11. 
 6. Dynamic Partitioning
