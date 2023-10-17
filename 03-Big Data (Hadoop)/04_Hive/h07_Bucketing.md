@@ -47,7 +47,10 @@
         ```
         ``` shell
         hdfs dfs -tail /user/hive/warehouse/rritec.db/orders_buck/000006_0
-        ```       
+        ```
+        ``` shell
+        hadoop fs -cat /user/hive/warehouse/b2310.db/orders_buck/000007_0 | wc -l
+        ```      
         
     3. Understanding `sorted by`
         ``` sql
