@@ -470,16 +470,16 @@
            .load("/FileStore/tables/nov2022/dept_pipe/departments")
            )
         ```
-###### or
+######## or
         ``` sql
         dept_df = (spark
-   .read
-   .format("csv")
-   .options(header=True,delimiter= "|")
-   .load("/FileStore/archive/department_p.csv")
-   )
-           )
-        ```
+                .read
+                   .format("csv")
+                   .options(header=True,delimiter= "|")
+                   .load("/FileStore/archive/department_p.csv")
+                   )
+                           )
+                ```
 
     2. observe type
         ``` sql
