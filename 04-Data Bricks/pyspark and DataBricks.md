@@ -461,27 +461,28 @@
         %fs head /FileStore/tables/nov2022/dept_pipe/departments
         ```
     3. Create dataframe
-        ``` sql
+
+       ``` sql
         dept_df = (spark
            .read
            .format("csv")
            .option("header", "true")
-           .option("delimiter", "|")
+           .option("delimiter", "|") 
+           .load("/FileStore/tables/nov2022/dept_pipe/departments")
+           )
+        ```
+    4. Create dataframe with options
+        ``` sql
+        dept_df = (spark
+           .read
+           .format("csv")
+           .options(header=True,delimiter= "|") 
            .load("/FileStore/tables/nov2022/dept_pipe/departments")
            )
         ```
         
-######## or
-
-        ``` sql
-        dept_df = (spark
-                .read
-                   .format("csv")
-                   .options(header=True,delimiter= "|")
-                   .load("/FileStore/archive/department_p.csv")
-                   )
-                           )
-         ```
+  
+ 
 
     2. observe type
         ``` sql
