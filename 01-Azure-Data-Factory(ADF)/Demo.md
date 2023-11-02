@@ -1,7 +1,10 @@
 1. Clouds are majorly three types
     1. GCP
-  3. AWS
-  4. Azure
+    2. AWS
+    3. Azure
+2. Observe High level differences 
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/ba729d30-4947-4171-b008-49a3b3afe22b)
+
 2. Azure Cloud Data Engineering
   1. Azure Data Factory/Azure Synapse Analytics
     1. Azure Fundmentals
