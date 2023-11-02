@@ -1,7 +1,7 @@
 1. Clouds are majorly three types
-  1. GCP
-  2. AWS
-  3. Azure
+    1. GCP
+  3. AWS
+  4. Azure
 2. Azure Cloud Data Engineering
   1. Azure Data Factory/Azure Synapse Analytics
     1. Azure Fundmentals
