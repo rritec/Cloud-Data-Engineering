@@ -5,6 +5,7 @@
     3. GCP
 
 2. Observe High level differences 
+
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/ba729d30-4947-4171-b008-49a3b3afe22b)
 
 2. Azure Cloud Data Engineering
