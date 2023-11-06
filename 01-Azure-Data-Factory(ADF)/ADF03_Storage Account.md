@@ -1,3 +1,6 @@
+# Resource Group?
+1. A resource group is a container that enables you to manage related resources for an Azure solution
+2. Refer more [here](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-groups)
 # Storage Account
   - Azure Storage is a Microsoft-managed service providing cloud storage that is 
       - highly available
@@ -29,6 +32,9 @@
   - Open **rriteccontainer** > open **input** folder > Click on **upload** > from **labdata** select **emp.csv** > Click on **upload**
   - Right Click on **emp.csv** > observe all properties
   - ![image](https://user-images.githubusercontent.com/20516321/209083873-83ee8400-13d9-497a-8772-95e3ff065fa3.png)
+# Reference Material
+1. [storage-account-overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+2. [storage-account-create](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 # Questions
 1. BLOB Stands for ?
     - Binary Large Object
