@@ -35,6 +35,7 @@
 # Reference Material
 1. [storage-account-overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 2. [storage-account-create](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
+3. [storage-redundancy](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)
 # Questions
 1. BLOB Stands for ?
     - Binary Large Object
