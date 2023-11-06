@@ -28,15 +28,22 @@
   - Open **rriteccontainer** > Click on **Add Directory** > Name it as **input**
   - Click on **Add Directory** > Name it as **output**
   - ![image](https://user-images.githubusercontent.com/20516321/209080956-412e8fa4-eef5-43f7-86b3-58cbc199ae78.png)
+
 ## Upload File
+
   - Open **rriteccontainer** > open **input** folder > Click on **upload** > from **labdata** select **emp.csv** > Click on **upload**
   - Right Click on **emp.csv** > observe all properties
   - ![image](https://user-images.githubusercontent.com/20516321/209083873-83ee8400-13d9-497a-8772-95e3ff065fa3.png)
+
 # Reference Material
+
 1. [storage-account-overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 2. [storage-account-create](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 3. [storage-redundancy](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)
+4. [access-tiers-overview](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)
+
 # Questions
+
 1. BLOB Stands for ?
     - Binary Large Object
     - It allows users to store large amounts of unstructured data on Microsoft's data storage platform
