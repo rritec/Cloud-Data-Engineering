@@ -29,3 +29,8 @@
   - Open **rriteccontainer** > open **input** folder > Click on **upload** > from **labdata** select **emp.csv** > Click on **upload**
   - Right Click on **emp.csv** > observe all properties
   - ![image](https://user-images.githubusercontent.com/20516321/209083873-83ee8400-13d9-497a-8772-95e3ff065fa3.png)
+# Questions
+1. BLOB Stands for ?
+    - Binary Large Object
+    - It allows users to store large amounts of unstructured data on Microsoft's data storage platform
+2. 
