@@ -54,4 +54,9 @@
     - RA-GRS
     - GZRS
     - RA-GZRS
-3. 
+3. How many types of Access tiers available?
+    - Hot Tier
+    - Cool Tier
+    - Cold Tier
+    - Archive Tier
+4. 
