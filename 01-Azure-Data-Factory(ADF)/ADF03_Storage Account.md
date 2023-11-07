@@ -59,4 +59,11 @@
     - Cool Tier
     - Cold Tier
     - Archive Tier
-4. 
+4. read blob using python pandas
+    - Click on ... blob > Click on Generate SAS > Click on generate SAS token and URL > Copy Blob SAS URL > replace below url and run it in any python notebook
+    '''python
+    import pandas as pd
+    data = pd.read_csv('https://b2311sa.blob.core.windows.net/rritecc/input/emp.csv?sp=r&st=2023-11-07T05:51:14Z&se=2023-11-07T13:51:14Z&sv=2022-11-02&sr=b&sig=dqNiY2dV%2B2FiMTMk5ffDNjjm341clAcM7iMYi8D0UVI%3D')
+    print(type(data))
+    print(data.head(25))'''
+6. 
