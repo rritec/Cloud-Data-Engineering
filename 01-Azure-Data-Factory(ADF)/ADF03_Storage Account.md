@@ -47,4 +47,11 @@
 1. BLOB Stands for ?
     - Binary Large Object
     - It allows users to store large amounts of unstructured data on Microsoft's data storage platform
-2. 
+2. How Many types of redundencys available?
+    - LRS
+    - ZRS
+    - GRS
+    - RA-GRS
+    - GZRS
+    - RA-GZRS
+3. 
