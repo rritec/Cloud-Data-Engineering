@@ -1,28 +1,6 @@
-# Azure Sql Database
+# Lab 1: Create Free Azure Sql Server and Database
   - Best for modern cloud applications. Hyperscale and serverless
-  - Follow this blog for free Azure SQL database [doc](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql)
-## Lab 1(Not required for training room)
-  - In search box type **Azure SQL** > Under **services** > Click on **Azure SQL**
-  - ![image](https://user-images.githubusercontent.com/20516321/209273844-196f7151-7378-40ea-a945-60bb8d8ef89b.png)
-
-  - Click on **Create** > Select **Resource Type** as **Single Database**> Click on **Create** > provide below details accordingly as for your names
-      - **Subsription:** Azure For Students
-      - **Resource Groups**: master-rritec
-      - **Database Name:** rritecazuresqldb
-      - **Server:** click on **create new** > **Server Name:** rritecazuresqlserver > **Location:** (US) East US > Select **Use SQL Authentication** 
-      - **Server admin login:**: saadmin
-      - **password:** RRitec123$
-      - **conformpassword:** RRitec123$
-      - Click on **ok**
-    - **workload environment:** Development
-    - **Compute+Storage:** General purpose server less
-    - **Backup Storagy Redundancy:** Local Redunt Backup Storage
-    - Click on **Networking** tab > select **public Network Access:** Selected Networks
-    - Click on **Add your client IPv4 address**
-    - select **Allow Azure Services and resources to access this server**    - 
-    - Click on **Review + Create**
-    - Click on **Create**
-    - ![image](https://user-images.githubusercontent.com/20516321/209275635-0512b890-d319-4a1b-b6f2-1eaa7b576eb8.png)
+  - Follow this blog for free Azure SQL database [doc](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql)
 
   ## Lab 2: create one table
   - Open **rritecazuresqldb**
