@@ -2,6 +2,8 @@
 1. Azure Data Factory is a cloud-based ETL and data-integration service that helps you to create data-driven workflows to:
     1. Orchestrate data movement.
     2. Transform data at scale.
+2. By using Azure Data Factory, you can reorganize **raw data** into **meaningful data stores** and **data lakes**. This allows you to make better business decisions
+3. Data integration allows you to collect data from multiple sources, then load this combined data to a location suitable for data analysis. If necessary, you can transform the data during this process. Although you can perform these tasks manually, you could consider using Azure Data Factory.
 2. In search box type **Data Factories** > Under **services** > Click on **Data Factories**
  ![image](https://user-images.githubusercontent.com/20516321/209284786-7918e604-260e-479b-9b5d-30813b9ea286.png)
 
@@ -20,3 +22,10 @@
 
 # Reference Material
 - [intro-to-azure-data-factory](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-factory/)
+- [data-factory-tutorials](https://learn.microsoft.com/en-us/azure/data-factory/data-factory-tutorials)
+
+# Questions
+
+1. What is ADF ?
+    - Azure Data Factory is a cloud-based ETL and data-integration service
+2. 
