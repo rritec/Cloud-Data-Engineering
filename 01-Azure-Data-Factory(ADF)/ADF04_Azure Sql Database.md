@@ -8,7 +8,7 @@
   - Under **sql server authentication** > provide **username:** as **saadmin** > **password:** as **RRitec123$**
   - Click on **ok**
   - Create emp,dept and salgrade tables and insert some data by running below code
-      ``` sql
+      ```sql
 
           CREATE TABLE [dbo].[DEPT]
           (DEPTNO INT PRIMARY KEY ,
