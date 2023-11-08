@@ -87,7 +87,7 @@
 
           INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
 
-          ```
+          
   - Observe data by runing 
       ``` sql
       select * from emp
