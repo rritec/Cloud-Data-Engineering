@@ -86,6 +86,7 @@
           INSERT INTO [dbo].[SALGRADE] VALUES (4, 2001, 3000);
 
           INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
+
           ```
   - Observe data by runing 
       ``` sql
