@@ -1,4 +1,4 @@
-# Create Pipenine from Blob to Azure Sql Database
+# Lab 1: Create Pipenine from Blob to Azure Sql Database
 
   1. Click on **Author**
   1. Right Click on **pipelines** > Click on **New Folder** > Name it as **rritec_pipelines**
@@ -21,7 +21,7 @@
 
      ![image](https://user-images.githubusercontent.com/20516321/209419293-07193ab6-aa37-49d6-bd60-ef786cbcc0ab.png)
 
-# Additional Columns
+# Lab 2: Additional Columns
 
 1. Open Pipeline **p01_from Blob to Azure Sql Database**
 2. Select **Copy Data** Activity
