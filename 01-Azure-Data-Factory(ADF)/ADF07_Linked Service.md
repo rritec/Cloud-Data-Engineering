@@ -40,3 +40,10 @@
   - ![image](https://user-images.githubusercontent.com/20516321/209418103-69375600-171e-47db-9c1f-3bb7fbff9199.png)
 
   - Click on **Create**
+
+# Questions
+
+1. I have two Azure SQL Databases (for example **asdb1**, **asdb2** ) then how many Linked services required?
+    - 2
+
+2. 
