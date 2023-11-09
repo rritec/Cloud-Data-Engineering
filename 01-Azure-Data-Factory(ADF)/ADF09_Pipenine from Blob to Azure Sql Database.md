@@ -29,15 +29,15 @@
 1. In **Additional Columns**  > Click on **New**
 1. provide as shown below
 
-![image](https://user-images.githubusercontent.com/20516321/209504074-83671970-e0cd-4a35-a09e-73a7b2e85ec6.png)
+  ![image](https://user-images.githubusercontent.com/20516321/209504074-83671970-e0cd-4a35-a09e-73a7b2e85ec6.png)
 
 1. Click on **Sink** tab
 1. In **Pre Copy Script** > type below sql code
 
-``` sql
-drop table [dbo].[TGT_EMP]
-```
-![image](https://user-images.githubusercontent.com/20516321/209504332-94e596eb-5636-4627-b45a-b06c12efb274.png)
+  ``` sql
+  drop table [dbo].[TGT_EMP]
+  ```
+  ![image](https://user-images.githubusercontent.com/20516321/209504332-94e596eb-5636-4627-b45a-b06c12efb274.png)
 
 1. Click on **debug**
 1. observe output jsons
