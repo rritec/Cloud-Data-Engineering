@@ -28,17 +28,22 @@
 1. Click on **Source** tab 
 1. In **Additional Columns**  > Click on **New**
 1. provide as shown below
-
-  ![image](https://user-images.githubusercontent.com/20516321/209504074-83671970-e0cd-4a35-a09e-73a7b2e85ec6.png)
-
+2. ![image](https://user-images.githubusercontent.com/20516321/209504074-83671970-e0cd-4a35-a09e-73a7b2e85ec6.png)
 1. Click on **Sink** tab
 1. In **Pre Copy Script** > type below sql code
+            ``` sql
+            drop table [dbo].[TGT_EMP]
+            ```
+1. ![image](https://user-images.githubusercontent.com/20516321/209504332-94e596eb-5636-4627-b45a-b06c12efb274.png)
+2. Click on **debug**
+3. observe output jsons
+4. open SSMS > observe data in table
 
-  ``` sql
-  drop table [dbo].[TGT_EMP]
-  ```
-  ![image](https://user-images.githubusercontent.com/20516321/209504332-94e596eb-5636-4627-b45a-b06c12efb274.png)
-
-1. Click on **debug**
-1. observe output jsons
-1. open SSMS > observe data in table
+# Questions
+1. What is Pipeline ?
+  - a data-driven workflow that can ingest data from multiple sources
+2. Types of Activities ?
+  - **Data movement activities:** These activities write data from any source store to a data sink.
+  - **Data transformation activities:** These activities transform, filter, and enhance data.
+  - **Control activities:** These activities can include deleting a file, copying data between sources, or looping through items
+3. 
