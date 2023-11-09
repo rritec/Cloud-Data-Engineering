@@ -9,3 +9,8 @@
 	  2. Self-hosted
 	  3. Azure-SSIS
 6. Refer the [doc](https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime)
+# Questions
+1. What is IR ?
+- Integration runtime (IR) is the compute infrastructure used by Azure Data Factory and Azure Synapse pipelines to execute and dispatch activities
+
+2. 
