@@ -24,20 +24,21 @@
 # Additional Columns
 
 1. Open Pipeline **p01_from Blob to Azure Sql Database**
-1. Select **Copy Data** Activity
-1. Click on **Source** tab 
-1. In **Additional Columns**  > Click on **New**
-1. provide as shown below
-2. ![image](https://user-images.githubusercontent.com/20516321/209504074-83671970-e0cd-4a35-a09e-73a7b2e85ec6.png)
-1. Click on **Sink** tab
-1. In **Pre Copy Script** > type below sql code
-            ``` sql
-            drop table [dbo].[TGT_EMP]
-            ```
-1. ![image](https://user-images.githubusercontent.com/20516321/209504332-94e596eb-5636-4627-b45a-b06c12efb274.png)
-2. Click on **debug**
-3. observe output jsons
-4. open SSMS > observe data in table
+2. Select **Copy Data** Activity
+3. Click on **Source** tab 
+4. In **Additional Columns**  > Click on **New**
+5. provide as shown below
+6. ![image](https://user-images.githubusercontent.com/20516321/209504074-83671970-e0cd-4a35-a09e-73a7b2e85ec6.png)
+7. Click on **Sink** tab
+8. In **Pre Copy Script** > type below sql code
+
+``` sql
+drop table [dbo].[TGT_EMP]
+```
+9. ![image](https://user-images.githubusercontent.com/20516321/209504332-94e596eb-5636-4627-b45a-b06c12efb274.png)
+10. Click on **debug**
+11. observe output jsons
+12. open SSMS > observe data in table
 
 # Questions
 1. What is Pipeline ?
