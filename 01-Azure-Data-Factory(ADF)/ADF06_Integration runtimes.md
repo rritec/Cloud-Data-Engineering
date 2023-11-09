@@ -14,5 +14,14 @@
 - Integration runtime (IR) is the compute infrastructure used by Azure Data Factory and Azure Synapse pipelines to execute and dispatch activities
 
 2. Types of IRs
+    - Azure
+    - Self-Hosted
+    - Azure-SSIS
 	
-3. 
+3. If source and targets are in Azure then which IR is needed?
+    - Azure
+4. If source or targets or both in private network then which IR is needed?
+    - Self-Hosted
+5. To run SSIS package which IR is needed?
+    - Azure-SSIS
+6. 
