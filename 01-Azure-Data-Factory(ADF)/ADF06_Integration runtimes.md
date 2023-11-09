@@ -13,4 +13,6 @@
 1. What is IR ?
 - Integration runtime (IR) is the compute infrastructure used by Azure Data Factory and Azure Synapse pipelines to execute and dispatch activities
 
-2. 
+2. Types of IRs
+	
+3. 
