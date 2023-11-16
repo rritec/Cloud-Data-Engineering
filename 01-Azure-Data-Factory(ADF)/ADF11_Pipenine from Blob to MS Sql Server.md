@@ -26,3 +26,9 @@
   - Click on **Debug**
   - Under **Output** > observe **Details**
   - ![image](https://user-images.githubusercontent.com/20516321/209775129-191c309d-ccce-4c27-9c82-6aad1e5228fa.png)
+# Home Work
+1. Create pipeline to copy data from Sql server to BLOB
+2. Create pipeline to copy data from Sql server to Sql Server
+
+# Questions
+1. 
