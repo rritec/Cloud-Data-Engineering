@@ -1,6 +1,6 @@
 # Understand Functions
 1. [split](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#split)
-2. 1. [range](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#range)
+2. [range](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#range)
 3. [add](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#add)
 4. [int](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#int)
 5. [substring](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#substring)
