@@ -59,6 +59,8 @@
                 
                 )
         ``` 
+
+![image](https://user-images.githubusercontent.com/20516321/228446856-7526191b-6d80-4341-a50e-db328ab64525.png)
  
 4. Create ForEach and Copy data activities
     1. Develop based on previous exercise knowledge
@@ -67,4 +69,4 @@
 ![image](https://user-images.githubusercontent.com/20516321/228448475-57c9a1fd-520c-4c7d-b532-7b8430774e99.png)
 
 
-![image](https://user-images.githubusercontent.com/20516321/228446856-7526191b-6d80-4341-a50e-db328ab64525.png)
+
