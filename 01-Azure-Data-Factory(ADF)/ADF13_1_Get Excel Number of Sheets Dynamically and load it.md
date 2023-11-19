@@ -5,7 +5,7 @@
 4. [int](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#int)
 5. [substring](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#substring)
 6. [length](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#length)
-7. refer more functions from [doc](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions)
+7. refer more functions from [doc](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#functions)
 # Get Excel Number of Sheets Dynamically and load it.
 
 ![image](https://user-images.githubusercontent.com/20516321/228440244-8cd81c11-813c-4014-b478-dd2fc385ad51.png)
