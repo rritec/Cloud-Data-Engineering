@@ -27,10 +27,10 @@
         @dataset().pSheetIndex
         
         ```
-    13.Provide parameter value as **999**
+    13. Provide parameter value as **999**
     14. Under **Field List** > Click on **New** > select **argument** as **Structure** 
 
-2. Get Error of Metadata Activity
+3. Get Error of Metadata Activity
 
     1. Drag and drop **Set Variable** activity into the work area > Name it as **Get Error of Metadata activity**
     2. connect **Get Metadata** fail with **Set Variable**
@@ -41,7 +41,7 @@
        ![image](https://user-images.githubusercontent.com/20516321/228446981-5b93b669-1f25-4cfe-953a-0ff5d61b45fd.png)
 
 
-3. Create Range Object
+4. Create Range Object
     1. Drag and drop one more **Set Varaible** > Name it as **range_of_page_numbers**
     2. Connect Previous activity to this activity using **Success**
     3. Click on **Settings** > Click on **New** > Add new variable name as **Range of Page Numbers** and Type as **Array** > Click on **Conform**
