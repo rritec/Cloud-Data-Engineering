@@ -8,7 +8,8 @@
 7. refer more functions from [doc](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions#functions)
 # Get Excel Number of Sheets Dynamically and load it.
 
-![image](https://user-images.githubusercontent.com/20516321/228440244-8cd81c11-813c-4014-b478-dd2fc385ad51.png)
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/c927eed5-6b60-47a1-92a3-be4b37eb0576)
+
 
 1. Get Metadata From Excel
     1. Create a pipeline with the name of **Get Excel Number of Sheets Dynamically and load it**
