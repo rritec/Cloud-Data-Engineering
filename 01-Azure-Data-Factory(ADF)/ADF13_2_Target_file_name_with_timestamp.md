@@ -15,7 +15,8 @@
 )
 ```
 
-6. clcik on debug > observe the file
+6. clcik on debug > observe the file in sink location
+   
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/b7c14cf7-2122-421b-8da2-918281dff96e)
 
-7. 
+8. 
