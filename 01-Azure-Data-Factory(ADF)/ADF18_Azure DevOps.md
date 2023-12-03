@@ -20,7 +20,7 @@
 2. Top Left Corner clcik on **Data Factory** drop down ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/72807a17-ee92-4f3c-9a38-305fb1c3855f)
 3. Click on **Setup Code Repositiry**
 
-![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/1501234a-b567-4dc4-8448-f92a7d85cd74)
+    ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/1501234a-b567-4dc4-8448-f92a7d85cd74)
 
 3. Select Repository Type as **Azure Devops Git**
 4. Select Organization/Project/repository names from the drop downs
