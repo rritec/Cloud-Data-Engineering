@@ -11,13 +11,14 @@
 4. Click on **Create New Organization**
 5. Click on **Continue**
 6. Name organization name as **rritecorg**
-7. provide project name as **rritecproj**
+7. provide project name as **rritecproj** > Click on **CreateProject**
 8. Click on **Repos**
 9. Click on **Initialize**
 
 ## Map Repo to ADF Code
-1. Open adf portal adf.azure.com
-2. Click on Setup Code Repositiry
+1. Open adf portal **adf.azure.com**
+2. Top Left Corner clcik on **Data Factory** drop down ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/72807a17-ee92-4f3c-9a38-305fb1c3855f)
+3. Click on **Setup Code Repositiry**
 
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/1501234a-b567-4dc4-8448-f92a7d85cd74)
 
