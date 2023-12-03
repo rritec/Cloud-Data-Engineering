@@ -22,9 +22,11 @@
 
     ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/1501234a-b567-4dc4-8448-f92a7d85cd74)
 
-3. Select Repository Type as **Azure Devops Git**
-4. Select Organization/Project/repository names from the drop downs
-5. Click on **apply**
+4. Select Repository Type as **Azure DevOps Git** > Click on **Continue**
+5. Select **Azure DevOps Organization Name**
+6. Select **Project Name**
+7. Select **Repository Name**
+8. Click on **Apply**
 
 ###### Observe the code of Main branch
 ###### Create a branch and learn how to merge it.
