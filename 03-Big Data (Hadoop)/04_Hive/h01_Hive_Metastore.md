@@ -5,7 +5,7 @@
     2. Type ```hive```
     3. type ```show databases;```
     4. type ```create database rritecdb```
-    5. desc rritecdb;
+    5. desc database rritecdb;
         
         ![image](https://user-images.githubusercontent.com/20516321/214228819-f9f120ef-2280-4dd5-9318-8d2f797e7cae.png)
 
