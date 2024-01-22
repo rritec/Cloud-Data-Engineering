@@ -11,7 +11,8 @@
 1. open https://portal.azure.com/
 2. In the search box > type Subscriptions
 3. Observe your subscription details
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/54abdeec-cab3-4225-b3c9-c4761debc063)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/b26d2bcd-01da-4cd5-b8a3-70cead06cd9a)
+
 
 
 ## Questions
