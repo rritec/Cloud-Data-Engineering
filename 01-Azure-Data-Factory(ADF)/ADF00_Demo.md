@@ -17,20 +17,20 @@
         5. Azure Logic Apps Service
         6. ETL(Withoud Coding)
         7. ...... etc
-3. Python
-    1. Core Level of Python
-    2. Advanced Level of Python
-  4. Hadoop
-    1. Linux Commands
-    2. HDFS Commands
-    3. HIVE Data Warehuse 
-    4. sqoop
-    5. Scala/python/spark
-  5. PySpark/Databricks
-    1. Pyspark inhouse(on-permise)
-    2. PySpark(Cloud)
-    3. spark-shell(spark-scala)(on-permise/cloud)
-    4. Databricks
+    2. Python
+        1. Core Level of Python
+        2. Advanced Level of Python
+    3. Hadoop
+        1. Linux Commands
+        2. HDFS Commands
+        3. HIVE Data Warehouse
+        4. sqoop
+        5. Scala/python/spark
+    4. PySpark/Databricks
+        1. Pyspark inhouse(on-permise)
+        2. PySpark(Cloud)
+        3. spark-shell(spark-scala)(on-permise/cloud)
+        4. Databricks
 3. Total Duration: 2 and half months
 4. CV
 5. Proxy
