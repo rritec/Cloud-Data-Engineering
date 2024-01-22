@@ -9,8 +9,8 @@
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/ba729d30-4947-4171-b008-49a3b3afe22b)
 
 2. Azure Cloud Data Engineering
-  1. Azure Data Factory/Azure Synapse Analytics
-    1. Azure Fundmentals
+    1. Azure Data Factory/Azure Synapse Analytics
+        1. Azure Fundmentals
     2. Azure Blobs
     3. Azure Sql Database
     4. Azure Batch Account
