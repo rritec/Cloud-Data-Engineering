@@ -29,5 +29,9 @@
   - Tableau
   - ...etc
 ## Questions
-1. Question 1
+1. Identify ADF use cases.
+    1. ETL (Extract, Transform, Load) processes.
+    2. Data movement and migration between on-premises and cloud data sources.
+    3. Data transformation and processing at scale.
+    4. All the above
 2. Question 2
