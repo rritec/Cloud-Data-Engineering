@@ -11,13 +11,13 @@
 2. Azure Cloud Data Engineering
     1. Azure Data Factory/Azure Synapse Analytics
         1. Azure Fundmentals
-    2. Azure Blobs
-    3. Azure Sql Database
-    4. Azure Batch Account
-    5. Azure Logic Apps
-    6. ETL
-    7. ......
-  3. Python
+        2. Azure Storage Account Service
+        3. Azure Sql Database Service
+        4. Azure Batch Account Service
+        5. Azure Logic Apps Service
+        6. ETL(Withoud Coding)
+        7. ...... etc
+3. Python
     1. Core Level of Python
     2. Advanced Level of Python
   4. Hadoop
