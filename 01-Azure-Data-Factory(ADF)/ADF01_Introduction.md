@@ -35,3 +35,7 @@
     3. Data transformation and processing at scale.
     4. All the above
 2. Question 2
+
+## Answers:
+1. 4
+2. 
