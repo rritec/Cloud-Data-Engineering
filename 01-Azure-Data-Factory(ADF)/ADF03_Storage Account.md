@@ -35,6 +35,10 @@
   - Right Click on **emp.csv** > observe all properties
   - ![image](https://user-images.githubusercontent.com/20516321/209083873-83ee8400-13d9-497a-8772-95e3ff065fa3.png)
 
+# Learning Path
+
+1. [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-in/credentials/certifications/exams/az-900/)
+
 # Reference Material
 
 1. [storage-account-overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
