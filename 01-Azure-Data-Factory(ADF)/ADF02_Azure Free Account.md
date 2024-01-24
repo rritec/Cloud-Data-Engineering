@@ -18,4 +18,19 @@
 ## Questions
 1. How to check usage of services?
     1. using https://www.microsoftazuresponsorships.com/
-2. 
+2. For Student Account which one is correct?
+    1. 365 days valid
+    2. college or school mailid required
+    3. 100 USD credit we will get
+    4. All of them
+3. With One Credit card how many times, we will get 200 USD credit and one month validity?
+4. In Sandbox how many hours for instance can practice?
+5. Per day how many sandbox instances available ?
+6. Can you monitor the usage of credits using the link https://www.microsoftazuresponsorships.com/ ?
+## Answers
+1. Answer is above
+2. 4
+3. Only Ones
+4. 4 Hours
+5. 10
+6. Yes
