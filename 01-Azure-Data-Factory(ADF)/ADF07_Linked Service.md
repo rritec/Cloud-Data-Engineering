@@ -45,7 +45,9 @@
 
 1. I have two Azure SQL Databases (for example **asdb1**, **asdb2** ) then how many Linked services required?
 2. Linked service is a connection string ? is it true?
+3. Linked Services are how many types? and what are those?
 
 # Answers
 1. 2
 2. True
+3. 2 types those are [Data Store Linked service](https://learn.microsoft.com/en-us/azure/data-factory/concepts-linked-services?tabs=data-factory#data-store-linked-services) and [Compute Liked Service](https://learn.microsoft.com/en-us/azure/data-factory/concepts-linked-services?tabs=data-factory#compute-linked-services)
