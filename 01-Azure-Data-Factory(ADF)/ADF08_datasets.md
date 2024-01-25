@@ -14,6 +14,10 @@
 ![image](https://user-images.githubusercontent.com/20516321/209418743-bcf5f118-00b6-442b-bb0e-5cecbc75b36c.png)
 
 # Questions
+
 1. In Blob two files available (example emp.txt and dept.txt) then how many datasets need to create?
-  - 2
-2. 
+2. In Azure SQL Database, we have 30 tables the how many datasets required to access all tables ?
+
+# Answers
+1. 2
+2. 30
