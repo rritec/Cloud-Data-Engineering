@@ -44,6 +44,8 @@
 # Questions
 
 1. I have two Azure SQL Databases (for example **asdb1**, **asdb2** ) then how many Linked services required?
-    - 2
+2. Linked service is a connection string ? is it true?
 
-2. 
+# Answers
+1. 2
+2. True
