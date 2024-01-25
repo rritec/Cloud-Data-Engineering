@@ -20,8 +20,12 @@
 13. Click on **Launch Studio**
 14. Observe all options
 
-# Reference Material
+# Learing Path
+
 - [intro-to-azure-data-factory](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-factory/)
+
+# Reference Material
+
 - [data-factory-tutorials](https://learn.microsoft.com/en-us/azure/data-factory/data-factory-tutorials)
 
 # Questions
