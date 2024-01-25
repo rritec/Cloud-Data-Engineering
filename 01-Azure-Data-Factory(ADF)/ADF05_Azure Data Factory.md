@@ -28,4 +28,28 @@
 
 1. What is ADF ?
     - Azure Data Factory is a cloud-based ETL and data-integration service
-2. 
+2. Which one is true about ADF?
+    1. Connect and collect
+    2. Transform and enrich
+    3. Continuous integration and delivery (CI/CD) and publish
+    4. Monitoring
+    5. All the above
+3. key components of Azure Data Factory?
+    1. Integration runtimes
+    2. Linked services
+    3. Datasets
+    4. Pipelines
+    5. Activities
+    8. Data flows 
+    10. All the above
+4. ADF Can handle which kind of data?
+    1. Structured
+    2. Unstructured
+    3. Semi-structured  
+5. ADF Supports CI/CD using
+    1. Azure DevOps
+    2. GitHub
+    3. All the above
+6. ADF is a low/No Code tool?
+    1. True
+7. 
