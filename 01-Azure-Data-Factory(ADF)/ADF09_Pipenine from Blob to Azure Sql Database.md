@@ -41,10 +41,9 @@ drop table [dbo].[TGT_EMP]
 12. open SSMS > observe data in table
 
 # Questions
-1. What is Pipeline ?
-  - a data-driven workflow that can ingest data from multiple sources
-2. Types of Activities ?
-  - **Data movement activities:** These activities write data from any source store to a data sink.
-  - **Data transformation activities:** These activities transform, filter, and enhance data.
-  - **Control activities:** These activities can include deleting a file, copying data between sources, or looping through items
-3. 
+1. What is Pipeline ?  
+2. Types of Activities ? 
+
+# Answers
+1. A data-driven workflow that can ingest data from multiple sources
+2. **Data movement activities:** These activities write data from any source store to a data sink. **Data transformation activities:** These activities transform, filter, and enhance data. **Control activities:** These activities can include deleting a file, copying data between sources, or looping through items.
