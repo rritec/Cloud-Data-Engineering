@@ -14,6 +14,9 @@
   - Click on **Create**
   - Click on **Express Setup** and install the software
   - Create a linked service using self-hsted IR
+
+    ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/6f237696-b51d-4463-be3e-457903482663)
+
   - create a dataset using above linked service
 
 # Create Pipenine from Blob to MS Sql Server
