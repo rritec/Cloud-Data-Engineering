@@ -57,5 +57,23 @@
 
 5. Click on **Activities** > Click on **edit**
 6. Drag and drop **Get Metadata** Activity
-7. 
-## 
+7. Click on **settings** > map dataset and parameters as shown below
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/84840885-e77e-4535-9f64-8eff67b086a1)
+
+8. Drag and drop **If Condition** activity
+9. Connect **Get Metadata** and **If Condition**
+10. Configure **if Condition** as shiwn below
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/996fc934-2dac-4d9a-a41a-e10029e5fc89)
+
+11. Click on **true** edit > drag and drop **copy Activity**
+12. configure **source** as shown below
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/fec90dd5-36e1-425f-83f2-08f2fafe78e1)
+
+13. Configure **sink** as shown below
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/9770339c-7f59-474d-9ef8-2a732f68f357)
+
+14. Click on debug and observe output.
+
+    
+## Questions
+## Answers
