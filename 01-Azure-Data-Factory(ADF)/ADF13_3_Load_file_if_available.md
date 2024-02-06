@@ -26,8 +26,24 @@
    
   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d4a508a5-822e-48ce-9b99-8689a64e0cf3)
 
-2. 
+2. Click on **parameters** > define as shown below
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/eaacac2e-5524-4a75-b753-e87a9fb03266)
+
+3. Click on **connection** > and set parameters as shown below
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/da4d9bff-79f3-40b8-ba39-bd0e3d408b81)
+
+4. 
 ## Step 3: Create a dynamic target to handle different azure sql database tables
+
+1. Click on **New Dataset** > Select **Azure Sal Database** > Click on **Continue** > Name it is **tgt_dynamic** > Click on **ok**
+   
+2. Click on parameters > create below parameters
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/c4193227-f38c-4f84-af5d-950261460c85)
+
+3. Click on **Connections** > provide below parameters
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/c00620f5-969b-4866-9554-82c1714319c9)
+
+4. 
 ## Step 4: Create a pipeline
 1. Create a pipeline with the name of **ADF13_3_Load_file_if_available**
 2. Create a parameter as shown below and paste above code
