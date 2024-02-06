@@ -22,6 +22,11 @@
 ```
 
 ## Step 2: Create a dynamic Source to handle different csv files
+1. Click on **New Dataset** > Select **Azure Blob Storage** > Click on **Continue** > Click on **DelimitedText** > Click on **Continue** > Name it is **src_dynamic_csv** > Click on **ok**
+   
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d4a508a5-822e-48ce-9b99-8689a64e0cf3)
+
+2. 
 ## Step 3: Create a dynamic target to handle different azure sql database tables
 ## Step 4: Create a pipeline
 1. Create a pipeline with the name of **ADF13_3_Load_file_if_available**
