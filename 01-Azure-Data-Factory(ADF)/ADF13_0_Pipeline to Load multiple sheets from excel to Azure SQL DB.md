@@ -67,7 +67,21 @@
 
     ![image](https://user-images.githubusercontent.com/20516321/209803533-21b87745-5ccf-401e-831f-deeb7f17b036.png)
 
-Related Content: 
+# Questions
+1. what is parameter at the level of dataset?
+  - We can parameterize al possible options like
+       - 1. container name
+         2. foldername
+         3. file name
+         4. sheet name
+         5. schema name
+         6. tablename
+2. Learned how to create Pipeline level array variable?
+  - True
+3. 
+4. 
+
+## Related Content: 
 
 1. [get dynamically all sheets using index numbers](https://learn.microsoft.com/en-us/answers/questions/986785/how-to-get-excel-sheet-names-dyanamically-in-azure)
 2. [ADF xlsx file Dynamic sheet name](https://learn.microsoft.com/en-us/answers/questions/767239/adf-xlsx-file-dynamic-sheet-name)
