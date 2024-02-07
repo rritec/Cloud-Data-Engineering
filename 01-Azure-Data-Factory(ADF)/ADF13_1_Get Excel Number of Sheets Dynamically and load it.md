@@ -77,5 +77,34 @@
 
 ![image](https://user-images.githubusercontent.com/20516321/228448475-57c9a1fd-520c-4c7d-b532-7b8430774e99.png)
 
+## Questions
+1. split('a_b_c', '_')
+2. and(equals(1, 1), equals(2, 2))
+3. coalesce(null, 'hello', 'world')
+4. concat('Hello', 'World')
+5. dayOfWeek('2018-03-15T13:27:36Z')
+6. div(11, 5)
+7. empty('')
+8. if(equals(1, 1), 'yes', 'no')
+9. indexOf('hello world', 'world')
+10. equals(length('abcd'),length(createArray(0, 1, 2, 3)))
+11. mod(3, 2)
+12. not(equals(1, 2))
+13. replace('the old string', 'old', 'new')
+## Anwsers
+1. ["a","b","c"]
+2. true
+3. hello
+4. "HelloWorld"
+5. 3
+6. 2
+7. true
+8. 'yes'
+9. 6
+10. true
+11. 1
+12. true
+13. "the new string"
+
 
 
