@@ -68,7 +68,7 @@
     ![image](https://user-images.githubusercontent.com/20516321/209803533-21b87745-5ccf-401e-831f-deeb7f17b036.png)
 
 # Questions
-1. what is parameter at the level of dataset?
+1. dataset level what all are can be parameterized?
   - We can parameterize al possible options like
        - 1. container name
          2. foldername
@@ -76,10 +76,8 @@
          4. sheet name
          5. schema name
          6. tablename
-2. Learned how to create Pipeline level array variable?
+2. In this chapter did you learned Pipeline level array variable?
   - True
-3. 
-4. 
 
 ## Related Content: 
 
