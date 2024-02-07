@@ -91,6 +91,10 @@
 11. mod(3, 2)
 12. not(equals(1, 2))
 13. replace('the old string', 'old', 'new')
+14. all functions are following which naming standards
+    1. camelCase
+    2. PascalCase
+15. 
 ## Anwsers
 1. ["a","b","c"]
 2. true
@@ -105,6 +109,7 @@
 11. 1
 12. true
 13. "the new string"
+14. camelCase
 
 
 
