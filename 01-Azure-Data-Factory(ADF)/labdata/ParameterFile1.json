@@ -1,0 +1,18 @@
+{
+  "srcs_tgts": [
+    {
+      "ContainerName": "cdrive",
+      "FolderName": "input",
+      "FileName": "dept.csv",
+      "SchemaName": "dbo",
+      "TableName": "tgt_dy_dept"
+    },
+    {
+      "ContainerName": "cdrive",
+      "FolderName": "input",
+      "FileName": "emp1.csv",
+      "SchemaName": "dbo",
+      "TableName": "tgt_dy_emp1"
+    }
+  ]
+}
