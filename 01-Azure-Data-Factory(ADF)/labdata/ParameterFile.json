@@ -1,9 +1,9 @@
 {
-  	  "ServerName": "b2401ass.database.windows.net",
-      "DatabaseName": "b240123db",
-      "UserName": "saadmin",
-      "Password": "RRitec12#",
-	  "tables": [
+  "ServerName": "b2401ass.database.windows.net",
+  "DatabaseName": "b240123db",
+  "UserName": "saadmin",
+  "Password": "**********",
+  "tables": [
     {
       "ContainerName": "cdrive",
       "FolderName": "input",
