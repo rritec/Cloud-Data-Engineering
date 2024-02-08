@@ -1,18 +1,26 @@
 {
-  "srcs_tgts": [
+  "tables": [
     {
       "ContainerName": "cdrive",
       "FolderName": "input",
       "FileName": "dept.csv",
       "SchemaName": "dbo",
-      "TableName": "tgt_dy_dept"
+      "TableName": "tgt_dy_dept",
+      "ServerName": "b2401ass.database.windows.net",
+      "DatabaseName": "b240123db",
+      "UserName": "saadmin",
+      "Password": "RRitec12#"
     },
     {
       "ContainerName": "cdrive",
       "FolderName": "input",
       "FileName": "emp1.csv",
       "SchemaName": "dbo",
-      "TableName": "tgt_dy_emp1"
+      "TableName": "tgt_dy_emp1",
+      "ServerName": "b2401ass.database.windows.net",
+      "DatabaseName": "b240123db",
+      "UserName": "saadmin",
+      "Password": "RRitec12#"
     }
   ]
 }
