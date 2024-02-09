@@ -24,7 +24,8 @@
 
 ```
 2. upload this file into **erp** container
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d54dcafb-bccf-41e0-ac41-612a8eb0b5c7)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/3174845d-8cf6-40ac-9cbd-e221c4ee5fce)
+
 
 3. Create a pipeline with the name of **erp_modules_automation**
 4. Drag and drop **lookup Activity** name it as **lookup_to_Read_parameter_file**
