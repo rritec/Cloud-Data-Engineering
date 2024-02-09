@@ -1,6 +1,7 @@
 # Load file if available
 
-## Step 1: Create a parameter file
+## Step 1: Create a parameter file and read using Lookup activity
+1. Open notepad copy below content and save file as json file **ParameterFile1.json** or download the file from our github labdata folder [ParameterFile1.json](https://github.com/rritec/Cloud-Data-Engineering/blob/main/01-Azure-Data-Factory(ADF)/labdata/ParameterFile1.json)
 ``` json
 {
   "srcs_tgts": [
@@ -22,7 +23,7 @@
 }
 
 ```
-
+2. lookup_Read_parameter_file
 ## Step 2: Create a dynamic Source to handle different csv files
 1. Click on **New Dataset** > Select **Azure Blob Storage** > Click on **Continue** > Click on **DelimitedText** > Click on **Continue** > Name it is **src_dynamic_csv** > Click on **ok**
    
