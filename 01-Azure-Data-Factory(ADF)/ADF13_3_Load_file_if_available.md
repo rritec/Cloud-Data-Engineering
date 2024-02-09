@@ -33,7 +33,8 @@
 
 4. Click on **settings** > Click on **New** > select **Azure Blob Storage** > Click on **continue** > Select **JSON** > Click on **Continue** > Name it as **parameter_file_json1** > select storage account Linked Service **ls_for_azure_blob_storage** > browse and select json file
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/275b62bb-c0c5-4c00-ba27-a707ae17d8fd)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/a755cd4d-f534-42a0-b3d9-e88581c80924)
+
 
 
 5. Click on **Preview data** > observe it.
