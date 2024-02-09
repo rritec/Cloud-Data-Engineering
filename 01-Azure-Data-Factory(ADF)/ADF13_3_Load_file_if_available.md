@@ -2,22 +2,24 @@
 
 ## Step 1: Create a parameter file
 ``` json
-[
 {
-"ContainerName":"cdrive",
-"FolderName":"input",
-"FileName":"dept1.csv",
-"SchemaName":"dbo",
-"TableName":"tgt_dy_dept"
-},
-{
-"ContainerName":"cdrive",
-"FolderName":"input",
-"FileName":"emp1.csv",
-"SchemaName":"dbo",
-"TableName":"tgt_dy_emp1"
+  "srcs_tgts": [
+    {
+      "ContainerName": "erp",
+      "FolderName": "ap",
+      "FileName": "emp.csv",
+      "SchemaName": "ap",
+      "TableName": "tgt_emp"
+    },
+    {
+      "ContainerName": "erp",
+      "FolderName": "ar",
+      "FileName": "dept.csv",
+      "SchemaName": "ar",
+      "TableName": "tgt_dept"
+    }
+  ]
 }
-]
 
 ```
 
