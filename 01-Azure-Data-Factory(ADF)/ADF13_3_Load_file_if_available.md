@@ -65,9 +65,10 @@
 4. 
 ## Step 4: finish pipeline
 1. Drag and drop **ForEach** Activity
-4. Clcik on **settings** > Select **Sequential** > Select **items** as shown below
+4. Clcik on **settings** > Select **Sequential** > Select **items** as shown below **@activity('read parameterfile').output.firstRow.srcs_tgts**
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/cca1ce23-fb4c-42ed-80d0-30b52bc679e0)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/041c49e8-c893-4f0d-8824-7fd52ebd387d)
+
 
 5. Click on **Activities** > Click on **edit**
 6. Drag and drop **Get Metadata** Activity
