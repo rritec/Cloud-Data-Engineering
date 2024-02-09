@@ -62,13 +62,8 @@
    ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/c00620f5-969b-4866-9554-82c1714319c9)
 
 4. 
-## Step 4: Create a pipeline
-1. Create a pipeline with the name of **ADF13_3_Load_file_if_available**
-2. Create a parameter as shown below and paste above code
-
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/3750c094-b6ad-4026-b23c-e2044c978235)
-
-3. Drag and drop **ForEach** Activity
+## Step 4: finish pipeline
+1. Drag and drop **ForEach** Activity
 4. Clcik on **settings** > Select **Sequential** > Select **items** as shown below
 
   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/cca1ce23-fb4c-42ed-80d0-30b52bc679e0)
