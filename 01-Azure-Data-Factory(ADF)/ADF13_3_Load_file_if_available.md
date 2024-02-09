@@ -23,12 +23,21 @@
 }
 
 ```
-2. Create a pipeline with the name of **erp_modules_automation**
-3. Drag and drop **lookup Activity** name it as **lookup_to_Read_parameter_file**
+2. upload this file into **erp** container
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d54dcafb-bccf-41e0-ac41-612a8eb0b5c7)
+
+3. Create a pipeline with the name of **erp_modules_automation**
+4. Drag and drop **lookup Activity** name it as **lookup_to_Read_parameter_file**
 
   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/3979139b-85a6-4058-ab57-066769eab746)
 
-4. 
+4. Click on **settings** > Click on **New** > select **Azure Blob Storage** > Click on **continue** > Select **JSON** > Click on **Continue** > Name it as **parameter_file_json1** > select storage account Linked Service **ls_for_azure_blob_storage** > browse and select json file
+
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/275b62bb-c0c5-4c00-ba27-a707ae17d8fd)
+
+
+5. Click on **Preview data** > observe it.
+6. Click on debug and obseve **Lookup Activity** output.
 ## Step 2: Create a dynamic Source to handle different csv files
 1. Click on **New Dataset** > Select **Azure Blob Storage** > Click on **Continue** > Click on **DelimitedText** > Click on **Continue** > Name it is **src_dynamic_csv** > Click on **ok**
    
