@@ -79,9 +79,9 @@
 1. Create a pipeline with the name **po6_IncrementalCopy**
 2. Drag and drop the **Lookup** activity to the pipeline designer surface.
 3. Change the name of the activity to **Lookup_last_load_date**
-4. Click on **Settings** tab > click **+ New** for Source Dataset > Click on **SQL Server**
+4. Click on **Settings** tab > click **+ New** for Source Dataset > Click on **Azure SQL Database**
 5. Name it as **ds_WatermarkDataset**
-6. Select Linked Service of **SQL Server**
+6. Select Linked Service of **Azure SQL Database**
 7. Select **Table Name** as **dbo.watermarktable**
 8.  Click on **ok**
 9.  select **Use query** as **Query**
@@ -100,9 +100,9 @@ where [TableName] ='tgt_incr_emp'
 
 1. Drag and drop one more lookup into work area
 2. Name it as **Get_max_transaction_date_from_source**
-3. Clcik on **Settings** tab > click **+ New** for Source Dataset > Click on **SQL Server**
+3. Clcik on **Settings** tab > click **+ New** for Source Dataset > Click on **Azure SQL Database**
 5. Name it as **ds_src_incr_emp**
-6. Select Linked Service of **SQL Server**
+6. Select Linked Service of **Azure SQL Database**
 7. Select **Table Name** as **dbo.ds_src_incr_emp**
 8.  Click on **ok**
 9.  select **Use query** as **Query**
@@ -136,9 +136,9 @@ and hiredate <= '@{activity('Get_max_transaction_date_from_source').output.first
 ```
 ![image](https://user-images.githubusercontent.com/20516321/229047115-83b2cbd8-97ad-4cad-9c32-1a2cf7265f04.png)
 
-7. Click on **Sink** > Click on **New** > Select **sql server** > Click on **Continue**
+7. Click on **Sink** > Click on **New** > Select **Azure SQL Database** > Click on **Continue**
 8. Provide **Name** as **ds_tgt_incr_emp**
-9. select **Linked Service** as **sql server**
+9. select **Linked Service** as **Azure SQL Database**
 10. Click on **ok**
 11. select **table option** as **auto create table**
 
