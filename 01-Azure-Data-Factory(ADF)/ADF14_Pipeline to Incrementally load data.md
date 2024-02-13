@@ -78,7 +78,7 @@
 
 1. Create a pipeline with the name **po6_IncrementalCopy**
 2. Drag and drop the **Lookup** activity to the pipeline designer surface.
-3. Change the name of the activity to **Lookup_last_load_date**
+3. Change the name of the activity to **Get_last_load_date**
 4. Click on **Settings** tab > click **+ New** for Source Dataset > Click on **Azure SQL Database**
 5. Name it as **ds_WatermarkDataset**
 6. Select Linked Service of **Azure SQL Database**
