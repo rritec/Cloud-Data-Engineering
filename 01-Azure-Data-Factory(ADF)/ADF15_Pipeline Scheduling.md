@@ -55,4 +55,8 @@
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/e8c60179-9c49-4c6b-9e95-3a7868e5618f)
 
 4. Map this trigger to any pipeline.
+## Questions
+1. Difference between tumbling window trigger and the schedule trigger
+## Answers
+1. [Trigger type comparison](https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-triggers#trigger-type-comparison)
 
