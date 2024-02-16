@@ -8,6 +8,7 @@
 6. Your data flows run on ADF-managed execution clusters for scaled-out data processing.
 7. Azure Data Factory handles all the code translation, path optimization, and execution of your data flow jobs.
 8. Reference1 [MSFT Doc](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-overview)
+9. [code-free-transformation-scale](https://learn.microsoft.com/en-us/training/modules/code-free-transformation-scale/)
 
 ## Create Dataflow equal to below sql query
 
