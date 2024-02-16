@@ -1,5 +1,8 @@
 # Exists Transformation
 
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/bcf8350f-37ac-4442-8a1b-0839fa982761)
+
+
 ## Create required source tables.
 ``` sql
 SELECT * INTO [dbo].[emp1020] FROM [dbo].[EMP] WHERE DEPTNO in (10,20);
