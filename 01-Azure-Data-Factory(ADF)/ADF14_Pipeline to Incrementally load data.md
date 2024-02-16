@@ -185,3 +185,7 @@ Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tuto
 Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-lastmodified-copy-data-tool)
 # Incremental copy partitioned file name copy data tool
 Ref: Follow MSFT [doc](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-partitioned-file-name-copy-data-tool)
+
+Correction: 
+Select LastLoadDate value as @activity('lookup_get_max_date_from_source').output.firstRow.max_date
+It should be max_hiredate
