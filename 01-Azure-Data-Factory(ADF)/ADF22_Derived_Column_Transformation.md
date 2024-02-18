@@ -38,6 +38,7 @@ SELECT * from emp;
     divide(minus(toDate(currentTimestamp()), HIREDATE) + dayOfWeek(HIREDATE) - dayOfWeek(toDate(currentTimestamp())), 7) * 2 - 
     iif(dayOfWeek(toDate(currentTimestamp())) < dayOfWeek(HIREDATE), 2, 0)
     ) +1
+   
         ```
 
   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/3a86b308-4ccd-4ec0-b5a9-dd3d1ddd7c9b)
