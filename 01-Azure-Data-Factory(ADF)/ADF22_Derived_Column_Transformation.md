@@ -1,28 +1,47 @@
-# Exists Transformation
+# Derived Column Transformation
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/bcf8350f-37ac-4442-8a1b-0839fa982761)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/22ecb850-5acc-4e74-91cc-b0252b0a7f18)
 
 
-## Create required source tables.
+
+## Observe required source table.
 ``` sql
-SELECT * INTO [dbo].[emp1020] FROM [dbo].[EMP] WHERE DEPTNO in (10,20);
-
-SELECT * INTO [dbo].[emp2030] FROM [dbo].[EMP] WHERE DEPTNO in (20,30);
+SELECT * from emp;
 
 ```
 ## create dataflow
-1. Click on **New data flow** > name it as **exists_dataflow**
+1. Click on **New data flow** > name it as **Derived_Column_dataflow**
 2. map **source1** as shown below
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/c3cd769c-ca61-4102-afcb-415be79f6710)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/10e9a30f-cd5a-4c85-bc61-bd14d2bbc460)
 
-3. map **source2** as shown below
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/2cfca641-1987-4f04-aab4-f2fbbdefbd6e)
 
-4. add **Exists**  transformation
+4. add **Derived Column**  transformation and create three calculations as shown below
+    1. totalSal
+        ``` sql
+        SAL+iif(isNull(COMM),toDecimal(0),COMM)
+        ```
+    2. numberOfDays
+        ``` sql
+        minus(HIREDATE,toDate(currentTimestamp()))
+        ```
+    3. numberOfWorkingDays
+        ``` sql
+        iif(
+    or(
+	   in( [1, 7],dayOfWeek(HIREDATE)),  /* Sunday or Saturday*/
+	   in( [1, 7],dayOfWeek(toDate(currentTimestamp())))      /* Sunday or Saturday*/
+    ),
+    0,  
+    minus(toDate(currentTimestamp()), HIREDATE) - 
+    divide(minus(toDate(currentTimestamp()), HIREDATE) + dayOfWeek(HIREDATE) - dayOfWeek(toDate(currentTimestamp())), 7) * 2 - 
+    iif(dayOfWeek(toDate(currentTimestamp())) < dayOfWeek(HIREDATE), 2, 0)
+    ) +1
+        ```
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/6591b3da-2f55-4bab-bcba-8d607781d713)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/3a86b308-4ccd-4ec0-b5a9-dd3d1ddd7c9b)
+
 
 5. add **sink**
 
