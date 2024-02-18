@@ -23,11 +23,11 @@ SELECT * from emp;
         SAL+iif(isNull(COMM),toDecimal(0),COMM)
         ```
     2. numberOfDays
-        ``` sql
+        ``` json
         minus(HIREDATE,toDate(currentTimestamp()))
         ```
     3. numberOfWorkingDays
-        ``` adf
+        ``` json
         iif(
         or(
 	   in( [1, 7],dayOfWeek(HIREDATE)),  /* Sunday or Saturday*/
