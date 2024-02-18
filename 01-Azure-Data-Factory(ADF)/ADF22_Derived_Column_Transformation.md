@@ -46,49 +46,18 @@ SELECT * from emp;
 
 5. add **sink**
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/f3dfd8a6-9f5a-4329-be28-6e6b82405d92)
-
-
-
 ## Map dataflow/run pipeline.
 
 6. create new pipeline and Map to pipeline using dataflow activity
-
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/a4dbfda8-bf39-4780-b762-3afa38c89749)
-
 7. run pipeline
-
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/8d4fce2e-18b6-4284-8924-19cc8905a3fd)
-
 8. observe output
-
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/97c8cd47-9c78-40db-92ac-954e8d084fba)
-
-9. 
+   
 ## Questions
-1. Do you know Intersect in SQL?
-2. Do you know Except in SQL ?
+
+1. Do you know `days` function and `networkdays.intl` in excel ?
+
 ## Answers
-1. observe below sql
-  ``` sql
-select * from [dbo].[emp1020]
-INTERSECT
-select * from [dbo].[emp2030]
-```
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d64385bf-6e46-49be-9fbf-72796d5d4842)
 
-2. Observe below sql
-  ``` sql
-select * from [dbo].[emp1020]
-EXCEPT
-select * from [dbo].[emp2030]
-```
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/b00d130b-1481-471b-ba48-e8c447d66bb1)
+1. Observe it . ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/efe92fe9-20b4-4ebd-a624-a1e0115982a1)
 
-``` sql
-select * from [dbo].[emp2030]
-EXCEPT
-select * from [dbo].[emp1020]
-```
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/b2ddd342-5c40-4d02-9a03-49104f62da0d)
 
