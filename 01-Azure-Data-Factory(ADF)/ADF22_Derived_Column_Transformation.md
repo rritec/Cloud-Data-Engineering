@@ -27,7 +27,7 @@ SELECT * from emp;
         minus(HIREDATE,toDate(currentTimestamp()))
         ```
     3. numberOfWorkingDays
-        ``` sql
+        ``` adf
         iif(
         or(
 	   in( [1, 7],dayOfWeek(HIREDATE)),  /* Sunday or Saturday*/
