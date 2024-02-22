@@ -35,19 +35,39 @@ size(
 )
 ```
 
-![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/4717bcab-36a6-4b78-8771-4825790e2ca6)
+ ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/4717bcab-36a6-4b78-8771-4825790e2ca6)
 
-4. 
+4. Click on **save**
+
+ ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/77a2be8c-8d77-4d3a-aefe-2ed50bb5c181)
+
 5. 
 
+## create Data flow
 
+1. Create new dataflow name it as **dataflow_workingdays**
+2. Click on down arrow mark > click on **add source** ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/1086b418-f9ed-4f06-8fc6-f5d596c66999)
+3. Click on new > select blob > select excel and create datasource as shown below
 
-6. add **Derived Column**  transformation and create three calculations as shown below
-    1. totalSal
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/8298e33a-956e-4c25-a808-94a0017e6e62)
+
+   
+4. Click on source **Projection** tab
+5. change datatypes of hiredate and paydate as shown below
+
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/0fd5776d-d9d4-41fe-b83f-7367c084acdb)
+
+6. 
+7. add **Derived Column**  transformation and create calculations as shown below
+    1. workingDays
+       
+       ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d1a0ff4e-6b3c-4c9b-b643-ba76e3f581c7)
+
+    3. 
         ``` sql
         SAL+iif(isNull(COMM),toDecimal(0),COMM)
         ```
-    2. numberOfDays
+    4. numberOfDays
         ``` json
         minus(HIREDATE,toDate(currentTimestamp()))
         ```
