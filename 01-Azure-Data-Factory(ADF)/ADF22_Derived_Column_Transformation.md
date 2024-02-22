@@ -28,16 +28,10 @@ SELECT * from emp;
         ```
     3. numberOfWorkingDays
         ``` json
-        iif(
-        or(
-	   in( [1, 7],dayOfWeek(HIREDATE)),  /* Sunday or Saturday*/
-	   in( [1, 7],dayOfWeek(toDate(currentTimestamp())))      /* Sunday or Saturday*/
-        ),
-        0,
+        
         minus(toDate(currentTimestamp()), HIREDATE) -
-        divide(minus(toDate(currentTimestamp()), HIREDATE) + dayOfWeek(HIREDATE) - dayOfWeek(toDate(currentTimestamp())), 7) * 2 -
-        iif(dayOfWeek(toDate(currentTimestamp())) < dayOfWeek(HIREDATE), 2, 0)
-        ) +1
+        divide(minus(toDate(currentTimestamp()), HIREDATE) ), 7) * 2 
+        )
    
         ```
 
