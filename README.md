@@ -12,130 +12,6 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 ------
 
 
-# ADF(Azure Data Factory)
-
-1. **Introduction**
-
-- ETL Introduction.
-- ELT Introduction
-- Different ETL Tools
-- Azure Data Factory Introduction
-- Azure Data Factory - Important Concepts in ADF
-- ADF Architecture
-- Create Azure Free Account with credit card
-- Create Azure Free Account with out credit card
-
-2. **Storage Account**
-
-- Introduction
-- What is subscription
-- What is resource group
-- create resource group
-- Create Storage Account
-- Differences among LRS/GRS/ZRS/GZRS
-- Difference between Hot and Cool Tiers
-- Create Data Lake Gen 2
-- Create Containers
-- Create Folders
-- Upload Files
-- Override Files
-- Download Files
-- Edit Files
-- Preview Files in different formats
-
-3. **Azure SQL Database**
-
-- Create SQL Database
-- Create Sql Server
-- Create Username and password
-- Allow Azure resources and selected IPS access
-- Create tables and insert data
-- Query Tables
-- Install SSMS
-- Access Azure SQL Database using SSMS   
-
-4. **Linked Service**
-
-- Create Linked Service to BLOB
-- Create Linked Service to Azure SQL Database
-- Create Linked Service to MSFT SQL Server
-- Create Linked Service to Batch Account
-- .... etc
-- Test Linked Service Connection
-
-5. **Integration Run Times**
-
-- What is Integration Run Time
-- Types of IRs
-- Azure integration runtime.
-- Self-hosted integration runtime.
-- Azure-SQL Server Integration Services (SSIS) integration runtime.
-- Install Self-Hosted IR
-- Configuration of Self-Hosted IR
-
-6. **DataSets**
-
-- Create Source Datasets
-- Create Sink Datasets      - 
-- Preview data
-- Create Lookup datasets
-- Understand and preview data
-
-
-7. **BLOB to BLOB Pipeline**
-
-- Create Pipeline
-- Map source Dataset
-- Map Sink Dataset
-- Debug
-- Trigger
-- Understand output of run steps
-- Understand Json log in each step
-
-8. **Azure Storage Account Integration with ADF**
-
-- Copy multiple files from blob to blob
-- Filter activity - Dynamic Copy Activity
-- Get File Names from Folder Dynamically
-- Copy Activity Behavior in ADF
-- Copy Activity Performance Tuning in ADF
-- Get Count of files from folder in ADF
-- Validate copied data between source and sink in ADF
-
-9. **Azure SQL Database integration with ADF**
-
-- Azure SQL Databases - Introduction - Relational databases in Azure
-- Overwrite and Append Modes in Copy Activity in ADF
-
-10. **Incremental Load**
-
-- What is full load
-- What is incremental load
-- types of incremental loads
-- Incrementally load data from Azure SQL Database to Azure Blob storage
-- Incrementally load data from multiple tables in SQL Server to a database in Azure SQL Database
-- Incrementally copy new and changed files based on LastModifiedDate
-- Incrementally copy new files based on time partitioned file name
-
-11. **Logic Apps**
-
-- Send Succeeded mail of ADF pipeline with run stats
-- Send Failed mail of ADF pipeline with error message
-- Branching and chaining activities
-
-12. **Azure Devops**
-
-- Create organization
-- create project
-- create Git main branch
-- configure Git to ADF
-- create a branch in ADF
-- publish ADF work in Git branch
-- delete git branches
-- understand commit in git
-- understand and debug merge conflicts 
-
-
 # Python Basic Level
 
 1. Install Anaconda
@@ -273,6 +149,130 @@ Please contact **Renuka** for **Training and Exam DP-203: Data Engineering on Mi
 - Spark DF
 - Spark SQL
 - Spark Structured Streaming
+
+# ADF(Azure Data Factory)
+
+1. **Introduction**
+
+- ETL Introduction.
+- ELT Introduction
+- Different ETL Tools
+- Azure Data Factory Introduction
+- Azure Data Factory - Important Concepts in ADF
+- ADF Architecture
+- Create Azure Free Account with credit card
+- Create Azure Free Account with out credit card
+
+2. **Storage Account**
+
+- Introduction
+- What is subscription
+- What is resource group
+- create resource group
+- Create Storage Account
+- Differences among LRS/GRS/ZRS/GZRS
+- Difference between Hot and Cool Tiers
+- Create Data Lake Gen 2
+- Create Containers
+- Create Folders
+- Upload Files
+- Override Files
+- Download Files
+- Edit Files
+- Preview Files in different formats
+
+3. **Azure SQL Database**
+
+- Create SQL Database
+- Create Sql Server
+- Create Username and password
+- Allow Azure resources and selected IPS access
+- Create tables and insert data
+- Query Tables
+- Install SSMS
+- Access Azure SQL Database using SSMS   
+
+4. **Linked Service**
+
+- Create Linked Service to BLOB
+- Create Linked Service to Azure SQL Database
+- Create Linked Service to MSFT SQL Server
+- Create Linked Service to Batch Account
+- .... etc
+- Test Linked Service Connection
+
+5. **Integration Run Times**
+
+- What is Integration Run Time
+- Types of IRs
+- Azure integration runtime.
+- Self-hosted integration runtime.
+- Azure-SQL Server Integration Services (SSIS) integration runtime.
+- Install Self-Hosted IR
+- Configuration of Self-Hosted IR
+
+6. **DataSets**
+
+- Create Source Datasets
+- Create Sink Datasets      - 
+- Preview data
+- Create Lookup datasets
+- Understand and preview data
+
+
+7. **BLOB to BLOB Pipeline**
+
+- Create Pipeline
+- Map source Dataset
+- Map Sink Dataset
+- Debug
+- Trigger
+- Understand output of run steps
+- Understand Json log in each step
+
+8. **Azure Storage Account Integration with ADF**
+
+- Copy multiple files from blob to blob
+- Filter activity - Dynamic Copy Activity
+- Get File Names from Folder Dynamically
+- Copy Activity Behavior in ADF
+- Copy Activity Performance Tuning in ADF
+- Get Count of files from folder in ADF
+- Validate copied data between source and sink in ADF
+
+9. **Azure SQL Database integration with ADF**
+
+- Azure SQL Databases - Introduction - Relational databases in Azure
+- Overwrite and Append Modes in Copy Activity in ADF
+
+10. **Incremental Load**
+
+- What is full load
+- What is incremental load
+- types of incremental loads
+- Incrementally load data from Azure SQL Database to Azure Blob storage
+- Incrementally load data from multiple tables in SQL Server to a database in Azure SQL Database
+- Incrementally copy new and changed files based on LastModifiedDate
+- Incrementally copy new files based on time partitioned file name
+
+11. **Logic Apps**
+
+- Send Succeeded mail of ADF pipeline with run stats
+- Send Failed mail of ADF pipeline with error message
+- Branching and chaining activities
+
+12. **Azure Devops**
+
+- Create organization
+- create project
+- create Git main branch
+- configure Git to ADF
+- create a branch in ADF
+- publish ADF work in Git branch
+- delete git branches
+- understand commit in git
+- understand and debug merge conflicts 
+
 
 # DataBricks
 
