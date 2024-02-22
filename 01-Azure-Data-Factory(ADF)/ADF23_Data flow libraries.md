@@ -17,12 +17,32 @@ Note to faculty: take recording and update
 ## create Data flow libraries Function
 1. Click on **Manage** > Click on  **Data flow libraries** > Click on **New**
 2. Name it as **rritec** > Click on **New** > Name it as **workingdays**
-3. 
+3. Create two arguments **i1 and i2 with datatype as date** as shown below and paste below code
+
+``` sql
+/*
+i1:date = Initial date
+i2:date = End date
+*/
+size(
+ filter(
+ mapLoop(
+ toInteger(i2 - i1), 
+ toString(addDays(i1, toInteger(#index)))
+ ),
+ not(in([1, 7], dayOfWeek(toDate(#item))))
+ )
+)
+```
+
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/4717bcab-36a6-4b78-8771-4825790e2ca6)
+
 4. 
+5. 
 
 
 
-5. add **Derived Column**  transformation and create three calculations as shown below
+6. add **Derived Column**  transformation and create three calculations as shown below
     1. totalSal
         ``` sql
         SAL+iif(isNull(COMM),toDecimal(0),COMM)
