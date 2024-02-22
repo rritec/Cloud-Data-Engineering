@@ -26,14 +26,7 @@ SELECT * from emp;
         ``` json
         minus(HIREDATE,toDate(currentTimestamp()))
         ```
-    3. numberOfWorkingDays
-        ``` json
-        
-        minus(toDate(currentTimestamp()), HIREDATE) -
-        divide(minus(toDate(currentTimestamp()), HIREDATE) ), 7) * 2 
-        )
-   
-        ```
+    
 
   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/3a86b308-4ccd-4ec0-b5a9-dd3d1ddd7c9b)
 
