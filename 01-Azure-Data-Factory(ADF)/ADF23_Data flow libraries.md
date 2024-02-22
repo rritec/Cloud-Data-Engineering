@@ -63,20 +63,7 @@ size(
        
        ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d1a0ff4e-6b3c-4c9b-b643-ba76e3f581c7)
 
-    3. 
-        ``` sql
-        SAL+iif(isNull(COMM),toDecimal(0),COMM)
-        ```
-    4. numberOfDays
-        ``` json
-        minus(HIREDATE,toDate(currentTimestamp()))
-        ```
     
-
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/b34b1527-bf62-4e44-aa7e-b8c59a9165e8)
-
-
-
 5. add **sink**
 
 ## Map dataflow/run pipeline.
