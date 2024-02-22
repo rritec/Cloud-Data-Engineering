@@ -65,7 +65,7 @@ END;
 
 
 ```
-2. Call this Stored procedure and verify results
+## Call this Stored procedure and verify results
 ``` sql
 -- Call the stored procedure
 EXEC CalculateTotalSalAndInsertForAll;
@@ -74,7 +74,8 @@ EXEC CalculateTotalSalAndInsertForAll;
 SELECT * FROM ResultTable;
 
 ```
-3. Map this stored procedure in ADF
+## Map this stored procedure in ADF
+
   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/34935fa4-9b74-4d0e-ac16-be5def3e95a9)
 
 4. Run and observe it.
