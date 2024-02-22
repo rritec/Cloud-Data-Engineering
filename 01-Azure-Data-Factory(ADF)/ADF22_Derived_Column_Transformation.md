@@ -28,7 +28,8 @@ SELECT * from emp;
         ```
     
 
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/3a86b308-4ccd-4ec0-b5a9-dd3d1ddd7c9b)
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/b34b1527-bf62-4e44-aa7e-b8c59a9165e8)
+
 
 
 5. add **sink**
