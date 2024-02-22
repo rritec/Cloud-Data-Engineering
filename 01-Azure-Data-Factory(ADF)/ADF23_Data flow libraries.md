@@ -1,3 +1,5 @@
+Note to faculty: take recording and update
+
 # ADF23_Data flow libraries.md
 
 1. Data flow libraries contain custom functions composed using the expression builder.
@@ -5,51 +7,22 @@
 
 
 ## Create required source file.
-1. create required source excel file asshown below or download from labdata 
+1. create required source excel file asshown below or download from labdata [working Days2.xlsx
+](https://github.com/rritec/Cloud-Data-Engineering/blob/main/Lab%20Data/working%20Days2.xlsx)
 
-Hiredate	PayDay	NETWORKDAYS_minus_1	weekday	dayname_using_text_fun
-1/1/2024	2/1/2024	23	2	Monday
-1/2/2024	2/1/2024	22	3	Tuesday
-1/3/2024	2/1/2024	21	4	Wednesday
-1/4/2024	2/1/2024	20	5	Thursday
-1/5/2024	2/1/2024	19	6	Friday
-1/6/2024	2/1/2024	18	7	Saturday
-1/7/2024	2/1/2024	18	1	Sunday
-1/8/2024	2/1/2024	18	2	Monday
-1/9/2024	2/1/2024	17	3	Tuesday
-1/10/2024	2/1/2024	16	4	Wednesday
-1/11/2024	2/1/2024	15	5	Thursday
-1/12/2024	2/1/2024	14	6	Friday
-1/13/2024	2/1/2024	13	7	Saturday
-1/14/2024	2/1/2024	13	1	Sunday
-1/15/2024	2/1/2024	13	2	Monday
-1/16/2024	2/1/2024	12	3	Tuesday
-1/17/2024	2/1/2024	11	4	Wednesday
-1/18/2024	2/1/2024	10	5	Thursday
-1/19/2024	2/1/2024	9	6	Friday
-1/20/2024	2/1/2024	8	7	Saturday
-1/21/2024	2/1/2024	8	1	Sunday
-1/22/2024	2/1/2024	8	2	Monday
-1/23/2024	2/1/2024	7	3	Tuesday
-1/24/2024	2/1/2024	6	4	Wednesday
-1/25/2024	2/1/2024	5	5	Thursday
-1/26/2024	2/1/2024	4	6	Friday
-1/27/2024	2/1/2024	3	7	Saturday
-1/28/2024	2/1/2024	3	1	Sunday
-1/29/2024	2/1/2024	3	2	Monday
-1/30/2024	2/1/2024	2	3	Tuesday
-1/31/2024	2/1/2024	1	4	Wednesday
-
-
-## create dataflow
-1. Click on **New data flow** > name it as **Derived_Column_dataflow**
-2. map **source1** as shown below
-
-  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/10e9a30f-cd5a-4c85-bc61-bd14d2bbc460)
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/8d0ea6a8-677d-4178-b536-3d6e73aad50c)
 
 
 
-4. add **Derived Column**  transformation and create three calculations as shown below
+## create Data flow libraries Function
+1. Click on **Manage** > Click on  **Data flow libraries** > Click on **New**
+2. Name it as **rritec** > Click on **New** > Name it as **workingdays**
+3. 
+4. 
+
+
+
+5. add **Derived Column**  transformation and create three calculations as shown below
     1. totalSal
         ``` sql
         SAL+iif(isNull(COMM),toDecimal(0),COMM)
