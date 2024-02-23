@@ -176,41 +176,30 @@ DROP PROCEDURE CalculateWorkingDaysForTable
 ``` sql
 -- Create a stored procedure to calculate working days
 CREATE PROCEDURE CalculateWorkingDaysForTable
+    @inputTableName NVARCHAR(255) = 'new_table',
+    @outputTableName NVARCHAR(255) = 'results_table',
+    @schemaName NVARCHAR(255) = 'dbo'
 AS
 BEGIN
     -- Declare variables
-    DECLARE @ordered_date DATE;
-    DECLARE @promised_date DATE;    
-    DECLARE @workingdays INT;
-
-    -- Cursor to iterate through new_table
-    DECLARE workingDaysCursor CURSOR FOR
-        SELECT ordered_date, promised_date
-        FROM new_table;
-
-    -- Open the cursor
-    OPEN workingDaysCursor;
-
-    -- Fetch the first row
-    FETCH NEXT FROM workingDaysCursor INTO @ordered_date, @promised_date;
-
-    -- Loop through the rows
-    WHILE @@FETCH_STATUS = 0
+    DECLARE @sql NVARCHAR(MAX);
+    
+    -- Check if the input table exists
+    IF OBJECT_ID(QUOTENAME(@schemaName) + '.' + QUOTENAME(@inputTableName), 'U') IS NOT NULL
     BEGIN
-        -- Calculate working days using your logic (considering holidays)
-        SET @workingdays = dbo.CalculateWorkingDays(@ordered_date, @promised_date);
+        -- Dynamic SQL to insert into the output table
+        SET @sql = '
+            INSERT INTO ' + QUOTENAME(@schemaName) + '.' + QUOTENAME(@outputTableName) + ' (ordered_date, promised_date, workingdays)
+            SELECT ordered_date, promised_date, dbo.CalculateWorkingDays(ordered_date, promised_date)
+            FROM ' + QUOTENAME(@schemaName) + '.' + QUOTENAME(@inputTableName) + ';';
 
-        -- Insert the result into results_table
-        INSERT INTO results_table (ordered_date, promised_date,  workingdays)
-        VALUES (@ordered_date, @promised_date, @workingdays);
-
-        -- Fetch the next row
-        FETCH NEXT FROM workingDaysCursor INTO @ordered_date, @promised_date;
+        -- Execute the dynamic SQL
+        EXEC sp_executesql @sql;
     END
-
-    -- Close and deallocate the cursor
-    CLOSE workingDaysCursor;
-    DEALLOCATE workingDaysCursor;
+    ELSE
+    BEGIN
+        PRINT 'Input table does not exist.';
+    END
 END;
 ```
 ## Call this Stored procedure and verify results
