@@ -10,7 +10,9 @@ BEGIN
     SELECT ename,job,sal
     FROM Emp
     ORDER BY SAL desc;
-	SELECT ename,job,sal
+
+
+SELECT ename,job,sal
     FROM Emp
     ORDER BY SAL
 END;
