@@ -1,5 +1,7 @@
 ## Create a simple stored procedure
+``` sql
 drop procedure GetEmployeeList
+```
 -- Create a simple stored procedure
 CREATE PROCEDURE GetEmployeeList
 AS
