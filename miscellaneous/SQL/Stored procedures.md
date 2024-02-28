@@ -94,5 +94,47 @@ EXEC GetEmployeeCount @Count = @EmployeeCount OUTPUT;
 print 'Total number '+ cast( @EmployeeCount AS varchar(255))
 ```
 
+## Error handling in stored procedure
+
+``` SQL
+drop table Employees
+```
+``` SQL
+create table Employees(empno int primary key,ename varchar(255))
+```
+``` SQL
+select * from Employees
+```
+
+``` SQL
+drop PROCEDURE InsertEmployee
+```
+``` SQL
+-- Error handling in stored procedure
+CREATE PROCEDURE InsertEmployee
+    @empno int,
+    @ename NVARCHAR(50)
+AS
+BEGIN
+    BEGIN TRY
+        INSERT INTO Employees (empno,ename)
+        VALUES (@empno, @ename);
+    END TRY
+    BEGIN CATCH
+        PRINT 'An error occurred: ' + ERROR_MESSAGE();
+    END CATCH
+END;
+```
+
+``` SQL
+EXEC InsertEmployee @empno=101,@ename='RamReddy';
+select * from Employees;
+EXEC InsertEmployee @empno=102,@ename='John';
+select * from Employees;
+EXEC InsertEmployee @empno=101,@ename='Myla';
+select * from Employees;
+```
+
+
 
 
