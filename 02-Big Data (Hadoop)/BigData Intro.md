@@ -15,6 +15,7 @@
     2. Unstructured
     3. Semi-structured
 4. 3 V’s / Characteristics of BIGDATA ?
+
    ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/fa2b954f-3d8d-4431-8fb2-1cdae5ecdce1)
 
 5. What is the solution for BIG DATA ?
@@ -79,72 +80,78 @@
     2. Map-Reduce is a paradigm for distributed processing of large data set over a cluster of nodes
 
 ## Questions
+
 1. Which of the below can be considered as characteristics of bigdata ?
 
     - A. Volume
     - B. Velocity
     - C. Variety
     - D. All the above
+
 2. Hadoop is the solution for bigdata problem.
 
     - A. True
     - B. False
 
-3.Hadoop follows distributed/parallel processing mechanism to process bigdata
+3. Hadoop follows distributed/parallel processing mechanism to process bigdata
 
     - A. True
     - B. False
+
 4. Which of the below in traditional RDBMS lead to the evolution of hadoop ?
 
     - A. Storage limit constraint
     - B. Parallel Processing
     - C. Open-Source 
     - D. Cost of the software is free
+    - E. All the above
 
-5.What is the default block size in Hadoop 2.X ?
+5. What is the default block size in Hadoop 2.X ?
 
-A. 64MB
-B. 128 MB
-C. 256 MB
-D. 512 MB
+    - A. 64 MB
+    - B. 128 MB
+    - C. 256 MB
+    - D. 512 MB
 
 6. Which is the Master Node in Hadoop ?
 
-A. Name Node(NN)
-B. Data Node(DN)
-C. Secondary Name Node(SNN)
-D. None of the above
+    - A. Name Node(NN)
+    - B. Data Node(DN)
+    - C. Secondary Name Node(SNN)
+    - D. None of the above
 
 
-7.Into how many blocks a file of 260 MB will be divided into in Hadoop 2.X ?
+7. Into how many blocks a file of 260 MB will be divided into in Hadoop 2.X ?
 
-A. 1
-B. 2
-C. 3
-D. 4
-
-
-8.Which of below can be considered as Worker Nodes(WN) in Hadoop ?
-
-A. Name Node(NN)
-B. Data Node(DN)
-C. Secondary Name Node(SNN)
-D. None of the above
+    - A. 1
+    - B. 2
+    - C. 3
+    - D. 4
 
 
-9.Is Hadoop Fault-Tolerant ?
 
-A.True
-B.false
+9. Is Hadoop Fault-Tolerant ?
 
-10.Select popular Hadoop distributions from below:
+    - A.True
+    - B.false
 
-A. Cloudera
-B. Horton Works
-C. MapR
-D. All the above
+10. Select Hadoop distributions from below
+
+    - A. Cloudera
+    - B. Horton Works
+    - C. MapR
+    - D. All the above
 
 ## Answers
+1. D
+2. A
+3. A
+4. E
+5. B
+6. A
+7. C
+8. A
+9. D
 
 
 
