@@ -80,22 +80,26 @@
 
 ## Questions
 1. Which of the below can be considered as characteristics of bigdata ?
-    A. Volume
-    B. Velocity
-    C. Variety
-    D. All the above
+
+    - A. Volume
+    - B. Velocity
+    - C. Variety
+    - D. All the above
 2. Hadoop is the solution for bigdata problem.
-    A. True
-    B. False
+
+    - A. True
+    - B. False
 
 3.Hadoop follows distributed/parallel processing mechanism to process bigdata
-    A. True
-    B. False
+
+    - A. True
+    - B. False
 4. Which of the below in traditional RDBMS lead to the evolution of hadoop ?
-    A. Storage limit constraint
-    B. Parallel Processing
-    C. Open-Source 
-    D. Cost of the software is free
+
+    - A. Storage limit constraint
+    - B. Parallel Processing
+    - C. Open-Source 
+    - D. Cost of the software is free
 
 5.What is the default block size in Hadoop 2.X ?
 
