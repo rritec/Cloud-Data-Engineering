@@ -12,6 +12,10 @@ BEGIN
   RETURN @TotalSalary;
 END;
 ```
+# test the function
+```sql
+SELECT dbo.CalculateTotalSalary(5000, 1000) AS TotalSalary;
+```
 # Use function
 ``` sql
 select empno,ename,sal,comm,
