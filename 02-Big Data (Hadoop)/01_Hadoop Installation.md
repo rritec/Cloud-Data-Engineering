@@ -1,7 +1,7 @@
 # 1. Oracle VM
 
-    1. Download virtualbox [here](https://download.virtualbox.org/virtualbox/7.0.8/VirtualBox-7.0.8-156879-Win.exe)
-    2. Double click on exe file > Click on Next
+1. Download virtualbox [here](https://download.virtualbox.org/virtualbox/7.0.8/VirtualBox-7.0.8-156879-Win.exe)
+2. Double click on exe file > Click on Next
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/27a68e52-e680-47be-9432-7f56c9159a21)
     3. Again click on **Next**
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/36c78b23-c39d-429f-9213-10ebe021d3dd)
