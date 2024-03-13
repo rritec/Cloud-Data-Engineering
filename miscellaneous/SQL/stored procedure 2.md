@@ -145,7 +145,7 @@ END;
 ```
 # Test the function
 ```sql
-SELECT *, [dbo].[CalculateWorkingDays](2024-02-01, 2024-02-07) AS working_days FROM dates
+SELECT [dbo].[CalculateWorkingDays]('2024-02-01', '2024-02-07') AS working_days 
 ```
 # create a stored procedure
 ```sql
