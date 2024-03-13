@@ -1,12 +1,12 @@
-# drop the table
+# Drop the table
 ``` sql
 drop table dates
 ```
-# create the table
+# Create the table
 ```sql
 create table dates(start_date DATE,end_date DATE)
 ```
-# insert the values
+# Insert the values
 ```sql
 INSERT INTO dates (Start_date, End_date)
 VALUES
@@ -105,7 +105,7 @@ VALUES
 ```sql
 drop function CalculateWorkingDays
 ```
-# create the function
+# Create the function
 ```sql
 CREATE or alter FUNCTION dbo.CalculateWorkingDays
 (
@@ -147,7 +147,7 @@ END;
 ```sql
 SELECT [dbo].[CalculateWorkingDays]('2024-02-01', '2024-02-07') AS working_days 
 ```
-# create a stored procedure
+# Create a stored procedure
 ```sql
 CREATE or alter PROCEDURE GetEmployeeList
 AS
@@ -173,7 +173,7 @@ BEGIN
     ');
 END;
 ```
-# execute the stored procedure
+# Execute the stored procedure
 ```sql
 EXEC GetEmployeeList;
 ```
