@@ -1,4 +1,5 @@
 # 1. Oracle VM
+
     1. Download virtualbox [here](https://download.virtualbox.org/virtualbox/7.0.8/VirtualBox-7.0.8-156879-Win.exe)
     2. Double click on exe file > Click on Next
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/27a68e52-e680-47be-9432-7f56c9159a21)
@@ -19,6 +20,7 @@
 
 
 # 2. Cloudera VM
+
     1. Download Cloudera Quick Start VM [here](https://drive.google.com/file/d/1zS9E6KYbM4PPgDopFH1VNRJNkNQ7Yu4T/view?usp=sharing)
     2. Create one empty folder and extract it
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/9cb209a8-6641-439d-918b-713f9b39eac2)
