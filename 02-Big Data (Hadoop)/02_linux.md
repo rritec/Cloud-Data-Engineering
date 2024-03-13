@@ -23,7 +23,7 @@
 2. A directory’s solo job is to store the files and the related information. 
 3. All the files, whether ordinary, special, or sub-directory, are contained in directories.
 
-##### mkdir
+## mkdir
 
 1. The mkdir stands for `make directory.`
 2. With the help of mkdir command, you can create a new directory wherever you want in your system.
@@ -56,7 +56,7 @@ mkdir <dirname1> <dirname2> <dirname3> ..
 mkdir d1 d2 d3
 
 ```
-##### mkdir -p
+## mkdir -p
 
 1. Sometimes when you want to create a directory, its parent directory or directories might not exist.
 2. With the help of mkdir -p command you can create sub-directories of a directory. 
@@ -69,7 +69,7 @@ mkdir d1 d2 d3
 mkdir -p country/state/district
 
 ```
-##### rmdir
+## rmdir
 1. rmdir stands for ‘remove directory'
 2. This command is used to delete a directory. 
 3. But will not be able to delete a directory including a sub-directory. 
@@ -86,7 +86,7 @@ mkdir -p country/state/district
 rmdir testDir
 
 ```
-##### Removing non-empty dir
+**Removing non-empty dir**
 1. syntax
 ``` sh
 
