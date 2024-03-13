@@ -10,12 +10,12 @@
 # 1. Linux Distributions
 
 1. Versions/types/kinds/flavors of Linux operating system are called Linux Flavors/Distributions (also called Linux Distro).
-  1. Ubuntu
-  2. Debian
-  3. Red hat
-  4. Fedora
-  5. Open SUSE
-  6. Cent os
+    1. Ubuntu
+    2. Debian
+    3. Red hat
+    4. Fedora
+    5. Open SUSE
+    6. Cent os
 
 # 2 Directory
 
