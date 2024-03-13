@@ -15,6 +15,7 @@
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/39125a5f-86c2-41e5-82d3-3ad0b3211c9d)
 
 5. Click on **Yes**
+
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/13fb2e91-be91-47c1-b6e5-97259a92b200)
 
 6. Click on **Install**
