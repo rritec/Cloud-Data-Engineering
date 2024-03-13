@@ -23,7 +23,7 @@
 2. A directory’s solo job is to store the files and the related information. 
 3. All the files, whether ordinary, special, or sub-directory, are contained in directories.
 
-## mkdir
+**mkdir**
 
 1. The mkdir stands for `make directory.`
 2. With the help of mkdir command, you can create a new directory wherever you want in your system.
@@ -56,7 +56,7 @@ mkdir <dirname1> <dirname2> <dirname3> ..
 mkdir d1 d2 d3
 
 ```
-## mkdir -p
+**mkdir -p**
 
 1. Sometimes when you want to create a directory, its parent directory or directories might not exist.
 2. With the help of mkdir -p command you can create sub-directories of a directory. 
@@ -69,7 +69,7 @@ mkdir d1 d2 d3
 mkdir -p country/state/district
 
 ```
-## rmdir
+**rmdir**
 1. rmdir stands for ‘remove directory'
 2. This command is used to delete a directory. 
 3. But will not be able to delete a directory including a sub-directory. 
@@ -99,7 +99,7 @@ rm –Rf <dirname>
 rm –Rf <country>
 
 ```
-##### Removing multiple directories
+**Removing multiple directories**
 1. You can also remove multiple directories simultaneously.
 2. syntax
 ``` sh
@@ -112,7 +112,7 @@ rmdir <dirname1> <dirname2> <dirname3> ..
 rmdir d1 d2 d3
 
 ```
-##### pwd
+**pwd**
 1. Pwd stands for “print working directory”
 2. Linux pwd command displays your location currently you are working on. 
 3. You log on to the home directory when you boot your PC
@@ -123,7 +123,7 @@ rmdir d1 d2 d3
 pwd
 
 ```
-##### cd
+**cd**
 1. cd stands for “change directory”
 2. Linux cd command is used to change the current directory i.e.;  the directory in which the user is currently working.
 3.  syntax
@@ -138,18 +138,18 @@ cd <dirname>
 cd NewDir
 
 ```
-##### Home directory
+**Home directory**
 1. The directory in which you find yourself when you first login is called your home directory.
 2. You will be doing much of your work in your home directory and subdirectories that you'll be creating to organize your files.
 3. cd (or) cd ~  will bring you to the home directory
 
 
-##### Child & parent directory
+**Child & parent directory**
 1. . (dot) represents the current working directory
 2. .. (dot dot) represents the directory one level above the current working directory, often referred to as the parent directory.
 3. ![image](https://user-images.githubusercontent.com/20516321/225894581-9dd25e93-3122-47cb-9f83-0f17d648da88.png)
 
-##### cd options
+**cd options**
 1. dfd
 
 
@@ -160,7 +160,7 @@ cd NewDir
 | cd / | It takes you to the entire system's root directory. |
 | cd ../..  | It will take you two directories up. |
 
-##### Linux path completion
+**Linux path completion**
 1. Path completion is a very helpful feature in any operating system. 
 2. It is made to speed up your typing speed. 
 3. You just have to hit 'Tab' key and your command, option or file name that is arguments will be automatically completed or will give you the options.
@@ -169,7 +169,7 @@ cd NewDir
 6. Path completion is extremely helpful in typing long file names where you don't remember the full file name.
 7. Some files contain symbols or spaces which is difficult to keep in mind there you can use it.
 
-## 3 Man and help
+# 3 Man and help
 1. Man stands for manual which is a reference book of a Linux operating system. 
 2. To get help on any command that you do not understand, you can type
 3. syntax
@@ -200,7 +200,7 @@ ls --help
 
 ```
 
-## 4 Vi Editor
+# 4 Vi Editor
 
 
 
@@ -232,8 +232,8 @@ x  --> to remove a character
 8. Navigating to a line:
 	`:n --> ` to go to a line number
 
-## 5 Linux Files
-##### Linux Files-Topics
+# 5 Linux Files
+**Linux Files-Topics**
 1. Creating empty files 
 2. Creating file contents
 3. Removing files
@@ -241,7 +241,7 @@ x  --> to remove a character
 5. Moving files
 6. Renaming files
 
-##### Touch-Creating single empty file
+**Touch-Creating single empty file**
 1. touch command is a way to create empty files .
 2. syntax
 ``` sh
@@ -256,7 +256,7 @@ touch myfile1
 
 ```
 
-##### Touch-Creating multiple empty files
+**Touch-Creating multiple empty files**
 1. To create multiple files just type all the file names with a single touch command followed by enter key.
 2.  syntax
 ``` sh
@@ -270,14 +270,14 @@ touch <filename1> <filename2>
 touch myfile1 myfile2
 
 ```
-##### Cat-Creating file contents
+**Cat-Creating file contents**
 1. Cat command is used to create file contents
 2. To create a new file, use the command
     -cat > filename
     -Add content
     -Press 'ctrl + d' to return to command prompt.
 
-##### Cat-Displaying files content
+**Cat-Displaying files content**
 1. Cat command is used to display files contents of a file
 2.  syntax
 ``` sh
@@ -298,13 +298,13 @@ cat myfile1
 cat /home/Admin/Month/ThisMonth.txt
 
 ```
-##### rm
+**rm**
 1. Removing file
 2. Removing multiple files
 3. Removing files with same extension
 4. Removing non-empty dir
 
-##### Rm-removing file
+**Rm-removing file**
 1. The 'rm' means remove. 
 2. This command is used to remove a file. 
 3. The command line doesn't have a recycle bin or trash unlike other GUI's to recover the files.
@@ -323,7 +323,7 @@ rm myfile1
 
 ```
 
-##### Rm-removing multiple files
+**Rm-removing multiple files**
 1. rm can be used as follows to remove multiple files at a time
 2. syntax
 ``` sh
@@ -337,7 +337,7 @@ rm <filename1> <filename2>
 rm myfile1 myfile2
 
 ```
-##### Rm-removing files with same extension
+**Rm-removing files with same extension**
 1. rm can be used to remove all the files ending with same extensions like .pdf, .txt,.log, etc.
 2.  syntax
 ``` sh
@@ -352,7 +352,7 @@ rm *.txt
 
 ```
 
-##### Rm-Removing non-empty dir
+**Rm-Removing non-empty dir**
 1. With rm '-r' option, you can delete a directory having sub directories inside it. 
 2. So you don't need to delete sub-directories manually.
 3. Non-empty directories can be removed recursively as follows: 
@@ -372,7 +372,7 @@ rm –R country
 rm –r country
 
 ```
-##### Rm-Removing file/dir forcefully
+**Rm-Removing file/dir forcefully**
 1. If a file has read-only access, then while removing it will  ask for permission whether to delete or not. 
 2. However, the file will be deleted after getting permission (Y)
 3. But by giving command rm -rf it will delete that particular file having read-only access without asking for permission.
@@ -393,7 +393,7 @@ rm -rf <directory name>
 
 ```
 
-##### cp
+**cp**
 1. Copying file
 2. Copying file into a directory
 3. Copying multiple files into a directory
@@ -401,7 +401,7 @@ rm -rf <directory name>
 5. Copying dir along with sub-dirs
 6. Copying multiple files with similar file names into a directory
 
-#####  cp-copying file
+**cp-copying file**
 1. 'cp' means copy. 
 2. 'cp cp-copying file' command is used to copy a file or a directory.
 3. To copy a file into the same directory syntax will be:
@@ -418,7 +418,7 @@ cp oldfile.txt newfile.txt
 
 ```
 
-##### cp-copying file into a directory
+**cp-copying file into a directory**
 1. cp can be used to copy a file into a directory 
 2. To copy a file into a directory the syntax will be:
 3. syntax
@@ -434,7 +434,7 @@ cp month.txt /home/Admin/Month
 
 ```
 
-##### cp-copying multiple files into a directory
+**cp-copying multiple files into a directory**
 1. cp can be used to copy multiple files into a directory 
 2. To copy a multiple files into a directory the syntax will be:
 3. syntax
@@ -450,7 +450,7 @@ cp month.txt week.txt /home/Admin/August
 
 ```
 
-##### cp-copying multiple files with same extension into a directory
+**cp-copying multiple files with same extension into a directory**
 1. cp can be used to copy multiple files with same extension into a directory 
 2. To copy a multiple files with same extension into a directory the syntax will be:
 3. syntax
@@ -466,7 +466,7 @@ cp *.txt /home/Admin/August
 
 ```
 
-##### cp-copying dir along with sub-dirs
+**cp-copying dir along with sub-dirs**
 1.Option 'r' with the copy command can be used to copy a directory including all its content from a source directory to the destination directory.
 2. syntax
 ``` sh
@@ -484,7 +484,7 @@ cp  JulyTempData/*      /home/Admin/AugTempData
 
 ```
 
-##### cp-copying multiple files with similar file names into a directory
+**cp-copying multiple files with similar file names into a directory**
 1. cp can be used to copy multiple files with similar file names into a directory 
 2. To copy a multiple files with similar file names into a directory the syntax will be:
 3. example
@@ -493,14 +493,14 @@ cp  JulyTempData/*      /home/Admin/AugTempData
 cp file* /home/Admin/File
 
 ```
-##### mv
+**mv**
 1. Moving a file
 2. Moving multiple files
 3. Moving multiple files with same extension
 4. Moving all files from one dir to other dir
 5. Renaming a file & directory
 
-##### Mv-moving a file
+**Mv-moving a file**
 1. Linux mv command is used to move existing file or directory from one location to another
 2. syntax
 ``` sh
