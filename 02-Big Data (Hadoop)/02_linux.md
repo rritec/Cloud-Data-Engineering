@@ -169,7 +169,7 @@ cd NewDir
 6. Path completion is extremely helpful in typing long file names where you don't remember the full file name.
 7. Some files contain symbols or spaces which is difficult to keep in mind there you can use it.
 
-##### 3 Man and help
+## 3 Man and help
 1. Man stands for manual which is a reference book of a Linux operating system. 
 2. To get help on any command that you do not understand, you can type
 3. syntax
@@ -200,7 +200,7 @@ ls --help
 
 ```
 
-##### 4 Vi Editor
+## 4 Vi Editor
 
 
 
@@ -232,7 +232,7 @@ x  --> to remove a character
 8. Navigating to a line:
 	`:n --> ` to go to a line number
 
-##### 5 Linux Files
+## 5 Linux Files
 ##### Linux Files-Topics
 1. Creating empty files 
 2. Creating file contents
