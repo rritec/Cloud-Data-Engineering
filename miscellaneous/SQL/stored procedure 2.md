@@ -144,6 +144,7 @@ BEGIN
 END;
 ```
 # create a stored procedure
+```sql
 CREATE or alter PROCEDURE GetEmployeeList
 AS
 BEGIN
