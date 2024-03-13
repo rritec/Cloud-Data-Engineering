@@ -107,7 +107,7 @@ drop function CalculateWorkingDays
 ```
 # create the function
 ```sql
-CREATE FUNCTION dbo.CalculateWorkingDays
+CREATE or alter FUNCTION dbo.CalculateWorkingDays
 (
     @startDate DATE,
     @endDate DATE
@@ -142,6 +142,10 @@ BEGIN
 
     RETURN IIF(@startDate <= @endDate, @workingDays, -@workingDays);
 END;
+```
+# Test the function
+```sql
+SELECT *, [dbo].[CalculateWorkingDays](2024-02-01, 2024-02-07) AS working_days FROM dates
 ```
 # create a stored procedure
 ```sql
