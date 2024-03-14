@@ -18,6 +18,10 @@
     5. Open SUSE
     6. Cent os
 
+``` unix
+cat /etc/centos-release
+```
+
 # 2 Directory
 
 1. A directory in Linux is similar to a folder in windows OS
