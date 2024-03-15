@@ -21,6 +21,12 @@
 ``` unix
 cat /etc/centos-release
 ```
+``` sh
+whoami
+```
+``` sh
+hostname
+```
 
 # 2 Directory
 
