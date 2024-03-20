@@ -164,11 +164,15 @@ drop table emp_ext;
 23. To delete type `hdfs dfs -rm -r -f /user/hive/warehose/rritecdb.db/emp_ext`
 # Questions
 1. Types of tables in hive ?
-   - Ans: two types of tables available thoses are manged tables and extrnal tables
+   
 2. If we drop internal table what will happens ?
-    - Ans: Data and Metadata both will be removed
-2. If we drop External table what will happens ?
-    - Ans: Metadata only will be removed.
-3. When to go for external table ?
-    - Ans: If data is not owned by hive application and there are other downstream applications(ex:powerbi,..etc) are using then go for External table.
-4. 
+    
+3. If we drop External table what will happens ?
+    
+4. When to go for external table ?
+5.  
+# Answers
+1. Two types of tables available thoses are manged tables and extrnal tables
+2. Data and Metadata both will be removed
+3. Metadata only will be removed.
+4. If data is not owned by hive application and there are other downstream applications(ex:powerbi,..etc) are using then go for External table.
