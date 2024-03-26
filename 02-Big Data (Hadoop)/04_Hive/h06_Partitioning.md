@@ -29,7 +29,7 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
     create table emp_partition(empno int,ename string,sal int) partitioned by(deptno int) row format delimited fields terminated by '|' ;
     ```
     ``` sql
-    desc formatted dept_partition;
+    desc formatted emp_partition;
     ```
     ``` sql
     load data local inpath '/home/cloudera/Desktop/rritec/emp10.txt' into table emp_partition partition(deptno=10);
