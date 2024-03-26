@@ -15,7 +15,7 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
     1. Static Partitioning
     2. Dynamic Partitioning
 
-5. Static Partitioning
+## Static Partitioning
     1. Insert input data files individually into a partition table is Static Partition.
     2. Usually when loading files (big files) into Hive tables static partitions are preferred.
     3. Static Partition saves your time in loading data compared to dynamic partition.
@@ -56,7 +56,8 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         ```
         
     11. 
-6. Dynamic Partitioning
+## Dynamic Partitioning
+
     1. Single insert to partition table is known as a dynamic partition.
     2. Usually, dynamic partition loads the data from the non-partitioned table.
     3. Dynamic Partition takes more time in loading data compared to static partition.
@@ -94,3 +95,5 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         
         4. 
     10.
+## Questions
+## Answers
