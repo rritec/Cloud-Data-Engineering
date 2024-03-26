@@ -43,7 +43,7 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
         load data local inpath '/home/cloudera/Desktop/rritec/emp20.txt' into table emp_partition partition(deptno=20);
         ```
         ``` sql
-        desc formatted dept_partition;
+        desc formatted emp_partition;
         ```
         ``` sql
         select * from emp_partition;
