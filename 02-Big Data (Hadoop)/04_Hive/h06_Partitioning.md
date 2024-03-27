@@ -110,4 +110,5 @@ insert into emp_dp2 partition(deptno,empno) select ename,sal,deptno,empno from e
 hdfs dfs -ls -R /user/hive/warehouse/b2403.db/emp_dp2
 ```
 Note: Do make sure that the column on which you want to partition should come last in select statements. If there are series of column then there order in partition(deptno,empno) should match in select statement.
+
 2. 
