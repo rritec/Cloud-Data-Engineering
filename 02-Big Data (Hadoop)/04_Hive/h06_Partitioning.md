@@ -97,4 +97,17 @@ CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (p
     4. 
 10.
 ## Questions
+1. how to do pratition based on multiple columns ?
 ## Answers
+1. run below scripts and observe it.
+``` sql
+create table emp_dp2(ename string,sal int) partitioned by(deptno int,empno int) row format delimited fields terminated by '|' ;
+```
+``` sql
+insert into emp_dp2 partition(deptno,empno) select ename,sal,deptno,empno from emp_dp_stage;
+```
+``` linux
+hdfs dfs -ls -R /user/hive/warehouse/b2403.db/emp_dp2
+```
+Note: Do make sure that the column on which you want to partition should come last in select statements. If there are series of column then there order in partition(deptno,empno) should match in select statement.
+2. 
