@@ -23,5 +23,16 @@ Click on activity -> Go to Settings
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/5187e289-f5f4-4188-8983-8b0c800cdfed)
 
 4.In Activities -> Search for **Until activity** now cut and paste **IF condition activity** and **Get MetaData activity** in **Until activity**
-  -
+   -Go to settings in Expression field provide **@equals(variables('vfile'),'Arrived' )**
+
+   ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/8f70d12a-dd7b-4af6-b206-ff0a3c621fae)
+
+5.After completing above steps validate and debug
+   -If file exist it will execute if condition it means **meta data activity** will execute
+   -else it will execute **wait activity**
+
+  ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/26337087-3c42-4b96-a88c-2c1c47e68ead)
+
+
+  
 
