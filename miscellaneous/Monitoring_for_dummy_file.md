@@ -7,8 +7,8 @@
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/5145914b-2dd4-4bcd-888f-e3784ca1da96)
 
 Click on activity -> Go to Settings 
-   .select Dataset if it is available if not create new dataset
-   .Field list -> Click on **New** -> In argument drop down select **Exists**
+   -select Dataset if it is available if not create new dataset
+   -Field list -> Click on **New** -> In argument drop down select **Exists**
 
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/a3c6b478-e05f-4d28-832c-363f4c35b884)
 
