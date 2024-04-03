@@ -330,7 +330,7 @@
 
     1. click on `create` > Click on `cluster` > provide name `rritecdb`
 
-        ![image](https://user-images.githubusercontent.com/20516321/220528295-0bf2384f-b575-4561-8e74-3d829eda0ddf.png)
+![image](https://user-images.githubusercontent.com/20516321/220528295-0bf2384f-b575-4561-8e74-3d829eda0ddf.png)
 
 # DBFS
 
@@ -519,7 +519,7 @@
         stu_df.show(3)
         ```
     4. 
-7. observe all the options and find out how to export as html
+
 # Dataframe Operations
 
 ## Word Count
