@@ -789,7 +789,7 @@ df.write.format("json").save("/FileStore/tables/rritec/output/df_data")
  .coalesce(1)
  .write
  .format("csv")
- .mode("overwrite") # one line extra
+ .mode("overwrite")
  .save("dbfs:/FileStore/b2404052/")
 )
 ```
@@ -798,7 +798,7 @@ df.write.format("json").save("/FileStore/tables/rritec/output/df_data")
  .repartition(1)
  .write
  .format("csv")
- .mode("overwrite") # one line extra
+ .mode("overwrite")
  .save("dbfs:/FileStore/b2404053/")
 )
 ```
