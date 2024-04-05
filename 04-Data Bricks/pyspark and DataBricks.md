@@ -780,6 +780,28 @@ df.write.format("json").save("/FileStore/tables/rritec/output/df_data")
 ```pysaprk
 %fs head dbfs:/FileStore/tables/rritec/output/final_student_csv_data/part-00000-tid-4721931960538371143-1b0b3268-03e9-4725-9d83-269e16786577-8-1-c000.csv
 ```
+## Write a Single file using Spark coalesce() & repartition()
+1. When you are ready to write a DataFrame, first use Spark repartition() and coalesce() to merge data from all partitions into a single partition and then save it to a file. This still creates a directory and write a single part file inside a directory instead of multiple part files
+2. Both coalesce() and repartition() are Spark Transformation operations that shuffle the data from multiple partitions into a single partition. **Use coalesce() as it performs better and uses lesser resources compared with repartition().**
+3. You have to be very careful when using Spark coalesce() and repartition() methods on larger datasets as they are expensive operations and could throw OutOfMemory errors.
+``` python
+(df 
+ .coalesce(1)
+ .write
+ .format("csv")
+ .mode("overwrite") # one line extra
+ .save("dbfs:/FileStore/b2404052/")
+)
+```
+``` python
+(df 
+ .repartition(1)
+ .write
+ .format("csv")
+ .mode("overwrite") # one line extra
+ .save("dbfs:/FileStore/b2404053/")
+)
+```
 # Read Modes
 1. mode 
     1. (default `PERMISSIVE`): allows a mode for dealing with corrupt records during parsing.
