@@ -94,9 +94,9 @@
       ```
   - ![image](https://user-images.githubusercontent.com/20516321/209278382-d5706988-accb-4f72-add2-5f473a0f774d.png)
 
-## Lab 3: Login and work in SSMS ttol
+## Lab 3: Login and work in SSMS tool
   - Instal SSMS tool by following [url](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#instal-sql-server-management-studio-ssms)
-  - open **rritecAzuresqldb** > copy serbername
+  - open **rritecAzuresqldb** > copy servername
   - ![image](https://user-images.githubusercontent.com/20516321/209279155-117ad993-851b-4bb2-b732-956579425adc.png)
 
   - open SSMS tool
