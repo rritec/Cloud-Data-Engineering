@@ -46,4 +46,7 @@ drop table [dbo].[TGT_EMP]
 
 # Answers
 1. A data-driven workflow that can ingest data from multiple sources
-2. **Data movement activities:** These activities write data from any source store to a data sink. **Data transformation activities:** These activities transform, filter, and enhance data. **Control activities:** These activities can include deleting a file, copying data between sources, or looping through items.
+2. Three types, those are given below, for more info refer [doc](https://learn.microsoft.com/en-in/azure/data-factory/concepts-pipelines-activities?tabs=data-factory)
+    1. **Data movement activities:** These activities write data from any source store to a data sink.
+    2. **Data transformation activities:** These activities transform, filter, and enhance data.
+    3. **Control activities:** These activities can include deleting a file, copying data between sources, or looping through items.
