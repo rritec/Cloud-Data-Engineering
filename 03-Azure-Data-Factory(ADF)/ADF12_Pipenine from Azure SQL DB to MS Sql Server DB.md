@@ -1,4 +1,5 @@
 # Create Pipenine from Azure SQL DB to MS Sql Server DB
+
   - Click on **Author**
   - Right click on **rritec_pipelines** folder > Click on **New Pipeline** > Name it as **p04_from Azure SQL DB to MS Sql Server DB**
   - Under **Activities** > Expand **Move & Transform** > Drag and drop **Copy Data** activity
