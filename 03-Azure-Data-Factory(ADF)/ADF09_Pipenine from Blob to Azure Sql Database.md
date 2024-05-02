@@ -42,7 +42,12 @@ drop table [dbo].[TGT_EMP]
 
 # Questions
 1. What is Pipeline ?  
-2. Types of Activities ? 
+2. Types of Activities ?
+3. What is the output if $$FILEPATH and $$FILENAME,inbelow configuration?
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/aa516e7d-9768-4d6f-a347-6063698518b1)
+
+4. 
+
 
 # Answers
 1. A data-driven workflow that can ingest data from multiple sources
@@ -50,3 +55,5 @@ drop table [dbo].[TGT_EMP]
     1. **Data movement activities:** These activities write data from any source store to a data sink.
     2. **Data transformation activities:** These activities transform, filter, and enhance data.
     3. **Control activities:** These activities can include deleting a file, copying data between sources, or looping through items.
+3. ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/789c670f-6cc9-4752-8953-7443e30addee)
+
