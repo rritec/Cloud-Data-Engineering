@@ -47,7 +47,11 @@ drop table [dbo].[TGT_EMP]
 
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/aa516e7d-9768-4d6f-a347-6063698518b1)
 
-4. 
+4. if we write mutiple scripts in precopyscript, will it work?
+
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d58edb12-29af-4472-8ecf-4284428a3115)
+
+5. 
 
 
 # Answers
@@ -60,5 +64,7 @@ drop table [dbo].[TGT_EMP]
 
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/789c670f-6cc9-4752-8953-7443e30addee)
 
-4. 
+4. Yes
+
+5. 
 
