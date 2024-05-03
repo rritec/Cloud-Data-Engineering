@@ -40,18 +40,7 @@ drop table [dbo].[TGT_EMP]
 11. observe output jsons
 12. open SSMS > observe data in table
 
-# Questions
-1. What is Pipeline ?  
-2. Types of Activities ?
-3. What is the output if $$FILEPATH and $$FILENAME,inbelow configuration?
 
-![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/aa516e7d-9768-4d6f-a347-6063698518b1)
-
-4. if we write mutiple scripts in precopyscript, will it work?
-
-![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d58edb12-29af-4472-8ecf-4284428a3115)
-
-5. 
 
 # Lab 3: Info level log captureing
 
@@ -89,6 +78,18 @@ deptno int
 11. click on debug
 12. this time it will run and load all rows
 
+# Questions
+1. What is Pipeline ?  
+2. Types of Activities ?
+3. What is the output if $$FILEPATH and $$FILENAME,inbelow configuration?
+
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/aa516e7d-9768-4d6f-a347-6063698518b1)
+
+4. if we write mutiple scripts in precopyscript, will it work?
+
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/d58edb12-29af-4472-8ecf-4284428a3115)
+
+5.
 # Answers
 1. A data-driven workflow that can ingest data from multiple sources
 2. Three types, those are given below, for more info refer [doc](https://learn.microsoft.com/en-in/azure/data-factory/concepts-pipelines-activities?tabs=data-factory)
