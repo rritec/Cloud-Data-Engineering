@@ -53,6 +53,41 @@ drop table [dbo].[TGT_EMP]
 
 5. 
 
+# Lab 3: Info level log captureing
+
+1. download [file](https://github.com/rritec/Cloud-Data-Engineering/blob/main/03-Azure-Data-Factory(ADF)/labdata/emp10.csv) use as source
+2. use below table as target
+``` sql
+create table [dbo].[tgt_emp10]
+(
+empno int,
+ename varchar(6),
+sal money,
+deptno int
+)
+```
+3. Create Pipliene
+4. click on debug and understand the error, you are not able to figure it out which column and which row is probelmatic
+5. now you understand the importance of info level log
+6. let us enable it
+7. go to sopy activity settings and enable log and select options as shown below
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/e36f52cb-49ae-4135-aa50-05ad2ee6b8c0)
+
+8. Click on debug
+9. go to storage account and observe logfile
+10. fix the problem by running below sql
+``` sql
+drop table [dbo].[tgt_emp10];
+create table [dbo].[tgt_emp10]
+(
+empno int,
+ename varchar(7),
+sal money,
+deptno int
+)
+```
+11. click on debug
+12. this time it will run and load all rows
 
 # Answers
 1. A data-driven workflow that can ingest data from multiple sources
