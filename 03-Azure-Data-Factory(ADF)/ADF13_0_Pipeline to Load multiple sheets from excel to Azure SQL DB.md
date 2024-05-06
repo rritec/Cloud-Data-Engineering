@@ -68,16 +68,27 @@
     ![image](https://user-images.githubusercontent.com/20516321/209803533-21b87745-5ccf-401e-831f-deeb7f17b036.png)
 
 # Questions
-1. dataset level what all are can be parameterized?
-  - We can parameterize al possible options like
+1. dataset level what all are can be parameterized?  
+2. In this chapter did you learned Pipeline level array variable?  
+3. In above Lab can i replace variable with parameter ?    
+4. can we change parameter value in mid of the pipeline running ?    
+5. can we change Variable value in mid of the pipeline running ?
+6. 
+    
+
+# Answers
+1. - We can parameterize all possible options like
        - 1. container name
          2. foldername
          3. file name
          4. sheet name
          5. schema name
          6. tablename
-2. In this chapter did you learned Pipeline level array variable?
-  - True
+2. True
+3. Yes
+4. No
+5. Yes
+6. 
 
 ## Related Content: 
 
