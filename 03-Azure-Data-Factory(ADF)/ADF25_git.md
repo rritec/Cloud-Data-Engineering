@@ -1,6 +1,6 @@
 # Git
 
-1. Download and install **Git Bash** using [URL](https://git-scm.com/download/win)
+1. Download and install **Git Bash** using [URL](https://github.com/git-for-windows/git/releases/download/v2.45.1.windows.1/Git-2.45.1-64-bit.exe)
 2. git **clone**:
     - Copies a Git repository, including all its files and history, to your local machine.
         ``` git
