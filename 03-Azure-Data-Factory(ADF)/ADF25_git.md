@@ -1,6 +1,7 @@
 # Git
 
-1. git **clone**:
+1. Download and install **Git Bash** using [URL](https://git-scm.com/download/win)
+2. git **clone**:
     - Copies a Git repository, including all its files and history, to your local machine.
         ``` git
             git clone <repository_url>
