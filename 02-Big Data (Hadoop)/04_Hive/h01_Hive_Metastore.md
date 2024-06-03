@@ -40,3 +40,13 @@
   
         ![image](https://user-images.githubusercontent.com/20516321/214237910-5cba6910-c977-4e6b-b275-c48f4e236c04.png)
 5. `info:`do you know we can clear the `hive cli` by using `ctrl +   L` or `!clear`
+# Questions
+1. What is Metadata? Few Examples?
+2. Where this metadata is storing?
+3. What are tha databases hive metastore support?
+4. What is the default warehouse location of HDFS?
+# Answers
+1. Data about data is metadata . Examples any titles like Table name,column name,dtabase name ..etc
+2. Meta store(in our case metastore is a MySql Database)
+3. Derby,MySql,Postgresql,Oracle,Sql Server
+4. /user/hive/warehouse/
