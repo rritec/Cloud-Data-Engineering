@@ -524,7 +524,7 @@
 
 # calculate totalsal of emp
 ``` python
-from pyspark.sql.functions import col, when
+from pyspark.sql.functions import col, when, expr
 df=(spark.read.format("csv").option("header",True).load("dbfs:/FileStore/tables/b240303/emp-1.csv")
     .withColumn("COMM", when(col("COMM").isNull(), 0).otherwise(col("COMM")))
     .withColumn("Totalsal",expr("SAL+COMM"))
