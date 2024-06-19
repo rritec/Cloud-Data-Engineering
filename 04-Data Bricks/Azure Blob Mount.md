@@ -23,4 +23,12 @@ df.show()
 ``` python
 df.write.option("header","true").csv("/mnt/emp/emp1.csv")
 ```
-4. 
+4. List Filesystem
+``` py 
+dbutils.fs.ls("/mnt/emp/")
+```
+5. Unmount the Filesystems
+``` py
+dbutils.fs.unmount("/mnt/emp")
+```
+6. 
