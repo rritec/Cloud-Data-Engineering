@@ -23,6 +23,7 @@
 ```pyspark
 dbutils.help()
 ```
+## fs utilities
 3. Observe dbutils filesystem help
 
 ```py
@@ -55,6 +56,29 @@ dbutils.fs.mv("/FileStore/b2406/emp.csv","/FileStore/rritec/")
 ```
 
 8. 
+## Data utilities
+1. Observe help Document
+``` py
+dbutils.data.help()
+```
+``` py
+dbutils.data.help('summarize')
+```
+2. Create simple dataframe
+``` py
+df = (spark
+           .read
+           .format("csv")
+           .option("header", "true")
+           .option("inferSchema", "true")           
+           .load("/FileStore/rritec/emp.csv"))
+```
+3. Analyze df
+``` py
+dbutils.data.summarize(df)
+```
+4. 
+
 ## Questions
 ## Answers
 
