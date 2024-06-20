@@ -78,6 +78,27 @@ df = (spark
 dbutils.data.summarize(df)
 ```
 4. 
+## Notebook Utility
+
+1. Observe help documents
+``` py
+dbutils.notebook.help()
+```
+``` py
+dbutils.notebook.help("exit")
+```
+``` py
+dbutils.notebook.help("run")
+```
+2. Create a notebook as shown below
+
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/2b7a8b72-795e-437b-b53c-96bb0f62f62c)
+
+3. Call this notebook from another notebook, it may throw error if you are working in community version.
+
+![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/92ffbe69-7288-4858-bdba-e79c24c5ff1c)
+
+4. 
 
 ## Questions
 ## Answers
