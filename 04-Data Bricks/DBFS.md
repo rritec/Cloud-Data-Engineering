@@ -28,7 +28,11 @@ dbutils.help()
 ```py
 dbutils.fs.help()
 ```
-4. List root folder of DBFS
+4. Observe ls help
+``` py
+dbutils.fs.help("ls")
+```
+5. List root folder of DBFS
 
 ```py
 dbutils.fs.ls("/")
