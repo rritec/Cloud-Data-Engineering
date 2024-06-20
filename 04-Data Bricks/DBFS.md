@@ -14,9 +14,9 @@
 
 ## Pre-configured directories in DBFS root
 1. Mainly below three folders are pre configured
-  1. FileStore
-  2. databricks-datasets
-  3. databricks-results
+      1. FileStore
+      2. databricks-datasets
+      3. databricks-results
 2. observe dbutils help
 
 ```py
