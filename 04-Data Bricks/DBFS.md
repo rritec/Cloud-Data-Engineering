@@ -5,7 +5,7 @@
 3. 
 # Key capabilities of Databricks DBFS:
 
-1. 1. Unified Interface: DBFS provides a single access point for various cloud storage systems like Amazon S3, Azure Data Lake Storage (ADLS), and Google Cloud Storage (GCS).This eliminates the need to use different APIs for each storage solution.
+1. Unified Interface: DBFS provides a single access point for various cloud storage systems like Amazon S3, Azure Data Lake Storage (ADLS), and Google Cloud Storage (GCS).This eliminates the need to use different APIs for each storage solution.
 2. Optimized for Spark: DBFS is specifically designed for Spark workloads, offering high-performance reads and writes for data processing tasks like ETL, machine learning, and data analytics.
 3. Simplified Management: DBFS simplifies working with cloud object storage by using familiar file system semantics (directories and files). This makes it easier to manage your data compared to directly interacting with object storage.
 4. Scalability: DBFS can automatically scale to handle increasing data volumes, avoiding storage bottlenecks as your data grows.
