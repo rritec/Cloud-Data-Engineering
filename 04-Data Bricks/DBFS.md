@@ -100,7 +100,64 @@ dbutils.notebook.help("run")
 
 4. 
 ## widget Utility
-1. 
+1. Observe Help document
+``` py 
+dbutils.widgets.help()
+```
+2. Create **combobox** input widget
+``` py
+dbutils.widgets.combobox(name="cb",
+                         defaultValue="DATABRICKS",
+                         choices=["DATABRICKS","ADF","FABRIC","POWERBI","BIGDATA","PYTHON"],
+                         label="combobox")
+```
+3. Create **dropdown** input widget
+``` py
+dbutils.widgets.dropdown(name="dd",
+                         defaultValue="DATABRICKS",
+                         choices=["DATABRICKS","ADF","FABRIC","POWERBI","BIGDATA","PYTHON"],
+                         label="dropdown")
+```
+4. Create **multiselect** input widget
+``` py
+dbutils.widgets.multiselect(name="ms",
+                         defaultValue="DATABRICKS",
+                         choices=["DATABRICKS","ADF","FABRIC","POWERBI","BIGDATA","PYTHON"],
+                         label="multiselect")
+```
+5. Create **text** input widget
+``` py
+dbutils.widgets.text(name="text",
+                         defaultValue="DATABRICKS",                         
+                         label="textbox")
+```
+6. Retrieves current value of an input widget
+``` py
+print(f"combobox input widget value is :{dbutils.widgets.get('cb')}")
+print(f"dropdown input widget value is :{dbutils.widgets.get('dd')}")
+print(f"multiselect input widget value is :{dbutils.widgets.get('ms')}")
+print(f"text input widget value is :{dbutils.widgets.get('text')}")
+```
+7. if we give wrong input widget name what will be the output
+   ``` py
+   print(f"combobox input widget value is :{dbutils.widgets.get('wrong_widget')}")
+   ```
+9. if we give wrong input widget name what will be the output
+``` py
+   print(f"combobox input widget value is :{dbutils.widgets.getArgument('wrong_widget')}")
+   ```
+10. if we give wrong input widget name what will be the output
+``` py
+   print(f"combobox input widget value is :{dbutils.widgets.getArgument('wrong_widget','testvalue')}")
+   ```
+11. Remove an input widget from the notebook.
+    ``` py
+    dbutils.widgets.remove("cb")
+    ```
+13. Remove all widgets in the notebook
+``` py
+dbutils.widgets.removeAll()
+```
 
 ## Questions
 ## Answers
