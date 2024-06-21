@@ -158,7 +158,7 @@ print(f"text input widget value is :{dbutils.widgets.get('text')}")
 ``` py
 dbutils.widgets.removeAll()
 ```
-# Mount Utility
+## Mount Utility
 1. Mount an Azure Blob storage container
 ``` python
 dbutils.fs.mount(
