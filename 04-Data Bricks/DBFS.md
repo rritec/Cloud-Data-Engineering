@@ -158,6 +158,67 @@ print(f"text input widget value is :{dbutils.widgets.get('text')}")
 ``` py
 dbutils.widgets.removeAll()
 ```
+# Mount Utility
+1. Mount an Azure Blob storage container
+``` python
+dbutils.fs.mount(
+  source = "wasbs://cdrive@b2404sa.blob.core.windows.net",
+  mount_point = "/mnt/emp",
+  extra_configs = {"fs.azure.account.key.b2404sa.blob.core.windows.net":"<xxxx  account key  xxxx>"})
+```
+2. Displays information about what is mounted within DBFS
+``` py
+dbutils.fs.mounts()
+```
+3. Create dataframe
+``` python
+df = (
+    spark
+    .read
+    .format("csv")
+    .option("header","true")
+    .load("dbfs:/mnt/emp/inputfolder/emp.csv")
+)
+```
+``` python
+df.show()
+```
+3. Write df in the mount
+``` python
+df.write.option("header","true").csv("/mnt/emp/emp1.csv")
+```
+4. List Filesystem of mount location
+``` py 
+dbutils.fs.ls("/mnt/emp/")
+```
+5. **refreshMounts**: Forces all machines in this cluster to refresh their mount cache, ensuring they receive the most recent information.
+``` py
+dbutils.fs.refreshMounts()
+```
+5. Unmount the Filesystems
+``` py
+dbutils.fs.unmount("/mnt/emp")
+```
+5. **updateMount**: Similar to mount(), but updates an existing mount point (if present) instead of creating a new one. If there is no mount point defined at the path specified by the mountPoint parameter, the method will throw an error.
+``` python
+dbutils.fs.mount(
+  source = "wasbs://ddrive@b2404sa.blob.core.windows.net/test",
+  mount_point = "/mnt/emp1",
+  extra_configs = {"fs.azure.account.key.b2404sa.blob.core.windows.net":"<Account Key>"})
+```
+``` py
+dbutils.fs.mounts()
+```
+``` py
+dbutils.fs.updateMount(
+  source = "wasbs://ddrive@b2404sa.blob.core.windows.net/excels_folder",
+  mount_point = "/mnt/emp1",
+  extra_configs = {"fs.azure.account.key.b2404sa.blob.core.windows.net":"<account Key>"})
+```
+``` py
+dbutils.fs.mounts()
+```
+
 
 ## Questions
 ## Answers
