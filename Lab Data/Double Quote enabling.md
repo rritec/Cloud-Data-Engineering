@@ -14,7 +14,7 @@
 
 ## Create Container
 
-- Click on **Container** and create name as rritec
+- Click on **Container** >> Give name as rritec
   
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/e253a5bf-0ced-41b3-94e4-5df327e22146)
 
