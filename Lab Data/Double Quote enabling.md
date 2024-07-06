@@ -1,4 +1,4 @@
-# How to Resolve Issues with Commas in CSV File Recordsrecords
+# How to Resolve Issues with Commas in CSV File Records
 
 ## Create CSV file 
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/c957f5eb-e1a5-4d0c-95c6-1363ccc9692f)
