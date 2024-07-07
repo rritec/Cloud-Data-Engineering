@@ -46,9 +46,9 @@
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/bfca6b46-be31-4635-8b1e-6b5eddd2f0af)
 - Go to connection
   
-- In **Quote Character** >> select Double Qoute (")
+- In **Quote Character** >> select **Double Qoute (")**
   
-- In **Escape Character** >> select Double Qoute (") as below Image
+- In **Escape Character** >> select **Double Qoute (")** as below Image
   
 ![image](https://github.com/rritec/Cloud-Data-Engineering/assets/20516321/82964d95-af53-48ba-93f9-c50e43ae77fc)
 
