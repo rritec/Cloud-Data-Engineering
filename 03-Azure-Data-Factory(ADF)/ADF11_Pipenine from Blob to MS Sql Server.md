@@ -30,8 +30,15 @@
   - Under **Output** > observe **Details**
   - ![image](https://user-images.githubusercontent.com/20516321/209775129-191c309d-ccce-4c27-9c82-6aad1e5228fa.png)
 # Home Work
-1. Create pipeline to copy data from Sql server to BLOB
-2. Create pipeline to copy data from Sql server to Sql Server
+1. Create pipeline to copy data from AzureBlob to AzureBlob
+2. Create pipeline to copy data from AzureBlob to AzureSqlDatabase
+3. Create pipeline to copy data from AzureBlob to SqlServer
+4. Create pipeline to copy data from AzureSqlDatabase to AzureBlob
+5. Create pipeline to copy data from AzureSqlDatabase to AzureSqlDatabase
+6. Create pipeline to copy data from AzureSqlDatabase to SqlServer
+7. Create pipeline to copy data from SqlServer to AzureBlob
+8. Create pipeline to copy data from SqlServer to AzureSqldatabase
+9. Create pipeline to copy data from SqlServer to SqlServer
 
 # Questions
 1. 
