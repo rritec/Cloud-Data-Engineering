@@ -3,6 +3,12 @@
   - Install SSMS [doc](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#instal-sql-server-management-studio-ssms)
   - enable `sa` user by following [doc](https://www.top-password.com/knowledge/unlock-sql-server-sa-account.html)
   - provide password and remember it.
+  - Create Database in Local sql server.
+    ```Sql
+    Create Database RRitecDB
+    ```
+    
+
 
 # Self Hosted IR
   - Perform data flows, data movement and dispatch activities to **external compute**
