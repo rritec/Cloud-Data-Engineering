@@ -1,7 +1,7 @@
 # Load file if available
 
 ## Step 1: Create a parameter file and read using Lookup activity
-1. Open notepad copy below content and save file as json file **ParameterFile1.json** or download the file from our github labdata folder [ParameterFile1.json](https://github.com/rritec/Cloud-Data-Engineering/blob/main/01-Azure-Data-Factory(ADF)/labdata/ParameterFile1.json)
+1. Open notepad copy below content and save file as json file **ParameterFile1.json** or download the file from our github labdata folder [ParameterFile1.json](https://github.com/rritec/Cloud-Data-Engineering/blob/main/03-Azure-Data-Factory(ADF)/labdata/ParameterFile1.json)
 ``` json
 {
   "srcs_tgts": [
