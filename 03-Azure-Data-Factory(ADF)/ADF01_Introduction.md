@@ -34,8 +34,8 @@
     2. Data movement and migration between on-premises and cloud data sources.
     3. Data transformation and processing at scale.
     4. All the above
-2. Question 2
+2. Explain Dimension Table, Fact Table,Star Schema, Snow Flake Schema,OLTP DB, DW DB ...etc
 
 ## Answers:
 1. 4
-2. 
+2. Listen these three videos https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_00_00_Data%20Warehousing%20Concepts.md
