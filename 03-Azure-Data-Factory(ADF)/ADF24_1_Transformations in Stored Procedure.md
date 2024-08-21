@@ -65,6 +65,19 @@ END;
 
 
 ```
+or
+```sql
+DROP PROCEDURE emp_total_sal
+
+CREATE PROCEDURE emp_total_sal
+AS
+BEGIN
+drop table [dbo].[tgt_emp1]
+select empno,ename,sal,comm,sal+isnull(comm,0) as total_sal 
+into tgt_emp1
+from emp
+END
+```
 ## Call this Stored procedure and verify results
 ``` sql
 -- Call the stored procedure
