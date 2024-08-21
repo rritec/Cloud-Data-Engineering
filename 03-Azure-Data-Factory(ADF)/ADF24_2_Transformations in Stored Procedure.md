@@ -5,14 +5,14 @@
 ## Create required data
 ``` sql
 drop table new_table;
-GO;
+
 -- Create a new table
 CREATE TABLE new_table
 (
     ordered_date DATE,
     promised_date DATE
 );
-GO;
+
 -- Insert data into the new_table
 INSERT INTO new_table (ordered_date, promised_date)
 VALUES
@@ -126,7 +126,7 @@ CREATE TABLE results_table
 ## create Function
 ``` sql
 DROP FUNCTION dbo.CalculateWorkingDays;
-GO;
+
 ```
 ``` sql
 -- Create FUNCTION
@@ -206,7 +206,7 @@ END;
 ``` sql
 -- Call the stored procedure
 EXEC CalculateWorkingDaysForTable
-GO
+
 
 select ordered_date,promised_date,workingdays from results_table
 
