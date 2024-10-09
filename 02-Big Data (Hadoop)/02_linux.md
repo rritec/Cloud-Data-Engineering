@@ -27,6 +27,9 @@ whoami
 ``` sh
 hostname
 ```
+``` sh
+pwd
+```
 
 # 2 Directory
 
