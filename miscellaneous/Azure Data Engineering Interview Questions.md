@@ -1,16 +1,17 @@
 1. What is IR ? Types of IRs ?
-2. What is Linked Service? Types of Linked Services?
-3. What is Dataset?
-4. What is Pipeline?
-5. Types of Activities?
-6. Give few examples where you written transformation Logic?
-7. What is dataflow? type of transformations available in dataflow?
-8. What is Full Load? How to implement it?
-9. What is Incremental Load ? how to implement it?
-10. What is logic Apps? how you used in your project?
-11. Types of schedules/Triggers?
-12. What is source Control? types of source controls available in ADF?
-13. How to create Datalake gen 2?
+   a.
+3. What is Linked Service? Types of Linked Services?
+4. What is Dataset?
+5. What is Pipeline?
+6. Types of Activities?
+7. Give few examples where you written transformation Logic?
+8. What is dataflow? type of transformations available in dataflow?
+9. What is Full Load? How to implement it?
+10. What is Incremental Load ? how to implement it?
+11. What is logic Apps? how you used in your project?
+12. Types of schedules/Triggers?
+13. What is source Control? types of source controls available in ADF?
+14. How to create Datalake gen 2?
 15. What is OLTP?
 16. What is Data Warehouse?
 17. Difference between OLTP and DW?
