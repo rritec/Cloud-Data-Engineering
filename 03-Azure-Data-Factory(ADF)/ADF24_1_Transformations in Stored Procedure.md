@@ -8,16 +8,6 @@
 
 
 ```sql
--- Create a table to store the results
-CREATE TABLE ResultTable (
-    empno INT,
-    ename NVARCHAR(255),
-    job NVARCHAR(255),
-    sal DECIMAL(10,2),
-    comm DECIMAL(10,2),
-    totalSal DECIMAL(10,2)
-);
-
 -- if already procedure available drop it.
 DROP PROCEDURE emp_total_sal
 
@@ -25,7 +15,7 @@ DROP PROCEDURE emp_total_sal
 CREATE PROCEDURE emp_total_sal
 AS
 BEGIN
-drop table [dbo].[tgt_emp1]
+drop table [dbo].ResultTable
 select empno,ename,sal,comm,sal+isnull(comm,0) as total_sal 
 into ResultTable
 from emp
