@@ -95,6 +95,17 @@ TOTALSAL int )
 10. select etl url paste in the browser > enter
 11. notice that few records might be created in the target table **tgt_azure_fun**
 
+## Call Azure Function in ADF
+
+1. create new pipeline
+2. drag and drop azure function activity
+3. Select Azure Function Activity > Click on New linked service > name it as lsaf > Select Azure subscription > Select Azure Function app URL >> Click on Create
+4. Provide function name as etl
+5. mehod as post
+6. body as {name:ram}
+7. click on debug
+8. observe output
+
 
 
 
