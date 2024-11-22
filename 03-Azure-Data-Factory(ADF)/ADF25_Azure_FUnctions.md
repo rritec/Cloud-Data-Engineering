@@ -106,6 +106,42 @@ TOTALSAL int )
 7. click on debug
 8. observe output
 
+## Questions
+1. how to return list as azure function output
+2. how to return dataFrame as azure function output
+## Answers
+1. use this code
+``` py
+@app.route(route="return_list", auth_level=func.AuthLevel.ANONYMOUS)
+def return_list(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('Python HTTP trigger function processed a request.')
+    my_list = [
+        {"name": "Alice", "age": 30},
+        {"name": "Bob", "age": 25},
+        {"name": "Charlie", "age": 35}
+    ]
+
+    # Convert the list to a JSON string
+    json_data = json.dumps(my_list)    
+    return func.HttpResponse(json_data, mimetype="application/json")
+```
+2. use this code
+``` py
+@app.route(route="return_df", auth_level=func.AuthLevel.ANONYMOUS)
+def return_df(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('Python HTTP trigger function processed a request.')
+    # Create a sample DataFrame
+    data = {'Name': ['Alice', 'Bob', 'Charlie'],
+            'Age': [30, 25, 35]}
+    df = pd.DataFrame(data)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+    return func.HttpResponse(json_data, mimetype="application/json")
+    
+```
+3. 
+
 
 
 
