@@ -85,13 +85,13 @@ pyodbc
 
 7. Under workspace click on deploy to azure
 8. Create target table with below DDL
-   ```sql
+```sql
 create table dbo.tgt_azure_fun(
 EMPNO varchar,
 SAL int,
 COMM int,
 TOTALSAL int )
-   ```
+```
 10. select etl url paste in the browser > enter
 11. notice that few records might be created in the target table **tgt_azure_fun**
 
