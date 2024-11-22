@@ -11,6 +11,7 @@
 1. open portal.azure.com
 2. go to free services
 3. click on function **Create**
+
 ![image](https://github.com/user-attachments/assets/d537d99f-ca1e-41dd-81ef-e02699b80c49)
 
 4. Click on Select
@@ -25,9 +26,11 @@
 
 1. Open VS Code
 2. Left Side Menu bar > click on **Azure** > Login with azure username and password
+
 ![image](https://github.com/user-attachments/assets/d5ee7dba-7811-4bb0-b708-85ccea5a9c73)
 
 3. In Workspace Pane > Click on Azure Functions > Click on create new project
+
 ![image](https://github.com/user-attachments/assets/db03b47c-2069-4207-8ebc-199312b4ef87)
 
 4. create a folder anywhere and select it
@@ -46,4 +49,52 @@
 17. paste in browser type **name=ram** > and observe output
 
 ## Create http Trigger to do ETL using python
-1. In VS Code > In workspace Menu 
+
+1. In VS Code > In workspace Menu
+2. Click on Azure Functions > Click on Create Function
+3. Click on HTTP trigger > Add http trigger function to an existing file > name it as etl > Select Anonymous >
+4. Change etl code as shown below > below logging.info line delete all the code add below code
+```py
+connection_string = "Driver={ODBC Driver 18 for SQL Server};Server=tcp:b2410asdbserver.database.windows.net,1433;Database=b2410asdb;Uid=sadmin;Pwd=RRitec123;Encrypt=yes;TrustServerCertificate=yes;Connection Timeout=30;"
+    query = "select * from dbo.emp"  
+    conn = pyodbc.connect(connection_string)
+    cursor = conn.cursor()
+    df = pd.read_sql(query, conn)
+    df["COMM"]=df["COMM"].fillna(0)
+    df["TOTALSAL"] = df["SAL"]+df["COMM"]
+    #df.to_sql("tgtemp20241121", conn, index=False, if_exists='replace')
+    for index, row in df.iterrows():
+        #print(index)
+        #print(row)
+        cursor.execute("INSERT INTO dbo.tgt_azure_fun(EMPNO,SAL,COMM,TOTALSAL) values(?,?,?,?)", row.EMPNO, row.SAL, row.COMM,row.TOTALSAL)
+    conn.commit()
+    cursor.close()
+    conn.close()
+    return func.HttpResponse("ETL completed")
+```
+5. Also add two imports in the top of the file after import logging >> save the file
+```py
+import pyodbc
+import pandas as pd
+```
+6. add below two modules in requirments.txt file > save the file
+```py
+pandas
+pyodbc
+```
+
+7. Under workspace click on deploy to azure
+8. Create target table with below DDL
+   ```sql
+create table dbo.tgt_azure_fun(
+EMPNO varchar,
+SAL int,
+COMM int,
+TOTALSAL int )
+   ```
+10. select etl url paste in the browser > enter
+11. notice that few records might be created in the target table **tgt_azure_fun**
+
+
+
+
