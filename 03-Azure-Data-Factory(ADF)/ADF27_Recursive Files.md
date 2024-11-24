@@ -1,4 +1,4 @@
-# How to Load the data from from Recursive Folders :
+# How to Load the data from Recursive Folders :
 
 ## INTRODUCTION :
 
@@ -39,11 +39,44 @@ I am attempting to retrieve files from four levels of folders within Azure Blob 
 
 
 
-Create Parameters outside the pipeline as per below screen shot.
+Create **Parameters** outside the pipeline as per below screen shot.
 
  ![image](https://github.com/user-attachments/assets/ecb251ec-bf82-4771-8d99-ebbb07cf8ccb)
 
-Drag GetMetadata Activity into Pipeline, create dataset
+Drag **GetMetadata** Activity into **Pipeline** and name it as **getBaseInsideFolders**
+
+Create **dataset** and name it as **ds_rec**
+
+Open dataset and create one parameter as Per below image
+
+![image](https://github.com/user-attachments/assets/d5630731-e100-4bc3-a02a-d3b98d9ad7cd)
+
+Now go to dataset **settings** and pass the **parameter** in **dataset properties** **Value**
+
+Click on **Value** then it will take you to **Pipeline expression Builder**
+
+In pipeline expression builder click on Parameters tab below and select **pBasePath** Parameter (which we created outside pipeline) as per below image
+
+![image](https://github.com/user-attachments/assets/36dce897-50a3-430d-9fad-aa5de73b8e97)
+
+Click On **Ok** then screen looks like with **passing parameter** in **value tab**
+
+![image](https://github.com/user-attachments/assets/dcc889db-951f-444a-9508-8924a00a67ba)
+
+In **FiledLists**  **Arguments** select **Child Items** as per below Image
+
+![image](https://github.com/user-attachments/assets/a41e8358-c129-4a3f-8d40-55a05c85dd5f)
+
+Run the **activity** and check the **output** you will get the **sub folders**(Child items) from inside the **Imput** floder
+
+![image](https://github.com/user-attachments/assets/520e7ad8-62a2-4cbc-81cc-041ff861504a)     ![Uploading image.png…]()
+
+
+
+
+
+
+
 
 
 
