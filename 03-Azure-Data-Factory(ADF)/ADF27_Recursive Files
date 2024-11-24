@@ -1,8 +1,0 @@
-# INTRODUCTION :
---
-I am attempting to retrieve files from four levels of folders within Azure Blob Storage and copy all the data files into an Azure SQL Database, as per the below screen shots.
-
-
-
-
-
