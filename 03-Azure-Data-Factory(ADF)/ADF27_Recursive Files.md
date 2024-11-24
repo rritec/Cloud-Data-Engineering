@@ -84,6 +84,17 @@ Outside the **foreach** activity in **settings** tab >> select **Squential** and
 After that it will take you to **Pipeline expression Builder** >> Go to **Activity Outputs** and select **getBaseInsideFolders childitems** as per below image
 
 ![image](https://github.com/user-attachments/assets/9067848c-99bd-4626-b5f1-8501b7b1827b)
+
+Now inside **foreach** activity, Drag **If Condition** activity to get required **year folder** and Name it as **ifyearFoler**
+
+Go to activities tab and pass the expression dynamically in **expression** value with below logic as per below image
+
+''' sql
+@contains(item().name,pipeline().parameters.pYear)
+
+
+
+
     
 
 
