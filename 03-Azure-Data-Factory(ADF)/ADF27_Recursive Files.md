@@ -69,7 +69,30 @@ In **FiledLists**  **Arguments** select **Child Items** as per below Image
 
 Run the **activity** and check the **output** you will get the **sub folders**(Child items) from inside the **Imput** floder
 
-![image](https://github.com/user-attachments/assets/520e7ad8-62a2-4cbc-81cc-041ff861504a)     ![Uploading image.png…]()
+ ![image](https://github.com/user-attachments/assets/e7a482f2-c21a-4711-8ad3-89b72ae29f57)
+
+![image](https://github.com/user-attachments/assets/520e7ad8-62a2-4cbc-81cc-041ff861504a)    
+
+Now we have to Get the required Sub folder **24** using getmetadata Activity output.
+ 
+Drag Foreach activity into the pipeline and name it as Loopforreqyearfolder and give connection with getmeta data activity as per below image
+
+Outside the **foreach** activity in **settings** tab >> select **Squential** and in **items** Click on **add dynamic content** as per below image
+
+![image](https://github.com/user-attachments/assets/b407cf8c-1d45-41b8-89cd-b083b09dd9a2)
+
+After that it will take you to **Pipeline expression Builder** >> Go to **Activity Outputs** and select **getBaseInsideFolders childitems** as per below image
+
+![image](https://github.com/user-attachments/assets/9067848c-99bd-4626-b5f1-8501b7b1827b)
+    
+
+
+
+
+
+
+
+
 
 
 
