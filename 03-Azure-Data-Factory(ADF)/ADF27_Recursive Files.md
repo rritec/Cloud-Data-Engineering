@@ -89,9 +89,30 @@ Now inside **foreach** activity, Drag **If Condition** activity to get required 
 
 Go to activities tab and pass the expression dynamically in **expression** value with below logic as per below image
 
-''' sql
-@contains(item().name,pipeline().parameters.pYear);
-'''
+``` ADF
+@contains(item().name,pipeline().parameters.pYear)
+```
+![image](https://github.com/user-attachments/assets/b675139d-1766-490e-a93b-7dcecbdd8ae0)
+
+Inside If condition Activity, if it is **TRUE** drag the **set varaiable** Activity and name it as **VSetYearFolder**
+
+Create one varaiable and name it as **vYearPath** and in below **Value** provide dynamically like **concat** **basefolder** and **year folder** as per below logic and image.
+
+```
+@concat(pipeline().parameters.pBasePath,'/',item().name)
+```
+
+![image](https://github.com/user-attachments/assets/1751f99d-a1de-4872-b193-d6ecaa878d3a)
+
+Now run the pipeline and **observer** **output**, it will get the **Required Year folder** and it will **concat** with **base folder**
+
+![image](https://github.com/user-attachments/assets/ccdc7d24-90ff-4241-9b0d-9810a6974aab)
+
+
+![image](https://github.com/user-attachments/assets/b752292c-dc11-4c44-a0bc-f6152a6ea161)
+
+
+
 
 
 
