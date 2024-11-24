@@ -90,8 +90,8 @@ Now inside **foreach** activity, Drag **If Condition** activity to get required 
 Go to activities tab and pass the expression dynamically in **expression** value with below logic as per below image
 
 ''' sql
-@contains(item().name,pipeline().parameters.pYear)
-
+@contains(item().name,pipeline().parameters.pYear);
+'''
 
 
 
