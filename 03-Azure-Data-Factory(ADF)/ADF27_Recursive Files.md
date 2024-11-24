@@ -37,11 +37,13 @@ I am attempting to retrieve files from four levels of folders within Azure Blob 
 
 ## How to create pipeline to get files recursively as per above screen shots.
 
-### Step : 1
+
 
 Create Parameters outside the pipeline as per below screen shot.
 
  ![image](https://github.com/user-attachments/assets/ecb251ec-bf82-4771-8d99-ebbb07cf8ccb)
+
+Drag GetMetadata Activity into Pipeline, create dataset
 
 
 
