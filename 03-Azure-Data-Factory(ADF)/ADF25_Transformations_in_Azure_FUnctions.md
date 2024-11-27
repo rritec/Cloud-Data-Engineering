@@ -66,7 +66,7 @@ connection_string = "Driver={ODBC Driver 18 for SQL Server};Server=tcp:b2410asdb
     for index, row in df.iterrows():
         #print(index)
         #print(row)
-        cursor.execute("INSERT INTO dbo.tgt_azure_fun(EMPNO,SAL,COMM,TOTALSAL) values(?,?,?,?)", row.EMPNO, row.SAL, row.COMM,row.TOTALSAL)
+        cursor.execute("INSERT INTO dbo.tgt_azure_fun(ENAME,SAL,COMM,TOTALSAL) values(?,?,?,?)", row.ENAME, row.SAL, row.COMM,row.TOTALSAL)
     conn.commit()
     cursor.close()
     conn.close()
@@ -87,7 +87,7 @@ pyodbc
 8. Create target table with below DDL
 ```sql
 create table dbo.tgt_azure_fun(
-EMPNO varchar,
+ENAME varchar,
 SAL int,
 COMM int,
 TOTALSAL int )
