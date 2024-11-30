@@ -85,7 +85,7 @@ After that it will take you to **Pipeline expression Builder** >> Go to **Activi
 
 ![image](https://github.com/user-attachments/assets/9067848c-99bd-4626-b5f1-8501b7b1827b)
 
-Now inside **foreach** activity, Drag **If Condition** activity to get required **year folder** and Name it as **ifyearFoler**
+Now inside **foreach** activity, Drag **If Condition** activity to get required **year folder** and Name it as **ifyearFolder**
 
 Go to activities tab and pass the expression dynamically in **expression** value with below logic as per below image
 
@@ -137,56 +137,117 @@ Drag Foreach activity into the pipeline and name it as **loopForReqMonthFolder**
 
 Outside the **foreach** activity in **settings** tab >> select **Squential** and in **items** Click on **add dynamic content** as per below image
 
-![image](https://github.com/user-attachments/assets/e9653c3c-25db-4b8c-b541-090059fabc5a)
+After that it will take you to **Pipeline expression Builder** >> Go to **Activity Outputs** and select **getYearInsideFolders childitems** as per below image
+
+![image](https://github.com/user-attachments/assets/e8a2b13b-4d98-42d8-9457-c70da6df47a4)
 
 ``` ADF
-@activity('getMonthInsideFolders').output.childItems
+@activity('getYearInsideFolders').output.childItems
 ```
+Now inside **foreach** activity, Drag **If Condition** activity to get required **monthfolder** and Name it as **ifmonthrFolder**
+
+Go to **activities** tab and pass the expression dynamically in **expression** value with below logic as per below image.
+
+![image](https://github.com/user-attachments/assets/2a124fec-1c50-4436-be76-64c6a52680ca)
+
+
+
+``` ADF
+@contains(item().name,pipeline().parameters.pYear)
+```
+
 Inside If condition Activity, if it is **TRUE** drag the **set varaiable** Activity and name it as **vSetMonthFolder**
 
 Create one varaiable and name it as **vMonthPath** and in below **Value** provide dynamically like **concat** **basefolder** , **year folder** and **Month folder** as per below logic and image
 
 ![image](https://github.com/user-attachments/assets/14c10cd4-25e3-4b4c-9e34-40f58b415802)
 
+
 ``` ADF
 @concat(variables('vYearPath'),'/',item().name)
 ```
-**Output :**
+Now run the pipeline and **observer** **output**, it will get the **Required month folder** and it will **concat** with **base folder**,**Year folder**
+
 ![image](https://github.com/user-attachments/assets/12bb23c4-3013-40f4-8c29-a2d3cb7daebc)
 
-#### How to get Month inside Sub Folders( folders)
+#### How to get Month inside Sub Folders( Day folders)
 
-Drag **GetMetadata** Activity into Pipeline and name it as **getYearInsideFolders**
+Drag **GetMetadata** Activity into Pipeline and name it as **getMonthInsideFolders**
 
 Create dataset and name it as **ds_rec**
 
 Open **dataset** and create one **parameter** as Per below image.
 
+![image](https://github.com/user-attachments/assets/51f68e4a-0f0d-4961-abe0-88d14169e86b)
 
+![image](https://github.com/user-attachments/assets/6ff7d633-39bf-465b-b4f5-a278cb0facb1)
 
+Pass **vYearPath** Varaible into **pPath Parameter** as shown in below image.
 
+In **Filedlist** **Arguments** select **ChildItems**
 
+Now you will get all the **Yearfolders** from **Month folder** as shown in below image.
 
+**Observe Getmeta data activity OutPut:**
 
+![image](https://github.com/user-attachments/assets/0c356a0d-240a-4449-947a-3a143a8fc8a9)
 
+Now we have to Get the required Sub folder **Max Day Folder** using  getmetadata Activity output(**getMonthInsideFolders**).
+ 
+Drag Foreach activity into the pipeline and name it as **loopForReqDayFolder** and give connection with getmeta data activity as per below image
 
+Outside the **foreach** activity in **settings** tab >> select **Squential** and in **items** Click on **add dynamic content** as per below images
 
+After that it will take you to **Pipeline expression Builder** >> Go to **Activity Outputs** and select **getDayInsideFolders childitems** as per below image
 
+![image](https://github.com/user-attachments/assets/9ae2de3e-2816-4163-baef-fcbf00159046)
 
+![image](https://github.com/user-attachments/assets/ed1dcf0c-ee12-4381-8b2d-d2fdb08fab3e)
 
+Now inside **foreach** activity, Drag **If Condition** activity to get required **monthfolder** and Name it as **ifmonthrFolder**
 
+Go to **activities** tab and pass the expression dynamically in **expression** value with below logic as per below image.
 
-    
+![image](https://github.com/user-attachments/assets/19364b3f-0ea5-47f2-b406-20b15748d90b)
 
+``` ADF
+@contains(item().name,pipeline().parameters.pDay)
+ ```
 
+Inside If condition Activity, if it is **TRUE** drag the **set varaiable** Activity and name it as **vSetYearFolder**
 
+Create one varaiable and name it as **vDayPath** and in below **Value** provide dynamically like **concat** **basefolder** , **year folder**,**Month folder** and **Day folder** as per below logic and image.
 
+![image](https://github.com/user-attachments/assets/2eeb9268-8264-48c6-9dd3-c8007ee5caaa)
 
+```
+@concat(variables('vMonthPath'),'/',item().name)
+```
+Now run the pipeline and **observer** **output**, it will get the **Required Day folder** and it will **concat** with **base folder**,**Year folder**,**month folder**
 
+![image](https://github.com/user-attachments/assets/fb2a68ac-71c1-49fe-ab44-5661d28642f5)
 
+Now we got Actual **Max day folder** where files has Uploading,so we have to load the data from this folder to **Azure sql Database**
 
+### How to Load the from Max Day folder to Azure sql DB
 
+Drag **copy Data activity** into existing pipeline and make connection between **forloop activity(loopForReqDayFolder)** 
 
+In **source dataset** pass **VDayPath** variable as shown in below image
+
+![image](https://github.com/user-attachments/assets/b7f27249-2766-4616-9dab-e76c05cb88a0)
+
+In **Target Dataset** select the destination where you want to load the data.
+
+**Run** the **Pipeline**
+
+**Check** the **Output**
+
+![image](https://github.com/user-attachments/assets/b13a9eac-38c6-4cf3-b319-98f46de8ac10)
+
+**Final Pipeiline version :**
+
+![image](https://github.com/user-attachments/assets/677615bb-f39f-4c1f-ac7a-927b51039b55)
 
 
 
