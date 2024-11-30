@@ -111,6 +111,66 @@ Now run the pipeline and **observer** **output**, it will get the **Required Yea
 
 ![image](https://github.com/user-attachments/assets/b752292c-dc11-4c44-a0bc-f6152a6ea161)
 
+#### How to get Year inside Sub Folders(Month folders)
+
+Drag **GetMetadata** Activity into Pipeline and name it as **getYearInsideFolders**
+
+Create dataset and name it as **ds_rec**
+
+Open **dataset** and create one **parameter** as Per below image.
+
+![image](https://github.com/user-attachments/assets/e9e9ad76-c971-43fe-9c7e-3cabc5c80b88)
+
+Pass **vYearPath** Varaible into **pPath Parameter** as shown in below image.
+
+In **Filedlist** **Arguments** select **ChildItems**
+
+![image](https://github.com/user-attachments/assets/5f04e42b-ef93-447c-ac25-86dc00a3d0ff)
+
+Now you will get all the **Monthfolders** from **24 Year folder** as shown in below image.
+
+![image](https://github.com/user-attachments/assets/8c887815-cdc0-4f29-ae92-2179c5a9ca46)
+
+Now we have to Get the required Sub folder **Max Month Folder** using  getmetadata Activity output(**getYearInsideFolders**).
+ 
+Drag Foreach activity into the pipeline and name it as **loopForReqMonthFolder** and give connection with getmeta data activity as per below image
+
+Outside the **foreach** activity in **settings** tab >> select **Squential** and in **items** Click on **add dynamic content** as per below image
+
+![image](https://github.com/user-attachments/assets/e9653c3c-25db-4b8c-b541-090059fabc5a)
+
+``` ADF
+@activity('getMonthInsideFolders').output.childItems
+```
+Inside If condition Activity, if it is **TRUE** drag the **set varaiable** Activity and name it as **vSetMonthFolder**
+
+Create one varaiable and name it as **vMonthPath** and in below **Value** provide dynamically like **concat** **basefolder** , **year folder** and **Month folder** as per below logic and image
+
+![image](https://github.com/user-attachments/assets/14c10cd4-25e3-4b4c-9e34-40f58b415802)
+
+``` ADF
+@concat(variables('vYearPath'),'/',item().name)
+```
+**Output :**
+![image](https://github.com/user-attachments/assets/12bb23c4-3013-40f4-8c29-a2d3cb7daebc)
+
+#### How to get Month inside Sub Folders( folders)
+
+Drag **GetMetadata** Activity into Pipeline and name it as **getYearInsideFolders**
+
+Create dataset and name it as **ds_rec**
+
+Open **dataset** and create one **parameter** as Per below image.
+
+
+
+
+
+
+
+
+
+
 
 
 
