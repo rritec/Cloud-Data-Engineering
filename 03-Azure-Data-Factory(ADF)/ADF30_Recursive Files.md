@@ -229,9 +229,12 @@ Now run the pipeline and **observer** **output**, it will get the **Required Day
 
 Now we got Actual **Max day folder** where files has Uploading,so we have to load the data from this folder to **Azure sql Database**
 
-### How to Load the from Max Day folder to Azure sql DB
+### How to Load the data from Max Day folder to Azure sql DB
 
-Drag **copy Data activity** into existing pipeline and make connection between **forloop activity(loopForReqDayFolder)** 
+Drag **copy Data activity** into existing pipeline and make connection between **forloop activity(loopForReqDayFolder)** and **Copy Data activity** as shown in below image.
+
+![image](https://github.com/user-attachments/assets/7caba9f2-d660-407e-9323-f3e4aa5eda39)
+
 
 In **source dataset** pass **VDayPath** variable as shown in below image
 
