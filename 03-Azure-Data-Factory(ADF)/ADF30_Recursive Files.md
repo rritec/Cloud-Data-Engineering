@@ -36,8 +36,7 @@ I am attempting to retrieve files from four levels of folders within Azure Blob 
 
 
 ## How to create pipeline to get files recursively as per above screen shots.
-
-
+------
 
 Create **Parameters** outside the pipeline as per below screen shot.
 
@@ -112,6 +111,7 @@ Now run the pipeline and **observer** **output**, it will get the **Required Yea
 ![image](https://github.com/user-attachments/assets/b752292c-dc11-4c44-a0bc-f6152a6ea161)
 
 #### How to get Year inside Sub Folders(Month folders)
+----
 
 Drag **GetMetadata** Activity into Pipeline and name it as **getYearInsideFolders**
 
@@ -171,6 +171,7 @@ Now run the pipeline and **observer** **output**, it will get the **Required mon
 ![image](https://github.com/user-attachments/assets/12bb23c4-3013-40f4-8c29-a2d3cb7daebc)
 
 #### How to get Month inside Sub Folders( Day folders)
+----
 
 Drag **GetMetadata** Activity into Pipeline and name it as **getMonthInsideFolders**
 
