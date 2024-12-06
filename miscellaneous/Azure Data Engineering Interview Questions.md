@@ -26,3 +26,7 @@
 27. What is Polybase?
     1. Refer MSFT doc [here](https://learn.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-ver16)
 28. What is Data lake?
+29. Difference between Azure Synapse Vs Azure Fabric
+    - [Refer 1](https://endjin.com/blog/2023/05/azure-synapse-analytics-versus-microsoft-fabric-a-side-by-side-comparison)
+    - [Refer 2](https://learn.microsoft.com/en-us/fabric/data-engineering/comparison-between-fabric-and-azure-synapse-spark)
+30. 
