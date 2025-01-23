@@ -9,6 +9,25 @@
       - scalable
       - redundant. 
   - Azure Storage includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files, Azure Queues, and Azure Tables
+## Azure Storage redundancy
+1. LRS
+
+![image](https://github.com/user-attachments/assets/77a9084b-acf8-404e-a81b-98fb08fd25ec)
+
+2. ZRS
+
+![image](https://github.com/user-attachments/assets/d1196b2b-717d-4045-a7ef-cf1f8662857e)
+
+3. GRS or RA-GRS
+
+![image](https://github.com/user-attachments/assets/20d4a895-478e-48ba-8685-342f1c099d98)
+
+4. GZRS or RA-GZRS
+
+![image](https://github.com/user-attachments/assets/50d417c0-bf98-4961-a3c7-04e6b855652b)
+
+
+
 ## Lab
   - Open [Azure Portal](https://portal.azure.com/)> > Click on the search bar > Type **Storage accounts** > Click on **Storage Accounts**
   - Click on **Create** > Under **Basics** tab provide below details
