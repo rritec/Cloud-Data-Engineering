@@ -38,4 +38,4 @@
 
 ## Answers:
 1. 4
-2. Listen these three videos https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_00_00_Data%20Warehousing%20Concepts.md
+2. Listen these three videos https://github.com/rritec/POWERBI/blob/master/01.%20Notebooks/PBI_00_00_Data%20Warehousing%20Concepts.md
