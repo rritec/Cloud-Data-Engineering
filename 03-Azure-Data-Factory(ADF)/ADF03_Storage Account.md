@@ -73,16 +73,14 @@
 2. How Many types of redundencys available?
     - LRS
     - ZRS
-    - GRS
-    - RA-GRS
-    - GZRS
-    - RA-GZRS
+    - GRS or RA-GRS
+    - GZRS or RA-GZRS
 3. How many types of Access tiers available?
     - Hot Tier
     - Cool Tier
     - Cold Tier
     - Archive Tier
-4. read blob using python pandas
+4. Read blob using python pandas
     - Click on ... blob > Click on Generate SAS > Click on generate SAS token and URL > Copy Blob SAS URL > replace below url and run it in any python notebook
    ```python
     import pandas as pd
