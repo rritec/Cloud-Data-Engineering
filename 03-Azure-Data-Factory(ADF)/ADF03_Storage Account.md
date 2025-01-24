@@ -100,21 +100,21 @@
     print(type(data))
     print(data.head(25))
    ```
-6. Azure Data Lake Storage Gen2 stores data in…
+5. Azure Data Lake Storage Gen2 stores data in…
     1. A document database hosted in Azure Cosmos DB.
     2. An HDFS-compatible file system hosted in Azure Storage.
     3. A relational data warehouse hosted in Azure Synapse Analytics.
        
-7. What option must you enable to use Azure Data Lake Storage Gen2?
+6. What option must you enable to use Azure Data Lake Storage Gen2?
     1. Global replication
     2. Data encryption
     3. Hierarchical namespace
-8. Blob Storage Vs ADLS Gen1 Vs ADLS Gen2
+7. Blob Storage Vs ADLS Gen1 Vs ADLS Gen2
    
 # Answers
-6. 2
-7. 3
-8. Blob Storage Vs ADLS Gen1 Vs ADLS Gen2
+5. 2
+6. 3
+7. Blob Storage Vs ADLS Gen1 Vs ADLS Gen2
     1. **Purpose:**
         1. Blob storage: General-purpose storage for unstructured data like images, videos, text files, and backups.
         2. ADLS Gen1: Primarily for large-scale big data analytics using Hadoop-compatible tools.
