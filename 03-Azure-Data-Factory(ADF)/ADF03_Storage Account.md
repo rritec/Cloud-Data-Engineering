@@ -51,10 +51,10 @@
   - Click on **Advanced** Tab > select **Enable hierarchical namespace**
   - Click on **Review**
   - Click on **Create**
-## Container
+## Create Container
   - Click on **Data Lake Storage** > Click on **Container** > Name it as **rriteccontainer** > Click on **Create**
   - ![image](https://user-images.githubusercontent.com/20516321/209080454-923c3672-5e86-4abb-a877-a85f5f43f26d.png)
-## Folder
+## Create Folder
   - Open **rriteccontainer** > Click on **Add Directory** > Name it as **input**
   - Click on **Add Directory** > Name it as **output**
   - ![image](https://user-images.githubusercontent.com/20516321/209080956-412e8fa4-eef5-43f7-86b3-58cbc199ae78.png)
@@ -67,7 +67,8 @@
 
 # Learning Path
 
-1. [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-in/credentials/certifications/exams/az-900/)
+1. Introduction to Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-data-lake-storage/)
+2. [Exam AZ-900: Microsoft Azure Fundamentals](https://learn.microsoft.com/en-in/credentials/certifications/exams/az-900/)
 
 # Reference Material
 
@@ -99,4 +100,26 @@
     print(type(data))
     print(data.head(25))
    ```
-6. 
+6. Azure Data Lake Storage Gen2 stores data in…
+    1. A document database hosted in Azure Cosmos DB.
+    2. An HDFS-compatible file system hosted in Azure Storage.
+    3. A relational data warehouse hosted in Azure Synapse Analytics.
+       
+7. What option must you enable to use Azure Data Lake Storage Gen2?
+    1. Global replication
+    2. Data encryption
+    3. Hierarchical namespace
+8. Blob Storage Vs ADLS Gen1 Vs ADLS Gen2
+   
+# Answers
+6. 2
+7. 3
+8. Blob Storage Vs ADLS Gen1 Vs ADLS Gen2
+    1. **Purpose:**
+        1. Blob storage: General-purpose storage for unstructured data like images, videos, text files, and backups.
+        2. ADLS Gen1: Primarily for large-scale big data analytics using Hadoop-compatible tools.
+        3. ADLS Gen2: Optimized for large-scale data analytics while offering a more modern, flexible file system interface built on top of Blob storage.
+    2. **When to use which:**
+        1. Blob storage: When you need to store large amounts of unstructured data with simple access requirements, like website content or application backups.
+        2. ADLS Gen1: If you have existing Hadoop workflows and need to maintain compatibility with a traditional HDFS-like structure.
+        3. ADLS Gen2: For most big data analytics scenarios where you need a hierarchical file system and want to leverage the scalability and cost-effectiveness of Blob storage. 
