@@ -28,7 +28,18 @@
 
 
 
-## Lab
+## Create BLOB Storage
+  - Open [Azure Portal](https://portal.azure.com/)> > Click on the search bar > Type **Storage accounts** > Click on **Storage Accounts**
+  - Click on **Create** > Under **Basics** tab provide below details
+      - Subscription: **rritecsubscription**
+      - Resource Group: **rritecresoucegroup**
+      - Storage Account Name: **rritecsa**
+      - Region: **(US) East US**
+      - Performance: **Standard**
+      - Redundancy: **Locally-Redundant Storage (LRS)**  
+  - Click on **Review**
+  - Click on **Create**
+## Create ADLS
   - Open [Azure Portal](https://portal.azure.com/)> > Click on the search bar > Type **Storage accounts** > Click on **Storage Accounts**
   - Click on **Create** > Under **Basics** tab provide below details
       - Subscription: **rritecsubscription**
