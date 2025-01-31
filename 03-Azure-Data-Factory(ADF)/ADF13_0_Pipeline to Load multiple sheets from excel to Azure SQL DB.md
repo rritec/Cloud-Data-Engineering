@@ -1,5 +1,5 @@
 # Load multiple sheets from excel to Azure SQL DB
-**Step 1: Create Excel with sample data**
+#### **Step 1: Create Excel with sample data**
   - Open excel > in Sheet1 type as shown below
 
     ![image](https://user-images.githubusercontent.com/20516321/191252721-c4e945f6-6823-4747-a86f-e5ab65cf334f.png)
@@ -10,10 +10,11 @@
 
   - save it > name it as **Load_multiple_sheets_of_excel**
   
-**Step 2: Upload Excel into Blob container folder**
+#### **Step 2: Upload Excel into Blob container folder**
   - Open > portal.azure.com > go to **storage account** > open **container** > open **folder** > upload above excel
 
-**Step 3: Create source dataset wth sheetname as parameter**
+#### **Step 3: Create source dataset wth sheetname as parameter**
+
   - Open **ADF Studio** > Click on **Author** > expand **Datasets** > Navigate to required folder > click on folder **...** > click on **New DataSet**
   - Select **Azure Blob Storage** > Click on **Continue** > Select **Excel** > Click on **Continue** > Name it as **src_multiple_sheets** > Select required **Linked Service** > Browse and point to above **Blob Excel** > select **First row as Header** > select import schema as **None** > Click on **ok**
   - Click on **Parameters** > Click on **New** > provide as shown below
@@ -29,7 +30,8 @@
     ![image](https://user-images.githubusercontent.com/20516321/191746516-27235344-7af2-41c1-9342-13a97f365f27.png)
     
 
-**Step 4: Create Target dataset**
+#### **Step 4: Create Target dataset**
+
   - Open **ADF Studio** > Click on **Author** > expand **Datasets** > Navigate to required folder > click on folder **...** > click on **New DataSet**
   - Select **Azure SQL Database** > Click on **Continue** > Name it as **tgt_multiple_sheets** > select required **Linked Service** > Click on **Edit** > provide required schemaname and table name > select **none**
   - Click on **ok**
@@ -37,7 +39,7 @@
     ![image](https://user-images.githubusercontent.com/20516321/191257544-6f49fafb-1a42-4a71-92b7-8b1809a462ad.png)
 
 
-**Step 5: Create Pipeline**
+#### **Step 5: Create Pipeline**
 
   - Open **ADF Studio** > Click on **Author** > expand **Pipelines** > Navigate to required folder > click on folder **...** > click on **New Pipeline**
   - Name pipeline as **p05_pipeline_load_multiple_sheets_to_azure_sql_database**
@@ -56,7 +58,7 @@
 
   - Click on **Sink** > Select Sink Dataset as **tgt_multiple_Sheets** > Select **table option** as **Auto Create** > Click on **publish all** 
 
-**Step 6: Trigger Pipeline**
+#### **Step 6: Trigger Pipeline**
   - Click on **Add Trigger** > Click on **Trigger now**
   - observe run status
 
