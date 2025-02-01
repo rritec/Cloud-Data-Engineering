@@ -24,7 +24,7 @@
 7. Json Code of pipeline
 ``` json
 {
-    "name": "pipeline1",
+    "name": "ADF13_4_Branch Files using Switch",
     "properties": {
         "activities": [
             {
