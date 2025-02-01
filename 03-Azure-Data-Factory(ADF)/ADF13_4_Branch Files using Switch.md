@@ -19,5 +19,6 @@
 
 6. Observe result
 
-![image](https://github.com/user-attachments/assets/50b8e838-4733-4816-9e64-4734e72b4afb)
+![image](https://github.com/user-attachments/assets/c9f02c4b-a0c1-42ce-8fb3-6b9a795656d8)
+
 
