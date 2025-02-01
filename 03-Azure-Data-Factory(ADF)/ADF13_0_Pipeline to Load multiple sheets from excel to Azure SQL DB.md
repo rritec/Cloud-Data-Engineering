@@ -1,16 +1,17 @@
 # Load multiple sheets from excel to Azure SQL DB
-#### **Step 1: Create Excel with sample data**
-  - Open excel > in Sheet1 type as shown below
+#### Step 1: Create Excel with sample data
+1. Open excel > in Sheet1 type as shown below
 
-    ![image](https://user-images.githubusercontent.com/20516321/191252721-c4e945f6-6823-4747-a86f-e5ab65cf334f.png)
+![image](https://user-images.githubusercontent.com/20516321/191252721-c4e945f6-6823-4747-a86f-e5ab65cf334f.png)
 
-  - In Sheet2 type as shown below
+2. In Sheet2 type as shown below
 
-    ![image](https://user-images.githubusercontent.com/20516321/191252829-46b4751e-0949-491b-95bd-bc476b85b506.png)
+![image](https://user-images.githubusercontent.com/20516321/191252829-46b4751e-0949-491b-95bd-bc476b85b506.png)
 
-  - save it > name it as **Load_multiple_sheets_of_excel**
+3. save it > name it as **Load_multiple_sheets_of_excel**
   
-#### **Step 2: Upload Excel into Blob container folder**
+#### Step 2: Upload Excel into Blob container folder
+
   - Open > portal.azure.com > go to **storage account** > open **container** > open **folder** > upload above excel
 
 #### **Step 3: Create source dataset wth sheetname as parameter**
