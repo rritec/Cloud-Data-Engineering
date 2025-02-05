@@ -91,4 +91,6 @@
 
     
 ## Questions
+1. what data strucs of python we can recall by seeing parameter file?
 ## Answers
+1. Dict and List.
