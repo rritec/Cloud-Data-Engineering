@@ -60,3 +60,5 @@ Serverless SQL pool is an **analytics system** and is **not recommended for OLTP
 
 
 
+
+
