@@ -58,6 +58,171 @@ Serverless SQL pool is an **analytics system** and is **not recommended for OLTP
 - The data **remains in the data lake files**, but is **abstracted** by a relational schema.
 - Client applications and **analytical tools** can query the data **as if it were in a relational database hosted in SQL Server**.
 
+## Use SQL to Query CSV Files
+
+### Selecting and Querying CSV Data
+1. Select the CSV folder.
+2. In the **New SQL script** list on the toolbar, select **Select TOP 100 rows**.
+3. In the **File type** list, select **Text format**, then apply settings to open a new SQL script.
+4. In the **Properties** pane, rename **SQL Script 1** to **Query Sales CSV files**.
+5. Change the result settings to show **All rows**.
+6. Select **Publish** to save the script and hide the **Properties** pane.
+
+#### Generated SQL Code:
+```sql
+-- This is auto-generated code
+SELECT TOP 100 *
+FROM OPENROWSET(
+    BULK 'https://datalakexxxxxxx.dfs.core.windows.net/files/sales/csv/**',
+    FORMAT = 'CSV',
+    PARSER_VERSION='2.0'
+) AS [result];
+```
+
+#### Modify the Query to Include Headers:
+```sql
+SELECT TOP 100 *
+FROM OPENROWSET(
+    BULK 'https://datalakexxxxxxx.dfs.core.windows.net/files/sales/csv/**',
+    FORMAT = 'CSV',
+    PARSER_VERSION='2.0',
+    HEADER_ROW = TRUE
+) AS [result];
+```
+7. Ensure **Built-in** is selected in the **Connect to** list.
+8. Click **▷ Run** to execute the SQL code.
+9. Review the query results.
+
+---
+## Transform Data Using CETAS (CREATE EXTERNAL TABLE AS SELECT)
+
+### Create an External Data Source and File Format
+```sql
+-- Database for sales data
+CREATE DATABASE Sales
+  COLLATE Latin1_General_100_BIN2_UTF8;
+GO;
+
+USE Sales;
+GO;
+
+-- External data is in the Files container in the data lake
+CREATE EXTERNAL DATA SOURCE sales_data WITH (
+    LOCATION = 'https://datalakexxxxxxx.dfs.core.windows.net/files/'
+);
+GO;
+
+-- Format for table files
+CREATE EXTERNAL FILE FORMAT ParquetFormat
+    WITH (
+        FORMAT_TYPE = PARQUET,
+        DATA_COMPRESSION = 'org.apache.hadoop.io.compress.SnappyCodec'
+    );
+GO;
+```
+1. Rename the script to **Create Sales DB** and publish it.
+2. Ensure the script is connected to the **Built-in SQL pool** and the **master database**, then run it.
+3. Refresh the **Data** page and verify the creation of the **Sales** database and **sales_data** external data source.
+
+---
+## Create an External Table
+
+### Retrieve and Aggregate Data
+```sql
+USE Sales;
+GO;
+
+SELECT Item AS Product,
+       SUM(Quantity) AS ItemsSold,
+       ROUND(SUM(UnitPrice) - SUM(TaxAmount), 2) AS NetRevenue
+FROM OPENROWSET(
+    BULK 'sales/csv/*.csv',
+    DATA_SOURCE = 'sales_data',
+    FORMAT = 'CSV',
+    PARSER_VERSION = '2.0',
+    HEADER_ROW = TRUE
+) AS orders
+GROUP BY Item;
+```
+
+### Save Query Results in an External Table
+```sql
+CREATE EXTERNAL TABLE ProductSalesTotals
+WITH (
+    LOCATION = 'sales/productsales/',
+    DATA_SOURCE = sales_data,
+    FILE_FORMAT = ParquetFormat
+)
+AS
+SELECT Item AS Product,
+       SUM(Quantity) AS ItemsSold,
+       ROUND(SUM(UnitPrice) - SUM(TaxAmount), 2) AS NetRevenue
+FROM OPENROWSET(
+    BULK 'sales/csv/*.csv',
+    DATA_SOURCE = 'sales_data',
+    FORMAT = 'CSV',
+    PARSER_VERSION = '2.0',
+    HEADER_ROW = TRUE
+) AS orders
+GROUP BY Item;
+```
+
+1. Rename the script **Create ProductSalesTotals Table** and publish it.
+2. Verify the table **ProductSalesTotals** in **External tables**.
+3. Query the **ProductSalesTotals** table to verify aggregated sales data.
+4. Confirm the creation of **productsales** folder in the data lake.
+5. Verify Parquet files containing aggregated sales data.
+
+---
+## Encapsulate Data Transformation in a Stored Procedure
+
+### Create a Stored Procedure to Aggregate Sales by Year
+```sql
+USE Sales;
+GO;
+
+CREATE PROCEDURE sp_GetYearlySales
+AS
+BEGIN
+    -- Drop existing table
+    IF EXISTS (
+        SELECT * FROM sys.external_tables
+        WHERE name = 'YearlySalesTotals'
+    )
+    DROP EXTERNAL TABLE YearlySalesTotals;
+    
+    -- Create external table
+    CREATE EXTERNAL TABLE YearlySalesTotals
+    WITH (
+        LOCATION = 'sales/yearlysales/',
+        DATA_SOURCE = sales_data,
+        FILE_FORMAT = ParquetFormat
+    )
+    AS
+    SELECT YEAR(OrderDate) AS CalendarYear,
+           SUM(Quantity) AS ItemsSold,
+           ROUND(SUM(UnitPrice) - SUM(TaxAmount), 2) AS NetRevenue
+    FROM OPENROWSET(
+        BULK 'sales/csv/*.csv',
+        DATA_SOURCE = 'sales_data',
+        FORMAT = 'CSV',
+        PARSER_VERSION = '2.0',
+        HEADER_ROW = TRUE
+    ) AS orders
+    GROUP BY YEAR(OrderDate);
+END;
+```
+### Execute the Stored Procedure
+```sql
+EXEC sp_GetYearlySales;
+```
+1. Run the script to create the stored procedure.
+2. Execute `EXEC sp_GetYearlySales;` to transform and store yearly sales data.
+3. Verify the **yearlysales** folder in the data lake.
+4. Delete the **yearlysales** folder before re-executing the stored procedure to avoid errors.
+
+
+
 
 
 
