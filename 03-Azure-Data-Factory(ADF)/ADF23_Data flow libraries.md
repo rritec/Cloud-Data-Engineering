@@ -1,5 +1,3 @@
-Note to faculty: take recording and update
-
 # ADF23_Data flow libraries.md
 
 1. Data flow libraries contain custom functions composed using the expression builder.
@@ -18,6 +16,15 @@ Note to faculty: take recording and update
 1. Click on **Manage** > Click on  **Data flow libraries** > Click on **New**
 2. Name it as **rritec** > Click on **New** > Name it as **workingdays**
 3. Create two arguments **i1 and i2 with datatype as date** as shown below and paste below code
+4. Refer help documents
+   - [size](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#size)
+   - [filter](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#filter)
+   - [mapLoop](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#mapLoop)
+   - [toInteger](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#toInteger)
+   - [tostring](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#tostring)
+   - [addDays](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#addDays)
+   - [dayOfWeek](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#dayOfWeek)
+   - [toDate](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-expressions-usage#toDate) 
 
 ``` sql
 /*
